@@ -1,0 +1,27 @@
+name: Adapter correction or integration evidence
+description: Report a version-specific mapping problem or reproducible integration.
+body:
+  - type: input
+    id: sdk
+    attributes:
+      label: SDK, exact version, wrapper, and loader
+    validations:
+      required: true
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Map task and reproducible scenario
+      description: Include layer types, basemap type, observed behavior, and expected result. Omit keys and private data.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and official references
+      description: Link a minimal public reproduction or sanitized screenshots. Distinguish source review from a live test.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Proposed correction and limitations

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A local Leaflet comparison of cartographic themes, hierarchy, and scale-aware labels." />
+    <title>Map Aesthetic — local design study</title>
+  </head>
+  <body>
+    <main>
+      <header class="page-header">
+        <div class="wordmark"><span class="mark" aria-hidden="true">m/a</span> map-aesthetic <span class="study-label">DESIGN STUDY</span></div>
+        <a href="https://leafletjs.com/" target="_blank" rel="noreferrer">Built with Leaflet ↗</a>
+      </header>
+
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <h1 id="page-title">Same data. A clearer map.</h1>
+          <p>Explore hierarchy, labels, and interaction across three cartographic themes.</p>
+        </div>
+        <p class="synthetic-note"><strong>Synthetic local data</strong><span>No tiles, external fonts, credentials, or map services.</span></p>
+      </section>
+
+      <section class="workspace" aria-label="Interactive map comparison">
+        <div class="toolbar">
+          <label class="theme-field" for="theme-select">After theme
+            <select id="theme-select" data-testid="theme-select">
+              <option value="quiet-analysis">Quiet Analysis</option>
+              <option value="night-operations">Night Operations</option>
+              <option value="public-guide">Public Guide</option>
+            </select>
+          </label>
+          <fieldset class="scale-controls">
+            <legend>View scale</legend>
+            <button type="button" data-scale="overview" data-testid="scale-overview">Overview</button>
+            <button type="button" data-scale="working" data-testid="scale-working" aria-pressed="true">Working</button>
+            <button type="button" data-scale="detail" data-testid="scale-detail">Detail</button>
+          </fieldset>
+          <button type="button" class="reset-button" data-testid="reset-view">Reset view</button>
+          <output class="ready-state" data-testid="demo-ready" data-state="loading" aria-live="polite">Loading local vectors…</output>
+        </div>
+
+        <div class="map-grid">
+          <section class="map-panel before-panel" aria-labelledby="before-title">
+            <header class="panel-heading"><div><span class="panel-index">01</span><h2 id="before-title">Before</h2></div><span>Plain styling</span></header>
+            <div id="map-before" class="map" data-testid="map-before" role="region" aria-label="Before map. Drag or use arrow keys to pan; plus and minus to zoom." tabindex="0"></div>
+            <div class="legend before-legend" aria-label="Before map legend"><span><i class="route-key"></i>Service route</span><span><i class="site-key"></i>Site</span><span><i class="selection-key"></i>Selected</span></div>
+          </section>
+          <section class="map-panel after-panel" aria-labelledby="after-title" data-testid="after-panel">
+            <header class="panel-heading"><div><span class="panel-index">02</span><h2 id="after-title">After</h2></div><span data-testid="theme-name">Quiet Analysis</span></header>
+            <div id="map-after" class="map" data-testid="map-after" role="region" aria-label="After map. Drag or use arrow keys to pan; plus and minus to zoom." tabindex="0"></div>
+            <div class="legend after-legend" aria-label="After map legend"><span><i class="route-key"></i>Service route</span><span><i class="site-key"></i>Site</span><span><i class="selection-key"></i>Selected</span></div>
+          </section>
+        </div>
+
+        <div class="map-status">
+          <span class="linked-icon" aria-hidden="true">↔</span><span>Views linked</span>
+          <output data-testid="scale-state" data-scale="working">Working</output>
+          <span class="status-separator">/</span><output data-testid="label-count">0 labels enabled</output>
+          <span class="coordinate-note">Local planar coordinates · synthetic meters</span>
+          <output class="sr-only" data-testid="view-before"></output>
+          <output class="sr-only" data-testid="view-after"></output>
+        </div>
+      </section>
+
+      <section class="selection-bar" aria-labelledby="sites-title">
+        <div class="selection-intro"><h2 id="sites-title">Route sites</h2><p>Select a site on either map or here.</p></div>
+        <div class="site-buttons" data-testid="site-list"></div>
+        <div class="selection-summary"><output data-testid="selected-state" data-selected="none" aria-live="polite">No site selected</output><button type="button" data-testid="clear-selection" disabled>Clear selection</button></div>
+      </section>
+
+      <footer class="page-footer">
+        <p>Local Leaflet study. The same generated geometry powers both maps; the After view applies theme tokens and scale-aware labels.</p>
+        <p>This demo does not validate commercial SDKs, provider basemaps, real geography, or label collision engines.</p>
+      </footer>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

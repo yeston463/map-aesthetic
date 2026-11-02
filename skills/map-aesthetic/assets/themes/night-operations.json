@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0",
+  "id": "night-operations",
+  "name": "Night Operations",
+  "mode": "dark",
+  "intent": "operations",
+  "ui": {
+    "background": "#121C25", "surface": "#1C2A36", "text": "#EEF5F9",
+    "mutedText": "#ADBFCB", "border": "#3A5060", "accent": "#63D8BE",
+    "accentText": "#0D2823", "focusRing": "#84C8FF",
+    "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "radiusPx": 8, "spacingPx": 8
+  },
+  "cartography": {
+    "land": "#1C2C36", "water": "#132632", "park": "#243F3B",
+    "road": "#3B505B", "roadCasing": "#16242D", "boundary": "#5F7A80",
+    "label": "#C2D4D9", "labelHalo": "#1C2C36",
+    "categorical": ["#63D8BE", "#F2B870", "#A8B1FF", "#F29AB7"],
+    "sequential": ["#21413D", "#2C675A", "#3C9580", "#63C3A6", "#AAE8CE"],
+    "route": { "color": "#63D8BE", "casingColor": "#122820", "widthPx": 4, "casingWidthPx": 7 },
+    "site": { "color": "#63D8BE", "radiusPx": 6, "strokeColor": "#15262C", "strokeWidthPx": 2 },
+    "selection": { "color": "#FFD091", "haloColor": "#15262C", "widthPx": 3 },
+    "labels": { "sizePx": 12, "haloWidthPx": 2, "density": "sparse" },
+    "scale": { "detailBelowMpp": 8, "overviewAboveMpp": 24 }
+  }
+}

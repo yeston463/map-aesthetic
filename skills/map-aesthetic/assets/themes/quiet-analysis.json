@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0",
+  "id": "quiet-analysis",
+  "name": "Quiet Analysis",
+  "mode": "light",
+  "intent": "analysis",
+  "ui": {
+    "background": "#F1F4F3", "surface": "#FFFFFF", "text": "#172F30",
+    "mutedText": "#516567", "border": "#CED9D6", "accent": "#146C60",
+    "accentText": "#FFFFFF", "focusRing": "#126A9B",
+    "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "radiusPx": 10, "spacingPx": 8
+  },
+  "cartography": {
+    "land": "#F0F3EE", "water": "#C9DFE8", "park": "#D9E7D7",
+    "road": "#FFFFFF", "roadCasing": "#D7DFDA", "boundary": "#A9BDB4",
+    "label": "#405C56", "labelHalo": "#F8FBF7",
+    "categorical": ["#177C6F", "#A15C27", "#6260A4", "#9A4567"],
+    "sequential": ["#DEEEE8", "#A8CFC1", "#68AC95", "#32826C", "#175445"],
+    "route": { "color": "#137C6C", "casingColor": "#FFFFFF", "widthPx": 4, "casingWidthPx": 7 },
+    "site": { "color": "#177C6F", "radiusPx": 6, "strokeColor": "#FFFFFF", "strokeWidthPx": 2 },
+    "selection": { "color": "#A7531A", "haloColor": "#FFFFFF", "widthPx": 3 },
+    "labels": { "sizePx": 12, "haloWidthPx": 2, "density": "balanced" },
+    "scale": { "detailBelowMpp": 8, "overviewAboveMpp": 24 }
+  }
+}

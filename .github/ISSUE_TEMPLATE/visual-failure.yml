@@ -1,0 +1,23 @@
+name: Visual or behavioral failure
+description: Report a map design decision, skill behavior, or demo regression.
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: User task and available inputs
+      description: State whether the agent had source, screenshots, or a live map. Omit private content.
+    validations:
+      required: true
+  - type: textarea
+    id: failure
+    attributes:
+      label: Observed failure and effect
+      description: Include viewport, geographic extent or local bounds, state, and concrete evidence when available.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps or minimal reproducible input
+    validations:
+      required: true

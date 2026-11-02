@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Map Aesthetic theme intent, version 1.0",
+  "description": "Semantic design tokens, not an executable SDK style or a compatibility guarantee.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "name", "mode", "intent", "ui", "cartography"],
+  "properties": {
+    "schemaVersion": { "const": "1.0" },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "mode": { "enum": ["light", "dark"] },
+    "intent": { "enum": ["analysis", "operations", "public"] },
+    "ui": {
+      "type": "object", "additionalProperties": false,
+      "required": ["background", "surface", "text", "mutedText", "border", "accent", "accentText", "focusRing", "fontFamily", "radiusPx", "spacingPx"],
+      "properties": {
+        "background": { "$ref": "#/$defs/color" },
+        "surface": { "$ref": "#/$defs/color" },
+        "text": { "$ref": "#/$defs/color" },
+        "mutedText": { "$ref": "#/$defs/color" },
+        "border": { "$ref": "#/$defs/color" },
+        "accent": { "$ref": "#/$defs/color" },
+        "accentText": { "$ref": "#/$defs/color" },
+        "focusRing": { "$ref": "#/$defs/color" },
+        "fontFamily": { "type": "string", "minLength": 1 },
+        "radiusPx": { "type": "number", "minimum": 0, "maximum": 32 },
+        "spacingPx": { "type": "number", "minimum": 4, "maximum": 32 }
+      }
+    },
+    "cartography": {
+      "type": "object", "additionalProperties": false,
+      "required": ["land", "water", "park", "road", "roadCasing", "boundary", "label", "labelHalo", "categorical", "sequential", "route", "site", "selection", "labels", "scale"],
+      "properties": {
+        "land": { "$ref": "#/$defs/color" },
+        "water": { "$ref": "#/$defs/color" },
+        "park": { "$ref": "#/$defs/color" },
+        "road": { "$ref": "#/$defs/color" },
+        "roadCasing": { "$ref": "#/$defs/color" },
+        "boundary": { "$ref": "#/$defs/color" },
+        "label": { "$ref": "#/$defs/color" },
+        "labelHalo": { "$ref": "#/$defs/color" },
+        "categorical": {
+          "type": "array", "minItems": 3, "maxItems": 12,
+          "uniqueItems": true, "items": { "$ref": "#/$defs/color" }
+        },
+        "sequential": {
+          "type": "array", "minItems": 3, "maxItems": 9,
+          "uniqueItems": true, "items": { "$ref": "#/$defs/color" }
+        },
+        "route": {
+          "type": "object", "additionalProperties": false,
+          "required": ["color", "casingColor", "widthPx", "casingWidthPx"],
+          "properties": {
+            "color": { "$ref": "#/$defs/color" },
+            "casingColor": { "$ref": "#/$defs/color" },
+            "widthPx": { "type": "number", "exclusiveMinimum": 0, "maximum": 24 },
+            "casingWidthPx": { "type": "number", "exclusiveMinimum": 0, "maximum": 40 }
+          }
+        },
+        "site": {
+          "type": "object", "additionalProperties": false,
+          "required": ["color", "radiusPx", "strokeColor", "strokeWidthPx"],
+          "properties": {
+            "color": { "$ref": "#/$defs/color" },
+            "radiusPx": { "type": "number", "minimum": 2, "maximum": 24 },
+            "strokeColor": { "$ref": "#/$defs/color" },
+            "strokeWidthPx": { "type": "number", "minimum": 0, "maximum": 8 }
+          }
+        },
+        "selection": {
+          "type": "object", "additionalProperties": false,
+          "required": ["color", "haloColor", "widthPx"],
+          "properties": {
+            "color": { "$ref": "#/$defs/color" },
+            "haloColor": { "$ref": "#/$defs/color" },
+            "widthPx": { "type": "number", "minimum": 1, "maximum": 12 }
+          }
+        },
+        "labels": {
+          "type": "object", "additionalProperties": false,
+          "required": ["sizePx", "haloWidthPx", "density"],
+          "properties": {
+            "sizePx": { "type": "number", "minimum": 10, "maximum": 24 },
+            "haloWidthPx": { "type": "number", "minimum": 0, "maximum": 4 },
+            "density": { "enum": ["sparse", "balanced", "dense"] }
+          }
+        },
+        "scale": {
+          "type": "object", "additionalProperties": false,
+          "required": ["detailBelowMpp", "overviewAboveMpp"],
+          "properties": {
+            "detailBelowMpp": { "type": "number", "exclusiveMinimum": 0 },
+            "overviewAboveMpp": { "type": "number", "exclusiveMinimum": 0 }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "color": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" }
+  }
+}

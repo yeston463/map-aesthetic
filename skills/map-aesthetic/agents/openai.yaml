@@ -1,0 +1,4 @@
+interface:
+  display_name: "Map Aesthetic"
+  short_description: "Refine web map cartography and interface design"
+  default_prompt: "Use $map-aesthetic to refine this web map's visual hierarchy, data styling, labels, and controls, then verify representative scales and interaction states."
