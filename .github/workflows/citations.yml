@@ -49,4 +49,6 @@ jobs:
       # Exit code 2 means the network blocked the conclusion, not that the citations hold.
       - run: python scripts/check_citations.py
       - if: failure()
-        run: echo "A scheduled citation failure is a report, not a build break: open an issue with the listed claims."
+        run: |
+          echo "A citation failure is a report, not a build break."
+          echo "Open an issue listing every claim marked UNSUPPORTED, DEAD, or UNCLAIMED."

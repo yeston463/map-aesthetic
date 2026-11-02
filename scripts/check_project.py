@@ -86,11 +86,42 @@ def check_readme_parity(errors: list[str]) -> None:
                       f"only-zh={sorted(chinese - english)}")
 
 
+def check_workflows(errors: list[str]) -> None:
+    """A workflow that fails to parse never reports anything, so catch it locally.
+
+    The live citation job runs on a schedule, so a syntax error in it can sit
+    unnoticed for a week.
+    """
+    workflows = sorted((ROOT / ".github" / "workflows").glob("*.yml"))
+    if not workflows:
+        errors.append(".github/workflows: no workflow files found")
+        return
+    for path in workflows:
+        try:
+            document = yaml.safe_load(path.read_text(encoding="utf-8"))
+        except (OSError, UnicodeDecodeError, yaml.YAMLError) as error:
+            errors.append(f"{path.relative_to(ROOT)}: does not parse ({error})")
+            continue
+        if not isinstance(document, dict):
+            errors.append(f"{path.relative_to(ROOT)}: must be a mapping")
+            continue
+        if "name" not in document or True not in document and "on" not in document:
+            errors.append(f"{path.relative_to(ROOT)}: needs a name and a trigger")
+        jobs = document.get("jobs")
+        if not isinstance(jobs, dict) or not jobs:
+            errors.append(f"{path.relative_to(ROOT)}: declares no jobs")
+            continue
+        for job, config in jobs.items():
+            if not isinstance(config, dict) or "runs-on" not in config or not config.get("steps"):
+                errors.append(f"{path.relative_to(ROOT)}: job {job} needs runs-on and steps")
+
+
 def main() -> int:
     errors = []
     check_skill_metadata(errors)
     check_interface(errors)
     check_readme_parity(errors)
+    check_workflows(errors)
 
     markdown = list(ROOT.glob("*.md"))
     for directory in ("skills", "docs", "evals", ".github"):
