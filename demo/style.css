@@ -47,23 +47,28 @@ select { border: 1px solid #c7d3c9; background: #fff; border-radius: 5px; paddin
 .panel-heading h2 { font-size: 15px; font-weight: 600; margin: 0; letter-spacing: -0.3px; }
 .panel-index { color: var(--muted-text, #7a857a); font: 10px ui-monospace, monospace; }
 .panel-heading > span { color: var(--muted-text, #7a857a); font-size: 10px; }
+/* The theme name is the one place the demo renders accentText on accent, the pair
+   the validator checks, so that promise is visible in the page rather than only in JSON. */
+.after-panel .panel-heading > span { background: var(--accent); color: var(--accent-text); padding: 3px 9px; border-radius: 999px; font-weight: 600; }
 .map { height: clamp(390px, 52vh, 650px); width: 100%; z-index: 0; }
 .map:focus-visible { outline-offset: -4px; }
 .leaflet-container { font-family: inherit; }
-.map-label { color: var(--map-label, #333); font-size: var(--map-label-size, 11px); text-align: center; white-space: nowrap; line-height: 20px; }
-.map-label span { text-shadow: 0 var(--map-halo-width, 1px) var(--map-halo, white), 0 calc(-1 * var(--map-halo-width, 1px)) var(--map-halo, white), var(--map-halo-width, 1px) 0 var(--map-halo, white), calc(-1 * var(--map-halo-width, 1px)) 0 var(--map-halo, white); }
+/* These take no fallback values: both panels receive them from main.js, from the
+   active theme or the plain baseline, so a legend cannot silently drift from its map. */
+.map-label { color: var(--map-label); font-size: var(--map-label-size); text-align: center; white-space: nowrap; line-height: 20px; }
+.map-label span { text-shadow: 0 var(--map-halo-width) var(--map-halo), 0 calc(-1 * var(--map-halo-width)) var(--map-halo), var(--map-halo-width) 0 var(--map-halo), calc(-1 * var(--map-halo-width)) 0 var(--map-halo); }
 .district-label { font-size: 10px; font-weight: 600; letter-spacing: 2px; opacity: 0.8; }
 .before-panel .district-label { letter-spacing: 0.5px; font-weight: 400; }
 .leaflet-control-zoom { border: 1px solid var(--border, #ccc) !important; box-shadow: 0 2px 5px #172b1510 !important; }
 .leaflet-control-zoom a { background: var(--surface, #fff) !important; color: var(--text, #333) !important; border-color: var(--border, #ddd) !important; }
 .leaflet-control-attribution { background: var(--surface, #fff) !important; color: var(--muted-text, #555) !important; font-size: 9px !important; }
 .leaflet-control-attribution a { color: inherit !important; }
-.legend { display: flex; gap: 23px; align-items: center; padding: 15px 20px; min-height: 49px; border-top: 1px solid var(--border, #dce0d8); font-size: 10px; color: var(--muted-text, #637267); }
+.legend { display: flex; gap: calc(var(--spacing-px) * 3); align-items: center; padding: 15px 20px; min-height: 49px; border-top: 1px solid var(--border, #dce0d8); font-size: 10px; color: var(--muted-text, #637267); }
 .legend > span { display: flex; align-items: center; gap: 7px; white-space: nowrap; }
 .legend i { display: inline-block; flex: none; }
-.route-key { width: 22px; height: 3px; border-radius: 3px; background: var(--route, #3388ff); }
-.site-key { width: 8px; height: 8px; border-radius: 50%; background: var(--site, #3388ff); }
-.selection-key { width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--selection, #9c36c8); }
+.route-key { width: 22px; height: 3px; border-radius: 3px; background: var(--route); }
+.site-key { width: 8px; height: 8px; border-radius: 50%; background: var(--site); }
+.selection-key { width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--selection); }
 .study-popup .leaflet-popup-content-wrapper, .study-popup .leaflet-popup-tip { background: var(--surface, white); color: var(--text, #203531); }
 .study-popup .leaflet-popup-content-wrapper { border-radius: var(--radius-px, 8px); box-shadow: 0 4px 18px #132b2322; }
 .site-popup { width: 190px; }
@@ -122,7 +127,7 @@ select { border: 1px solid #c7d3c9; background: #fff; border-radius: 5px; paddin
   .map-grid { grid-template-columns: minmax(0, 1fr); }
   .panel-heading { min-height: 48px; padding: 10px 14px; }
   .map { height: 375px; }
-  .legend { padding: 13px 14px; gap: 22px; }
+  .legend { padding: 13px 14px; gap: calc(var(--spacing-px) * 2); }
   .map-status { flex-wrap: wrap; padding: 12px 14px; gap: 8px; font-size: 9px; }
   .map-status output[data-testid="scale-state"] { margin-left: auto; }
   .map-status .status-separator { display: none; }

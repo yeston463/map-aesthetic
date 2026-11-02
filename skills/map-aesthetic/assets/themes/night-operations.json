@@ -12,8 +12,8 @@
     "radiusPx": 8, "spacingPx": 8
   },
   "cartography": {
-    "land": "#1C2C36", "water": "#132632", "park": "#243F3B",
-    "road": "#3B505B", "roadCasing": "#16242D", "boundary": "#5F7A80",
+    "land": "#1C2C36", "water": "#0C1A23", "park": "#243F3B",
+    "road": "#3B505B", "roadCasing": "#101B22", "boundary": "#5F7A80",
     "label": "#C2D4D9", "labelHalo": "#1C2C36",
     "categorical": ["#63D8BE", "#F2B870", "#A8B1FF", "#F29AB7"],
     "sequential": ["#21413D", "#2C675A", "#3C9580", "#63C3A6", "#AAE8CE"],

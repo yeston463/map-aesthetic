@@ -71,6 +71,52 @@ class ThemeValidationTests(unittest.TestCase):
         validator.validate_theme(self.theme)
         self.assertEqual(self.theme, original)
 
+    def test_delta_e_matches_an_independent_metric(self):
+        # Values produced by colour-science 0.4.7 (delta_E, method='CIE 2000').
+        for color, other, expected in (
+            ("#1C2C36", "#0C1A23", 5.59),
+            ("#1C2C36", "#132632", 2.26),
+            ("#177C6F", "#A15C27", 41.20),
+            ("#000000", "#FFFFFF", 100.00),
+            ("#1C2C36", "#1C2C36", 0.00),
+        ):
+            with self.subTest(pair=(color, other)):
+                self.assertAlmostEqual(validator.delta_e(color, other), expected, delta=0.05)
+
+    def test_context_surface_invisible_against_land_is_rejected(self):
+        self.theme["cartography"]["water"] = self.theme["cartography"]["land"]
+        self.assertTrue(any("water vs land" in error and "separate surface" in error
+                            for error in validator.validate_theme(self.theme)))
+
+    def test_halo_matching_land_is_not_flagged_as_a_separation_failure(self):
+        # A label halo normally matches land so text reads across roads and fills.
+        # Treating that as a defect would reject a correct design.
+        self.theme["cartography"]["labelHalo"] = self.theme["cartography"]["land"]
+        self.assertEqual(validator.validate_theme(self.theme), [])
+
+    def test_indistinguishable_categories_are_rejected(self):
+        self.theme["cartography"]["categorical"] = ["#177C6F", "#187D6F", "#6260A4", "#9A4567"]
+        self.assertTrue(any("categorical" in error for error in validator.validate_theme(self.theme)))
+
+    def test_non_monotonic_sequential_ramp_is_rejected(self):
+        self.theme["cartography"]["sequential"] = ["#DEEEE8", "#A8CFC1", "#175445", "#68AC95", "#32826C"]
+        self.assertTrue(any("monotonic" in error for error in validator.validate_theme(self.theme)))
+
+    def test_non_finite_in_memory_number_is_rejected(self):
+        # The CLI rejects non-finite text, so this path only exists for callers
+        # that build a theme in memory.
+        self.theme["cartography"]["route"]["widthPx"] = float("nan")
+        self.assertTrue(any("finite" in error for error in validator.validate_theme(self.theme)))
+
+    def test_presets_clear_the_separation_floors_with_margin(self):
+        for path in PRESETS.glob("*.json"):
+            cartography = validator.load_json(path)["cartography"]
+            with self.subTest(preset=path.name):
+                self.assertEqual(validator.check_separation(cartography), [])
+                for foreground, background in validator.CONTEXT_PAIRS:
+                    self.assertGreater(validator.delta_e(cartography[foreground], cartography[background]),
+                                       validator.MIN_CONTEXT_DELTA_E)
+
 
 if __name__ == "__main__":
     unittest.main()

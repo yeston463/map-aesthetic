@@ -92,8 +92,9 @@ and after evidence. Fix observed regressions and recheck affected states.
 
 If theme JSON is produced, validate it with
 `python <skill-dir>/scripts/validate_theme.py <theme.json>` when Python and
-`jsonschema` are available. Structural and contrast checks do not prove good
-cartography, color-vision accessibility, or SDK support. Report unavailable
+`jsonschema` are available. Structural, contrast, and CIEDE2000 separability checks
+reject surfaces that cannot be told apart; they do not prove label readability,
+full color-vision accessibility, or SDK support. Report unavailable
 checks without silently treating them as passed.
 
 Deliver proportionally to the request:

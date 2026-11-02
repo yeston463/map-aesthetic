@@ -58,7 +58,10 @@ Source: [VectorTileLayer style replacement, helpers, and limitations](https://de
 - A 2D text halo and a 3D callout/occluded label are separate design problems.
 - Match scale intent using actual view scale and layer limits; copied zoom thresholds are unreliable.
 - Inspect `MapImageLayer` sublayer/service support before changing its renderer.
-- Cached `TileLayer` sublayer properties are read-only in the checked Sublayer reference.
+- Cached `TileLayer` sublayer properties are read-only in the checked Sublayer reference,
+  except `legendEnabled`, `popupEnabled`, and the `popupTemplate` title. Do not report a
+  legend or popup-title change on a cached sublayer as unavailable; renderer, labels,
+  and visibility are the parts that are not.
 
 Sources: [FeatureLayer labeling and rendering](https://developers.arcgis.com/javascript/latest/references/core/layers/FeatureLayer/), [Sublayer constraints](https://developers.arcgis.com/javascript/latest/references/core/layers/support/Sublayer/).
 

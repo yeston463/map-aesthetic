@@ -17,6 +17,12 @@ units, readiness signal, style-reset behavior, cleanup, and rollback. Link the
 official version-matched documentation and give the check date. Identify native,
 approximate, unavailable, and unverified capabilities separately.
 
+Every URL cited by an adapter also needs an entry in the claim table in
+`scripts/check_citations.py`: the statement the page supports plus tokens that must
+appear on it. Provider docs are single-page apps and can answer HTTP 200 with a
+different article, so reachability alone proves nothing. `check_project.py` will not
+notice a dead citation; the claim table is what does.
+
 Separate documentation coverage from runtime evidence. A hosted screenshot is
 not a substitute for source, setup details, and a reproducible scenario. Do not
 claim that all versions, accounts, styles, 2D/3D modes, or wrappers were tested
@@ -30,6 +36,10 @@ by the current architecture. Add one only with an actual reusable requirement.
 
 Include purpose, data semantics, and real units. Validate token files and check
 the intended background, selection state, label readability, and legend mapping.
+Context fills and categorical classes must clear the CIEDE2000 floors in the
+[theme contract](skills/map-aesthetic/references/theme-contract.md); measure them
+rather than judging by a luminance ratio, which rates two obvious-to-distinguish
+hues as identical when they share lightness.
 Do not change classifications or coordinates to make a visual example look better.
 Demonstration fixtures must be redistributable and clearly identify synthetic data.
 Keep provider keys, private styles, customer screenshots, and production data out

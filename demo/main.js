@@ -10,8 +10,10 @@ const themes = { [quiet.id]: quiet, [night.id]: night, [publicGuide.id]: publicG
 // This local illustration maps a subset of the intent schema. It does not implement
 // categorical/sequential legends, automatic collision avoidance, or other SDK adapters.
 const query = id => document.querySelector(`[data-testid="${id}"]`);
+// Plain Leaflet defaults, deliberately independent of the packaged themes so the
+// Before panel cannot inherit a theme value by accident.
 const baseline = {
-  ...quiet.cartography, land: '#e9e9e9', water: '#99bddd', park: '#a9d78d', road: '#ffffff',
+  land: '#e9e9e9', water: '#99bddd', park: '#a9d78d', road: '#ffffff',
   roadCasing: '#bbbbbb', boundary: '#777777', label: '#333333', labelHalo: '#ffffff',
   route: { color: '#3388ff', casingColor: '#3388ff', widthPx: 3, casingWidthPx: 3 },
   site: { color: '#3388ff', radiusPx: 6, strokeColor: '#3388ff', strokeWidthPx: 2 },
@@ -102,6 +104,15 @@ function setThemeVariables() {
   query('theme-name').textContent = theme.name;
 }
 
+// The Before panel has no theme, so its legend and labels take the same plain
+// values the map uses. Keeping one source avoids a legend that drifts from its map.
+function setBaselineVariables() {
+  const panel = query('before-panel');
+  [['--route', baseline.route.color], ['--site', baseline.site.color], ['--selection', baseline.selection.color],
+   ['--map-label', baseline.label], ['--map-halo', baseline.labelHalo],
+   ['--map-label-size', '12px'], ['--map-halo-width', '0px'], ['--spacing-px', '8px']].forEach(([name, value]) => panel.style.setProperty(name, value));
+}
+
 function styleMap(model) {
   const c = model.after ? theme.cartography : baseline;
   model.map.getContainer().style.backgroundColor = c.land;
@@ -159,11 +170,14 @@ function updateScale() {
   const metersPerPixel = map.distance(map.containerPointToLatLng([0, 100]), map.containerPointToLatLng([100, 100])) / 100;
   const thresholds = theme.cartography.scale;
   const scale = metersPerPixel > thresholds.overviewAboveMpp ? 'overview' : metersPerPixel < thresholds.detailBelowMpp ? 'detail' : 'working';
+  const density = theme.cartography.labels.density;
   let afterCount = 0;
   maps.forEach(model => {
     model.labelLayers.forEach(({ label, marker }, index) => {
       const maximum = scale === 'overview' ? 0 : scale === 'working' ? 1 : 2;
-      const sparse = theme.cartography.labels.density === 'sparse' && label.priority === 2 && index % 2 === 0;
+      // A sparse theme thins the least important tier that this band shows. At
+      // overview only district names remain, so there is nothing left to thin.
+      const sparse = density === 'sparse' && label.priority === maximum && maximum > 0 && index % 2 === 0;
       const visible = !model.after || label.siteId === selectedId || (label.priority <= maximum && !sparse);
       if (visible) { marker.addTo(model.map); if (model.after) afterCount++; }
       else marker.remove();
@@ -210,6 +224,7 @@ query('reset-view').addEventListener('click', () => maps[1].map.setView(center, 
 query('clear-selection').addEventListener('click', () => selectSite(null));
 
 setThemeVariables();
+setBaselineVariables();
 maps.forEach(styleMap);
 updateScale();
 new ResizeObserver(() => {

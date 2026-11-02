@@ -110,6 +110,7 @@ Python 3.10+ is supported by the validation tools.
 ```sh
 python -m pip install -r requirements-dev.txt
 python scripts/check_project.py
+python scripts/check_citations.py --offline
 python -m unittest discover -s tests -v
 npm run build
 npx playwright install chromium
@@ -122,9 +123,22 @@ Theme files can be checked independently:
 python skills/map-aesthetic/scripts/validate_theme.py path/to/theme.json
 ```
 
-The validator checks structure, three UI text-contrast pairs, and token
-invariants. It cannot prove SDK support, label readability, palette ordering,
-color-vision accessibility, or overall aesthetic quality.
+The validator checks structure, three UI text-contrast pairs, CIEDE2000 separability
+between context surfaces and data classes, and token invariants. It refuses fills and
+classes that cannot be told apart. It cannot prove SDK support, label readability,
+overall aesthetic quality, or full color-vision accessibility, and a monotonic ramp is
+not the same claim as one that reads as more-or-less.
+
+Citations are checked separately. Provider documentation sites are single-page apps,
+so a removed page can still answer HTTP 200; the check therefore pairs each adapter
+citation with tokens that must appear on the page it opens.
+
+```sh
+python scripts/check_citations.py --offline   # claim table, no network
+python scripts/check_citations.py             # resolve citations and confirm claims
+```
+
+Exit code 2 means the network blocked the conclusion, not that the citations hold.
 
 ## Project layout
 

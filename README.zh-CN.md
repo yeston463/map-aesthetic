@@ -118,6 +118,7 @@ npm run dev
 ```sh
 python -m pip install -r requirements-dev.txt
 python scripts/check_project.py
+python scripts/check_citations.py --offline
 python -m unittest discover -s tests -v
 npm run build
 npx playwright install chromium
@@ -130,9 +131,19 @@ npm run test:browser
 python skills/map-aesthetic/scripts/validate_theme.py path/to/theme.json
 ```
 
-验证覆盖 JSON 结构、三组界面文字对比度、描边宽度与尺度顺序等约束。
-图层可读性、色带感知顺序、色觉差异、标注遮挡及引擎支持仍需单独验收。
+验证覆盖 JSON 结构、三组界面文字对比度、CIEDE2000 面色分离与类别可分辨性、
+描边宽度与尺度顺序等约束。它拒绝"看不出来"的面色，但不证明图层可读性、
+完整色觉无障碍、标注遮挡或引擎支持；色带亮度单调也不等于感知上确实代表多少。
 查看[实际验证记录](docs/verification.md)与[行为评估场景](evals/cases.md)。
+
+官方文档引用单独检查。厂商文档站多为单页应用，页面被删除后仍可能返回 HTTP 200，
+因此检查器为每条 adapter 引用绑定了"页面必须出现的关键词"：
+
+```sh
+python scripts/check_citations.py
+```
+
+退出码 2 表示网络阻断了结论，不等于引用通过。
 
 ## 阅读顺序
 

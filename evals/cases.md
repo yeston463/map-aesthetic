@@ -19,6 +19,10 @@ A build pass cannot substitute for visual or interaction evidence.
 An unexecuted provider recipe cannot substitute for a verified provider integration.
 The local Leaflet synthetic demo is the first planned executable fixture.
 Other cases require their own inputs and environments before runtime execution is possible.
+Two cases ship a reduced fragment in `fixtures/` rather than the full project their input
+section describes. A run against a fragment evaluates only the decisions that fragment
+supports: record it as a reduced-input run, name the case it stands in for, and list the
+declared input elements that were absent. Do not report such a run as passing the case.
 
 ## Case 1: Leaflet with an immutable raster base
 

@@ -34,15 +34,23 @@ an existing remote before changing it; do not overwrite another remote.
 npm ci
 python -m pip install -r requirements-dev.txt
 python scripts/check_project.py
+python scripts/check_citations.py --offline
 python -m unittest discover -s tests -v
 npm run build
 npx playwright install chromium
 npm run test:browser
+python scripts/check_citations.py
 ```
 
+The last command needs network. Run it before a release: it resolves every cited
+page and confirms each adapter claim still appears there. Exit code 2 means the
+network blocked the conclusion, which is not a pass and must not be recorded as one.
+
 The CI workflow repeats structural, validator, build, and browser checks on pushes
-and pull requests. It has read-only repository permissions and does not deploy a site.
-The behavioral scenario suite is manual; record an execution separately from CI.
+and pull requests, and re-checks live citations weekly. It has read-only repository
+permissions and does not deploy a site.
+The behavioral scenario suite is manual; record an execution separately from CI, and
+label a run against a reduced fixture as exactly that rather than as a case pass.
 
 ## Version and artifacts
 

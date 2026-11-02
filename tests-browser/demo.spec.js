@@ -80,6 +80,70 @@ test('scale changes alter label density and synchronize the comparison views', a
   await expectLinkedViews(page);
 });
 
+test('sparse density shows fewer labels than balanced at the same scale', async ({ page }) => {
+  await ready(page);
+  await page.getByTestId('scale-working').click();
+  const balanced = Number(await page.getByTestId('label-count').getAttribute('data-count'));
+  await page.getByTestId('theme-select').selectOption('night-operations');
+  const sparse = Number(await page.getByTestId('label-count').getAttribute('data-count'));
+  expect(sparse).toBeLessThan(balanced);
+  await page.getByTestId('theme-select').selectOption('public-guide');
+  await expect(page.getByTestId('label-count')).toHaveAttribute('data-count', String(balanced));
+});
+
+test('rendered text contrast and legend colors come from the same tokens', async ({ page }) => {
+  await ready(page);
+  for (const theme of ['quiet-analysis', 'night-operations', 'public-guide']) {
+    await page.getByTestId('theme-select').selectOption(theme);
+    const measured = await page.evaluate(() => {
+      const toRgb = value => {
+        const probe = document.createElement('span');
+        probe.style.color = value.trim();
+        document.body.append(probe);
+        const rgb = getComputedStyle(probe).color.match(/\d+/g).map(Number).join(', ');
+        probe.remove();
+        return `rgb(${rgb})`;
+      };
+      const luminance = value => {
+        const [red, green, blue] = value.match(/\d+/g).map(Number).map(channel => channel / 255)
+          .map(channel => (channel <= 0.04045 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4));
+        return 0.2126 * red + 0.7152 * green + 0.0722 * blue;
+      };
+      const ratio = (foreground, background) => {
+        const [high, low] = [luminance(foreground), luminance(background)].sort((a, b) => b - a);
+        return (high + 0.05) / (low + 0.05);
+      };
+      const panel = document.querySelector('[data-testid="after-panel"]');
+      const before = document.querySelector('[data-testid="before-panel"]');
+      const chip = panel.querySelector('.panel-heading > span');
+      const stroke = document.querySelector('[data-testid="map-after"] .leaflet-route-pane path:last-of-type');
+      const beforeStroke = document.querySelector('[data-testid="map-before"] .leaflet-route-pane path:last-of-type');
+      const accent = toRgb(getComputedStyle(panel).getPropertyValue('--accent'));
+      const accentText = toRgb(getComputedStyle(panel).getPropertyValue('--accent-text'));
+      return {
+        chipRatio: ratio(getComputedStyle(chip).color, getComputedStyle(chip).backgroundColor),
+        chipBackground: getComputedStyle(chip).backgroundColor,
+        accent,
+        chipColor: getComputedStyle(chip).color,
+        accentText,
+        legendRoute: getComputedStyle(panel.querySelector('.route-key')).backgroundColor,
+        routeStroke: toRgb(stroke.getAttribute('stroke')),
+        beforeLegendRoute: getComputedStyle(before.querySelector('.route-key')).backgroundColor,
+        beforeRouteStroke: toRgb(beforeStroke.getAttribute('stroke')),
+        beforeLegendGap: getComputedStyle(before.querySelector('.legend')).gap,
+      };
+    });
+    expect(measured.chipRatio).toBeGreaterThanOrEqual(4.5);
+    expect(measured.chipBackground).toBe(measured.accent);
+    expect(measured.chipColor).toBe(measured.accentText);
+    expect(measured.legendRoute).toBe(measured.routeStroke);
+    // The unthemed panel must bind to the plain baseline the same way, or its
+    // legend drifts from its map without any check noticing.
+    expect(measured.beforeLegendRoute).toBe(measured.beforeRouteStroke);
+    expect(measured.beforeLegendGap).not.toBe('normal');
+  }
+});
+
 test('mobile layout supports keyboard selection and survives viewport resizing', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await ready(page);

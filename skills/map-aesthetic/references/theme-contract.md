@@ -10,7 +10,7 @@ Keep the target project's native configuration and layer semantics intact.
 - [Quiet analysis](../assets/themes/quiet-analysis.json): low-noise analytical context.
 - [Night operations](../assets/themes/night-operations.json): dark operational context.
 - [Public guide](../assets/themes/public-guide.json): legible public-facing navigation.
-- [Validator](../scripts/validate_theme.py): shape, UI contrast, and cross-field invariants.
+- [Validator](../scripts/validate_theme.py): shape, UI contrast, measured color separability, and cross-field invariants.
 
 Python 3.10+ and `jsonschema` are needed for the optional validator. Reading or
 using the skill does not require Python, Node, a map account, or any demo dependency.
@@ -23,10 +23,35 @@ opaque six-digit hex. Pixel values are CSS pixels. `spacingPx` is a design unit,
 not a directive to give every control the same size.
 
 Check `text` and `mutedText` on `surface`, and `accentText` on `accent` at 4.5:1
-or better for ordinary text. The validator covers those pairs only. Actual
-transparency, disabled states, text over maps, focus indicators, imagery, and
-large text need contextual inspection. The palette alone does not establish
-accessibility conformance.
+or better for ordinary text. Actual transparency, disabled states, text over maps,
+focus indicators, imagery, and large text need contextual inspection. The palette
+alone does not establish accessibility conformance.
+
+## Measured separability floors
+
+Color distance is measured in CIEDE2000, because a WCAG luminance ratio is the wrong
+instrument for map fills: two classes can share identical lightness and still be
+obvious to distinguish, and two fills can clear 1.3:1 and still be invisible.
+
+| Check | Floor |
+| --- | --- |
+| `water`, `park`, `roadCasing` against `land` | dE2000 at least 5 |
+| every `categorical` pair, normally and under a red-green simulation | dE2000 at least 5 |
+| `sequential` adjacent stops, plus monotonic lightness | dE2000 at least 5 |
+
+A difference near 2.3 is a just-noticeable difference across a large flat area, so 5
+asks for a clearly visible edge rather than a barely detectable one. The floors
+refuse an invisible surface; they do not certify a legible one. Thin strokes at
+small widths, texture, halos against roads, and the real basemap all still need
+inspection. `labelHalo` is deliberately excluded: a halo normally matches `land` so
+text reads across darker features, and requiring separation there would reject a
+correct design.
+
+`sequential` runs from low value at index 0 to high value at the last index. On a
+light basemap the ramp normally darkens toward the high end; on a dark basemap it
+normally lightens. Both are correct, so the validator checks monotonic lightness and
+step size rather than a direction. Record which direction a theme uses before binding
+it to data, because binding index 0 to the wrong end inverts the map silently.
 
 ## Cartographic tokens
 
