@@ -138,6 +138,16 @@ def fetch(url: str, timeout: float) -> tuple[str, str, str]:
         return "", "", f"{type(error).__name__}: {error}"
 
 
+def fetch_with_retry(url: str, timeout: float, retries: int) -> tuple[str, str, str]:
+    """Retry transport failures only. A wrong page or a dead link is a result, not noise."""
+    attempt = fetch(url, timeout)
+    for _ in range(max(0, retries)):
+        if not attempt[2]:
+            break
+        attempt = fetch(url, timeout)
+    return attempt
+
+
 def citations(paths) -> dict[str, set[str]]:
     cited: dict[str, set[str]] = {}
     for path in paths:
@@ -153,6 +163,7 @@ def citations(paths) -> dict[str, set[str]]:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--timeout", type=float, default=25.0)
+    parser.add_argument("--retries", type=int, default=1, help="extra attempts after a transport failure")
     parser.add_argument("--offline", action="store_true", help="check the claim table without any network use")
     args = parser.parse_args(argv)
 
@@ -177,14 +188,15 @@ def main(argv: list[str] | None = None) -> int:
 
     urls = sorted(set(cited) | CLAIM_URLS)
     with ThreadPoolExecutor(max_workers=4) as pool:
-        bodies = list(pool.map(lambda url: fetch(url, args.timeout), urls))
+        bodies = list(pool.map(lambda url: fetch_with_retry(url, args.timeout, args.retries), urls))
     status_for = dict(zip(urls, bodies))
 
     blocked: list[str] = []
     for url, (status, text, error) in status_for.items():
         sources = ", ".join(sorted(cited.get(url, {"(claim target only)"})))
         if error:
-            blocked.append(f"BLOCKED    {url} ({error}) cited by {sources}")
+            attempts = 1 + max(0, args.retries)
+            blocked.append(f"BLOCKED    {url} ({error}) after {attempts} attempt(s), cited by {sources}")
         elif not status.startswith("2"):
             failures.append(f"DEAD       {url} -> HTTP {status} cited by {sources}")
         elif any(marker in text.lower() for marker in SOFT_NOT_FOUND):

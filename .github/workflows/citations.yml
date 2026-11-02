@@ -46,9 +46,26 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r requirements-dev.txt
-      # Exit code 2 means the network blocked the conclusion, not that the citations hold.
-      - run: python scripts/check_citations.py
-      - if: failure()
+      # Exit 1 means a citation rotted or stopped supporting its claim: that is red.
+      # Exit 2 means the network prevented a conclusion: that is reported loudly as
+      # unverified, never as a pass, but it is not rot and should not train anyone to
+      # ignore a red citation run.
+      - name: Check citations
         run: |
-          echo "A citation failure is a report, not a build break."
-          echo "Open an issue listing every claim marked UNSUPPORTED, DEAD, or UNCLAIMED."
+          set +e
+          python scripts/check_citations.py > citations.log 2>&1
+          code=$?
+          set -e
+          cat citations.log
+          {
+            echo "## Citation check"
+            echo
+            echo '```'
+            cat citations.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          if [ "$code" -eq 2 ]; then
+            echo "::warning title=Citations unverified::Some URLs could not be reached. They are UNVERIFIED, not passed. Re-run this workflow before drawing any conclusion."
+            exit 0
+          fi
+          exit "$code"
