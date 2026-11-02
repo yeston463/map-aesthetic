@@ -55,6 +55,10 @@ problem and its effect on the user task.
 
 ## Pull requests
 
+Run `python scripts/check_project.py` before pushing. It also parses every file in
+`.github/workflows`, because a workflow that fails GitHub's parser reports nothing at
+all and a schedule-only job can stay broken for a week without anyone noticing.
+
 Explain the trigger, previous problem, resulting behavior, and actual validation.
 Update both READMEs when support claims or installation instructions change.
 Update [verification](docs/verification.md) only for checks actually executed.
