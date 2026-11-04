@@ -11,4 +11,7 @@ test-results/
 playwright-report/
 .DS_Store
 Thumbs.db
+evals/ab-reviews/*/replay/
+evals/ab-reviews/*/replay-settled/
+evals/ab-reviews/*/replay-final/
 citations.log

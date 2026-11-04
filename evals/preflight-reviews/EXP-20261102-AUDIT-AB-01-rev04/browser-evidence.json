@@ -1,0 +1,393 @@
+{
+  "scope": "Unchanged frozen evaluator; existing positive fixture; all output outside frozen revisions",
+  "evaluator_sha256": "8652029eacafe09e1f462929c714f1cb945659f015361a07fa9675192ce279ae",
+  "runs": [
+    {
+      "label": "positive-default",
+      "mode": null,
+      "exit": 0,
+      "verdict": "PASS",
+      "reasons": [],
+      "delivery": {
+        "pass": true,
+        "reason": null,
+        "detail": {
+          "rule_version": "rev04/delivery-3",
+          "problems": [],
+          "identity": [
+            {
+              "file": "before-desktop.png",
+              "delivered_digest": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "evaluator_digest": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "bytes_match_evaluation": true,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 2,
+                "bit_depth": 8
+              }
+            },
+            {
+              "file": "after-desktop.png",
+              "delivered_digest": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "evaluator_digest": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "bytes_match_evaluation": true,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 2,
+                "bit_depth": 8
+              }
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "delivered_digest": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "evaluator_digest": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "bytes_match_evaluation": true,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 390,
+                "height": 844,
+                "color_type": 2,
+                "bit_depth": 8
+              }
+            }
+          ],
+          "pixel_comparisons": [
+            {
+              "file": "before-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "max_channel_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "mean_channel_delta": 0,
+              "bytes_match_evaluation": true
+            },
+            {
+              "file": "after-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "max_channel_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "mean_channel_delta": 0,
+              "bytes_match_evaluation": true
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "comparable": true,
+              "pixels": 329160,
+              "max_channel_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "mean_channel_delta": 0,
+              "bytes_match_evaluation": true
+            }
+          ],
+          "content_binding_mode": "byte_equal",
+          "registered_pixels": {
+            "desktop": [
+              1280,
+              900
+            ],
+            "mobile": [
+              390,
+              844
+            ]
+          },
+          "registered_device_scale_factor": 1,
+          "tolerances": {
+            "camera_center_absolute_deg": 0,
+            "camera_zoom_absolute": 0,
+            "camera_bearing_absolute_deg": 0,
+            "camera_pitch_absolute_deg": 0,
+            "pixel_max_channel_delta": 0,
+            "pixel_differing_fraction": 0
+          },
+          "state_fields_compared": [
+            "variant",
+            "selected_site",
+            "popup_open",
+            "sheet_state",
+            "measure_mode"
+          ],
+          "note": "Delivered files are opened and measured: PNG header, colour type, digest, camera, state fields and pixels against this run's own capture. A self-consistent sidecar over an unrelated image cannot pass."
+        }
+      },
+      "stdout": "Evaluator finished. Verdict: PASS exit=0 reasons=none\n",
+      "stderr": ""
+    },
+    {
+      "label": "unrelated-default",
+      "mode": null,
+      "exit": 1,
+      "verdict": "FAIL",
+      "reasons": [
+        "screenshot_checks.delivered_artifacts_consistent:DELIVERED_ARTIFACT_INVALID"
+      ],
+      "delivery": {
+        "pass": false,
+        "reason": "DELIVERED_ARTIFACT_INVALID",
+        "detail": {
+          "rule_version": "rev04/delivery-3",
+          "problems": [
+            {
+              "file": "before-desktop.png",
+              "problem": "DELIVERED_IMAGE_NOT_THIS_PAGES_RENDER",
+              "delivered": "2a437b53980d7be074ebdf2b1ed01f38f57146f57dce4164ba81b95da1021a5e",
+              "evaluator_capture": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "max_channel_delta": 255,
+              "differing_pixels": 1152000,
+              "differing_fraction": 1,
+              "note": "byte equality is registered because rev04 measured zero variation across nine independent loads of these states; a picture of anything else fails here"
+            },
+            {
+              "file": "after-desktop.png",
+              "problem": "DELIVERED_IMAGE_NOT_THIS_PAGES_RENDER",
+              "delivered": "2a437b53980d7be074ebdf2b1ed01f38f57146f57dce4164ba81b95da1021a5e",
+              "evaluator_capture": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "max_channel_delta": 255,
+              "differing_pixels": 1152000,
+              "differing_fraction": 1,
+              "note": "byte equality is registered because rev04 measured zero variation across nine independent loads of these states; a picture of anything else fails here"
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "problem": "DELIVERED_IMAGE_NOT_THIS_PAGES_RENDER",
+              "delivered": "6a5683e09f649c99ca20227a649da7a18174c533e60c58fd1e3b20db0acea300",
+              "evaluator_capture": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "max_channel_delta": 255,
+              "differing_pixels": 329160,
+              "differing_fraction": 1,
+              "note": "byte equality is registered because rev04 measured zero variation across nine independent loads of these states; a picture of anything else fails here"
+            }
+          ],
+          "identity": [
+            {
+              "file": "before-desktop.png",
+              "delivered_digest": "2a437b53980d7be074ebdf2b1ed01f38f57146f57dce4164ba81b95da1021a5e",
+              "evaluator_digest": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 2,
+                "bit_depth": 8
+              }
+            },
+            {
+              "file": "after-desktop.png",
+              "delivered_digest": "2a437b53980d7be074ebdf2b1ed01f38f57146f57dce4164ba81b95da1021a5e",
+              "evaluator_digest": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 2,
+                "bit_depth": 8
+              }
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "delivered_digest": "6a5683e09f649c99ca20227a649da7a18174c533e60c58fd1e3b20db0acea300",
+              "evaluator_digest": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 390,
+                "height": 844,
+                "color_type": 2,
+                "bit_depth": 8
+              }
+            }
+          ],
+          "pixel_comparisons": [
+            {
+              "file": "before-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "max_channel_delta": 255,
+              "differing_pixels": 1152000,
+              "differing_fraction": 1,
+              "mean_channel_delta": 161.512516,
+              "bytes_match_evaluation": false
+            },
+            {
+              "file": "after-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "max_channel_delta": 255,
+              "differing_pixels": 1152000,
+              "differing_fraction": 1,
+              "mean_channel_delta": 162.328785,
+              "bytes_match_evaluation": false
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "comparable": true,
+              "pixels": 329160,
+              "max_channel_delta": 255,
+              "differing_pixels": 329160,
+              "differing_fraction": 1,
+              "mean_channel_delta": 164.412484,
+              "bytes_match_evaluation": false
+            }
+          ],
+          "content_binding_mode": "byte_equal",
+          "registered_pixels": {
+            "desktop": [
+              1280,
+              900
+            ],
+            "mobile": [
+              390,
+              844
+            ]
+          },
+          "registered_device_scale_factor": 1,
+          "tolerances": {
+            "camera_center_absolute_deg": 0,
+            "camera_zoom_absolute": 0,
+            "camera_bearing_absolute_deg": 0,
+            "camera_pitch_absolute_deg": 0,
+            "pixel_max_channel_delta": 0,
+            "pixel_differing_fraction": 0
+          },
+          "state_fields_compared": [
+            "variant",
+            "selected_site",
+            "popup_open",
+            "sheet_state",
+            "measure_mode"
+          ],
+          "note": "Delivered files are opened and measured: PNG header, colour type, digest, camera, state fields and pixels against this run's own capture. A self-consistent sidecar over an unrelated image cannot pass."
+        }
+      },
+      "stdout": "Evaluator finished. Verdict: FAIL exit=1 reasons=screenshot_checks.delivered_artifacts_consistent:DELIVERED_ARTIFACT_INVALID\n",
+      "stderr": ""
+    },
+    {
+      "label": "unrelated-unknown-mode",
+      "mode": "byte_eqaul",
+      "exit": 0,
+      "verdict": "PASS",
+      "reasons": [],
+      "delivery": {
+        "pass": true,
+        "reason": null,
+        "detail": {
+          "rule_version": "rev04/delivery-3",
+          "problems": [],
+          "identity": [
+            {
+              "file": "before-desktop.png",
+              "delivered_digest": "2a437b53980d7be074ebdf2b1ed01f38f57146f57dce4164ba81b95da1021a5e",
+              "evaluator_digest": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 2,
+                "bit_depth": 8
+              }
+            },
+            {
+              "file": "after-desktop.png",
+              "delivered_digest": "2a437b53980d7be074ebdf2b1ed01f38f57146f57dce4164ba81b95da1021a5e",
+              "evaluator_digest": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 2,
+                "bit_depth": 8
+              }
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "delivered_digest": "6a5683e09f649c99ca20227a649da7a18174c533e60c58fd1e3b20db0acea300",
+              "evaluator_digest": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 390,
+                "height": 844,
+                "color_type": 2,
+                "bit_depth": 8
+              }
+            }
+          ],
+          "pixel_comparisons": [
+            {
+              "file": "before-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "max_channel_delta": 255,
+              "differing_pixels": 1152000,
+              "differing_fraction": 1,
+              "mean_channel_delta": 161.512516,
+              "bytes_match_evaluation": false
+            },
+            {
+              "file": "after-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "max_channel_delta": 255,
+              "differing_pixels": 1152000,
+              "differing_fraction": 1,
+              "mean_channel_delta": 162.328785,
+              "bytes_match_evaluation": false
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "comparable": true,
+              "pixels": 329160,
+              "max_channel_delta": 255,
+              "differing_pixels": 329160,
+              "differing_fraction": 1,
+              "mean_channel_delta": 164.412484,
+              "bytes_match_evaluation": false
+            }
+          ],
+          "content_binding_mode": "byte_eqaul",
+          "registered_pixels": {
+            "desktop": [
+              1280,
+              900
+            ],
+            "mobile": [
+              390,
+              844
+            ]
+          },
+          "registered_device_scale_factor": 1,
+          "tolerances": {
+            "camera_center_absolute_deg": 0,
+            "camera_zoom_absolute": 0,
+            "camera_bearing_absolute_deg": 0,
+            "camera_pitch_absolute_deg": 0,
+            "pixel_max_channel_delta": 0,
+            "pixel_differing_fraction": 0
+          },
+          "state_fields_compared": [
+            "variant",
+            "selected_site",
+            "popup_open",
+            "sheet_state",
+            "measure_mode"
+          ],
+          "note": "Delivered files are opened and measured: PNG header, colour type, digest, camera, state fields and pixels against this run's own capture. A self-consistent sidecar over an unrelated image cannot pass."
+        }
+      },
+      "stdout": "Evaluator finished. Verdict: PASS exit=0 reasons=none\n",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "scope": "Read-only verifier functions; old-tree snapshot in memory; decision tests output redirected outside frozen revision",
+  "readonly_checks_passed": 234,
+  "readonly_checks_failed": [],
+  "frozen_file_count": 1286,
+  "previous_trees_unchanged": true,
+  "decision_table_test_exit": 0,
+  "null_verification_evidence": {
+    "probes": {
+      "P09_executor_identity": {
+        "status": "VERIFIED_CONFINED",
+        "evidence": {
+          "executor_kind": null,
+          "identity_source": null,
+          "parent_session_inherited": false
+        }
+      },
+      "P10_context_injection": {
+        "status": "VERIFIED_CONFINED",
+        "evidence": {
+          "method": null,
+          "skills_visible": null,
+          "memory_visible": null,
+          "probe_marker": null
+        }
+      },
+      "P11_tool_permission_profile": {
+        "status": "VERIFIED_CONFINED",
+        "evidence": {
+          "source": null,
+          "file_access_rule": null,
+          "network_rule": null,
+          "observed_effect": null
+        }
+      },
+      "P12_budget_enforcement": {
+        "status": "VERIFIED_CONFINED",
+        "evidence": {
+          "source": null,
+          "limit_kind": null,
+          "limit_value": null,
+          "observed_enforcement": true
+        }
+      }
+    },
+    "result": {
+      "verdict": "PREFLIGHT_PASSED",
+      "exit_code": 0,
+      "reasons": [],
+      "violations": [],
+      "defects": [],
+      "optional_notes": [
+        "D01_dead_port_classification:NOT_RUN (optional diagnostic: not applicable on this host)",
+        "D02_listening_404_classification:NOT_RUN (optional diagnostic: not applicable on this host)",
+        "D03_visible_asset_listing:NOT_RUN (optional diagnostic: not applicable on this host)"
+      ],
+      "counts": {
+        "required_total": 12,
+        "required_present": 12,
+        "recorded_total": 15,
+        "manifest_total": 15
+      }
+    }
+  }
+}

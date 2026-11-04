@@ -1,0 +1,2457 @@
+{
+  "scope": "Unchanged frozen evaluator; existing positive fixture; all output outside frozen revisions",
+  "evaluator_sha256": "fd94e68c2613992e89edd45e57c5b654d1c21660a9d3fcd071dc178e7189f83d",
+  "unit_suite": {
+    "exit": 0,
+    "log": "29/29 as declared -> C:\\Users\\赵航\\Desktop\\studio\\_review_map_aesthetic\\.tmp\\rev06-audit-2d9ix1wu\\browser\\delivery_rules_unit_tests.json\n  u00_registered_defaults_are_accepted           PASS\n  u01_null_mode                                  PASS\n  u02_undefined_mode                             PASS\n  u03_object_mode                                PASS\n  u04_array_mode                                 PASS\n  u05_misspelled_mode                            PASS\n  u06_uppercase_mode                             PASS\n  u07_padded_mode                                PASS\n  u08_known_but_uncalibrated_mode                PASS\n  u09_empty_allowed_list                         PASS\n  u10_allowed_list_absent                        PASS\n  u11_allowed_list_names_a_nonexistent_mode      PASS\n  u12_rationale_missing                          PASS\n  u13_tolerance_mode_without_numbers             PASS\n  u14_empty_env_means_registered_default         PASS\n  u15_unset_env_means_registered_default         PASS\n  u16_explicit_registered_mode_is_environment    PASS\n  u17_misspelled_env_is_refused_at_parsing       PASS\n  u18_unknown_mode_leaves_no_shot_clean          PASS\n  u19_unknown_mode_still_refuses_the_decoy       PASS\n  u20_valid_mode_over_honest_delivery_passes     PASS\n  u21_encoder_decoder_round_trip_is_lossless     PASS\n  u22_transparent_pixels_differ_even_with_matching_colour PASS\n  u23_opaque_rgba_is_not_penalised               PASS\n  u24_half_transparent_is_visible                PASS\n  u25_TRNS_key_without_an_alpha_channel          PASS\n  u26_transparent_delivery_refused_under_tolerance PASS\n  u27_transparent_delivery_refused_under_byte_equal PASS\n  u28_opaque_rgba_delivery_passes                PASS\n",
+    "totals": {
+      "cases": 29,
+      "passed": 29,
+      "failed": 0
+    }
+  },
+  "runs": [
+    {
+      "label": "positive-default",
+      "mode": null,
+      "exit": 0,
+      "verdict": "PASS",
+      "reasons": [],
+      "delivery": {
+        "pass": true,
+        "reason": null,
+        "detail": {
+          "rule_version": "rev06/delivery-6",
+          "problems": [],
+          "identity": [
+            {
+              "file": "before-desktop.png",
+              "delivered_digest": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "evaluator_digest": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "bytes_match_evaluation": true,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 2,
+                "bit_depth": 8
+              },
+              "delivered_alpha": {
+                "min": 255,
+                "max": 255,
+                "non_opaque_pixels": 0,
+                "transparent_pixels": 0,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": true
+              }
+            },
+            {
+              "file": "after-desktop.png",
+              "delivered_digest": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "evaluator_digest": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "bytes_match_evaluation": true,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 2,
+                "bit_depth": 8
+              },
+              "delivered_alpha": {
+                "min": 255,
+                "max": 255,
+                "non_opaque_pixels": 0,
+                "transparent_pixels": 0,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": true
+              }
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "delivered_digest": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "evaluator_digest": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "bytes_match_evaluation": true,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 390,
+                "height": 844,
+                "color_type": 2,
+                "bit_depth": 8
+              },
+              "delivered_alpha": {
+                "min": 255,
+                "max": 255,
+                "non_opaque_pixels": 0,
+                "transparent_pixels": 0,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": true
+              }
+            }
+          ],
+          "pixel_comparisons": [
+            {
+              "file": "before-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 0,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 0,
+              "mean_channel_delta": 0,
+              "delivered_alpha": {
+                "min": 255,
+                "max": 255,
+                "non_opaque_pixels": 0,
+                "transparent_pixels": 0,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": true
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "bytes_match_evaluation": true
+            },
+            {
+              "file": "after-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 0,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 0,
+              "mean_channel_delta": 0,
+              "delivered_alpha": {
+                "min": 255,
+                "max": 255,
+                "non_opaque_pixels": 0,
+                "transparent_pixels": 0,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": true
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "bytes_match_evaluation": true
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "comparable": true,
+              "pixels": 329160,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 0,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 0,
+              "mean_channel_delta": 0,
+              "delivered_alpha": {
+                "min": 255,
+                "max": 255,
+                "non_opaque_pixels": 0,
+                "transparent_pixels": 0,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": true
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "bytes_match_evaluation": true
+            }
+          ],
+          "content_binding_mode": "byte_equal",
+          "allowed_content_binding_modes": [
+            "byte_equal",
+            "pixel_tolerance",
+            "unavailable"
+          ],
+          "mode_contract_ok": true,
+          "registered_pixels": {
+            "desktop": [
+              1280,
+              900
+            ],
+            "mobile": [
+              390,
+              844
+            ]
+          },
+          "registered_device_scale_factor": 1,
+          "tolerances": {
+            "camera_center_absolute_deg": 0,
+            "camera_zoom_absolute": 0,
+            "camera_bearing_absolute_deg": 0,
+            "camera_pitch_absolute_deg": 0,
+            "pixel_max_channel_delta": 0,
+            "pixel_differing_fraction": 0
+          },
+          "state_fields_compared": [
+            "variant",
+            "selected_site",
+            "popup_open",
+            "sheet_state",
+            "measure_mode"
+          ],
+          "note": "Delivered files are opened and measured: PNG header, colour type, digest, camera, state fields, transparency, and the displayed samples (red, green, blue, alpha) against this run's own capture. A self-consistent sidecar over an unrelated or transparent image cannot pass."
+        }
+      },
+      "stdout": "Evaluator finished. Verdict: PASS exit=0 reasons=none\n",
+      "stderr": ""
+    },
+    {
+      "label": "positive-explicit-pixel",
+      "mode": "pixel_tolerance",
+      "exit": 0,
+      "verdict": "PASS",
+      "reasons": [],
+      "delivery": {
+        "pass": true,
+        "reason": null,
+        "detail": {
+          "rule_version": "rev06/delivery-6",
+          "problems": [],
+          "identity": [
+            {
+              "file": "before-desktop.png",
+              "delivered_digest": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "evaluator_digest": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "bytes_match_evaluation": true,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 2,
+                "bit_depth": 8
+              },
+              "delivered_alpha": {
+                "min": 255,
+                "max": 255,
+                "non_opaque_pixels": 0,
+                "transparent_pixels": 0,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": true
+              }
+            },
+            {
+              "file": "after-desktop.png",
+              "delivered_digest": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "evaluator_digest": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "bytes_match_evaluation": true,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 2,
+                "bit_depth": 8
+              },
+              "delivered_alpha": {
+                "min": 255,
+                "max": 255,
+                "non_opaque_pixels": 0,
+                "transparent_pixels": 0,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": true
+              }
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "delivered_digest": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "evaluator_digest": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "bytes_match_evaluation": true,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 390,
+                "height": 844,
+                "color_type": 2,
+                "bit_depth": 8
+              },
+              "delivered_alpha": {
+                "min": 255,
+                "max": 255,
+                "non_opaque_pixels": 0,
+                "transparent_pixels": 0,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": true
+              }
+            }
+          ],
+          "pixel_comparisons": [
+            {
+              "file": "before-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 0,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 0,
+              "mean_channel_delta": 0,
+              "delivered_alpha": {
+                "min": 255,
+                "max": 255,
+                "non_opaque_pixels": 0,
+                "transparent_pixels": 0,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": true
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "bytes_match_evaluation": true
+            },
+            {
+              "file": "after-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 0,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 0,
+              "mean_channel_delta": 0,
+              "delivered_alpha": {
+                "min": 255,
+                "max": 255,
+                "non_opaque_pixels": 0,
+                "transparent_pixels": 0,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": true
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "bytes_match_evaluation": true
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "comparable": true,
+              "pixels": 329160,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 0,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 0,
+              "mean_channel_delta": 0,
+              "delivered_alpha": {
+                "min": 255,
+                "max": 255,
+                "non_opaque_pixels": 0,
+                "transparent_pixels": 0,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": true
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "bytes_match_evaluation": true
+            }
+          ],
+          "content_binding_mode": "pixel_tolerance",
+          "allowed_content_binding_modes": [
+            "byte_equal",
+            "pixel_tolerance",
+            "unavailable"
+          ],
+          "mode_contract_ok": true,
+          "registered_pixels": {
+            "desktop": [
+              1280,
+              900
+            ],
+            "mobile": [
+              390,
+              844
+            ]
+          },
+          "registered_device_scale_factor": 1,
+          "tolerances": {
+            "camera_center_absolute_deg": 0,
+            "camera_zoom_absolute": 0,
+            "camera_bearing_absolute_deg": 0,
+            "camera_pitch_absolute_deg": 0,
+            "pixel_max_channel_delta": 0,
+            "pixel_differing_fraction": 0
+          },
+          "state_fields_compared": [
+            "variant",
+            "selected_site",
+            "popup_open",
+            "sheet_state",
+            "measure_mode"
+          ],
+          "note": "Delivered files are opened and measured: PNG header, colour type, digest, camera, state fields, transparency, and the displayed samples (red, green, blue, alpha) against this run's own capture. A self-consistent sidecar over an unrelated or transparent image cannot pass."
+        }
+      },
+      "stdout": "Evaluator finished. Verdict: PASS exit=0 reasons=none\n",
+      "stderr": ""
+    },
+    {
+      "label": "unknown-mode",
+      "mode": "byte_eqaul",
+      "exit": 2,
+      "verdict": "ERROR",
+      "reasons": [
+        "CONFIGURATION_INVALID:CONTENT_BINDING_MODE_UNKNOWN"
+      ],
+      "stdout": "Evaluator finished. Verdict: ERROR exit=2 reasons=CONFIGURATION_INVALID:CONTENT_BINDING_MODE_UNKNOWN\n",
+      "stderr": ""
+    },
+    {
+      "label": "transparent-default",
+      "mode": null,
+      "exit": 1,
+      "verdict": "FAIL",
+      "reasons": [
+        "screenshot_checks.delivered_artifacts_consistent:DELIVERED_ARTIFACT_INVALID"
+      ],
+      "delivery": {
+        "pass": false,
+        "reason": "DELIVERED_ARTIFACT_INVALID",
+        "detail": {
+          "rule_version": "rev06/delivery-6",
+          "problems": [
+            {
+              "file": "before-desktop.png",
+              "problem": "DELIVERED_IMAGE_NOT_OPAQUE",
+              "delivered_alpha": {
+                "min": 0,
+                "max": 0,
+                "non_opaque_pixels": 1152000,
+                "transparent_pixels": 1152000,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "note": "a transparent frame displays nothing; equality of the hidden RGB is not evidence that it is this page"
+            },
+            {
+              "file": "before-desktop.png",
+              "problem": "DELIVERED_IMAGE_NOT_THIS_PAGES_RENDER",
+              "delivered": "6e96991a822cd28ed5a3c4835f7a579accc8811c350028b0e8370960cf82914e",
+              "evaluator_capture": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "max_channel_delta": 255,
+              "differing_pixels": 1152000,
+              "differing_fraction": 1,
+              "note": "9 independent loads over 3 states produced 9/9 byte-identical pairs, with a worst intra-state delta of 0/255 over 0 of pixels, so requiring the delivered bytes to equal this run's own capture asks nothing the render cannot repeat; the smallest real difference this measurement separates is 0.490022 of pixels and an unrelated picture differs over 1."
+            },
+            {
+              "file": "after-desktop.png",
+              "problem": "DELIVERED_IMAGE_NOT_OPAQUE",
+              "delivered_alpha": {
+                "min": 0,
+                "max": 0,
+                "non_opaque_pixels": 1152000,
+                "transparent_pixels": 1152000,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "note": "a transparent frame displays nothing; equality of the hidden RGB is not evidence that it is this page"
+            },
+            {
+              "file": "after-desktop.png",
+              "problem": "DELIVERED_IMAGE_NOT_THIS_PAGES_RENDER",
+              "delivered": "c098e82f5fbda30a3ff86cc663d69253bfaa0be4b0f6514283e0bfae60856670",
+              "evaluator_capture": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "max_channel_delta": 255,
+              "differing_pixels": 1152000,
+              "differing_fraction": 1,
+              "note": "9 independent loads over 3 states produced 9/9 byte-identical pairs, with a worst intra-state delta of 0/255 over 0 of pixels, so requiring the delivered bytes to equal this run's own capture asks nothing the render cannot repeat; the smallest real difference this measurement separates is 0.490022 of pixels and an unrelated picture differs over 1."
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "problem": "DELIVERED_IMAGE_NOT_OPAQUE",
+              "delivered_alpha": {
+                "min": 0,
+                "max": 0,
+                "non_opaque_pixels": 329160,
+                "transparent_pixels": 329160,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "note": "a transparent frame displays nothing; equality of the hidden RGB is not evidence that it is this page"
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "problem": "DELIVERED_IMAGE_NOT_THIS_PAGES_RENDER",
+              "delivered": "628748183d79a75b58d0a6c8fa329d315d38489ff5b1e6454c8a4925a80aa75e",
+              "evaluator_capture": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "max_channel_delta": 255,
+              "differing_pixels": 329160,
+              "differing_fraction": 1,
+              "note": "9 independent loads over 3 states produced 9/9 byte-identical pairs, with a worst intra-state delta of 0/255 over 0 of pixels, so requiring the delivered bytes to equal this run's own capture asks nothing the render cannot repeat; the smallest real difference this measurement separates is 0.490022 of pixels and an unrelated picture differs over 1."
+            }
+          ],
+          "identity": [
+            {
+              "file": "before-desktop.png",
+              "delivered_digest": "6e96991a822cd28ed5a3c4835f7a579accc8811c350028b0e8370960cf82914e",
+              "evaluator_digest": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 6,
+                "bit_depth": 8
+              },
+              "delivered_alpha": {
+                "min": 0,
+                "max": 0,
+                "non_opaque_pixels": 1152000,
+                "transparent_pixels": 1152000,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              }
+            },
+            {
+              "file": "after-desktop.png",
+              "delivered_digest": "c098e82f5fbda30a3ff86cc663d69253bfaa0be4b0f6514283e0bfae60856670",
+              "evaluator_digest": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 6,
+                "bit_depth": 8
+              },
+              "delivered_alpha": {
+                "min": 0,
+                "max": 0,
+                "non_opaque_pixels": 1152000,
+                "transparent_pixels": 1152000,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              }
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "delivered_digest": "628748183d79a75b58d0a6c8fa329d315d38489ff5b1e6454c8a4925a80aa75e",
+              "evaluator_digest": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 390,
+                "height": 844,
+                "color_type": 6,
+                "bit_depth": 8
+              },
+              "delivered_alpha": {
+                "min": 0,
+                "max": 0,
+                "non_opaque_pixels": 329160,
+                "transparent_pixels": 329160,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              }
+            }
+          ],
+          "pixel_comparisons": [
+            {
+              "file": "before-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 255,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 255,
+              "differing_pixels": 1152000,
+              "differing_fraction": 1,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 1152000,
+              "mean_channel_delta": 63.75,
+              "delivered_alpha": {
+                "min": 0,
+                "max": 0,
+                "non_opaque_pixels": 1152000,
+                "transparent_pixels": 1152000,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "bytes_match_evaluation": false
+            },
+            {
+              "file": "after-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 255,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 255,
+              "differing_pixels": 1152000,
+              "differing_fraction": 1,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 1152000,
+              "mean_channel_delta": 63.75,
+              "delivered_alpha": {
+                "min": 0,
+                "max": 0,
+                "non_opaque_pixels": 1152000,
+                "transparent_pixels": 1152000,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "bytes_match_evaluation": false
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "comparable": true,
+              "pixels": 329160,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 255,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 255,
+              "differing_pixels": 329160,
+              "differing_fraction": 1,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 329160,
+              "mean_channel_delta": 63.75,
+              "delivered_alpha": {
+                "min": 0,
+                "max": 0,
+                "non_opaque_pixels": 329160,
+                "transparent_pixels": 329160,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "bytes_match_evaluation": false
+            }
+          ],
+          "content_binding_mode": "byte_equal",
+          "allowed_content_binding_modes": [
+            "byte_equal",
+            "pixel_tolerance",
+            "unavailable"
+          ],
+          "mode_contract_ok": true,
+          "registered_pixels": {
+            "desktop": [
+              1280,
+              900
+            ],
+            "mobile": [
+              390,
+              844
+            ]
+          },
+          "registered_device_scale_factor": 1,
+          "tolerances": {
+            "camera_center_absolute_deg": 0,
+            "camera_zoom_absolute": 0,
+            "camera_bearing_absolute_deg": 0,
+            "camera_pitch_absolute_deg": 0,
+            "pixel_max_channel_delta": 0,
+            "pixel_differing_fraction": 0
+          },
+          "state_fields_compared": [
+            "variant",
+            "selected_site",
+            "popup_open",
+            "sheet_state",
+            "measure_mode"
+          ],
+          "note": "Delivered files are opened and measured: PNG header, colour type, digest, camera, state fields, transparency, and the displayed samples (red, green, blue, alpha) against this run's own capture. A self-consistent sidecar over an unrelated or transparent image cannot pass."
+        }
+      },
+      "stdout": "Evaluator finished. Verdict: FAIL exit=1 reasons=screenshot_checks.delivered_artifacts_consistent:DELIVERED_ARTIFACT_INVALID\n",
+      "stderr": ""
+    },
+    {
+      "label": "transparent-pixel",
+      "mode": "pixel_tolerance",
+      "exit": 1,
+      "verdict": "FAIL",
+      "reasons": [
+        "screenshot_checks.delivered_artifacts_consistent:DELIVERED_ARTIFACT_INVALID"
+      ],
+      "delivery": {
+        "pass": false,
+        "reason": "DELIVERED_ARTIFACT_INVALID",
+        "detail": {
+          "rule_version": "rev06/delivery-6",
+          "problems": [
+            {
+              "file": "before-desktop.png",
+              "problem": "DELIVERED_IMAGE_NOT_OPAQUE",
+              "delivered_alpha": {
+                "min": 0,
+                "max": 0,
+                "non_opaque_pixels": 1152000,
+                "transparent_pixels": 1152000,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "note": "a transparent frame displays nothing; equality of the hidden RGB is not evidence that it is this page"
+            },
+            {
+              "file": "before-desktop.png",
+              "problem": "DELIVERED_IMAGE_OUTSIDE_PIXEL_TOLERANCE",
+              "comparable": true,
+              "pixels": 1152000,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 255,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 255,
+              "differing_pixels": 1152000,
+              "differing_fraction": 1,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 1152000,
+              "mean_channel_delta": 63.75,
+              "delivered_alpha": {
+                "min": 0,
+                "max": 0,
+                "non_opaque_pixels": 1152000,
+                "transparent_pixels": 1152000,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "delivered_digest": "6e96991a822cd28ed5a3c4835f7a579accc8811c350028b0e8370960cf82914e",
+              "evaluator_digest": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "tolerance": {
+                "camera_center_absolute_deg": 0,
+                "camera_zoom_absolute": 0,
+                "camera_bearing_absolute_deg": 0,
+                "camera_pitch_absolute_deg": 0,
+                "pixel_max_channel_delta": 0,
+                "pixel_differing_fraction": 0
+              },
+              "note": "Delivered pixels are compared against this run's own capture over the samples the display would use - red, green, blue and alpha - with a tolerance of max_channel_delta 0/255 over at most 0.0 of pixels, set between the measured intra-state noise (0/255, 0 of pixels) and every real difference observed (0.490022; an unrelated picture differs over 1). The same measurement shows alpha is part of that comparison: a frame with identical colour samples and every alpha at 0 differs in 1152000 of 1152000 pixels with a colour delta of 0 and an alpha delta of 255, while the same frame re-encoded as RGBA with every alpha at 255 differs in 0 pixels."
+            },
+            {
+              "file": "after-desktop.png",
+              "problem": "DELIVERED_IMAGE_NOT_OPAQUE",
+              "delivered_alpha": {
+                "min": 0,
+                "max": 0,
+                "non_opaque_pixels": 1152000,
+                "transparent_pixels": 1152000,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "note": "a transparent frame displays nothing; equality of the hidden RGB is not evidence that it is this page"
+            },
+            {
+              "file": "after-desktop.png",
+              "problem": "DELIVERED_IMAGE_OUTSIDE_PIXEL_TOLERANCE",
+              "comparable": true,
+              "pixels": 1152000,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 255,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 255,
+              "differing_pixels": 1152000,
+              "differing_fraction": 1,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 1152000,
+              "mean_channel_delta": 63.75,
+              "delivered_alpha": {
+                "min": 0,
+                "max": 0,
+                "non_opaque_pixels": 1152000,
+                "transparent_pixels": 1152000,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "delivered_digest": "c098e82f5fbda30a3ff86cc663d69253bfaa0be4b0f6514283e0bfae60856670",
+              "evaluator_digest": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "tolerance": {
+                "camera_center_absolute_deg": 0,
+                "camera_zoom_absolute": 0,
+                "camera_bearing_absolute_deg": 0,
+                "camera_pitch_absolute_deg": 0,
+                "pixel_max_channel_delta": 0,
+                "pixel_differing_fraction": 0
+              },
+              "note": "Delivered pixels are compared against this run's own capture over the samples the display would use - red, green, blue and alpha - with a tolerance of max_channel_delta 0/255 over at most 0.0 of pixels, set between the measured intra-state noise (0/255, 0 of pixels) and every real difference observed (0.490022; an unrelated picture differs over 1). The same measurement shows alpha is part of that comparison: a frame with identical colour samples and every alpha at 0 differs in 1152000 of 1152000 pixels with a colour delta of 0 and an alpha delta of 255, while the same frame re-encoded as RGBA with every alpha at 255 differs in 0 pixels."
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "problem": "DELIVERED_IMAGE_NOT_OPAQUE",
+              "delivered_alpha": {
+                "min": 0,
+                "max": 0,
+                "non_opaque_pixels": 329160,
+                "transparent_pixels": 329160,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "note": "a transparent frame displays nothing; equality of the hidden RGB is not evidence that it is this page"
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "problem": "DELIVERED_IMAGE_OUTSIDE_PIXEL_TOLERANCE",
+              "comparable": true,
+              "pixels": 329160,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 255,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 255,
+              "differing_pixels": 329160,
+              "differing_fraction": 1,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 329160,
+              "mean_channel_delta": 63.75,
+              "delivered_alpha": {
+                "min": 0,
+                "max": 0,
+                "non_opaque_pixels": 329160,
+                "transparent_pixels": 329160,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "delivered_digest": "628748183d79a75b58d0a6c8fa329d315d38489ff5b1e6454c8a4925a80aa75e",
+              "evaluator_digest": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "tolerance": {
+                "camera_center_absolute_deg": 0,
+                "camera_zoom_absolute": 0,
+                "camera_bearing_absolute_deg": 0,
+                "camera_pitch_absolute_deg": 0,
+                "pixel_max_channel_delta": 0,
+                "pixel_differing_fraction": 0
+              },
+              "note": "Delivered pixels are compared against this run's own capture over the samples the display would use - red, green, blue and alpha - with a tolerance of max_channel_delta 0/255 over at most 0.0 of pixels, set between the measured intra-state noise (0/255, 0 of pixels) and every real difference observed (0.490022; an unrelated picture differs over 1). The same measurement shows alpha is part of that comparison: a frame with identical colour samples and every alpha at 0 differs in 1152000 of 1152000 pixels with a colour delta of 0 and an alpha delta of 255, while the same frame re-encoded as RGBA with every alpha at 255 differs in 0 pixels."
+            }
+          ],
+          "identity": [
+            {
+              "file": "before-desktop.png",
+              "delivered_digest": "6e96991a822cd28ed5a3c4835f7a579accc8811c350028b0e8370960cf82914e",
+              "evaluator_digest": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 6,
+                "bit_depth": 8
+              },
+              "delivered_alpha": {
+                "min": 0,
+                "max": 0,
+                "non_opaque_pixels": 1152000,
+                "transparent_pixels": 1152000,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              }
+            },
+            {
+              "file": "after-desktop.png",
+              "delivered_digest": "c098e82f5fbda30a3ff86cc663d69253bfaa0be4b0f6514283e0bfae60856670",
+              "evaluator_digest": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 6,
+                "bit_depth": 8
+              },
+              "delivered_alpha": {
+                "min": 0,
+                "max": 0,
+                "non_opaque_pixels": 1152000,
+                "transparent_pixels": 1152000,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              }
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "delivered_digest": "628748183d79a75b58d0a6c8fa329d315d38489ff5b1e6454c8a4925a80aa75e",
+              "evaluator_digest": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 390,
+                "height": 844,
+                "color_type": 6,
+                "bit_depth": 8
+              },
+              "delivered_alpha": {
+                "min": 0,
+                "max": 0,
+                "non_opaque_pixels": 329160,
+                "transparent_pixels": 329160,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              }
+            }
+          ],
+          "pixel_comparisons": [
+            {
+              "file": "before-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 255,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 255,
+              "differing_pixels": 1152000,
+              "differing_fraction": 1,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 1152000,
+              "mean_channel_delta": 63.75,
+              "delivered_alpha": {
+                "min": 0,
+                "max": 0,
+                "non_opaque_pixels": 1152000,
+                "transparent_pixels": 1152000,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "bytes_match_evaluation": false
+            },
+            {
+              "file": "after-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 255,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 255,
+              "differing_pixels": 1152000,
+              "differing_fraction": 1,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 1152000,
+              "mean_channel_delta": 63.75,
+              "delivered_alpha": {
+                "min": 0,
+                "max": 0,
+                "non_opaque_pixels": 1152000,
+                "transparent_pixels": 1152000,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "bytes_match_evaluation": false
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "comparable": true,
+              "pixels": 329160,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 255,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 255,
+              "differing_pixels": 329160,
+              "differing_fraction": 1,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 329160,
+              "mean_channel_delta": 63.75,
+              "delivered_alpha": {
+                "min": 0,
+                "max": 0,
+                "non_opaque_pixels": 329160,
+                "transparent_pixels": 329160,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "bytes_match_evaluation": false
+            }
+          ],
+          "content_binding_mode": "pixel_tolerance",
+          "allowed_content_binding_modes": [
+            "byte_equal",
+            "pixel_tolerance",
+            "unavailable"
+          ],
+          "mode_contract_ok": true,
+          "registered_pixels": {
+            "desktop": [
+              1280,
+              900
+            ],
+            "mobile": [
+              390,
+              844
+            ]
+          },
+          "registered_device_scale_factor": 1,
+          "tolerances": {
+            "camera_center_absolute_deg": 0,
+            "camera_zoom_absolute": 0,
+            "camera_bearing_absolute_deg": 0,
+            "camera_pitch_absolute_deg": 0,
+            "pixel_max_channel_delta": 0,
+            "pixel_differing_fraction": 0
+          },
+          "state_fields_compared": [
+            "variant",
+            "selected_site",
+            "popup_open",
+            "sheet_state",
+            "measure_mode"
+          ],
+          "note": "Delivered files are opened and measured: PNG header, colour type, digest, camera, state fields, transparency, and the displayed samples (red, green, blue, alpha) against this run's own capture. A self-consistent sidecar over an unrelated or transparent image cannot pass."
+        }
+      },
+      "stdout": "Evaluator finished. Verdict: FAIL exit=1 reasons=screenshot_checks.delivered_artifacts_consistent:DELIVERED_ARTIFACT_INVALID\n",
+      "stderr": ""
+    },
+    {
+      "label": "opaque-rgba-pixel",
+      "mode": "pixel_tolerance",
+      "exit": 0,
+      "verdict": "PASS",
+      "reasons": [],
+      "delivery": {
+        "pass": true,
+        "reason": null,
+        "detail": {
+          "rule_version": "rev06/delivery-6",
+          "problems": [],
+          "identity": [
+            {
+              "file": "before-desktop.png",
+              "delivered_digest": "f103bffa57ebaa8099074117a9be2edb70fb9c390c9bc342a66d2187c8ba1da3",
+              "evaluator_digest": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 6,
+                "bit_depth": 8
+              },
+              "delivered_alpha": {
+                "min": 255,
+                "max": 255,
+                "non_opaque_pixels": 0,
+                "transparent_pixels": 0,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": true
+              }
+            },
+            {
+              "file": "after-desktop.png",
+              "delivered_digest": "ed2693d48f6b66f6efb4489b6874c588748c38da960411570728a2925232328f",
+              "evaluator_digest": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 6,
+                "bit_depth": 8
+              },
+              "delivered_alpha": {
+                "min": 255,
+                "max": 255,
+                "non_opaque_pixels": 0,
+                "transparent_pixels": 0,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": true
+              }
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "delivered_digest": "7ff98d8c9acf894e521f584520eac1f6362fbef341e8d2ef3df4aeb7f18a6347",
+              "evaluator_digest": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 390,
+                "height": 844,
+                "color_type": 6,
+                "bit_depth": 8
+              },
+              "delivered_alpha": {
+                "min": 255,
+                "max": 255,
+                "non_opaque_pixels": 0,
+                "transparent_pixels": 0,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": true
+              }
+            }
+          ],
+          "pixel_comparisons": [
+            {
+              "file": "before-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 0,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 0,
+              "mean_channel_delta": 0,
+              "delivered_alpha": {
+                "min": 255,
+                "max": 255,
+                "non_opaque_pixels": 0,
+                "transparent_pixels": 0,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": true
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "bytes_match_evaluation": false
+            },
+            {
+              "file": "after-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 0,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 0,
+              "mean_channel_delta": 0,
+              "delivered_alpha": {
+                "min": 255,
+                "max": 255,
+                "non_opaque_pixels": 0,
+                "transparent_pixels": 0,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": true
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "bytes_match_evaluation": false
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "comparable": true,
+              "pixels": 329160,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 0,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 0,
+              "mean_channel_delta": 0,
+              "delivered_alpha": {
+                "min": 255,
+                "max": 255,
+                "non_opaque_pixels": 0,
+                "transparent_pixels": 0,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": true
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "bytes_match_evaluation": false
+            }
+          ],
+          "content_binding_mode": "pixel_tolerance",
+          "allowed_content_binding_modes": [
+            "byte_equal",
+            "pixel_tolerance",
+            "unavailable"
+          ],
+          "mode_contract_ok": true,
+          "registered_pixels": {
+            "desktop": [
+              1280,
+              900
+            ],
+            "mobile": [
+              390,
+              844
+            ]
+          },
+          "registered_device_scale_factor": 1,
+          "tolerances": {
+            "camera_center_absolute_deg": 0,
+            "camera_zoom_absolute": 0,
+            "camera_bearing_absolute_deg": 0,
+            "camera_pitch_absolute_deg": 0,
+            "pixel_max_channel_delta": 0,
+            "pixel_differing_fraction": 0
+          },
+          "state_fields_compared": [
+            "variant",
+            "selected_site",
+            "popup_open",
+            "sheet_state",
+            "measure_mode"
+          ],
+          "note": "Delivered files are opened and measured: PNG header, colour type, digest, camera, state fields, transparency, and the displayed samples (red, green, blue, alpha) against this run's own capture. A self-consistent sidecar over an unrelated or transparent image cannot pass."
+        }
+      },
+      "stdout": "Evaluator finished. Verdict: PASS exit=0 reasons=none\n",
+      "stderr": ""
+    },
+    {
+      "label": "near-opaque-pixel",
+      "mode": "pixel_tolerance",
+      "exit": 1,
+      "verdict": "FAIL",
+      "reasons": [
+        "screenshot_checks.delivered_artifacts_consistent:DELIVERED_ARTIFACT_INVALID"
+      ],
+      "delivery": {
+        "pass": false,
+        "reason": "DELIVERED_ARTIFACT_INVALID",
+        "detail": {
+          "rule_version": "rev06/delivery-6",
+          "problems": [
+            {
+              "file": "before-desktop.png",
+              "problem": "DELIVERED_IMAGE_NOT_OPAQUE",
+              "delivered_alpha": {
+                "min": 254,
+                "max": 254,
+                "non_opaque_pixels": 1152000,
+                "transparent_pixels": 0,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "note": "a transparent frame displays nothing; equality of the hidden RGB is not evidence that it is this page"
+            },
+            {
+              "file": "before-desktop.png",
+              "problem": "DELIVERED_IMAGE_OUTSIDE_PIXEL_TOLERANCE",
+              "comparable": true,
+              "pixels": 1152000,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 1,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 1,
+              "differing_pixels": 1152000,
+              "differing_fraction": 1,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 1152000,
+              "mean_channel_delta": 0.25,
+              "delivered_alpha": {
+                "min": 254,
+                "max": 254,
+                "non_opaque_pixels": 1152000,
+                "transparent_pixels": 0,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "delivered_digest": "3cc21bcf663c1b7bafcac8d7a23c66eb443257f08cff53af984a821312554027",
+              "evaluator_digest": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "tolerance": {
+                "camera_center_absolute_deg": 0,
+                "camera_zoom_absolute": 0,
+                "camera_bearing_absolute_deg": 0,
+                "camera_pitch_absolute_deg": 0,
+                "pixel_max_channel_delta": 0,
+                "pixel_differing_fraction": 0
+              },
+              "note": "Delivered pixels are compared against this run's own capture over the samples the display would use - red, green, blue and alpha - with a tolerance of max_channel_delta 0/255 over at most 0.0 of pixels, set between the measured intra-state noise (0/255, 0 of pixels) and every real difference observed (0.490022; an unrelated picture differs over 1). The same measurement shows alpha is part of that comparison: a frame with identical colour samples and every alpha at 0 differs in 1152000 of 1152000 pixels with a colour delta of 0 and an alpha delta of 255, while the same frame re-encoded as RGBA with every alpha at 255 differs in 0 pixels."
+            },
+            {
+              "file": "after-desktop.png",
+              "problem": "DELIVERED_IMAGE_NOT_OPAQUE",
+              "delivered_alpha": {
+                "min": 254,
+                "max": 254,
+                "non_opaque_pixels": 1152000,
+                "transparent_pixels": 0,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "note": "a transparent frame displays nothing; equality of the hidden RGB is not evidence that it is this page"
+            },
+            {
+              "file": "after-desktop.png",
+              "problem": "DELIVERED_IMAGE_OUTSIDE_PIXEL_TOLERANCE",
+              "comparable": true,
+              "pixels": 1152000,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 1,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 1,
+              "differing_pixels": 1152000,
+              "differing_fraction": 1,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 1152000,
+              "mean_channel_delta": 0.25,
+              "delivered_alpha": {
+                "min": 254,
+                "max": 254,
+                "non_opaque_pixels": 1152000,
+                "transparent_pixels": 0,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "delivered_digest": "c9759c57accca1ded3f50f6bba5ef2fb9d59d99c3034f3fa44fd308843940c09",
+              "evaluator_digest": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "tolerance": {
+                "camera_center_absolute_deg": 0,
+                "camera_zoom_absolute": 0,
+                "camera_bearing_absolute_deg": 0,
+                "camera_pitch_absolute_deg": 0,
+                "pixel_max_channel_delta": 0,
+                "pixel_differing_fraction": 0
+              },
+              "note": "Delivered pixels are compared against this run's own capture over the samples the display would use - red, green, blue and alpha - with a tolerance of max_channel_delta 0/255 over at most 0.0 of pixels, set between the measured intra-state noise (0/255, 0 of pixels) and every real difference observed (0.490022; an unrelated picture differs over 1). The same measurement shows alpha is part of that comparison: a frame with identical colour samples and every alpha at 0 differs in 1152000 of 1152000 pixels with a colour delta of 0 and an alpha delta of 255, while the same frame re-encoded as RGBA with every alpha at 255 differs in 0 pixels."
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "problem": "DELIVERED_IMAGE_NOT_OPAQUE",
+              "delivered_alpha": {
+                "min": 254,
+                "max": 254,
+                "non_opaque_pixels": 329160,
+                "transparent_pixels": 0,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "note": "a transparent frame displays nothing; equality of the hidden RGB is not evidence that it is this page"
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "problem": "DELIVERED_IMAGE_OUTSIDE_PIXEL_TOLERANCE",
+              "comparable": true,
+              "pixels": 329160,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 1,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 1,
+              "differing_pixels": 329160,
+              "differing_fraction": 1,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 329160,
+              "mean_channel_delta": 0.25,
+              "delivered_alpha": {
+                "min": 254,
+                "max": 254,
+                "non_opaque_pixels": 329160,
+                "transparent_pixels": 0,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "delivered_digest": "2621d18bdd5190fd89a0e7aaea3fc76c11c3bc319c9bd57f3e62fc3ce626e89f",
+              "evaluator_digest": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "tolerance": {
+                "camera_center_absolute_deg": 0,
+                "camera_zoom_absolute": 0,
+                "camera_bearing_absolute_deg": 0,
+                "camera_pitch_absolute_deg": 0,
+                "pixel_max_channel_delta": 0,
+                "pixel_differing_fraction": 0
+              },
+              "note": "Delivered pixels are compared against this run's own capture over the samples the display would use - red, green, blue and alpha - with a tolerance of max_channel_delta 0/255 over at most 0.0 of pixels, set between the measured intra-state noise (0/255, 0 of pixels) and every real difference observed (0.490022; an unrelated picture differs over 1). The same measurement shows alpha is part of that comparison: a frame with identical colour samples and every alpha at 0 differs in 1152000 of 1152000 pixels with a colour delta of 0 and an alpha delta of 255, while the same frame re-encoded as RGBA with every alpha at 255 differs in 0 pixels."
+            }
+          ],
+          "identity": [
+            {
+              "file": "before-desktop.png",
+              "delivered_digest": "3cc21bcf663c1b7bafcac8d7a23c66eb443257f08cff53af984a821312554027",
+              "evaluator_digest": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 6,
+                "bit_depth": 8
+              },
+              "delivered_alpha": {
+                "min": 254,
+                "max": 254,
+                "non_opaque_pixels": 1152000,
+                "transparent_pixels": 0,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              }
+            },
+            {
+              "file": "after-desktop.png",
+              "delivered_digest": "c9759c57accca1ded3f50f6bba5ef2fb9d59d99c3034f3fa44fd308843940c09",
+              "evaluator_digest": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 6,
+                "bit_depth": 8
+              },
+              "delivered_alpha": {
+                "min": 254,
+                "max": 254,
+                "non_opaque_pixels": 1152000,
+                "transparent_pixels": 0,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              }
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "delivered_digest": "2621d18bdd5190fd89a0e7aaea3fc76c11c3bc319c9bd57f3e62fc3ce626e89f",
+              "evaluator_digest": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 390,
+                "height": 844,
+                "color_type": 6,
+                "bit_depth": 8
+              },
+              "delivered_alpha": {
+                "min": 254,
+                "max": 254,
+                "non_opaque_pixels": 329160,
+                "transparent_pixels": 0,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              }
+            }
+          ],
+          "pixel_comparisons": [
+            {
+              "file": "before-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 1,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 1,
+              "differing_pixels": 1152000,
+              "differing_fraction": 1,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 1152000,
+              "mean_channel_delta": 0.25,
+              "delivered_alpha": {
+                "min": 254,
+                "max": 254,
+                "non_opaque_pixels": 1152000,
+                "transparent_pixels": 0,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "bytes_match_evaluation": false
+            },
+            {
+              "file": "after-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 1,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 1,
+              "differing_pixels": 1152000,
+              "differing_fraction": 1,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 1152000,
+              "mean_channel_delta": 0.25,
+              "delivered_alpha": {
+                "min": 254,
+                "max": 254,
+                "non_opaque_pixels": 1152000,
+                "transparent_pixels": 0,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "bytes_match_evaluation": false
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "comparable": true,
+              "pixels": 329160,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 1,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 1,
+              "differing_pixels": 329160,
+              "differing_fraction": 1,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 329160,
+              "mean_channel_delta": 0.25,
+              "delivered_alpha": {
+                "min": 254,
+                "max": 254,
+                "non_opaque_pixels": 329160,
+                "transparent_pixels": 0,
+                "has_alpha_channel": true,
+                "has_trns": false,
+                "trans_key": null,
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "bytes_match_evaluation": false
+            }
+          ],
+          "content_binding_mode": "pixel_tolerance",
+          "allowed_content_binding_modes": [
+            "byte_equal",
+            "pixel_tolerance",
+            "unavailable"
+          ],
+          "mode_contract_ok": true,
+          "registered_pixels": {
+            "desktop": [
+              1280,
+              900
+            ],
+            "mobile": [
+              390,
+              844
+            ]
+          },
+          "registered_device_scale_factor": 1,
+          "tolerances": {
+            "camera_center_absolute_deg": 0,
+            "camera_zoom_absolute": 0,
+            "camera_bearing_absolute_deg": 0,
+            "camera_pitch_absolute_deg": 0,
+            "pixel_max_channel_delta": 0,
+            "pixel_differing_fraction": 0
+          },
+          "state_fields_compared": [
+            "variant",
+            "selected_site",
+            "popup_open",
+            "sheet_state",
+            "measure_mode"
+          ],
+          "note": "Delivered files are opened and measured: PNG header, colour type, digest, camera, state fields, transparency, and the displayed samples (red, green, blue, alpha) against this run's own capture. A self-consistent sidecar over an unrelated or transparent image cannot pass."
+        }
+      },
+      "stdout": "Evaluator finished. Verdict: FAIL exit=1 reasons=screenshot_checks.delivered_artifacts_consistent:DELIVERED_ARTIFACT_INVALID\n",
+      "stderr": ""
+    },
+    {
+      "label": "trns-pixel",
+      "mode": "pixel_tolerance",
+      "exit": 1,
+      "verdict": "FAIL",
+      "reasons": [
+        "screenshot_checks.delivered_artifacts_consistent:DELIVERED_ARTIFACT_INVALID"
+      ],
+      "delivery": {
+        "pass": false,
+        "reason": "DELIVERED_ARTIFACT_INVALID",
+        "detail": {
+          "rule_version": "rev06/delivery-6",
+          "problems": [
+            {
+              "file": "before-desktop.png",
+              "problem": "DELIVERED_IMAGE_NOT_OPAQUE",
+              "delivered_alpha": {
+                "min": 0,
+                "max": 255,
+                "non_opaque_pixels": 182356,
+                "transparent_pixels": 182356,
+                "has_alpha_channel": false,
+                "has_trns": true,
+                "trans_key": [
+                  255,
+                  255,
+                  255
+                ],
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "note": "a transparent frame displays nothing; equality of the hidden RGB is not evidence that it is this page"
+            },
+            {
+              "file": "before-desktop.png",
+              "problem": "DELIVERED_IMAGE_OUTSIDE_PIXEL_TOLERANCE",
+              "comparable": true,
+              "pixels": 1152000,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 255,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 255,
+              "differing_pixels": 182356,
+              "differing_fraction": 0.158295,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 182356,
+              "mean_channel_delta": 10.091315,
+              "delivered_alpha": {
+                "min": 0,
+                "max": 255,
+                "non_opaque_pixels": 182356,
+                "transparent_pixels": 182356,
+                "has_alpha_channel": false,
+                "has_trns": true,
+                "trans_key": [
+                  255,
+                  255,
+                  255
+                ],
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "delivered_digest": "d2f43636f96b7f6798fcba9a0934ce38693ecaf2e7215985926f135e4b73e57e",
+              "evaluator_digest": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "tolerance": {
+                "camera_center_absolute_deg": 0,
+                "camera_zoom_absolute": 0,
+                "camera_bearing_absolute_deg": 0,
+                "camera_pitch_absolute_deg": 0,
+                "pixel_max_channel_delta": 0,
+                "pixel_differing_fraction": 0
+              },
+              "note": "Delivered pixels are compared against this run's own capture over the samples the display would use - red, green, blue and alpha - with a tolerance of max_channel_delta 0/255 over at most 0.0 of pixels, set between the measured intra-state noise (0/255, 0 of pixels) and every real difference observed (0.490022; an unrelated picture differs over 1). The same measurement shows alpha is part of that comparison: a frame with identical colour samples and every alpha at 0 differs in 1152000 of 1152000 pixels with a colour delta of 0 and an alpha delta of 255, while the same frame re-encoded as RGBA with every alpha at 255 differs in 0 pixels."
+            },
+            {
+              "file": "after-desktop.png",
+              "problem": "DELIVERED_IMAGE_NOT_OPAQUE",
+              "delivered_alpha": {
+                "min": 0,
+                "max": 255,
+                "non_opaque_pixels": 228571,
+                "transparent_pixels": 228571,
+                "has_alpha_channel": false,
+                "has_trns": true,
+                "trans_key": [
+                  255,
+                  255,
+                  255
+                ],
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "note": "a transparent frame displays nothing; equality of the hidden RGB is not evidence that it is this page"
+            },
+            {
+              "file": "after-desktop.png",
+              "problem": "DELIVERED_IMAGE_OUTSIDE_PIXEL_TOLERANCE",
+              "comparable": true,
+              "pixels": 1152000,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 255,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 255,
+              "differing_pixels": 228571,
+              "differing_fraction": 0.198412,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 228571,
+              "mean_channel_delta": 12.648786,
+              "delivered_alpha": {
+                "min": 0,
+                "max": 255,
+                "non_opaque_pixels": 228571,
+                "transparent_pixels": 228571,
+                "has_alpha_channel": false,
+                "has_trns": true,
+                "trans_key": [
+                  255,
+                  255,
+                  255
+                ],
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "delivered_digest": "8a01fe5fa4b66712c2712162f04fb6cc4971618d8afd6984c2a87cf3466796df",
+              "evaluator_digest": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "tolerance": {
+                "camera_center_absolute_deg": 0,
+                "camera_zoom_absolute": 0,
+                "camera_bearing_absolute_deg": 0,
+                "camera_pitch_absolute_deg": 0,
+                "pixel_max_channel_delta": 0,
+                "pixel_differing_fraction": 0
+              },
+              "note": "Delivered pixels are compared against this run's own capture over the samples the display would use - red, green, blue and alpha - with a tolerance of max_channel_delta 0/255 over at most 0.0 of pixels, set between the measured intra-state noise (0/255, 0 of pixels) and every real difference observed (0.490022; an unrelated picture differs over 1). The same measurement shows alpha is part of that comparison: a frame with identical colour samples and every alpha at 0 differs in 1152000 of 1152000 pixels with a colour delta of 0 and an alpha delta of 255, while the same frame re-encoded as RGBA with every alpha at 255 differs in 0 pixels."
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "problem": "DELIVERED_IMAGE_NOT_OPAQUE",
+              "delivered_alpha": {
+                "min": 0,
+                "max": 255,
+                "non_opaque_pixels": 114524,
+                "transparent_pixels": 114524,
+                "has_alpha_channel": false,
+                "has_trns": true,
+                "trans_key": [
+                  255,
+                  255,
+                  255
+                ],
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "note": "a transparent frame displays nothing; equality of the hidden RGB is not evidence that it is this page"
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "problem": "DELIVERED_IMAGE_OUTSIDE_PIXEL_TOLERANCE",
+              "comparable": true,
+              "pixels": 329160,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 255,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 255,
+              "differing_pixels": 114524,
+              "differing_fraction": 0.347928,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 114524,
+              "mean_channel_delta": 22.180414,
+              "delivered_alpha": {
+                "min": 0,
+                "max": 255,
+                "non_opaque_pixels": 114524,
+                "transparent_pixels": 114524,
+                "has_alpha_channel": false,
+                "has_trns": true,
+                "trans_key": [
+                  255,
+                  255,
+                  255
+                ],
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "delivered_digest": "7b2ccfbfc6d7afe442c351c063cfff4d20989a96de553113708ec462c48eb12b",
+              "evaluator_digest": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "tolerance": {
+                "camera_center_absolute_deg": 0,
+                "camera_zoom_absolute": 0,
+                "camera_bearing_absolute_deg": 0,
+                "camera_pitch_absolute_deg": 0,
+                "pixel_max_channel_delta": 0,
+                "pixel_differing_fraction": 0
+              },
+              "note": "Delivered pixels are compared against this run's own capture over the samples the display would use - red, green, blue and alpha - with a tolerance of max_channel_delta 0/255 over at most 0.0 of pixels, set between the measured intra-state noise (0/255, 0 of pixels) and every real difference observed (0.490022; an unrelated picture differs over 1). The same measurement shows alpha is part of that comparison: a frame with identical colour samples and every alpha at 0 differs in 1152000 of 1152000 pixels with a colour delta of 0 and an alpha delta of 255, while the same frame re-encoded as RGBA with every alpha at 255 differs in 0 pixels."
+            }
+          ],
+          "identity": [
+            {
+              "file": "before-desktop.png",
+              "delivered_digest": "d2f43636f96b7f6798fcba9a0934ce38693ecaf2e7215985926f135e4b73e57e",
+              "evaluator_digest": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 2,
+                "bit_depth": 8
+              },
+              "delivered_alpha": {
+                "min": 0,
+                "max": 255,
+                "non_opaque_pixels": 182356,
+                "transparent_pixels": 182356,
+                "has_alpha_channel": false,
+                "has_trns": true,
+                "trans_key": [
+                  255,
+                  255,
+                  255
+                ],
+                "fully_opaque": false
+              }
+            },
+            {
+              "file": "after-desktop.png",
+              "delivered_digest": "8a01fe5fa4b66712c2712162f04fb6cc4971618d8afd6984c2a87cf3466796df",
+              "evaluator_digest": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 2,
+                "bit_depth": 8
+              },
+              "delivered_alpha": {
+                "min": 0,
+                "max": 255,
+                "non_opaque_pixels": 228571,
+                "transparent_pixels": 228571,
+                "has_alpha_channel": false,
+                "has_trns": true,
+                "trans_key": [
+                  255,
+                  255,
+                  255
+                ],
+                "fully_opaque": false
+              }
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "delivered_digest": "7b2ccfbfc6d7afe442c351c063cfff4d20989a96de553113708ec462c48eb12b",
+              "evaluator_digest": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 390,
+                "height": 844,
+                "color_type": 2,
+                "bit_depth": 8
+              },
+              "delivered_alpha": {
+                "min": 0,
+                "max": 255,
+                "non_opaque_pixels": 114524,
+                "transparent_pixels": 114524,
+                "has_alpha_channel": false,
+                "has_trns": true,
+                "trans_key": [
+                  255,
+                  255,
+                  255
+                ],
+                "fully_opaque": false
+              }
+            }
+          ],
+          "pixel_comparisons": [
+            {
+              "file": "before-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 255,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 255,
+              "differing_pixels": 182356,
+              "differing_fraction": 0.158295,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 182356,
+              "mean_channel_delta": 10.091315,
+              "delivered_alpha": {
+                "min": 0,
+                "max": 255,
+                "non_opaque_pixels": 182356,
+                "transparent_pixels": 182356,
+                "has_alpha_channel": false,
+                "has_trns": true,
+                "trans_key": [
+                  255,
+                  255,
+                  255
+                ],
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "bytes_match_evaluation": false
+            },
+            {
+              "file": "after-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 255,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 255,
+              "differing_pixels": 228571,
+              "differing_fraction": 0.198412,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 228571,
+              "mean_channel_delta": 12.648786,
+              "delivered_alpha": {
+                "min": 0,
+                "max": 255,
+                "non_opaque_pixels": 228571,
+                "transparent_pixels": 228571,
+                "has_alpha_channel": false,
+                "has_trns": true,
+                "trans_key": [
+                  255,
+                  255,
+                  255
+                ],
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "bytes_match_evaluation": false
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "comparable": true,
+              "pixels": 329160,
+              "channels_compared": [
+                "red",
+                "green",
+                "blue",
+                "alpha"
+              ],
+              "max_channel_delta": 255,
+              "max_colour_delta": 0,
+              "max_alpha_delta": 255,
+              "differing_pixels": 114524,
+              "differing_fraction": 0.347928,
+              "colour_differing_pixels": 0,
+              "alpha_differing_pixels": 114524,
+              "mean_channel_delta": 22.180414,
+              "delivered_alpha": {
+                "min": 0,
+                "max": 255,
+                "non_opaque_pixels": 114524,
+                "transparent_pixels": 114524,
+                "has_alpha_channel": false,
+                "has_trns": true,
+                "trans_key": [
+                  255,
+                  255,
+                  255
+                ],
+                "fully_opaque": false
+              },
+              "captured_alpha": {
+                "min": 255,
+                "max": 255,
+                "has_alpha_channel": false,
+                "has_trns": false,
+                "fully_opaque": true
+              },
+              "bytes_match_evaluation": false
+            }
+          ],
+          "content_binding_mode": "pixel_tolerance",
+          "allowed_content_binding_modes": [
+            "byte_equal",
+            "pixel_tolerance",
+            "unavailable"
+          ],
+          "mode_contract_ok": true,
+          "registered_pixels": {
+            "desktop": [
+              1280,
+              900
+            ],
+            "mobile": [
+              390,
+              844
+            ]
+          },
+          "registered_device_scale_factor": 1,
+          "tolerances": {
+            "camera_center_absolute_deg": 0,
+            "camera_zoom_absolute": 0,
+            "camera_bearing_absolute_deg": 0,
+            "camera_pitch_absolute_deg": 0,
+            "pixel_max_channel_delta": 0,
+            "pixel_differing_fraction": 0
+          },
+          "state_fields_compared": [
+            "variant",
+            "selected_site",
+            "popup_open",
+            "sheet_state",
+            "measure_mode"
+          ],
+          "note": "Delivered files are opened and measured: PNG header, colour type, digest, camera, state fields, transparency, and the displayed samples (red, green, blue, alpha) against this run's own capture. A self-consistent sidecar over an unrelated or transparent image cannot pass."
+        }
+      },
+      "stdout": "Evaluator finished. Verdict: FAIL exit=1 reasons=screenshot_checks.delivered_artifacts_consistent:DELIVERED_ARTIFACT_INVALID\n",
+      "stderr": ""
+    }
+  ]
+}

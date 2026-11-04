@@ -54,11 +54,11 @@ label a run against a reduced fixture as exactly that rather than as a case pass
 
 ## Version and artifacts
 
-The initial project version is `0.1.0`, recorded in `package.json` and its lockfile.
-The theme contract has an independent `schemaVersion` (`1.0`). Documentation
+The initial project version is `0.2.0`, recorded in `package.json` and its lockfile.
+The theme contract has an independent `schemaVersion` (`1.1`). Documentation
 clarifications need not break the contract; incompatible token changes do.
 
-After checks pass, create a `v0.1.0` tag and a GitHub release if desired. Include
+After checks pass, create a `v0.2.0` tag and a GitHub release if desired. Include
 the skill folder as a ZIP with `map-aesthetic/SKILL.md` at its root directory;
 omit `node_modules`, test artifacts, `.git`, and local credentials. A GitHub source
 archive also contains the skill at `skills/map-aesthetic`.
@@ -69,7 +69,7 @@ Create the skill-only archive locally with:
 python scripts/package_skill.py
 ```
 
-The default output is `.tmp/releases/map-aesthetic-0.1.0.zip`; the command prints
+The default output is `.tmp/releases/map-aesthetic-0.2.0.zip`; the command prints
 its file count and SHA-256. The archive includes the skill's MIT notice. It does
 not publish or upload anything. Extract its `map-aesthetic` directory into the
 chosen skill location.

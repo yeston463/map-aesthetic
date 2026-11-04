@@ -1,0 +1,158 @@
+{
+  "scope": "Read-only replay and isolated copy mutations; all cleanup subprocess calls mocked; no Docker operations",
+  "baseline_gate": {
+    "verdict": "VERIFIED_PASS",
+    "passed": true,
+    "failure_count": 0,
+    "failures": [],
+    "inconclusive": []
+  },
+  "previous_counterexamples": {
+    "empty_controls": {
+      "verdict": "PREFLIGHT_FAILED",
+      "passed": false,
+      "failure_count": 1,
+      "failures": [
+        "MISSING_DIAGNOSTIC_CONTROLS_RESULT:controls_result_is_empty"
+      ],
+      "inconclusive": []
+    },
+    "missing_one_control": {
+      "verdict": "PREFLIGHT_FAILED",
+      "passed": false,
+      "failure_count": 1,
+      "failures": [
+        "MISSING_REQUIRED_DIAGNOSTIC_CONTROL:control_1_mount_leak"
+      ],
+      "inconclusive": []
+    },
+    "all_raw_observations_missing": {
+      "verdict": "PREFLIGHT_FAILED",
+      "passed": false,
+      "failure_count": 18,
+      "failures": [
+        "MISSING_OR_EMPTY_RAW_OBSERVATION:P01_inside_workspace_read:arm_a",
+        "MISSING_OR_EMPTY_RAW_OBSERVATION:P01_inside_workspace_read:arm_b",
+        "MISSING_OR_EMPTY_RAW_OBSERVATION:P02_loopback_service_reachable:arm_a",
+        "MISSING_OR_EMPTY_RAW_OBSERVATION:P02_loopback_service_reachable:arm_b"
+      ],
+      "inconclusive": [
+        "CONSTRAINT_INCONCLUSIVE:P03_outside_sentinel_via_absolute_path:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P04_outside_sentinel_via_relative_traversal:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P05_reparse_point_escape:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P06_reference_material_reachable:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P07_cross_workspace_port:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P08_localhost_any_interface:arm_a=None,arm_b=None"
+      ]
+    },
+    "all_transport_records_exit_127": {
+      "verdict": "PREFLIGHT_FAILED",
+      "passed": false,
+      "failure_count": 18,
+      "failures": [
+        "TRANSPORT_EXIT_NONZERO:P01_inside_workspace_read:arm_a:exit=127",
+        "TRANSPORT_EXIT_NONZERO:P01_inside_workspace_read:arm_b:exit=127",
+        "TRANSPORT_EXIT_NONZERO:P02_loopback_service_reachable:arm_a:exit=127",
+        "TRANSPORT_EXIT_NONZERO:P02_loopback_service_reachable:arm_b:exit=127"
+      ],
+      "inconclusive": [
+        "CONSTRAINT_INCONCLUSIVE:P03_outside_sentinel_via_absolute_path:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P04_outside_sentinel_via_relative_traversal:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P05_reparse_point_escape:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P06_reference_material_reachable:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P07_cross_workspace_port:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P08_localhost_any_interface:arm_a=None,arm_b=None"
+      ]
+    }
+  },
+  "new_counterexamples": {
+    "transport_stdout_unparseable_cached_observation_kept": {
+      "verdict": "PREFLIGHT_FAILED",
+      "passed": false,
+      "failure_count": 18,
+      "failures": [
+        "TRANSPORT_STDOUT_PARSE_FAILED:P01_inside_workspace_read:arm_a:OBSERVATION_DELIMITERS_MISSING",
+        "TRANSPORT_STDOUT_PARSE_FAILED:P01_inside_workspace_read:arm_b:OBSERVATION_DELIMITERS_MISSING",
+        "TRANSPORT_STDOUT_PARSE_FAILED:P02_loopback_service_reachable:arm_a:OBSERVATION_DELIMITERS_MISSING",
+        "TRANSPORT_STDOUT_PARSE_FAILED:P02_loopback_service_reachable:arm_b:OBSERVATION_DELIMITERS_MISSING"
+      ],
+      "inconclusive": [
+        "CONSTRAINT_INCONCLUSIVE:P03_outside_sentinel_via_absolute_path:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P04_outside_sentinel_via_relative_traversal:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P05_reparse_point_escape:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P06_reference_material_reachable:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P07_cross_workspace_port:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P08_localhost_any_interface:arm_a=None,arm_b=None"
+      ]
+    },
+    "controls_passed_validation_string_false": {
+      "verdict": "PREFLIGHT_FAILED",
+      "passed": false,
+      "failure_count": 4,
+      "failures": [
+        "DIAGNOSTIC_CONTROL_VALIDATION_FAILED:control_1_mount_leak:got_str_'false'",
+        "DIAGNOSTIC_CONTROL_VALIDATION_FAILED:control_2_network_leak:got_str_'false'",
+        "DIAGNOSTIC_CONTROL_VALIDATION_FAILED:control_3_unstarted_target:got_str_'false'",
+        "DIAGNOSTIC_CONTROL_VALIDATION_FAILED:control_4_tool_setup_failure:got_str_'false'"
+      ],
+      "inconclusive": []
+    }
+  },
+  "cleanup_query_failure": {
+    "mocked_calls": 1,
+    "reported_success": false,
+    "reported_ownership_match": false
+  },
+  "unit_tests": {
+    "run": 50,
+    "failures": 0,
+    "errors": 0
+  },
+  "decision_matches_recorded": true,
+  "prior_trees_match": {
+    "rev01": true,
+    "rev02": true,
+    "rev03": true,
+    "rev04": true,
+    "rev05": true,
+    "rev06": true,
+    "sandbox-preflight-01": true,
+    "sandbox-preflight-02": true,
+    "docker-executor-01": true,
+    "docker-executor-02": true,
+    "docker-executor-03": true,
+    "docker-executor-04": true
+  },
+  "packages": {
+    "arm-a": {
+      "count": 42,
+      "drift": []
+    },
+    "arm-b": {
+      "count": 67,
+      "drift": []
+    }
+  },
+  "code_digest_mismatches": [],
+  "reviewed_code_sha256": {
+    "acceptance_gate.py": "35588ab13df6922ed401632fd9475ab3eed93ac21001f28304732194e31d22d3",
+    "container_transport.py": "27c71cb615202c2dfcf96ce18fe927ce50415ffef87e6a55e4690472496e7972",
+    "prepare_docker_inputs.py": "fa15c6629cea3d27db86a0ad68c312be3f4149c5fc6bf9f312220916966dd0c3",
+    "probe_classifier.py": "ae66ec3320844fc95b26df60fb68bffce18616a402812ba908d4b3e3f97a301a",
+    "probe_runner.py": "5d5ee2422b51f861723769c461bdf7761c85afd7058b9e52287f0aa3672376d7",
+    "run_docker_preflight.py": "4ed4ce64ee8596f4a8fb04982ca7c74876c8747c6500877c278f9f22909ac29e",
+    "snapshot_materials.py": "d8cec371dc34c7e1c39cde52f47b68a826d91002ead9c8b9463362209f10493f",
+    "test_collector_pipeline.py": "1006267f1ae4622e0ce4634952e15821c0cd4be3a6c7a5957290730a45d19196",
+    "test_offline_acceptance_gate.py": "f6b66db17392c42ff9a3e8f3053fd30bf00735381103e8622b4345629723548c",
+    "test_probe_classifier.py": "6f01af0254c5a61ce39708c61a137fe55f8c558c4faef0a37eb62f933dbbdb18",
+    "verify_immutability.py": "00e9c5ba39e80456594f338bd818ca7a77c6f3e99145cef1f80f4138d1eee7eb"
+  },
+  "observation_run_id_mismatches": [],
+  "recorded_cleanup": {
+    "run_id": "dr01-63b8b649",
+    "query_before_exit": 0,
+    "query_after_exit": 0,
+    "remaining_count": 0,
+    "verified": true
+  }
+}

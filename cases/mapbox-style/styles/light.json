@@ -1,0 +1,132 @@
+{
+  "version": 8,
+  "metadata": {
+    "case-id": "case-quiet-analysis",
+    "case-attribution": "Synthetic local data · map-aesthetic vector-style case"
+  },
+  "name": "Map Aesthetic case · Quiet Analysis",
+  "sources": {
+    "context": {
+      "type": "geojson",
+      "data": "/cases/mapbox-style/data/context.geojson"
+    },
+    "places": {
+      "type": "geojson",
+      "data": "/cases/mapbox-style/data/places.geojson"
+    }
+  },
+  "layers": [
+    {
+      "id": "ground",
+      "type": "background",
+      "paint": {
+        "background-color": "#F0F3EE"
+      }
+    },
+    {
+      "id": "water",
+      "type": "fill",
+      "source": "context",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "fill-color": "#C9DFE8",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "road-casing",
+      "type": "line",
+      "source": "context",
+      "filter": [
+        "==",
+        [
+          "get",
+          "rank"
+        ],
+        "arterial"
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#D7DFDA",
+        "line-width": 7,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "road",
+      "type": "line",
+      "source": "context",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-width": [
+          "case",
+          [
+            "==",
+            [
+              "get",
+              "rank"
+            ],
+            "arterial"
+          ],
+          4.5,
+          2
+        ],
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "place-name",
+      "type": "symbol",
+      "source": "places",
+      "filter": [
+        "<=",
+        [
+          "get",
+          "tier"
+        ],
+        1
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-size": 12,
+        "symbol-placement": "point",
+        "text-max-width": 8
+      },
+      "paint": {
+        "text-color": "#405C56",
+        "text-halo-color": "#F8FBF7",
+        "text-halo-width": 2
+      }
+    }
+  ],
+  "center": [
+    121.4385,
+    31.2265
+  ],
+  "zoom": 14,
+  "bearing": 0,
+  "pitch": 0
+}

@@ -113,9 +113,83 @@ class ThemeValidationTests(unittest.TestCase):
             cartography = validator.load_json(path)["cartography"]
             with self.subTest(preset=path.name):
                 self.assertEqual(validator.check_separation(cartography), [])
+                self.assertEqual(validator.check_semantics(cartography), [])
                 for foreground, background in validator.CONTEXT_PAIRS:
                     self.assertGreater(validator.delta_e(cartography[foreground], cartography[background]),
                                        validator.MIN_CONTEXT_DELTA_E)
+
+    def test_optional_thematic_fields_are_actually_optional(self):
+        # A contract-1.0 theme carrying none of the new fields must still validate,
+        # otherwise the additions are a silent breaking change.
+        theme = validator.load_json(PRESETS / "quiet-analysis.json")
+        for key in ("area", "missing", "diverging", "classes", "states"):
+            del theme["cartography"][key]
+        theme["cartography"]["selection"].pop("keepClassVisible")
+        theme["schemaVersion"] = "1.0"
+        self.assertEqual(validator.validate_theme(theme), [])
+
+    def test_v11_extensions_cannot_silently_claim_v10(self):
+        self.theme["schemaVersion"] = "1.0"
+        self.assertTrue(validator.validate_theme(self.theme))
+
+    def test_v11_version_is_accepted(self):
+        self.theme["schemaVersion"] = "1.1"
+        self.assertEqual(validator.validate_theme(self.theme), [])
+
+    def test_missing_value_coloured_like_a_class_is_rejected(self):
+        lowest = self.theme["cartography"]["sequential"][0]
+        self.theme["cartography"]["missing"]["color"] = lowest
+        self.assertTrue(any("missing.color" in error and "confusable" in error
+                            for error in validator.validate_theme(self.theme)))
+
+    def test_unpatterned_missing_needs_more_margin_than_patterned_missing(self):
+        # #006A5B sits 6.53 dE2000 from class 配送站 and 7.53 from the nearest ramp stop:
+        # enough with a hatch carrying the distinction, not enough when colour is alone.
+        theme = validator.load_json(PRESETS / "quiet-analysis.json")
+        theme["cartography"]["missing"]["color"] = "#006A5B"
+        theme["cartography"]["missing"]["pattern"] = "none"
+        failures = [error for error in validator.validate_theme(theme) if "missing.color" in error]
+        self.assertTrue(failures, failures)
+        theme["cartography"]["missing"]["pattern"] = "diagonal-hatch"
+        self.assertEqual([error for error in validator.validate_theme(theme) if "missing.color" in error], [])
+
+    def test_class_bound_to_an_off_palette_colour_is_rejected(self):
+        self.theme["cartography"]["classes"][0]["color"] = "#FF00FF"
+        self.assertTrue(any("not one of cartography.categorical" in error
+                            for error in validator.validate_theme(self.theme)))
+
+    def test_duplicate_class_ids_are_rejected(self):
+        self.theme["cartography"]["classes"][1]["id"] = self.theme["cartography"]["classes"][0]["id"]
+        self.assertTrue(any("ids must be unique" in error for error in validator.validate_theme(self.theme)))
+
+    def test_selection_floor_depends_on_whether_the_class_fill_survives(self):
+        # #006A5B is 6.53 dE2000 from class 配送站. As an added ring that is enough,
+        # because the fill still says which class it is; as a replacing fill it is not,
+        # because colour alone would then carry two meanings.
+        self.theme["cartography"]["selection"]["color"] = "#006A5B"
+        ring = validator.validate_theme(self.theme)
+        self.assertEqual([error for error in ring if "selection.color" in error], [])
+        self.theme["cartography"]["selection"]["keepClassVisible"] = False
+        replacement = validator.validate_theme(self.theme)
+        failures = [error for error in replacement if "selection.color" in error]
+        self.assertTrue(failures, failures)
+        self.assertTrue(all("replacing" in error for error in failures))
+
+    def test_diverging_ramp_needs_a_centre_stop(self):
+        self.theme["cartography"]["diverging"]["ramp"] = ["#2F6E8C", "#8FBDD3", "#D9A98C", "#A8542B"]
+        self.assertTrue(any("odd number of stops" in error for error in validator.validate_theme(self.theme)))
+
+    def test_diverging_ramp_that_does_not_turn_at_the_centre_is_rejected(self):
+        self.theme["cartography"]["diverging"]["ramp"] = ["#2F6E8C", "#8FBDD3", "#EFEFEA", "#F5F0E0", "#FAF6EA"]
+        self.assertTrue(any("move away from the centre" in error for error in validator.validate_theme(self.theme)))
+
+    def test_status_colour_matching_a_class_colour_is_rejected(self):
+        self.theme["cartography"]["states"]["alert"] = self.theme["cartography"]["classes"][0]["color"]
+        self.assertTrue(any("states.alert vs class" in error for error in validator.validate_theme(self.theme)))
+
+    def test_boundary_invisible_against_land_is_rejected(self):
+        self.theme["cartography"]["area"]["boundaryColor"] = self.theme["cartography"]["land"]
+        self.assertTrue(any("area.boundaryColor" in error for error in validator.validate_theme(self.theme)))
 
 
 if __name__ == "__main__":

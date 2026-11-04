@@ -1,0 +1,118 @@
+{
+  "scope": "Read-only replay and isolated copy mutations; all cleanup subprocess calls mocked; no Docker operations",
+  "baseline_gate": {
+    "verdict": "VERIFIED_PASS",
+    "passed": true,
+    "failure_count": 0,
+    "failures": [],
+    "inconclusive": []
+  },
+  "previous_counterexamples": {
+    "empty_controls": {
+      "verdict": "PREFLIGHT_FAILED",
+      "passed": false,
+      "failure_count": 1,
+      "failures": [
+        "MISSING_DIAGNOSTIC_CONTROLS_RESULT:controls_result_is_empty"
+      ],
+      "inconclusive": []
+    },
+    "missing_one_control": {
+      "verdict": "PREFLIGHT_FAILED",
+      "passed": false,
+      "failure_count": 1,
+      "failures": [
+        "MISSING_REQUIRED_DIAGNOSTIC_CONTROL:control_1_mount_leak"
+      ],
+      "inconclusive": []
+    },
+    "all_raw_observations_missing": {
+      "verdict": "PREFLIGHT_FAILED",
+      "passed": false,
+      "failure_count": 18,
+      "failures": [
+        "MISSING_OR_EMPTY_RAW_OBSERVATION:P01_inside_workspace_read:arm_a",
+        "MISSING_OR_EMPTY_RAW_OBSERVATION:P01_inside_workspace_read:arm_b",
+        "MISSING_OR_EMPTY_RAW_OBSERVATION:P02_loopback_service_reachable:arm_a",
+        "MISSING_OR_EMPTY_RAW_OBSERVATION:P02_loopback_service_reachable:arm_b"
+      ],
+      "inconclusive": [
+        "CONSTRAINT_INCONCLUSIVE:P03_outside_sentinel_via_absolute_path:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P04_outside_sentinel_via_relative_traversal:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P05_reparse_point_escape:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P06_reference_material_reachable:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P07_cross_workspace_port:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P08_localhost_any_interface:arm_a=None,arm_b=None"
+      ]
+    },
+    "all_transport_records_exit_127": {
+      "verdict": "PREFLIGHT_FAILED",
+      "passed": false,
+      "failure_count": 18,
+      "failures": [
+        "TRANSPORT_EXIT_NONZERO:P01_inside_workspace_read:arm_a:exit=127",
+        "TRANSPORT_EXIT_NONZERO:P01_inside_workspace_read:arm_b:exit=127",
+        "TRANSPORT_EXIT_NONZERO:P02_loopback_service_reachable:arm_a:exit=127",
+        "TRANSPORT_EXIT_NONZERO:P02_loopback_service_reachable:arm_b:exit=127"
+      ],
+      "inconclusive": [
+        "CONSTRAINT_INCONCLUSIVE:P03_outside_sentinel_via_absolute_path:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P04_outside_sentinel_via_relative_traversal:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P05_reparse_point_escape:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P06_reference_material_reachable:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P07_cross_workspace_port:arm_a=None,arm_b=None",
+        "CONSTRAINT_INCONCLUSIVE:P08_localhost_any_interface:arm_a=None,arm_b=None"
+      ]
+    }
+  },
+  "new_counterexamples": {
+    "transport_stdout_unparseable_cached_observation_kept": {
+      "verdict": "VERIFIED_PASS",
+      "passed": true,
+      "failure_count": 0,
+      "failures": [],
+      "inconclusive": []
+    },
+    "controls_passed_validation_string_false": {
+      "verdict": "VERIFIED_PASS",
+      "passed": true,
+      "failure_count": 0,
+      "failures": [],
+      "inconclusive": []
+    }
+  },
+  "cleanup_query_failure": {
+    "mocked_calls": 1,
+    "reported_success": false,
+    "reported_ownership_match": false
+  },
+  "unit_tests": {
+    "run": 43,
+    "failures": 0,
+    "errors": 0
+  },
+  "decision_matches_recorded": true,
+  "prior_trees_match": {
+    "rev01": true,
+    "rev02": true,
+    "rev03": true,
+    "rev04": true,
+    "rev05": true,
+    "rev06": true,
+    "sandbox-preflight-01": true,
+    "sandbox-preflight-02": true,
+    "docker-executor-01": true,
+    "docker-executor-02": true,
+    "docker-executor-03": true
+  },
+  "packages": {
+    "arm-a": {
+      "count": 42,
+      "drift": []
+    },
+    "arm-b": {
+      "count": 67,
+      "drift": []
+    }
+  }
+}

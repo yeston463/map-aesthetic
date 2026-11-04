@@ -124,7 +124,7 @@ def main() -> int:
     check_workflows(errors)
 
     markdown = list(ROOT.glob("*.md"))
-    for directory in ("skills", "docs", "evals", ".github"):
+    for directory in ("skills", "docs", "evals", "cases", ".github"):
         markdown.extend((ROOT / directory).rglob("*.md"))
     link_pattern = re.compile(r"!?\[[^\]\n]*\]\(([^)\n]+)\)")
     for path in markdown:
@@ -159,6 +159,12 @@ def main() -> int:
             errors.append("package.json and package-lock.json root package versions differ")
         if package["version"] != lock["version"]:
             errors.append("package.json and package-lock.json versions differ")
+        for section in ("dependencies", "devDependencies"):
+            if package.get(section, {}) != locked_root.get(section, {}):
+                errors.append(f"package.json and package-lock.json {section} differ; regenerate the lockfile")
+            for dependency in package.get(section, {}):
+                if f"node_modules/{dependency}" not in lock.get("packages", {}):
+                    errors.append(f"package-lock.json: missing dependency {dependency}")
 
     module_path = SKILL / "scripts/validate_theme.py"
     spec = importlib.util.spec_from_file_location("theme_validator", module_path)

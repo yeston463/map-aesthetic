@@ -1,0 +1,75 @@
+{
+  "scope": "Unchanged frozen evaluator against existing positive fixture; separate diagnostic outputs; no agent A/B",
+  "evaluator_sha256": "77d25e324fb78b8a846c427d9b92f58165348abe8e7424e71d33d8b7403a6f89",
+  "exit": 0,
+  "verdict": "PASS",
+  "screenshot_check": {
+    "pass": true,
+    "reason": null,
+    "detail": {
+      "problems": [],
+      "identity": [
+        {
+          "file": "after-desktop.png",
+          "bytes_match_evaluation": false
+        },
+        {
+          "file": "before-desktop.png",
+          "bytes_match_evaluation": false
+        },
+        {
+          "file": "after-mobile-selection.png",
+          "bytes_match_evaluation": false
+        }
+      ],
+      "require_identical_rendering": false,
+      "note": "Checks delivered against the state this run observed: digest, declared pixels, variant and camera. Screenshots of some other page fail here."
+    }
+  },
+  "actual_png_dimensions": [
+    1,
+    1
+  ],
+  "declared_zoom": 3,
+  "declared_dpr": 7,
+  "stdout": "Evaluator finished. Verdict: PASS exit=0 reasons=none\n",
+  "stderr": "",
+  "settled_baseline": {
+    "runs": [
+      {
+        "sha256": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+        "bytes": 121540,
+        "camera": {
+          "center": {
+            "lat": 31.226500223526298,
+            "lng": 121.43850000000002
+          },
+          "zoom": 16
+        }
+      },
+      {
+        "sha256": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+        "bytes": 121540,
+        "camera": {
+          "center": {
+            "lat": 31.226500223526298,
+            "lng": 121.43850000000002
+          },
+          "zoom": 16
+        }
+      },
+      {
+        "sha256": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+        "bytes": 121540,
+        "camera": {
+          "center": {
+            "lat": 31.226500223526298,
+            "lng": 121.43850000000002
+          },
+          "zoom": 16
+        }
+      }
+    ],
+    "distinct_digests": 1
+  }
+}

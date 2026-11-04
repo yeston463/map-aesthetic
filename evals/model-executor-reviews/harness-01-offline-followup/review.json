@@ -1,0 +1,93 @@
+{
+  "scope": "Offline tests plus loopback-only fake HTTP with synthetic credentials; no external API or Docker",
+  "unit_tests": {
+    "run": 27,
+    "failures": 0,
+    "errors": 0
+  },
+  "previous_minimal_counterexample": {
+    "verdict": "PREFLIGHT_FAILED",
+    "exit": 1,
+    "real_status": "NOT_RUN"
+  },
+  "tool_timeout_calls": [
+    {
+      "timeout": 1.0
+    }
+  ],
+  "workspace_absolute_result": {
+    "success": true,
+    "content": "synthetic-inside-token",
+    "size_bytes": 22,
+    "resolved_path": "/workspace/inside_sentinel.txt"
+  },
+  "evidence_overwrite_prevented": true,
+  "retry_budget_counterexample": {
+    "configured_max_model_requests": 1,
+    "configured_max_total_time_seconds": 1,
+    "http_attempts": 3,
+    "http_dispatch_elapsed_seconds": [
+      0.019,
+      0.521,
+      1.522
+    ],
+    "recorded_budget": {
+      "contract": {
+        "max_model_requests": 1,
+        "max_tool_calls": 10,
+        "max_total_time_seconds": 1,
+        "per_tool_timeout_seconds": 1,
+        "max_output_tokens_per_request": 2048,
+        "max_retries_per_step": 2,
+        "token_cutoff_mode": "request_level_max_tokens_param_plus_post_hoc_accounting"
+      },
+      "elapsed_seconds": 1.523,
+      "requests_dispatched": 1,
+      "tool_calls_dispatched": 0,
+      "retries_count": 0,
+      "is_terminated": false,
+      "termination_reason": null,
+      "token_usage": {
+        "prompt_tokens_total": 1,
+        "completion_tokens_total": 1,
+        "tokens_total": 2,
+        "records_count": 1,
+        "accounting_nature": "post_hoc_reported_usage (not cloud-level hard killswitch)"
+      },
+      "audit_log_entries": 1
+    },
+    "response_finish_reason": "stop"
+  },
+  "execution_string_false_flags": {
+    "verdict": "VERIFIED_PASS",
+    "real_status": "VERIFIED_PASS",
+    "exit": 0
+  },
+  "prior_trees_match": {
+    "rev01": true,
+    "rev02": true,
+    "rev03": true,
+    "rev04": true,
+    "rev05": true,
+    "rev06": true,
+    "sandbox-preflight-01": true,
+    "sandbox-preflight-02": true,
+    "docker-executor-01": true,
+    "docker-executor-02": true,
+    "docker-executor-03": true,
+    "docker-executor-04": true,
+    "docker-regression-01": true
+  },
+  "code_sha256": {
+    "acceptance_controller.py": "90ee8655db40e8ca399c63505c550460f8a86e617c842004e5a093fdd674d827",
+    "budget_controller.py": "595b2ca07cf07741f04fd28f30c0e386156d69ad788462a055a7471743212c91",
+    "context_builder.py": "5b0c472c899d63e2383bb2a6edc1dc89da3895876cbf819b34043555b1d2cf59",
+    "evidence_writer.py": "1dc2a4aad13b86402229926a0f2708dfb1c329f56982e88f6b97a0f32e287b5b",
+    "harness_runner.py": "042081581a5e1361343b859a40cb5a05a5ce09efc36dcfb1f714c6c09957abaf",
+    "model_adapter.py": "414f533a1d765268178f44cdd6207bbff0fcb8a850b79f6841b161624ed0466e",
+    "snapshot_materials.py": "3e12dc103f5565186716b3c433f3e9b9b0992d472341ebff996d6cd3aa24c85c",
+    "test_offline_harness.py": "3b073dc999a61d30b19d25ceb503676c7b9834e5cd7431357f5c0be8780967b8",
+    "tool_gateway.py": "46afbd33094f6dceffcdbccdedc7a48a501a68f1b1b3ecb181cc010cf5c079eb",
+    "verify_reviewer_counterexamples.py": "920335e842461ceb11c5a1a464d6abfd76c61e0c866b19df5c9f8087f4a3fa8b"
+  }
+}

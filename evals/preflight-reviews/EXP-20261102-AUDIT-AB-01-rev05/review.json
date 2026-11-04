@@ -1,0 +1,47 @@
+{
+  "scope": "Read-only verifier functions; test and generator output redirected outside frozen revisions",
+  "readonly_checks_passed": 495,
+  "readonly_checks_failed": [],
+  "frozen_file_count": 1673,
+  "previous_trees_unchanged": true,
+  "decision_tests": {
+    "exit": 0,
+    "totals": {
+      "cases": 43,
+      "passed": 43,
+      "failed": 0,
+      "must_pass_rows": 5,
+      "must_refuse_rows": 38
+    },
+    "examples": 45
+  },
+  "null_evidence": {
+    "verdict": "PREFLIGHT_INCONCLUSIVE",
+    "exit": 2,
+    "defects": [
+      "EVIDENCE_FIELD_NULL:P09_executor_identity:executor_kind",
+      "EVIDENCE_FIELD_NULL:P09_executor_identity:identity_source",
+      "EVIDENCE_FIELD_NULL:P09_executor_identity:parent_session_inherited",
+      "EVIDENCE_FIELD_NULL:P10_context_injection:method",
+      "EVIDENCE_FIELD_NULL:P10_context_injection:skills_visible",
+      "EVIDENCE_FIELD_NULL:P10_context_injection:memory_visible",
+      "EVIDENCE_FIELD_NULL:P10_context_injection:probe_marker",
+      "EVIDENCE_FIELD_NULL:P11_tool_permission_profile:source",
+      "EVIDENCE_FIELD_NULL:P11_tool_permission_profile:file_access_rule",
+      "EVIDENCE_FIELD_NULL:P11_tool_permission_profile:network_rule",
+      "EVIDENCE_FIELD_NULL:P11_tool_permission_profile:observed_effect",
+      "EVIDENCE_FIELD_NULL:P12_budget_enforcement:source",
+      "EVIDENCE_FIELD_NULL:P12_budget_enforcement:limit_kind",
+      "EVIDENCE_FIELD_NULL:P12_budget_enforcement:limit_value",
+      "EVIDENCE_FIELD_NULL:P12_budget_enforcement:limit_unit",
+      "EVIDENCE_FIELD_NULL:P12_budget_enforcement:enforcement_observation",
+      "EVIDENCE_FIELD_NULL:P12_budget_enforcement:observed_enforcement"
+    ]
+  },
+  "registration_generator": {
+    "exit": 0,
+    "reproduces_semantics_except_generated_at": true,
+    "contradictory_measurement_refused": true,
+    "refusal_wrote_no_file": true
+  }
+}

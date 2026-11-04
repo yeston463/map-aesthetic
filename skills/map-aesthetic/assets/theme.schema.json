@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": ["schemaVersion", "id", "name", "mode", "intent", "ui", "cartography"],
   "properties": {
-    "schemaVersion": { "const": "1.0" },
+    "schemaVersion": { "enum": ["1.0", "1.1"] },
     "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
     "name": { "type": "string", "minLength": 1 },
     "mode": { "enum": ["light", "dark"] },
@@ -74,9 +74,66 @@
           "properties": {
             "color": { "$ref": "#/$defs/color" },
             "haloColor": { "$ref": "#/$defs/color" },
-            "widthPx": { "type": "number", "minimum": 1, "maximum": 12 }
+            "widthPx": { "type": "number", "minimum": 1, "maximum": 12 },
+            "keepClassVisible": {
+              "type": "boolean",
+              "description": "When true the feature keeps its class fill and selection is drawn as an added ring or halo. When false the fill is replaced, so selection.color must stay separable from every class colour."
+            }
           }
         },
+        "area": {
+          "type": "object", "additionalProperties": false,
+          "required": ["fillOpacity", "boundaryColor", "boundaryWidthPx"],
+          "properties": {
+            "fillOpacity": { "type": "number", "minimum": 0.1, "maximum": 0.9 },
+            "boundaryColor": { "$ref": "#/$defs/color" },
+            "boundaryWidthPx": { "type": "number", "minimum": 0, "maximum": 6 }
+          },
+          "description": "Thematic polygon surface. fillOpacity is a ratio, not a percentage; neighbouring fills must stay comparable."
+        },
+        "missing": {
+          "type": "object", "additionalProperties": false,
+          "required": ["color", "fillOpacity", "pattern", "label"],
+          "properties": {
+            "color": { "$ref": "#/$defs/color" },
+            "fillOpacity": { "type": "number", "minimum": 0.1, "maximum": 0.9 },
+            "pattern": { "enum": ["diagonal-hatch", "cross-hatch", "none"] },
+            "label": { "type": "string", "minLength": 1 }
+          },
+          "description": "No-data surface. Must not be confusable with the lowest or highest class, and pattern carries the distinction when colour does not."
+        },
+        "diverging": {
+          "type": "object", "additionalProperties": false,
+          "required": ["ramp", "midpoint"],
+          "properties": {
+            "ramp": {
+              "type": "array", "minItems": 3, "maxItems": 7, "uniqueItems": true,
+              "items": { "$ref": "#/$defs/color" }
+            },
+            "midpoint": { "enum": ["mean", "zero", "target"], "description": "What the centre colour means. Use only when the data has a meaningful reference value." }
+          },
+          "description": "Ordered ramp around a reference value. The ramp length must be odd so one stop is exactly the midpoint."
+        },
+        "classes": {
+          "type": "array", "minItems": 2, "maxItems": 12, "uniqueItems": true,
+          "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["id", "color"],
+            "properties": { "id": { "type": "string", "minLength": 1 }, "color": { "$ref": "#/$defs/color" } }
+          },
+          "description": "Stable id-to-colour binding. Colours must come from categorical so filtering and selection cannot reassign them."
+        },
+        "states": {
+          "type": "object", "additionalProperties": false,
+          "required": ["hover", "alert", "disabled"],
+          "properties": {
+            "hover": { "$ref": "#/$defs/color" },
+            "alert": { "$ref": "#/$defs/color" },
+            "disabled": { "$ref": "#/$defs/color" }
+          },
+          "description": "Interaction and status colours that may appear on the same feature as a class colour."
+        },
+
         "labels": {
           "type": "object", "additionalProperties": false,
           "required": ["sizePx", "haloWidthPx", "density"],
@@ -97,6 +154,22 @@
       }
     }
   },
+  "allOf": [
+    {
+      "if": { "properties": { "schemaVersion": { "const": "1.0" } } },
+      "then": {
+        "properties": {
+          "cartography": {
+            "not": { "anyOf": [
+              { "required": ["area"] }, { "required": ["missing"] },
+              { "required": ["diverging"] }, { "required": ["classes"] }, { "required": ["states"] }
+            ] },
+            "properties": { "selection": { "not": { "required": ["keepClassVisible"] } } }
+          }
+        }
+      }
+    }
+  ],
   "$defs": {
     "color": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" }
   }

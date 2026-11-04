@@ -27,6 +27,12 @@ MIN_CONTEXT_DELTA_E = 5.0
 MIN_CLASS_DELTA_E = 5.0
 MIN_RAMP_STEP_DELTA_E = 5.0
 MIN_UI_CONTRAST = 4.5
+MIN_BOUNDARY_DELTA_E = 3.0
+MIN_STATE_DELTA_E = 5.0
+# When selection replaces the class fill, colour is the only signal left, so the
+# emphasis must be further from every class than a mere ring would need to be.
+MIN_REPLACING_SELECTION_DELTA_E = 8.0
+MIN_UNPATTERNED_MISSING_DELTA_E = 8.0
 
 # Context fills that sit on the ground and must read as separate surfaces.
 # labelHalo is deliberately absent: a halo normally matches land so that text
@@ -171,6 +177,100 @@ def check_separation(cartography: dict) -> list[str]:
     return failures
 
 
+def check_semantics(cartography: dict) -> list[str]:
+    """Rules for the thematic fields. Absent fields are skipped, so a v1.0 theme still passes."""
+    failures = []
+    land = cartography["land"]
+    classes = [entry["color"] for entry in cartography.get("classes", [])]
+    ramps = list(cartography.get("sequential", [])) + list(cartography.get("diverging", {}).get("ramp", []))
+
+    area = cartography.get("area")
+    if area:
+        distance = delta_e(area["boundaryColor"], land)
+        if distance < MIN_BOUNDARY_DELTA_E:
+            failures.append(f"cartography.area.boundaryColor vs land: dE2000 {distance:.2f}; "
+                            f"a thematic boundary needs at least {MIN_BOUNDARY_DELTA_E} to close each area")
+
+    missing = cartography.get("missing")
+    if missing:
+        floor = MIN_CLASS_DELTA_E if missing["pattern"] != "none" else MIN_UNPATTERNED_MISSING_DELTA_E
+        comparators = {"land": land, **{f"class {index}": color for index, color in enumerate(classes)},
+                       **{f"ramp {index}": color for index, color in enumerate(ramps)}}
+        for label, color in comparators.items():
+            distance = delta_e(missing["color"], color)
+            if distance < floor:
+                failures.append(f"cartography.missing.color vs {label}: dE2000 {distance:.2f}; no data must not "
+                                f"be confusable with a value class (needs {floor}"
+                                f"{'' if missing['pattern'] != 'none' else ', and pattern is none'})")
+
+    diverging = cartography.get("diverging")
+    if diverging:
+        ramp = diverging["ramp"]
+        if len(ramp) % 2 == 0:
+            failures.append("cartography.diverging.ramp must have an odd number of stops so one stop is the midpoint")
+        else:
+            lightness = [luminance(color) for color in ramp]
+            centre = len(ramp) // 2
+            first = lightness[:centre + 1]
+            second = lightness[centre:]
+            turning = (all(b > a for a, b in zip(first, first[1:])) and all(b < a for a, b in zip(second, second[1:]))
+                       or all(b < a for a, b in zip(first, first[1:])) and all(b > a for a, b in zip(second, second[1:])))
+            if not turning:
+                failures.append("cartography.diverging.ramp must move away from the centre stop in both directions")
+        for index, color in enumerate(ramp[:-1]):
+            distance = delta_e(color, ramp[index + 1])
+            if distance < MIN_RAMP_STEP_DELTA_E:
+                failures.append(f"cartography.diverging step {index}->{index + 1}: dE2000 {distance:.2f}; "
+                                f"needs at least {MIN_RAMP_STEP_DELTA_E}")
+
+    entries = cartography.get("classes", [])
+    identifiers = [entry["id"] for entry in entries]
+    if len(set(identifiers)) != len(identifiers):
+        failures.append("cartography.classes: ids must be unique; they are the binding, not the colours")
+    palette = {color.lower() for color in cartography["categorical"]}
+    for entry in entries:
+        if entry["color"].lower() not in palette:
+            failures.append(f"cartography.classes {entry['id']}: colour is not one of cartography.categorical; "
+                            "binding a class to an off-palette colour lets a later restyle reassign it")
+        distance = delta_e(entry["color"], land)
+        if distance < MIN_CLASS_DELTA_E:
+            failures.append(f"cartography.classes {entry['id']} vs land: dE2000 {distance:.2f}; "
+                            f"a class must clear {MIN_CLASS_DELTA_E} on the ground it sits on")
+    for index, color in enumerate(classes):
+        for other in classes[index + 1:]:
+            distance = delta_e(color, other)
+            if distance < MIN_CLASS_DELTA_E:
+                failures.append(f"cartography.classes {identifiers[index]} vs {identifiers[index + 1 + classes[index + 1:].index(other)]}: "
+                                f"dE2000 {distance:.2f}; classes need at least {MIN_CLASS_DELTA_E}")
+
+    selection = cartography["selection"]
+    keep = selection.get("keepClassVisible", True)
+    floor = MIN_CLASS_DELTA_E if keep else MIN_REPLACING_SELECTION_DELTA_E
+    for index, color in enumerate(classes):
+        distance = delta_e(selection["color"], color)
+        if distance < floor:
+            failures.append(f"cartography.selection.color vs class {identifiers[index]}: dE2000 {distance:.2f}; "
+                            f"{'a selection ring' if keep else 'a replacing selection fill'} "
+                            f"needs at least {floor} from every class")
+
+    states = cartography.get("states")
+    if states:
+        for name in ("alert", "hover"):
+            for index, color in enumerate(classes):
+                distance = delta_e(states[name], color)
+                if distance < MIN_STATE_DELTA_E:
+                    failures.append(f"cartography.states.{name} vs class {identifiers[index]}: dE2000 {distance:.2f}; "
+                                    f"status and class are drawn on the same feature and need {MIN_STATE_DELTA_E}")
+            distance = delta_e(states[name], land)
+            if distance < MIN_STATE_DELTA_E:
+                failures.append(f"cartography.states.{name} vs land: dE2000 {distance:.2f}; needs {MIN_STATE_DELTA_E}")
+        distance = delta_e(states["disabled"], land)
+        if distance < MIN_BOUNDARY_DELTA_E:
+            failures.append(f"cartography.states.disabled vs land: dE2000 {distance:.2f}; a filtered-out feature "
+                            f"should still be visible, needs {MIN_BOUNDARY_DELTA_E}")
+    return failures
+
+
 def validate_theme(theme: object, schema: dict | None = None) -> list[str]:
     """Return actionable errors. An empty list is not a cartographic approval."""
     if schema is None:
@@ -201,6 +301,7 @@ def validate_theme(theme: object, schema: dict | None = None) -> list[str]:
             failures.append(f"cartography.{key}: colors must be unique ignoring hex case")
 
     failures.extend(check_separation(cartography))
+    failures.extend(check_semantics(cartography))
 
     def check_finite(value: object, path: str = "$") -> None:
         if isinstance(value, float) and not math.isfinite(value):

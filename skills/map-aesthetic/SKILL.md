@@ -29,8 +29,12 @@ change when source is available, and evidence appropriate to the available acces
 
 ## Load only the relevant guidance
 
-Read [cartographic design](references/cartographic-design.md). Select the SDK
-reference matching the actual project:
+Read [cartographic design](references/cartographic-design.md). For common visual
+defects (dense points, route/road confusion, choropleth competing with labels,
+Chinese long label collisions, dark mode contrast, or mobile sheet/popup occlusion),
+consult the [scenario guides](references/scenarios/README.md).
+
+Select the SDK reference matching the actual project:
 
 | SDK | Reference |
 | --- | --- |
@@ -84,6 +88,11 @@ when uncertain. Reference notes are starting points, not a promise of compatibil
   implementable portion and the exact remaining configuration step.
 
 ## Verify and report
+
+Identify the engine that actually ran. A MapLibre fixture does not validate
+Mapbox GL JS, Standard imports, or provider services. Hand-authored examples and
+automated regression checks do not establish that this skill improved an agent's
+output; comparative claims require separately recorded agent executions.
 
 Use [visual QA](references/visual-qa.md) to select representative states. Verify
 map canvas and DOM together, plus selection, popups, resize, theme transitions,

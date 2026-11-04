@@ -1,0 +1,96 @@
+{
+  "scope": "Exact extracted verdict branch; synthetic rows; no access probes executed",
+  "source_sha256": "6acef220e311ee4bac396557fba1481b3782aa323007d8dd80e03b4035721ec5",
+  "cases": {
+    "recorded_rows": {
+      "verdict": "PREFLIGHT_FAILED",
+      "reason": "Un-confined access demonstrated by P2_absolute_path_outside_workspace, P3_relative_traversal, P4_junction_escape, P7_cross_workspace_port, P9_listening_port_404: the executor-visible boundary the plan requires is not in place."
+    },
+    "required_context_probe_not_run": {
+      "verdict": "PREFLIGHT_PASSED",
+      "reason": "Every executed probe came back BLOCKED against a passing positive control."
+    },
+    "positive_controls_blocked": {
+      "verdict": "PREFLIGHT_PASSED",
+      "reason": "Every executed probe came back BLOCKED against a passing positive control."
+    },
+    "empty_probes": {
+      "verdict": "PREFLIGHT_PASSED",
+      "reason": "Every executed probe came back BLOCKED against a passing positive control."
+    }
+  },
+  "recorded_calibration_rows": [
+    {
+      "id": "c01_positive",
+      "result_hash_matches": true,
+      "verdict_matches": true,
+      "recorded_exit_matches": true
+    },
+    {
+      "id": "c02_data_attribute_and_coordinate",
+      "result_hash_matches": true,
+      "verdict_matches": true,
+      "recorded_exit_matches": true
+    },
+    {
+      "id": "c03_district_geometry_mutated",
+      "result_hash_matches": true,
+      "verdict_matches": true,
+      "recorded_exit_matches": true
+    },
+    {
+      "id": "c04_required_probe_method_removed",
+      "result_hash_matches": true,
+      "verdict_matches": true,
+      "recorded_exit_matches": true
+    },
+    {
+      "id": "c05_sheet_avoidance_disabled",
+      "result_hash_matches": true,
+      "verdict_matches": true,
+      "recorded_exit_matches": true
+    },
+    {
+      "id": "c06_screenshot_metadata_incomplete",
+      "result_hash_matches": true,
+      "verdict_matches": true,
+      "recorded_exit_matches": true
+    },
+    {
+      "id": "c07_tile_resource_missing",
+      "result_hash_matches": true,
+      "verdict_matches": true,
+      "recorded_exit_matches": true
+    },
+    {
+      "id": "c08_desktop_panel_over_target",
+      "result_hash_matches": true,
+      "verdict_matches": true,
+      "recorded_exit_matches": true
+    },
+    {
+      "id": "c09_no_delivered_state",
+      "result_hash_matches": true,
+      "verdict_matches": true,
+      "recorded_exit_matches": true
+    },
+    {
+      "id": "c10_screenshot_camera_stale",
+      "result_hash_matches": true,
+      "verdict_matches": true,
+      "recorded_exit_matches": true
+    },
+    {
+      "id": "c11_target_service_absent",
+      "result_hash_matches": true,
+      "verdict_matches": true,
+      "recorded_exit_matches": true
+    },
+    {
+      "id": "c12_mobile_sheet_target_missing",
+      "result_hash_matches": true,
+      "verdict_matches": true,
+      "recorded_exit_matches": true
+    }
+  ]
+}

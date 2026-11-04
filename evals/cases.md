@@ -15,6 +15,12 @@ Store results separately with the date, agent, environment, evidence, and actual
 4. Grade each expected behavior as observed, not observed, or not applicable with a reason.
 5. Record concrete failures using a file, capture, command result, or reproduced interaction.
 
+For comparisons, freeze inputs, prompts, budgets, and output revisions. Detect
+reference-answer/evaluator or cross-arm reads from tool receipts and invalidate
+the comparison when they occur. Separate directories are not an access boundary.
+See the [contaminated attempt audit](ab-reviews/2026-11-02/README.md). Do not hand
+that audit or the expected behaviors to the executing agents.
+
 A build pass cannot substitute for visual or interaction evidence.
 An unexecuted provider recipe cannot substitute for a verified provider integration.
 The local Leaflet synthetic demo is the first planned executable fixture.
@@ -26,12 +32,14 @@ declared input elements that were absent. Do not report such a run as passing th
 
 ## Case 1: Leaflet with an immutable raster base
 
+**Fixture status**: Fully executable local project at [cases/leaflet-raster/](../cases/leaflet-raster/). Run with `npm run case:serve` and `npm run case:verify`.
+
 **Input**
 
 - A local Leaflet project with a locally served synthetic raster base and fixed fixture data.
-- HTML controls, point markers, a route, one popup, and a legend.
-- Dense and sparse areas; a long place name; saved bounds for overview and detail views.
-- No external provider account is required; the synthetic base is identified as such.
+- HTML controls, point markers, a route, one popup, a legend, and a mobile bottom sheet.
+- Dense and sparse areas; long place names with parentheses; overview, working, and detail views.
+- No external provider account is required; synthetic raster tiles served locally from `cases/leaflet-raster/tiles/`.
 
 **Task**
 
@@ -140,11 +148,13 @@ Apply the reference's road, label, and business-marker hierarchy to the existing
 
 ## Case 5: Mapbox style replacement drops business layers
 
+**Fixture status**: The executable [local fixture](../cases/mapbox-style/) runs MapLibre GL JS, not Mapbox GL JS. `npm run case:verify` owns its local server. The [Mapbox integration example](../cases/mapbox-style/mapbox-gl-variant.js) is unverified with the actual SDK; this fixture does not complete the Mapbox runtime evaluation.
+
 **Input**
 
-- A Mapbox GL JS project with the installed version available in its dependency files.
-- Runtime-added business sources, layers, images, feature state, and selection listeners.
-- A light/dark style switch; after switching, business features disappear in the fixture.
+- A vector map project with the installed SDK version (`maplibre-gl 6.16.0`) in package.json.
+- Runtime-added business sources (`zones`, `delivery-route`, `stations`), layers, feature state, and selection listeners.
+- A light/dark style switch; exercises the lifecycle and topological restoration via `restore.js`.
 
 **Task**
 

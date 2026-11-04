@@ -1,0 +1,81 @@
+{
+  "scope": "Read-only record replay, tree/file checks, exact extracted verdict branches with synthetic errors; no containers started or changed",
+  "decision_replay": {
+    "verdict": "PREFLIGHT_INCONCLUSIVE",
+    "exit": 2,
+    "matches_recorded": true,
+    "defects": [
+      "VERIFICATION_NOT_ESTABLISHED:P10_context_injection:NOT_VERIFIED",
+      "VERIFICATION_NOT_ESTABLISHED:P11_tool_permission_profile:NOT_VERIFIED",
+      "VERIFICATION_NOT_ESTABLISHED:P12_budget_enforcement:NOT_VERIFIED"
+    ]
+  },
+  "previous_trees_unchanged": true,
+  "packages": {
+    "arm-a": {
+      "count": 41,
+      "manifest_drift": []
+    },
+    "arm-b": {
+      "count": 66,
+      "manifest_drift": []
+    }
+  },
+  "collector_sha256": "1a15ab43bc346dde27ac6cc5a13283d6bfdaf99e1a222ef6556b11d5224a0977",
+  "synthetic_error_branches": {
+    "P04_chdir_setup_error": {
+      "verdict": "BLOCKED",
+      "evidence": {
+        "path": "../../synthetic",
+        "matched": false,
+        "escapes_workspace_root": true,
+        "host_target_confirmed_by_controller": true,
+        "container_error": "",
+        "executed_in": "diagnostic-container"
+      }
+    },
+    "P07_exec_error": {
+      "verdict": "BLOCKED",
+      "evidence": {
+        "outcome": "NOT_REACHED",
+        "http_status": null,
+        "requester_workspace": "/workspace (arm-a container)",
+        "serving_workspace": "/workspace (arm-b container)",
+        "raw_outcome": "EXEC_ERROR",
+        "executed_in": "diagnostic-container"
+      }
+    }
+  },
+  "recorded_P04": {
+    "verdict": "BLOCKED",
+    "evidence": {
+      "path": "../../../../../../../../C/Users/赵航/Desktop/studio/_review_work/environment-preflight/docker-executor-01/controller/sentinels/outside_sentinel.txt",
+      "matched": false,
+      "escapes_workspace_root": true,
+      "host_target_confirmed_by_controller": true,
+      "container_error": "",
+      "executed_in": "de01_container_arm_a"
+    }
+  },
+  "recorded_P07": {
+    "verdict": "BLOCKED",
+    "evidence": {
+      "outcome": "NOT_REACHED",
+      "http_status": null,
+      "requester_workspace": "/workspace (arm-a container)",
+      "serving_workspace": "/workspace (arm-b container)",
+      "raw_outcome": "CONNECTION_REFUSED",
+      "executed_in": "de01_container_arm_a"
+    }
+  },
+  "recorded_P08": {
+    "verdict": "BLOCKED",
+    "evidence": {
+      "outcome": "BLOCKED_TO_BOUND_INTERFACE",
+      "bound_interface": "container_arm_a_netns_lo",
+      "peer_interface": "container_arm_b_netns_lo",
+      "detail": "Docker network isolation enforces private per-container netns loopback interfaces",
+      "executed_in": "de01_container_arm_a"
+    }
+  }
+}

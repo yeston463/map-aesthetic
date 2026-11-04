@@ -1,0 +1,123 @@
+{
+  "evaluation_version": "docker-regression-01",
+  "evaluated_at": "2026-11-03T20:39:24+08:00",
+  "run_id": "dr01-63b8b649",
+  "scope": "Minimal live Docker container regression and Antigravity model feasibility review",
+  "offline_self_check": {
+    "total_tests": 50,
+    "passed": 50,
+    "failed": 0,
+    "errors": 0,
+    "modules": {
+      "test_offline_acceptance_gate.py": 24,
+      "test_collector_pipeline.py": 17,
+      "test_probe_classifier.py": 9
+    }
+  },
+  "negative_counterexamples_blocked": {
+    "empty_controls": true,
+    "missing_one_control": true,
+    "all_raw_observations_cleared": true,
+    "all_transports_exit_127": true,
+    "cleanup_query_failure": true,
+    "transport_stdout_unparseable_cached_observation_kept": true,
+    "controls_passed_validation_string_false": true
+  },
+  "live_container_execution": {
+    "run_id": "dr01-63b8b649",
+    "arm_a_container": "dr01_container_arm_a_dr01-63b8b649",
+    "arm_b_container": "dr01_container_arm_b_dr01-63b8b649",
+    "network_mode": "none",
+    "readonly_rootfs": true,
+    "security_opt": [
+      "no-new-privileges:true"
+    ],
+    "cap_drop": [
+      "ALL"
+    ],
+    "memory_limit": "256m",
+    "cpu_limit": "1.0",
+    "pids_limit": 64,
+    "symmetric_probes": "P01-P08 ALL EXECUTED SYMMETRICALLY",
+    "diagnostic_controls": {
+      "control_1_mount_leak": {
+        "detected": "ALLOWED",
+        "passed": true,
+        "type": "bool"
+      },
+      "control_2_network_leak": {
+        "detected": "ALLOWED",
+        "passed": true,
+        "type": "bool"
+      },
+      "control_3_unstarted_target": {
+        "detected": "INCONCLUSIVE",
+        "passed": true,
+        "type": "bool"
+      },
+      "control_4_tool_setup_failure": {
+        "detected": "INCONCLUSIVE",
+        "passed": true,
+        "type": "bool"
+      }
+    },
+    "cleanup_audit": {
+      "verified_ownership_match": true,
+      "deletion_performed": true,
+      "deleted_count": 2,
+      "queried_after_count": 0,
+      "cleanup_verified_success": true
+    }
+  },
+  "gate_verdicts": {
+    "container_layer": "VERIFIED_PASS",
+    "container_boundary_passed": true,
+    "composite_executor_status": "CONTAINER_PASS_MODEL_NOT_READY",
+    "model_executor_layer": "INCONCLUSIVE_NOT_READY",
+    "recommended_exit_code": 2,
+    "formal_ab_ready": false
+  },
+  "prior_revisions_immutability": {
+    "snapshot_before_hash": "5cead0947576ecfd112c941f5d65a27e169fcfb3679f12074c6876e810204771",
+    "snapshot_after_hash": "5cead0947576ecfd112c941f5d65a27e169fcfb3679f12074c6876e810204771",
+    "all_12_revisions_unchanged": true
+  },
+  "workspace_immutability": {
+    "arm_a_files": 43,
+    "arm_a_diffs": 0,
+    "arm_b_files": 68,
+    "arm_b_diffs": 0,
+    "status": "PASS"
+  },
+  "code_digests": {
+    "acceptance_gate.py": "35588ab13df6922ed401632fd9475ab3eed93ac21001f28304732194e31d22d3",
+    "container_transport.py": "27c71cb615202c2dfcf96ce18fe927ce50415ffef87e6a55e4690472496e7972",
+    "prepare_docker_inputs.py": "fa15c6629cea3d27db86a0ad68c312be3f4149c5fc6bf9f312220916966dd0c3",
+    "probe_classifier.py": "ae66ec3320844fc95b26df60fb68bffce18616a402812ba908d4b3e3f97a301a",
+    "probe_runner.py": "5d5ee2422b51f861723769c461bdf7761c85afd7058b9e52287f0aa3672376d7",
+    "run_docker_preflight.py": "4ed4ce64ee8596f4a8fb04982ca7c74876c8747c6500877c278f9f22909ac29e",
+    "snapshot_materials.py": "d8cec371dc34c7e1c39cde52f47b68a826d91002ead9c8b9463362209f10493f",
+    "test_collector_pipeline.py": "1006267f1ae4622e0ce4634952e15821c0cd4be3a6c7a5957290730a45d19196",
+    "test_offline_acceptance_gate.py": "f6b66db17392c42ff9a3e8f3053fd30bf00735381103e8622b4345629723548c",
+    "test_probe_classifier.py": "6f01af0254c5a61ce39708c61a137fe55f8c558c4faef0a37eb62f933dbbdb18",
+    "verify_immutability.py": "00e9c5ba39e80456594f338bd818ca7a77c6f3e99145cef1f80f4138d1eee7eb"
+  },
+  "evidence_digests": {
+    "acceptance_gate_report.json": "80cf2552a8d80b28b8e0ebfbc5afd4770c1076355fa5b91b038ab0640629f8c4",
+    "cleanup_audit.json": "1bf1e92545052ce663225934fce4eaf8415c3ed56925a250c0136aed1900ca40",
+    "container_inspect_summary.json": "3f6b0678eeecb8846d6ebc64193a72f4dd0fa3aab7092ba7556c37f5deec2734",
+    "diagnostic_controls_evaluation.json": "81b61409ff11027e061b7d14aee874f8b9027ecb8267088a89a0278d983babce",
+    "executor_asset_contract.json": "ff3dab18f4029e922f6c3829c3c64fe11ece4ffeca502000f01c54726d4e03e1",
+    "input_immutability_verification.json": "58b2c5b02d8dac066bd034747dc8b259c0135dc519de9ce8cd782b2236981fb2",
+    "input_manifest_arm-a.json": "87607a3b1231891274ecb12f6a877f93286dabf62c08f7ec345df24e2fdc8ce5",
+    "input_manifest_arm-b.json": "6dd99d468c2df088ad7257534f6c0f845d24fc782ffa2bd2aac7f37d012a8e7f",
+    "pre_fix_counterexamples.json": "45765f412b2b08166c8c3e69e412d96bcc77e53b24f6f3d2aa1617a8a16baf3c",
+    "preflight_probe_record.json": "559cd961cf62719de44a2905e08410d22e90246dd8f94e3b78ac793ff388ed6a",
+    "raw_probe_observations.json": "bd1b1dcc9a71747ff6b82929f4833b42ed2d1201d7e5b77e92de565f73960b62",
+    "reproduce_prefix_counterexamples.py": "f0e589ef58f5d77ba584760d2b5c5b1be32154830c714837bbbe402e6b4ef71a"
+  },
+  "decision_digests": {
+    "composite_executor_status.json": "dba154781d51dad0d5351c2611ab4976660cc63c2f055fca322ca5ada57372ef",
+    "preflight_result.json": "48f954705c04e41d2c149093406d9bf95a6647a8f87e9cef25638cf65ac60c95"
+  }
+}

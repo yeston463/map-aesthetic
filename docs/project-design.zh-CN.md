@@ -110,7 +110,7 @@ CSS 不能被假定能独立修改瓦片里的道路、文字或 WebGL 图层。
 ## 6. 主题契约与原生配置的关系
 
 [主题契约](../skills/map-aesthetic/references/theme-contract.md) 用于记录视觉意图。
-[JSON Schema](../skills/map-aesthetic/assets/theme.schema.json) 当前声明 `schemaVersion: "1.0"`。
+[JSON Schema](../skills/map-aesthetic/assets/theme.schema.json) 当前声明 `schemaVersion: "1.1"`。
 它定义 `ui` 与 `cartography` 两组 token，不包含地图实例、数据加载或跨引擎调用。
 此 JSON 不是 Mapbox Style JSON，也不能直接传入各厂商地图初始化函数。
 
@@ -258,8 +258,8 @@ demo/                           # 可运行的本地 Leaflet 合成演示
 
 ## 12. 维护、版本与贡献标准
 
-项目版本与主题契约版本分别管理；`0.1.0` 项目并不意味着 `0.1` 契约。
-现有主题遵循契约 `1.0`，不兼容字段变化需要升级 `schemaVersion` 并说明迁移方式。
+项目版本与主题契约版本分别管理；项目 `0.2.0` 与主题契约 `1.1` 独立演进。
+当前预设遵循契约 `1.1`，原结构的 `1.0` 仍可读取，不兼容字段变化需要升级 `schemaVersion` 并说明迁移方式。
 新增语义字段必须解释用途、单位、默认策略、示例和对既有主题的影响。
 适合自动检查的约束应有校验及有效失败用例；不能机械测试“美观”。
 适配文档应记录核查依据，SDK 更新时优先复核受影响版本与能力。

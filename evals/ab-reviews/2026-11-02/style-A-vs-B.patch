@@ -1,0 +1,51 @@
+--- A/style-improved.js
++++ B/style-improved.js
+@@ -1,35 +1,18 @@
+-// Improved styling: every value below comes from the cartographic design contract
+-// or from stated cartographic rules, so the change is auditable rather than a taste preference.
++// Improved styling: every value below comes from the packaged theme contract or from a
++// stated cartographic rule, so the change is auditable rather than a taste preference.
++//
++// Read this file as the "after" of IMPROVEMENT.patch.
++
++import theme from '/skills/map-aesthetic/assets/themes/quiet-analysis.json' with { type: 'json' };
+ 
+ export const variant = 'improved';
+-export const label = 'Improved · Quiet Analysis';
++export const label = `Improved · ${theme.name}`;
+ 
+ // Explicit stacking: context below business data, business data below text, selection
+ // above the data it emphasises. Leaflet panes are the only reliable way to get this.
+ export const panes = { districts: 410, casing: 420, route: 425, selection: 435, sites: 440, labels: 450 };
+ 
+ export const basemap = { opacity: 1, className: undefined, note: '本地栅格瓦片：道路与注记已烘焙进像素，不能按要素单独改色' };
+-
+-const theme = {
+-  cartography: {
+-    sequential: ['#DEEEE8', '#A8CFC1', '#68AC95', '#32826C', '#175445'],
+-    area: { fillOpacity: 0.55, boundaryColor: '#A9BDB4', boundaryWidthPx: 1 },
+-    missing: { color: '#C8C8C1', fillOpacity: 0.5, pattern: 'diagonal-hatch', label: '无数据' },
+-    diverging: { ramp: ['#2F6E8C', '#8FBDD3', '#EFEFEA', '#D9A98C', '#A8542B'], midpoint: 'mean' },
+-    route: { color: '#137C6C', casingColor: '#FFFFFF', widthPx: 4, casingWidthPx: 7 },
+-    classes: [
+-      { id: '配送站', color: '#177C6F' },
+-      { id: '集散点', color: '#6260A4' },
+-      { id: '驿站', color: '#A15C27' },
+-    ],
+-    site: { strokeColor: '#FFFFFF', strokeWidthPx: 2 },
+-    states: { hover: '#126A9B', alert: '#B3261E', disabled: '#9AA4A0' },
+-    selection: { color: '#1A1A1A', haloColor: '#FFFFFF', widthPx: 3, keepClassVisible: true },
+-    labels: { sizePx: 12, haloWidthPx: 2, density: 'balanced' },
+-    label: '#405C56',
+-    labelHalo: '#F8FBF7',
+-  },
+-};
+ 
+ const { area, missing, diverging, classes, selection, states, labels: labelTokens, sequential } = theme.cartography;
+ 
+@@ -117,4 +100,4 @@
+ 
+ export const sheet = { collapsible: true, reserveBottomPx: 168 };
+ 
+-export const themeId = 'quiet-analysis';
++export const themeId = theme.id;

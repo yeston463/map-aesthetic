@@ -1,0 +1,42 @@
+{
+  "scope": "Read-only input-manifest verification, request serialization and mock-only gateway write; no model, network, Docker or A/B execution",
+  "experiment_id": "EXP-20261104-MAP-AB-01",
+  "packages": {
+    "baseline_package": {
+      "file_count": 38,
+      "manifest_drift": [],
+      "unlisted_files": [],
+      "differs_from_rev06": []
+    },
+    "skill_package": {
+      "file_count": 25,
+      "manifest_drift": [],
+      "unlisted_files": [],
+      "differs_from_rev06": []
+    }
+  },
+  "task_still_requires_agent_screenshots": true,
+  "model_seed": {
+    "planned": 42,
+    "serialized_seed": null,
+    "serialized_temperature": 0.0
+  },
+  "current_gateway_write_to_required_deliverable": {
+    "success": false,
+    "error": "READ_ONLY_WORKSPACE_ROOT",
+    "detail": "Writing permitted only under /workspace/output or /workspace/evidence",
+    "attempted_path": "/workspace/cases/leaflet-raster/style-improved.js"
+  },
+  "logical_request_ceiling_all_runs": 90,
+  "http_attempt_ceiling_all_runs": 270,
+  "plan_file_sha256": {
+    "experiment_spec.json": "1ec9b7db3e26fd696e786c28988eb22ce1688240e20db2bace9509c13d259049",
+    "frozen_inputs_manifest.json": "00d5c0540b184e57517ec0c95e5adc55cb8502e2b376e26fea69dce5245d5070",
+    "PREREGISTRATION.md": "4619573f1780be8cff0273bc9d7926e218fcc82d544b1b7c55b6dc168ee77968"
+  },
+  "source_sha256": {
+    "gateway": "46b48e04146453db65ec63747b07bbead0e5cae946ed2068228830381cae99ca",
+    "model_adapter": "33a2f00582fb1be0a42e24c7c209972a230ffc000edd7afe71f82efb42c0d58f",
+    "rev06_evaluator": "fd94e68c2613992e89edd45e57c5b654d1c21660a9d3fcd071dc178e7189f83d"
+  }
+}

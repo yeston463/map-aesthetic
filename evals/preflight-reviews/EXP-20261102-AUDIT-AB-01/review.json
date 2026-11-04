@@ -1,0 +1,47 @@
+{
+  "experimentId": "EXP-20261102-AUDIT-AB-01",
+  "reviewVerdict": "PREFLIGHT_FAILED_CONFIRMED__FROZEN_EVALUATOR_NOT_READY",
+  "formalAgentTrialLaunchedByThisReview": false,
+  "sourceHashes": {
+    "preflight/preflight_result.json": "9e1acba33380ec8994558046f1520791c6935f9443f71d437ab43817f8e627c5",
+    "preflight/run_preflight_checks.py": "8a78f5c57e0d0265232d2953fd063209687eca342c3caa1c566bc6aa8a124b82",
+    "frozen_plan/unified_evaluator.mjs": "b07abd5f3d3ae45fc2f7b0bf14c8eaee1a05ba704025a12c537f8272dd91f67c",
+    "frozen_plan/experiment_spec.json": "8357a84f859f77ef9692776246b7d61654bf6d2f3bcb0daadaa5432b3527e0fa"
+  },
+  "manifestReview": {
+    "baseline": {
+      "entries": 26,
+      "mismatches": [],
+      "manifestSha256": "c03a47cbd7810e8ea2a3c08e4ed83bd4be0298b836fcd39c9425da4a72b457c2",
+      "generatedCaches": []
+    },
+    "skill": {
+      "entries": 25,
+      "mismatches": [],
+      "manifestSha256": "df929e33f92b20f89bb4a83262992b6d75e9739ce3c4ce0d03503ad21d1adc4f",
+      "generatedCaches": [
+        "skills/map-aesthetic/scripts/__pycache__/validate_theme.cpython-313.pyc"
+      ]
+    }
+  },
+  "correctedProbeInterpretation": {
+    "absolute_path_read_outside": "TESTED_HOST_PATH_READABLE",
+    "relative_path_traversal": "TESTED_PARENT_PATH_READABLE",
+    "junction_traversal": "INCONCLUSIVE_SETUP_COMMAND_FAILED__NOT_PROOF_OF_ISOLATION",
+    "reference_repo_access": "TESTED_BASELINE_FILE_READABLE__NOT_FORMAL_TRIAL_ANSWER_LEAK",
+    "network_port_crosstalk": {
+      "4174": "HTTP_SERVER_REACHED_200",
+      "4181": "HTTP_SERVER_REACHED_404",
+      "4182": "HTTP_SERVER_REACHED_404"
+    },
+    "global_skills_leak": "BUILTIN_DIRECTORY_ENUMERATED__NO_AUTOLOAD_OR_MAP_AESTHETIC_CONTENT_PROOF"
+  },
+  "baselineHasLockfile": false,
+  "actualThemeSchemaVersion": "1.1",
+  "calibration": {
+    "processExitCode": 0,
+    "verdict": "ERROR",
+    "error": "page.evaluate: TypeError: window.__case.applyStyle is not a function\n    at eval (eval at evaluate (:370:30), <anonymous>:4:23)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+  },
+  "sourceFilesUnmodified": true
+}

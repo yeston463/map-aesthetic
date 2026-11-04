@@ -1,0 +1,354 @@
+{
+  "metric": "CIEDE2000 (deltaE00), not WCAG contrast or a beauty score",
+  "thresholds": {
+    "maxFidelity": 2.3,
+    "minProminence": 5.0,
+    "minSemantics": 5.0
+  },
+  "variants": {
+    "baseline": {
+      "image": [
+        1020,
+        1015
+      ],
+      "measured": {
+        "route": {
+          "painted": "#3388FF",
+          "localContrast": 40.42,
+          "declared": "#3388ff",
+          "fidelity": 0.0
+        },
+        "site": {
+          "painted": "#1C8B65",
+          "declared": "#1c8b65",
+          "fidelity": 0.0,
+          "vsDistrict": 27.87
+        },
+        "district": {
+          "painted": "#B3D4C7",
+          "declared": "#a8cfc1",
+          "fidelity": 2.22
+        },
+        "districtMissing": {
+          "painted": "#DDE9DA",
+          "declared": "#d9e7d7",
+          "fidelity": 1.02,
+          "vsDistrict": 8.91
+        },
+        "label": {
+          "painted": "#333333",
+          "localContrast": 60.66622957674618,
+          "declared": "#333333"
+        }
+      },
+      "areas": {
+        "classes": [
+          {
+            "id": "D5",
+            "value": 380,
+            "declared": "#d9e7d7",
+            "painted": "#DDE9DA"
+          },
+          {
+            "id": "D1",
+            "value": 610,
+            "declared": "#a8cfc1",
+            "painted": "#B3D4C7"
+          },
+          {
+            "id": "D3",
+            "value": 920,
+            "declared": "#68ac95",
+            "painted": "#7DB6A2"
+          },
+          {
+            "id": "D2",
+            "value": 1260,
+            "declared": "#175445",
+            "painted": "#386B5E"
+          }
+        ],
+        "missing": [
+          {
+            "id": "D4",
+            "value": null,
+            "declared": null,
+            "painted": "#DDE9DA"
+          },
+          {
+            "id": "D6",
+            "value": null,
+            "declared": null,
+            "painted": "#DDE9DA"
+          }
+        ],
+        "adjacentDeltaE": [
+          8.91,
+          10.86,
+          26.61
+        ],
+        "minAdjacent": 8.91,
+        "missingVsClassMin": 0.0,
+        "lightnessMonotonic": true
+      }
+    },
+    "improved": {
+      "image": [
+        1020,
+        1015
+      ],
+      "measured": {
+        "route": {
+          "painted": "#137C6C",
+          "localContrast": 35.95,
+          "declared": "#137C6C",
+          "fidelity": 0.0
+        },
+        "site": {
+          "painted": "#A15C27",
+          "declared": "#A15C27",
+          "fidelity": 0.0,
+          "vsDistrict": 44.57
+        },
+        "district": {
+          "painted": "#C7DDD4",
+          "declared": "#A8CFC1",
+          "fidelity": 6.8
+        },
+        "districtMissing": {
+          "painted": "#DBDBD7",
+          "declared": "#C8C8C1",
+          "fidelity": 4.82,
+          "vsDistrict": 9.44
+        },
+        "label": {
+          "painted": "#405C56",
+          "localContrast": 42.7523822869157,
+          "declared": "#405C56"
+        }
+      },
+      "areas": {
+        "classes": [
+          {
+            "id": "D5",
+            "value": 380,
+            "declared": "#DEEEE8",
+            "painted": "#E5EEE9"
+          },
+          {
+            "id": "D1",
+            "value": 610,
+            "declared": "#A8CFC1",
+            "painted": "#C7DDD4"
+          },
+          {
+            "id": "D3",
+            "value": 920,
+            "declared": "#68AC95",
+            "painted": "#A4C9BC"
+          },
+          {
+            "id": "D2",
+            "value": 1260,
+            "declared": "#32826C",
+            "painted": "#86B2A5"
+          }
+        ],
+        "missing": [
+          {
+            "id": "D4",
+            "value": null,
+            "declared": null,
+            "painted": "#DBDBD7"
+          },
+          {
+            "id": "D6",
+            "value": null,
+            "declared": null,
+            "painted": "#DBDBD7"
+          }
+        ],
+        "adjacentDeltaE": [
+          6.93,
+          7.38,
+          6.82
+        ],
+        "minAdjacent": 6.82,
+        "missingVsClassMin": 5.63,
+        "lightnessMonotonic": true
+      }
+    },
+    "attempt-filter": {
+      "image": [
+        1020,
+        1015
+      ],
+      "measured": {
+        "route": {
+          "painted": "#137C6C",
+          "localContrast": 35.81,
+          "declared": "#137C6C",
+          "fidelity": 0.0
+        },
+        "site": {
+          "painted": "#A15C27",
+          "declared": "#A15C27",
+          "fidelity": 0.0,
+          "vsDistrict": 43.96
+        },
+        "district": {
+          "painted": "#C3D9D1",
+          "declared": "#A8CFC1",
+          "fidelity": 6.43
+        },
+        "districtMissing": {
+          "painted": "#D6D6D3",
+          "declared": "#C8C8C1",
+          "fidelity": 3.99,
+          "vsDistrict": 9.52
+        },
+        "label": {
+          "painted": "#405C56",
+          "localContrast": 41.944665162447045,
+          "declared": "#405C56"
+        }
+      },
+      "areas": {
+        "classes": [
+          {
+            "id": "D5",
+            "value": 380,
+            "declared": "#DEEEE8",
+            "painted": "#E1EAE6"
+          },
+          {
+            "id": "D1",
+            "value": 610,
+            "declared": "#A8CFC1",
+            "painted": "#C3D9D1"
+          },
+          {
+            "id": "D3",
+            "value": 920,
+            "declared": "#68AC95",
+            "painted": "#A0C5B9"
+          },
+          {
+            "id": "D2",
+            "value": 1260,
+            "declared": "#32826C",
+            "painted": "#82AEA2"
+          }
+        ],
+        "missing": [
+          {
+            "id": "D4",
+            "value": null,
+            "declared": null,
+            "painted": "#D6D6D3"
+          },
+          {
+            "id": "D6",
+            "value": null,
+            "declared": null,
+            "painted": "#D6D6D3"
+          }
+        ],
+        "adjacentDeltaE": [
+          7.02,
+          7.48,
+          6.95
+        ],
+        "minAdjacent": 6.95,
+        "missingVsClassMin": 5.86,
+        "lightnessMonotonic": true
+      }
+    },
+    "attempt-opacity": {
+      "image": [
+        1020,
+        1015
+      ],
+      "measured": {
+        "route": {
+          "painted": "#137C6C",
+          "localContrast": 36.65,
+          "declared": "#137C6C",
+          "fidelity": 0.0
+        },
+        "site": {
+          "painted": "#A15C27",
+          "declared": "#A15C27",
+          "fidelity": 0.0,
+          "vsDistrict": 43.96
+        },
+        "district": {
+          "painted": "#C3D9D1",
+          "declared": "#A8CFC1",
+          "fidelity": 6.43
+        },
+        "districtMissing": {
+          "painted": "#D6D6D3",
+          "declared": "#C8C8C1",
+          "fidelity": 3.99,
+          "vsDistrict": 9.52
+        },
+        "label": {
+          "painted": "#405C56",
+          "localContrast": 41.944665162447045,
+          "declared": "#405C56"
+        }
+      },
+      "areas": {
+        "classes": [
+          {
+            "id": "D5",
+            "value": 380,
+            "declared": "#DEEEE8",
+            "painted": "#E1EAE6"
+          },
+          {
+            "id": "D1",
+            "value": 610,
+            "declared": "#A8CFC1",
+            "painted": "#C3D9D1"
+          },
+          {
+            "id": "D3",
+            "value": 920,
+            "declared": "#68AC95",
+            "painted": "#A0C5B9"
+          },
+          {
+            "id": "D2",
+            "value": 1260,
+            "declared": "#32826C",
+            "painted": "#82AEA2"
+          }
+        ],
+        "missing": [
+          {
+            "id": "D4",
+            "value": null,
+            "declared": null,
+            "painted": "#D6D6D3"
+          },
+          {
+            "id": "D6",
+            "value": null,
+            "declared": null,
+            "painted": "#D6D6D3"
+          }
+        ],
+        "adjacentDeltaE": [
+          7.02,
+          7.48,
+          6.95
+        ],
+        "minAdjacent": 6.95,
+        "missingVsClassMin": 5.86,
+        "lightnessMonotonic": true
+      }
+    }
+  }
+}

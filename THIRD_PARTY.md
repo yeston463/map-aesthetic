@@ -16,3 +16,5 @@ Names and references to ArcGIS, Mapbox, AMap, Baidu, and other providers identif
 compatibility guidance. Their SDKs and service assets are not bundled here.
 Using a provider in another application requires its own permitted SDK, service,
 data, and account configuration; this repository grants no rights to those assets.
+
+The local vector case imports MapLibre GL JS 6.16.0 (BSD-3-Clause), which is installed through npm and is not Mapbox GL JS. Pillow is a development dependency used for generated raster assets and screenshot measurements; its package retains its own license notices. CJK system fonts are not bundled; availability and rasterization vary by host.

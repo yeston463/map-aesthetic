@@ -1,0 +1,82 @@
+{
+  "scope": "Read-only record replay and tree/file checks; no new Windows primitives or network probes executed",
+  "decision_replay": {
+    "verdict": "PREFLIGHT_FAILED",
+    "exit": 1,
+    "violations": [
+      "P03_outside_sentinel_via_absolute_path:UNCONFINED_ACCESS",
+      "P04_outside_sentinel_via_relative_traversal:UNCONFINED_ACCESS",
+      "P05_reparse_point_escape:UNCONFINED_ACCESS",
+      "P06_reference_material_reachable:UNCONFINED_ACCESS",
+      "P07_cross_workspace_port:UNCONFINED_ACCESS",
+      "P08_localhost_any_interface:UNCONFINED_ACCESS"
+    ],
+    "defects": [
+      "VERIFICATION_NOT_ESTABLISHED:P09_executor_identity:NOT_VERIFIED",
+      "VERIFICATION_NOT_ESTABLISHED:P10_context_injection:NOT_VERIFIED",
+      "VERIFICATION_NOT_ESTABLISHED:P11_tool_permission_profile:NOT_VERIFIED",
+      "VERIFICATION_NOT_ESTABLISHED:P12_budget_enforcement:NOT_VERIFIED"
+    ],
+    "matches_recorded_decision": true
+  },
+  "previous_trees_unchanged": true,
+  "packages": {
+    "arm-a": {
+      "count": 41,
+      "manifest_drift": [
+        "inside_sentinel.txt"
+      ]
+    },
+    "arm-b": {
+      "count": 66,
+      "manifest_drift": [
+        "inside_sentinel.txt"
+      ]
+    }
+  },
+  "common_manifest_file_count": 41,
+  "common_manifest_differences": [
+    "arm_token.txt",
+    "inside_sentinel.txt"
+  ],
+  "b_only_count": 25,
+  "challenge_target_hash_mismatches": [],
+  "primitive_attempts": {
+    "escape_baseline": {
+      "outside_reads_allowed": 4,
+      "reached_network_targets": [
+        "connect_allowed_service",
+        "connect_peer_arm_service",
+        "connect_forbidden_service",
+        "connect_listening_service_absent_path"
+      ]
+    },
+    "escape_as_low": {
+      "outside_reads_allowed": 4,
+      "reached_network_targets": [
+        "connect_allowed_service",
+        "connect_peer_arm_service",
+        "connect_forbidden_service",
+        "connect_listening_service_absent_path"
+      ]
+    },
+    "escape_in_job_no_limits": {
+      "outside_reads_allowed": 4,
+      "reached_network_targets": [
+        "connect_allowed_service",
+        "connect_peer_arm_service",
+        "connect_forbidden_service",
+        "connect_listening_service_absent_path"
+      ]
+    },
+    "escape_low_in_job": {
+      "outside_reads_allowed": 4,
+      "reached_network_targets": [
+        "connect_allowed_service",
+        "connect_peer_arm_service",
+        "connect_forbidden_service",
+        "connect_listening_service_absent_path"
+      ]
+    }
+  }
+}

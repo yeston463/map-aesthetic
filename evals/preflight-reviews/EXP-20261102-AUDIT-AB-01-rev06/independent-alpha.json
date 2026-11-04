@@ -1,0 +1,119 @@
+[
+  {
+    "directory": "transparent-images",
+    "file": "after-desktop.png",
+    "mode": "RGBA",
+    "size": [
+      1280,
+      900
+    ],
+    "alpha_extrema": [
+      0,
+      0
+    ]
+  },
+  {
+    "directory": "transparent-images",
+    "file": "after-mobile-selection.png",
+    "mode": "RGBA",
+    "size": [
+      390,
+      844
+    ],
+    "alpha_extrema": [
+      0,
+      0
+    ]
+  },
+  {
+    "directory": "transparent-images",
+    "file": "before-desktop.png",
+    "mode": "RGBA",
+    "size": [
+      1280,
+      900
+    ],
+    "alpha_extrema": [
+      0,
+      0
+    ]
+  },
+  {
+    "directory": "opaque-rgba-images",
+    "file": "after-desktop.png",
+    "mode": "RGBA",
+    "size": [
+      1280,
+      900
+    ],
+    "alpha_extrema": [
+      255,
+      255
+    ]
+  },
+  {
+    "directory": "opaque-rgba-images",
+    "file": "after-mobile-selection.png",
+    "mode": "RGBA",
+    "size": [
+      390,
+      844
+    ],
+    "alpha_extrema": [
+      255,
+      255
+    ]
+  },
+  {
+    "directory": "opaque-rgba-images",
+    "file": "before-desktop.png",
+    "mode": "RGBA",
+    "size": [
+      1280,
+      900
+    ],
+    "alpha_extrema": [
+      255,
+      255
+    ]
+  },
+  {
+    "directory": "near-opaque-images",
+    "file": "after-desktop.png",
+    "mode": "RGBA",
+    "size": [
+      1280,
+      900
+    ],
+    "alpha_extrema": [
+      254,
+      254
+    ]
+  },
+  {
+    "directory": "near-opaque-images",
+    "file": "after-mobile-selection.png",
+    "mode": "RGBA",
+    "size": [
+      390,
+      844
+    ],
+    "alpha_extrema": [
+      254,
+      254
+    ]
+  },
+  {
+    "directory": "near-opaque-images",
+    "file": "before-desktop.png",
+    "mode": "RGBA",
+    "size": [
+      1280,
+      900
+    ],
+    "alpha_extrema": [
+      254,
+      254
+    ]
+  }
+]

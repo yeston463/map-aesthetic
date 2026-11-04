@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>江岸片区配送地图 · 案例</title>
+<link rel="stylesheet" href="/node_modules/leaflet/dist/leaflet.css">
+<link rel="stylesheet" href="/cases/leaflet-raster/ui.css">
+</head>
+<body>
+<div class="shell">
+  <header class="bar">
+    <div class="ident"><strong>江岸片区配送</strong><span data-testid="variant-label">—</span></div>
+    <div class="bar-actions">
+      <label class="field">着色口径
+        <select data-testid="measure-select">
+          <option value="absolute">业务量（顺序色带）</option>
+          <option value="deviation">相对均值偏差（发散色带）</option>
+        </select>
+      </label>
+      <button type="button" data-testid="zoom-overview">全景</button>
+      <button type="button" data-testid="zoom-street">街巷</button>
+    </div>
+  </header>
+
+  <main class="stage">
+    <div id="map" class="map" data-testid="map" role="region"
+         aria-label="江岸片区配送地图，可平移缩放并选择站点"></div>
+
+    <aside class="panel" data-testid="panel">
+      <section>
+        <h2>图例</h2>
+        <ul class="legend" data-testid="legend"></ul>
+      </section>
+      <section>
+        <h2>站点</h2>
+        <ul class="sites" data-testid="site-list"></ul>
+      </section>
+      <p class="note" data-testid="provenance">合成数据 · 无真实地点 · 底图为本地生成的栅格瓦片</p>
+    </aside>
+
+    <div class="sheet" data-testid="sheet">
+      <button type="button" class="sheet-handle" data-testid="sheet-toggle" aria-expanded="true">站点面板</button>
+      <div class="sheet-body" data-testid="sheet-body"><ul class="sites sites-compact" data-testid="site-list-sheet"></ul></div>
+    </div>
+  </main>
+
+  <footer class="status">
+    <span data-testid="ready" data-state="loading">载入中…</span>
+    <span>缩放 <output data-testid="zoom-readout">—</output></span>
+    <span>可见标注 <output data-testid="label-readout">—</output></span>
+    <span>选中 <output data-testid="selection-readout">无</output></span>
+    <span>底图署名 <output data-testid="attribution-readout">—</output></span>
+  </footer>
+</div>
+<script src="/node_modules/leaflet/dist/leaflet.js"></script>
+<script type="module" src="/cases/leaflet-raster/app.js"></script>
+</body>
+</html>

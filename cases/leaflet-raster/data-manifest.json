@@ -1,0 +1,54 @@
+{
+  "generated_by": "scripts/make_case_data.py",
+  "seed": 20261102,
+  "crs": "OGC:CRS84 (lon/lat, WGS 84 axis order)",
+  "provenance": "Synthetic. Drawn from a fixed seed; no real place, dataset, or third-party tile source is represented, and no attribution beyond this repository applies.",
+  "datum_note": "Synthetic geometry in plain lon/lat, so no GCJ-02 or BD-09 offset applies. Do not copy this pattern to real China basemap data without resolving the datum.",
+  "area": {
+    "lon": [
+      121.43,
+      121.447
+    ],
+    "lat": [
+      31.22,
+      31.233
+    ]
+  },
+  "tile_zooms": [
+    14,
+    15
+  ],
+  "counts": {
+    "cases/leaflet-raster/data/context.geojson": 38,
+    "cases/leaflet-raster/data/sites.geojson": 12,
+    "cases/leaflet-raster/data/route.geojson": 1,
+    "cases/leaflet-raster/data/districts.geojson": 6,
+    "cases/leaflet-raster/data/labels.geojson": 24,
+    "cases/mapbox-style/data/business.geojson": 7,
+    "cases/mapbox-style/data/context.geojson": 11,
+    "cases/mapbox-style/data/places.geojson": 6
+  },
+  "files": {
+    "cases/leaflet-raster/data/context.geojson": "9703e7eeec4e448b6ff111993b4a1e46dcaace9bc616d510a2261be7ce84de99",
+    "cases/leaflet-raster/data/districts.geojson": "60b5ce75dd315d88d4ad50243d09fff412be381831ea08cd5e26226c3b507717",
+    "cases/leaflet-raster/data/labels.geojson": "06810f588e07d32b76f437b96076696c86ef0771c780aa3ef2125a0a03073c5b",
+    "cases/leaflet-raster/data/route.geojson": "492f5fba98767c85f15ebbf3b888d8d3fd71c8e98038c5e97e97d8c374a2e15e",
+    "cases/leaflet-raster/data/sites.geojson": "ea42a59383c48fac5c36b0db6e07ed0983b54a7e6186aabe9e4694621ff635b4",
+    "cases/leaflet-raster/tiles/14/13718/6694.png": "874d3a615c7740f6cda5cc855a0926c9b913066fd66e4e689c3ee3b566f60683",
+    "cases/leaflet-raster/tiles/14/13718/6695.png": "818cf738719504c79a36f7ac00b48b30f27755043c3defad194ea2fd88287778",
+    "cases/leaflet-raster/tiles/14/13719/6694.png": "5b24f6d7bbef5b51d704f0ee51be2d860f6ddbb2f462e4ac3cf488387f439517",
+    "cases/leaflet-raster/tiles/14/13719/6695.png": "bf4f1ad79974e22dad03f342c194d3fdf84f9ac265bbae03557612bcffe7964e",
+    "cases/leaflet-raster/tiles/15/27436/13388.png": "ee8b725173a16daa6d133c7780c90ace5386eb5515b5defc42ee3bc213370791",
+    "cases/leaflet-raster/tiles/15/27436/13389.png": "c10cb53baeec1e890e7537be9f59a90f215ad4e9c678b09965e1424ec9e32df8",
+    "cases/leaflet-raster/tiles/15/27436/13390.png": "4cfcd76d472f437b2d1de8af3f8238ac3e52d5edb4d3047451e7d5203b2b69ee",
+    "cases/leaflet-raster/tiles/15/27437/13388.png": "db724fa80759dd3114dd52f197701e8a11dd28a4a3e10903f5d1ab37a2d01c91",
+    "cases/leaflet-raster/tiles/15/27437/13389.png": "5cc92948890531a81c2b7246ccd901b861271bce312332b61c8d959ef5e8765f",
+    "cases/leaflet-raster/tiles/15/27437/13390.png": "0b831b1b272846a249e36a9d12789c0a57a1843076d21e224bb2994e285c1f0b",
+    "cases/leaflet-raster/tiles/15/27438/13388.png": "70d8c9b0b6a4dc157889c84107dfc614b0621dc2b1f60ea1d56d3fefa8a8fd14",
+    "cases/leaflet-raster/tiles/15/27438/13389.png": "94ac899f358ac648c4692a5cebbc56c1bab31e497f3a35efb8288ed44047bb74",
+    "cases/leaflet-raster/tiles/15/27438/13390.png": "179baca4e034ff50950862ba1a09006031aeaa78e909898d93e8aa10038284ad",
+    "cases/mapbox-style/data/business.geojson": "6afb5811e4bf9c89fe5559b6e04bfac0d9d41981d0565fc5b9363ec73ea721a6",
+    "cases/mapbox-style/data/context.geojson": "efa87d7c2ea38690fda9dddd3a29cef9d19e4c9a302cd10acadefe69f8c62a82",
+    "cases/mapbox-style/data/places.geojson": "e8cbdefd5a06c027ed3a2558b98299f75e2c02f9a0d3f4434ab39753e0a68ba9"
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "scope": "Read-only artifact replay; 36 offline tests and 17 reverse tests, Docker CLI error case mocked; no Docker operations or external model",
+  "unit_tests": {
+    "run": 36,
+    "failures": 0,
+    "errors": 0
+  },
+  "reverse_tests": [
+    {
+      "name": "test_01_adapter_broken_endpoint_fails_no_mock_fallback",
+      "passed": true,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_02_docker_tool_execution_failure_returns_failure",
+      "passed": true,
+      "docker_subprocess_mocked": true
+    },
+    {
+      "name": "test_03_unreconciled_or_mismatched_host_output_fails_gate",
+      "passed": true,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_04_mock_transport_rejected_in_docker_mode",
+      "passed": true,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_05_illegal_tool_calls_rejected_by_gateway",
+      "passed": true,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_06_exhausted_budget_terminates_loop_no_further_dispatches",
+      "passed": true,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_07_incomplete_or_failed_single_arm_fails_composite_gate",
+      "passed": true,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_08_cleanup_query_before_failure_fails_gate",
+      "passed": true,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_09_cleanup_post_query_failure_fails_gate",
+      "passed": true,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_10_cleanup_remaining_containers_fails_gate",
+      "passed": true,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_11_host_reconciliation_wrong_sentinel_token_fails_gate",
+      "passed": true,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_12_fake_server_readback_failed_or_false_blocks_completion",
+      "passed": true,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_13_fake_server_wrong_sentinel_token_blocks_completion",
+      "passed": true,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_14_cleanup_ownership_mismatch_fails_gate",
+      "passed": true,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_15_harness_runner_cleanup_failure_propagates_to_runner_exit_1",
+      "passed": true,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_16_harness_runner_clean_success_yields_exit_2_pending",
+      "passed": true,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_17_tests_do_not_modify_delivery_archive",
+      "passed": true,
+      "docker_subprocess_mocked": false
+    }
+  ],
+  "archive_immutability": {
+    "before_files": 204,
+    "after_files": 204,
+    "unchanged": true,
+    "added": [],
+    "removed": [],
+    "modified": []
+  },
+  "recorded_run": {
+    "id": "hi01-real-9b4e1102",
+    "execution_type": "live_container_regression",
+    "containers": {
+      "arm-a": {
+        "id": "58efa4f9905f66784dd6de316b0d9ba5e8bcd81721d835825a5de30125e9cbe2",
+        "name": "hi01_c_arm_a_hi01-real-9b4e1102"
+      },
+      "arm-b": {
+        "id": "88c167ca4a0ef6799fa1d34019ac853d4c2102c3094fa6eb50232af0af0ba1e5",
+        "name": "hi01_c_arm_b_hi01-real-9b4e1102"
+      }
+    }
+  },
+  "recorded_gate_replays": {
+    "verdict": "VERIFIED_PASS",
+    "composite": "HARNESS_READY_REAL_MODEL_PENDING",
+    "exit": 2,
+    "failures": []
+  },
+  "host_artifacts": {
+    "arm-a": {
+      "hash_matches_recorded": true,
+      "sentinel_matches_actual_input": true,
+      "recorded_file_size": 348,
+      "actual_size": 348,
+      "executed_tools": 3,
+      "rejected_tools": 1
+    },
+    "arm-b": {
+      "hash_matches_recorded": true,
+      "sentinel_matches_actual_input": true,
+      "recorded_file_size": 348,
+      "actual_size": 348,
+      "executed_tools": 3,
+      "rejected_tools": 1
+    }
+  },
+  "server_http_record_count": 10,
+  "cleanup_query_failure": {
+    "mocked_calls": 1,
+    "reported_success": false,
+    "reported_before_count": 0,
+    "reported_after_count": 0
+  },
+  "wrong_sentinel_host_reconciliation_accepted": false,
+  "failed_readback_marked_verified": false,
+  "prior_trees_match": {
+    "rev01": true,
+    "rev02": true,
+    "rev03": true,
+    "rev04": true,
+    "rev05": true,
+    "rev06": true,
+    "sandbox-preflight-01": true,
+    "sandbox-preflight-02": true,
+    "docker-executor-01": true,
+    "docker-executor-02": true,
+    "docker-executor-03": true,
+    "docker-executor-04": true,
+    "docker-regression-01": true,
+    "harness-01": true
+  },
+  "code_sha256": {
+    "acceptance_controller.py": "7595c28f2bb56d524cb2990f66e849aae2a3cf537731270600a8441ee928fd53",
+    "budget_controller.py": "2798f6a3f646ba58ce36d9a58c8a1c6ba99a37f9f6149a4b557204a9d5e34379",
+    "context_builder.py": "5b0c472c899d63e2383bb2a6edc1dc89da3895876cbf819b34043555b1d2cf59",
+    "docker_manager.py": "9f6e78008700a969339c4e3012f334c4cd59ec32b0a1f11972a5f088e72da1b6",
+    "evidence_writer.py": "1dc2a4aad13b86402229926a0f2708dfb1c329f56982e88f6b97a0f32e287b5b",
+    "harness_runner.py": "34fe986f4a2151d71d32201643da3746aba90824009bb87eed3c54a258be1635",
+    "local_fake_server.py": "a30fadc4bda85d6ecf90914a54e4089d747ac07334f6692f6bcd4038b236996e",
+    "model_adapter.py": "d0df0d09719692b21612f3502d0356a50faa6e74a4894b256a5d1ed834e7ef8c",
+    "snapshot_materials.py": "8618cfdd4947ce9345fbff1e4850fd6a150ae52cfdd250d0624ff8e4d4939504",
+    "test_integration_reverse_checks.py": "6a3ee116f0214139722e910b6e4c2004a93bc46dd9b88586f6fddaeb6807cbb7",
+    "test_offline_harness.py": "cf1aa7c43c80b28abf521cd950c83b6111005b7c8031316e865df1e951ff99e3",
+    "tool_gateway.py": "46b48e04146453db65ec63747b07bbead0e5cae946ed2068228830381cae99ca",
+    "verify_archive_immutability.py": "f575d5fe08db5fb709e8d28ccdbca822fd09d6c49d6ec8f6f9d0d26eebe03011",
+    "verify_reviewer_counterexamples.py": "1069ca49b6efbe2c06ba6ff14b9e30d5b8366fee910c756ec822d7298756d5d4"
+  }
+}

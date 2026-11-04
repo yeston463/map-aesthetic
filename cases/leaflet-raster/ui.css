@@ -1,0 +1,69 @@
+:root {
+  --ink: #22282c;
+  --muted: #6b7480;
+  --line: #dfe3e6;
+  --surface: #ffffff;
+  --page: #f4f5f6;
+  --focus: #12669b;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif; color: var(--ink); background: var(--page); }
+button, select { font: inherit; }
+button:focus-visible, select:focus-visible, a:focus-visible, .map:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+.shell { display: flex; flex-direction: column; height: 100dvh; overflow: hidden; }
+.bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 16px; background: var(--surface); border-bottom: 1px solid var(--line); }
+.ident { display: flex; align-items: baseline; gap: 10px; }
+.ident strong { font-size: 15px; }
+.ident span { font-size: 11px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+.bar-actions { display: flex; align-items: center; gap: 8px; }
+.field { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
+.bar-actions button, .bar-actions select { font-size: 12px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 5px; background: var(--surface); color: var(--ink); }
+
+.stage { flex: 1; min-height: 0; position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 260px; }
+.map { position: relative; z-index: 0; width: 100%; height: 100%; min-height: 0; }
+.panel { min-height: 0; background: var(--surface); border-left: 1px solid var(--line); padding: 14px; overflow: auto; }
+.panel h2 { margin: 0 0 8px; font-size: 12px; letter-spacing: .02em; color: var(--muted); font-weight: 600; }
+.panel section + section { margin-top: 16px; }
+.note { margin: 16px 0 0; font-size: 11px; line-height: 1.6; color: var(--muted); }
+
+.legend, .sites { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.legend li { display: flex; align-items: center; gap: 8px; font-size: 12px; }
+.legend i { width: 14px; height: 14px; border-radius: 50%; flex: none; border: 1px solid rgba(0,0,0,.18); }
+.legend i.swatch-area { border-radius: 2px; width: 18px; }
+.legend i.swatch-line { border-radius: 2px; width: 20px; height: 4px; }
+.legend .missing-swatch { background: repeating-linear-gradient(45deg, #e9e9e9 0 3px, #c9c9c9 3px 6px); }
+.sites li button { width: 100%; text-align: left; font-size: 12px; padding: 7px 9px; border: 1px solid var(--line); border-radius: 6px; background: #fbfcfc; color: var(--ink); }
+.sites li button[aria-pressed="true"] { border-color: #2b6cb0; background: #eaf2fb; }
+.sites .kind { display: block; margin-top: 3px; font-size: 10px; color: var(--muted); }
+
+.status { display: flex; flex-wrap: wrap; gap: 14px; padding: 8px 16px; font-size: 11px; color: var(--muted); background: var(--surface); border-top: 1px solid var(--line); }
+.status output { font-variant-numeric: tabular-nums; color: var(--ink); }
+
+/* Mobile sheet: the baseline keeps it open, which is what hides the selected target. */
+.sheet { display: none; }
+.sheet-handle { display: none; }
+
+body.variant-baseline .legend li.swatch-status-normal i { background: #1c8b65; }
+body.variant-baseline .legend li.swatch-status-alert i { background: #c64040; }
+body.variant-baseline .legend li.swatch-route i { background: #3388ff; }
+body.variant-baseline .legend li.swatch-class-1 i { background: #1c8b65; }
+body.variant-baseline .legend li.swatch-class-2 i { background: #a15c27; }
+body.variant-baseline .legend li.swatch-class-3 i { background: #6260a4; }
+
+/* Exploratory whole-raster filter. Applied to the tile container, not business layers. */
+.basemap-desaturate { filter: saturate(0.35) contrast(0.92); }
+
+@media (max-width: 760px) {
+  .stage { grid-template-columns: minmax(0, 1fr); }
+  .bar { align-items: flex-start; flex-direction: column; }
+  .ident { flex-wrap: wrap; }
+  .ident span { min-height: 14px; }
+  .bar-actions { width: 100%; flex-wrap: wrap; }
+  .panel { display: none; }
+  .map { min-height: 0; }
+  .sheet { display: block; position: absolute; z-index: 10; left: 0; right: 0; bottom: 0; background: var(--surface); border-top: 1px solid var(--line); padding: 8px 12px 12px; max-height: 42vh; overflow: auto; }
+  .sheet-handle { display: block; position: sticky; z-index: 1; top: 0; width: 100%; text-align: left; font-size: 12px; padding: 6px 0; border: 0; background: var(--surface); color: var(--muted); }
+  .sites-compact { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+  body.sheet-collapsed .sheet-body { display: none; }
+}

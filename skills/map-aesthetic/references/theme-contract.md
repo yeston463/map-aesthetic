@@ -6,7 +6,7 @@ Keep the target project's native configuration and layer semantics intact.
 
 ## Files and validation
 
-- [Schema](../assets/theme.schema.json): JSON Schema draft 2020-12, contract version `1.0`.
+- [Schema](../assets/theme.schema.json): JSON Schema draft 2020-12, accepted versions `1.0` and `1.1`; bundled themes use `1.1`.
 - [Quiet analysis](../assets/themes/quiet-analysis.json): low-noise analytical context.
 - [Night operations](../assets/themes/night-operations.json): dark operational context.
 - [Public guide](../assets/themes/public-guide.json): legible public-facing navigation.
@@ -63,8 +63,43 @@ it to data, because binding index 0 to the wrong end inverts the map silently.
 | `sequential` | Ordered low-to-high visual ramp | Inspect perceptual ordering and contrast against the actual background. Do not replace a diverging ramp with this sequence. |
 | `route` | Business line plus casing | `casingWidthPx` is total outer stroke width, greater than `widthPx`. Usually requires two strokes/layers. |
 | `site` | Business point plus outline | `radiusPx` is radius, not diameter; convert for SDKs that use size or device pixels. |
-| `selection` | Selected feature emphasis | Use a redundant outline/halo or shape; color alone may not distinguish the state. |
+| `selection` | Selected feature emphasis | `widthPx` stroke/halo width. `keepClassVisible` boolean controls whether original class fill is kept. |
+| `area` | Thematic polygon surface | `fillOpacity` (0.1–0.9 ratio), `boundaryColor`, `boundaryWidthPx` (CSS px). Maps to polygon layers. |
+| `missing` | No-data polygon surface | `color`, `fillOpacity`, `pattern` (`diagonal-hatch` / `cross-hatch` / `none`), `label`. Separates null from low values. |
+| `diverging` | Reference-centered ramp | `ramp` (odd length 3–7), `midpoint` (`mean` / `zero` / `target`). For relative deviation tasks. |
+| `classes` | Stable ID-to-color binding | Explicit binding of categorical colours to business class IDs (`id`, `color`). |
+| `states` | Interaction and alert states | `hover`, `alert`, `disabled`. Status colors rendered as secondary rings or badges. |
 | `scale` | Ground-resolution thresholds | Values are approximate meters per CSS pixel near the view center. Convert to native scale/zoom using the active projection and latitude. |
+
+## Thematic polygon and state rules (Contract v1.1)
+
+The v1.1 theme extensions provide structured cartographic tokens for choropleths,
+missing data, and multi-state features:
+
+- **Thematic area (`area`)**: `fillOpacity` is a decimal ratio (0.1 to 0.9). In vector
+  basemaps where polygons can sit below labels, opacities of 0.5–0.7 are common. In
+  raster basemaps where polygons overlay roads, 0.35–0.5 maintains road visibility.
+  `boundaryWidthPx` specifies outline stroke in CSS pixels (0 to 6 px).
+- **Missing data (`missing`)**: Explicitly isolates no-data features from true low
+  values. `color` must maintain at least 8.0 dE2000 from the nearest sequential class
+  when `pattern` is `none`. When a hatch pattern (`diagonal-hatch` or `cross-hatch`)
+  is used, the texture carries the semantic distinction.
+- **Diverging ramp (`diverging`)**: Reserved for data with a meaningful midpoint
+  (`mean`, `zero`, or `target`). The ramp must contain an odd number of stops (3, 5, or 7)
+  so that the middle stop anchors exactly at the reference point. Both sides must
+  perceptually diverge away from the center.
+- **Class bindings (`classes`)**: Binds specific business categories (e.g. `枢纽仓`,
+  `自提点`) to colours from the `categorical` palette. Prevents dynamic filtering or
+  selection from shuffling colors across classes.
+- **Status rings & states (`states`, `selection.keepClassVisible`)**: When
+  `keepClassVisible` is `true`, feature selection is rendered as an outer ring or halo,
+  preserving the feature's internal class color fill. When `keepClassVisible` is `false`,
+  the selection color completely replaces the feature's fill and must maintain strict
+  dE2000 separation from all category colors.
+- **Backward compatibility and migration**: All new fields (`area`, `missing`,
+  `diverging`, `classes`, `states`, `selection.keepClassVisible`) are optional.
+  The validator accepts version 1.0 without the new fields; extended themes must declare `schemaVersion: "1.1"`. Older validators do not automatically accept 1.1. Semantic quality checks are separate from structural compatibility.
+  Target applications only bind the specific fields required by their cartographic tasks.
 
 Below `detailBelowMpp`, show task-relevant fine detail; above
 `overviewAboveMpp`, prefer distribution and aggregation; between them use the
@@ -105,3 +140,5 @@ an incompatible contract change is introduced.
 The bundled demo implements only the subset it can demonstrate with local
 Leaflet vectors. It does not render quantitative ramps or implement real label
 collision, provider basemap editing, clustering, or 3D.
+
+Color-distance thresholds are project heuristics, not universal perception or accessibility guarantees. The missing-data floor is 5 with a pattern and 8 without one; replacing selection uses a floor of 8, added rings use 5. Inspect actual composited pixels and redundant cues.

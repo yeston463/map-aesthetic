@@ -1,0 +1,555 @@
+{
+  "scope": "Unchanged frozen evaluator; existing positive fixture; all output outside frozen revisions",
+  "evaluator_sha256": "bc9536b99e80eceb969f4bfb2a74753677193abdf29c92129bbec46af240c91d",
+  "unit_suite": {
+    "exit": 0,
+    "log": "21/21 as declared -> C:\\Users\\赵航\\Desktop\\studio\\_review_map_aesthetic\\.tmp\\rev05-audit-py_6_52p\\browser\\delivery_rules_unit_tests.json\n  u00_registered_defaults_are_accepted           PASS\n  u01_null_mode                                  PASS\n  u02_undefined_mode                             PASS\n  u03_object_mode                                PASS\n  u04_array_mode                                 PASS\n  u05_misspelled_mode                            PASS\n  u06_uppercase_mode                             PASS\n  u07_padded_mode                                PASS\n  u08_known_but_uncalibrated_mode                PASS\n  u09_empty_allowed_list                         PASS\n  u10_allowed_list_absent                        PASS\n  u11_allowed_list_names_a_nonexistent_mode      PASS\n  u12_rationale_missing                          PASS\n  u13_tolerance_mode_without_numbers             PASS\n  u14_empty_env_means_registered_default         PASS\n  u15_unset_env_means_registered_default         PASS\n  u16_explicit_registered_mode_is_environment    PASS\n  u17_misspelled_env_is_refused_at_parsing       PASS\n  u18_unknown_mode_leaves_no_shot_clean          PASS\n  u19_unknown_mode_still_refuses_the_decoy       PASS\n  u20_valid_mode_over_honest_delivery_passes     PASS\n",
+    "totals": {
+      "cases": 21,
+      "passed": 21,
+      "failed": 0
+    }
+  },
+  "runs": [
+    {
+      "label": "positive-default",
+      "mode": null,
+      "exit": 0,
+      "verdict": "PASS",
+      "reasons": [],
+      "delivery": {
+        "pass": true,
+        "reason": null,
+        "detail": {
+          "rule_version": "rev05/delivery-5",
+          "problems": [],
+          "identity": [
+            {
+              "file": "before-desktop.png",
+              "delivered_digest": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "evaluator_digest": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "bytes_match_evaluation": true,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 2,
+                "bit_depth": 8
+              }
+            },
+            {
+              "file": "after-desktop.png",
+              "delivered_digest": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "evaluator_digest": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "bytes_match_evaluation": true,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 2,
+                "bit_depth": 8
+              }
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "delivered_digest": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "evaluator_digest": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "bytes_match_evaluation": true,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 390,
+                "height": 844,
+                "color_type": 2,
+                "bit_depth": 8
+              }
+            }
+          ],
+          "pixel_comparisons": [
+            {
+              "file": "before-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "max_channel_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "mean_channel_delta": 0,
+              "bytes_match_evaluation": true
+            },
+            {
+              "file": "after-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "max_channel_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "mean_channel_delta": 0,
+              "bytes_match_evaluation": true
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "comparable": true,
+              "pixels": 329160,
+              "max_channel_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "mean_channel_delta": 0,
+              "bytes_match_evaluation": true
+            }
+          ],
+          "content_binding_mode": "byte_equal",
+          "allowed_content_binding_modes": [
+            "byte_equal",
+            "pixel_tolerance",
+            "unavailable"
+          ],
+          "mode_contract_ok": true,
+          "registered_pixels": {
+            "desktop": [
+              1280,
+              900
+            ],
+            "mobile": [
+              390,
+              844
+            ]
+          },
+          "registered_device_scale_factor": 1,
+          "tolerances": {
+            "camera_center_absolute_deg": 0,
+            "camera_zoom_absolute": 0,
+            "camera_bearing_absolute_deg": 0,
+            "camera_pitch_absolute_deg": 0,
+            "pixel_max_channel_delta": 0,
+            "pixel_differing_fraction": 0
+          },
+          "state_fields_compared": [
+            "variant",
+            "selected_site",
+            "popup_open",
+            "sheet_state",
+            "measure_mode"
+          ],
+          "note": "Delivered files are opened and measured: PNG header, colour type, digest, camera, state fields and pixels against this run's own capture. A self-consistent sidecar over an unrelated image cannot pass."
+        }
+      },
+      "stdout": "Evaluator finished. Verdict: PASS exit=0 reasons=none\n",
+      "stderr": ""
+    },
+    {
+      "label": "positive-explicit-pixel",
+      "mode": "pixel_tolerance",
+      "exit": 0,
+      "verdict": "PASS",
+      "reasons": [],
+      "delivery": {
+        "pass": true,
+        "reason": null,
+        "detail": {
+          "rule_version": "rev05/delivery-5",
+          "problems": [],
+          "identity": [
+            {
+              "file": "before-desktop.png",
+              "delivered_digest": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "evaluator_digest": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "bytes_match_evaluation": true,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 2,
+                "bit_depth": 8
+              }
+            },
+            {
+              "file": "after-desktop.png",
+              "delivered_digest": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "evaluator_digest": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "bytes_match_evaluation": true,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 2,
+                "bit_depth": 8
+              }
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "delivered_digest": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "evaluator_digest": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "bytes_match_evaluation": true,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 390,
+                "height": 844,
+                "color_type": 2,
+                "bit_depth": 8
+              }
+            }
+          ],
+          "pixel_comparisons": [
+            {
+              "file": "before-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "max_channel_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "mean_channel_delta": 0,
+              "bytes_match_evaluation": true
+            },
+            {
+              "file": "after-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "max_channel_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "mean_channel_delta": 0,
+              "bytes_match_evaluation": true
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "comparable": true,
+              "pixels": 329160,
+              "max_channel_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "mean_channel_delta": 0,
+              "bytes_match_evaluation": true
+            }
+          ],
+          "content_binding_mode": "pixel_tolerance",
+          "allowed_content_binding_modes": [
+            "byte_equal",
+            "pixel_tolerance",
+            "unavailable"
+          ],
+          "mode_contract_ok": true,
+          "registered_pixels": {
+            "desktop": [
+              1280,
+              900
+            ],
+            "mobile": [
+              390,
+              844
+            ]
+          },
+          "registered_device_scale_factor": 1,
+          "tolerances": {
+            "camera_center_absolute_deg": 0,
+            "camera_zoom_absolute": 0,
+            "camera_bearing_absolute_deg": 0,
+            "camera_pitch_absolute_deg": 0,
+            "pixel_max_channel_delta": 0,
+            "pixel_differing_fraction": 0
+          },
+          "state_fields_compared": [
+            "variant",
+            "selected_site",
+            "popup_open",
+            "sheet_state",
+            "measure_mode"
+          ],
+          "note": "Delivered files are opened and measured: PNG header, colour type, digest, camera, state fields and pixels against this run's own capture. A self-consistent sidecar over an unrelated image cannot pass."
+        }
+      },
+      "stdout": "Evaluator finished. Verdict: PASS exit=0 reasons=none\n",
+      "stderr": ""
+    },
+    {
+      "label": "unknown-mode",
+      "mode": "byte_eqaul",
+      "exit": 2,
+      "verdict": "ERROR",
+      "reasons": [
+        "CONFIGURATION_INVALID:CONTENT_BINDING_MODE_UNKNOWN"
+      ],
+      "stdout": "Evaluator finished. Verdict: ERROR exit=2 reasons=CONFIGURATION_INVALID:CONTENT_BINDING_MODE_UNKNOWN\n",
+      "stderr": ""
+    },
+    {
+      "label": "transparent-default",
+      "mode": null,
+      "exit": 1,
+      "verdict": "FAIL",
+      "reasons": [
+        "screenshot_checks.delivered_artifacts_consistent:DELIVERED_ARTIFACT_INVALID"
+      ],
+      "delivery": {
+        "pass": false,
+        "reason": "DELIVERED_ARTIFACT_INVALID",
+        "detail": {
+          "rule_version": "rev05/delivery-5",
+          "problems": [
+            {
+              "file": "before-desktop.png",
+              "problem": "DELIVERED_IMAGE_NOT_THIS_PAGES_RENDER",
+              "delivered": "6e96991a822cd28ed5a3c4835f7a579accc8811c350028b0e8370960cf82914e",
+              "evaluator_capture": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "max_channel_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "note": "9 independent loads over 3 states produced 9/9 byte-identical pairs, with a worst intra-state delta of 0/255 over 0 of pixels, so requiring the delivered bytes to equal this run's own capture asks nothing the render cannot repeat; the smallest real difference this measurement separates is 0.490022 of pixels and an unrelated picture differs over 1."
+            },
+            {
+              "file": "after-desktop.png",
+              "problem": "DELIVERED_IMAGE_NOT_THIS_PAGES_RENDER",
+              "delivered": "c098e82f5fbda30a3ff86cc663d69253bfaa0be4b0f6514283e0bfae60856670",
+              "evaluator_capture": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "max_channel_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "note": "9 independent loads over 3 states produced 9/9 byte-identical pairs, with a worst intra-state delta of 0/255 over 0 of pixels, so requiring the delivered bytes to equal this run's own capture asks nothing the render cannot repeat; the smallest real difference this measurement separates is 0.490022 of pixels and an unrelated picture differs over 1."
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "problem": "DELIVERED_IMAGE_NOT_THIS_PAGES_RENDER",
+              "delivered": "628748183d79a75b58d0a6c8fa329d315d38489ff5b1e6454c8a4925a80aa75e",
+              "evaluator_capture": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "max_channel_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "note": "9 independent loads over 3 states produced 9/9 byte-identical pairs, with a worst intra-state delta of 0/255 over 0 of pixels, so requiring the delivered bytes to equal this run's own capture asks nothing the render cannot repeat; the smallest real difference this measurement separates is 0.490022 of pixels and an unrelated picture differs over 1."
+            }
+          ],
+          "identity": [
+            {
+              "file": "before-desktop.png",
+              "delivered_digest": "6e96991a822cd28ed5a3c4835f7a579accc8811c350028b0e8370960cf82914e",
+              "evaluator_digest": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 6,
+                "bit_depth": 8
+              }
+            },
+            {
+              "file": "after-desktop.png",
+              "delivered_digest": "c098e82f5fbda30a3ff86cc663d69253bfaa0be4b0f6514283e0bfae60856670",
+              "evaluator_digest": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 6,
+                "bit_depth": 8
+              }
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "delivered_digest": "628748183d79a75b58d0a6c8fa329d315d38489ff5b1e6454c8a4925a80aa75e",
+              "evaluator_digest": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 390,
+                "height": 844,
+                "color_type": 6,
+                "bit_depth": 8
+              }
+            }
+          ],
+          "pixel_comparisons": [
+            {
+              "file": "before-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "max_channel_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "mean_channel_delta": 0,
+              "bytes_match_evaluation": false
+            },
+            {
+              "file": "after-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "max_channel_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "mean_channel_delta": 0,
+              "bytes_match_evaluation": false
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "comparable": true,
+              "pixels": 329160,
+              "max_channel_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "mean_channel_delta": 0,
+              "bytes_match_evaluation": false
+            }
+          ],
+          "content_binding_mode": "byte_equal",
+          "allowed_content_binding_modes": [
+            "byte_equal",
+            "pixel_tolerance",
+            "unavailable"
+          ],
+          "mode_contract_ok": true,
+          "registered_pixels": {
+            "desktop": [
+              1280,
+              900
+            ],
+            "mobile": [
+              390,
+              844
+            ]
+          },
+          "registered_device_scale_factor": 1,
+          "tolerances": {
+            "camera_center_absolute_deg": 0,
+            "camera_zoom_absolute": 0,
+            "camera_bearing_absolute_deg": 0,
+            "camera_pitch_absolute_deg": 0,
+            "pixel_max_channel_delta": 0,
+            "pixel_differing_fraction": 0
+          },
+          "state_fields_compared": [
+            "variant",
+            "selected_site",
+            "popup_open",
+            "sheet_state",
+            "measure_mode"
+          ],
+          "note": "Delivered files are opened and measured: PNG header, colour type, digest, camera, state fields and pixels against this run's own capture. A self-consistent sidecar over an unrelated image cannot pass."
+        }
+      },
+      "stdout": "Evaluator finished. Verdict: FAIL exit=1 reasons=screenshot_checks.delivered_artifacts_consistent:DELIVERED_ARTIFACT_INVALID\n",
+      "stderr": ""
+    },
+    {
+      "label": "transparent-pixel",
+      "mode": "pixel_tolerance",
+      "exit": 0,
+      "verdict": "PASS",
+      "reasons": [],
+      "delivery": {
+        "pass": true,
+        "reason": null,
+        "detail": {
+          "rule_version": "rev05/delivery-5",
+          "problems": [],
+          "identity": [
+            {
+              "file": "before-desktop.png",
+              "delivered_digest": "6e96991a822cd28ed5a3c4835f7a579accc8811c350028b0e8370960cf82914e",
+              "evaluator_digest": "8d610b0c75185fdc87f5a8ba49da298487a37df9b79f5e04f7180d4ce2f39431",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 6,
+                "bit_depth": 8
+              }
+            },
+            {
+              "file": "after-desktop.png",
+              "delivered_digest": "c098e82f5fbda30a3ff86cc663d69253bfaa0be4b0f6514283e0bfae60856670",
+              "evaluator_digest": "d24cead482a29a00fbd8af5770b3c3802e0239ff31829e2c013ba40c281ae53a",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 1280,
+                "height": 900,
+                "color_type": 6,
+                "bit_depth": 8
+              }
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "delivered_digest": "628748183d79a75b58d0a6c8fa329d315d38489ff5b1e6454c8a4925a80aa75e",
+              "evaluator_digest": "62cec7eff84078a0dc72455c522a3786aa1cb6610c1503a95a18e6fe5ea5b87f",
+              "bytes_match_evaluation": false,
+              "sidecar_matches_its_own_file": true,
+              "png_header": {
+                "width": 390,
+                "height": 844,
+                "color_type": 6,
+                "bit_depth": 8
+              }
+            }
+          ],
+          "pixel_comparisons": [
+            {
+              "file": "before-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "max_channel_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "mean_channel_delta": 0,
+              "bytes_match_evaluation": false
+            },
+            {
+              "file": "after-desktop.png",
+              "comparable": true,
+              "pixels": 1152000,
+              "max_channel_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "mean_channel_delta": 0,
+              "bytes_match_evaluation": false
+            },
+            {
+              "file": "after-mobile-selection.png",
+              "comparable": true,
+              "pixels": 329160,
+              "max_channel_delta": 0,
+              "differing_pixels": 0,
+              "differing_fraction": 0,
+              "mean_channel_delta": 0,
+              "bytes_match_evaluation": false
+            }
+          ],
+          "content_binding_mode": "pixel_tolerance",
+          "allowed_content_binding_modes": [
+            "byte_equal",
+            "pixel_tolerance",
+            "unavailable"
+          ],
+          "mode_contract_ok": true,
+          "registered_pixels": {
+            "desktop": [
+              1280,
+              900
+            ],
+            "mobile": [
+              390,
+              844
+            ]
+          },
+          "registered_device_scale_factor": 1,
+          "tolerances": {
+            "camera_center_absolute_deg": 0,
+            "camera_zoom_absolute": 0,
+            "camera_bearing_absolute_deg": 0,
+            "camera_pitch_absolute_deg": 0,
+            "pixel_max_channel_delta": 0,
+            "pixel_differing_fraction": 0
+          },
+          "state_fields_compared": [
+            "variant",
+            "selected_site",
+            "popup_open",
+            "sheet_state",
+            "measure_mode"
+          ],
+          "note": "Delivered files are opened and measured: PNG header, colour type, digest, camera, state fields and pixels against this run's own capture. A self-consistent sidecar over an unrelated image cannot pass."
+        }
+      },
+      "stdout": "Evaluator finished. Verdict: PASS exit=0 reasons=none\n",
+      "stderr": ""
+    }
+  ]
+}

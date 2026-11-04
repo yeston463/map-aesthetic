@@ -1,0 +1,4445 @@
+{
+  "executedAt": "2026-11-02T12:09:20.483Z",
+  "summary": {
+    "kind": "post_hoc_artifact_replay_not_valid_agent_AB",
+    "capture": {
+      "fixedDesktopCenterLatLng": [
+        31.2268,
+        121.4388
+      ],
+      "fixedDesktopZoom": 15,
+      "desktopViewport": [
+        1280,
+        900
+      ],
+      "mobileViewport": [
+        390,
+        844
+      ]
+    },
+    "improvedDesktopImagesIdentical": true,
+    "improvedMobileImagesIdentical": true
+  },
+  "results": {
+    "A": {
+      "initialStyleSha256": "164a4290fbc6a679aa3cdcaee6b792980ec9d9f8e5b7afb8e429207fe5c7b140",
+      "variants": {
+        "baseline": {
+          "initial": {
+            "viewport": [
+              1280,
+              900
+            ],
+            "dpr": 1,
+            "center": [
+              31.226500223526298,
+              121.43850000000002
+            ],
+            "bounds": "121.42755031585695,31.219022460260756,121.44943714141847,31.23397688117882",
+            "zoom": 16,
+            "mapSize": [
+              1020,
+              815
+            ],
+            "selected": null,
+            "visibleLabelBoxes": 24,
+            "overlappingPairs": 0,
+            "sheetOverTargetBoundingBoxPx2": null,
+            "sheetOverPopupBoundingBoxPx2": null,
+            "renderedData": {
+              "sites": [
+                {
+                  "properties": {
+                    "name": "江岸路综合配送中心（北区临时中转点）",
+                    "site_id": "S01",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1840
+                  },
+                  "coordinates": [
+                    121.431724,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "临江路集散点",
+                    "site_id": "S02",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 920
+                  },
+                  "coordinates": [
+                    121.436036,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "旧仓里驿站",
+                    "site_id": "S03",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 610
+                  },
+                  "coordinates": [
+                    121.4385,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "江淮大道配送站",
+                    "site_id": "S04",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1520
+                  },
+                  "coordinates": [
+                    121.440348,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "东圩里集散点",
+                    "site_id": "S05",
+                    "class_name": "集散点",
+                    "status": "alert",
+                    "throughput": 730
+                  },
+                  "coordinates": [
+                    121.444352,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "纺织新村驿站",
+                    "site_id": "S06",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 380
+                  },
+                  "coordinates": [
+                    121.434188,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "沿河路配送站",
+                    "site_id": "S07",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1130
+                  },
+                  "coordinates": [
+                    121.437884,
+                    31.230984
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "南苑驿站",
+                    "site_id": "S08",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 290
+                  },
+                  "coordinates": [
+                    121.44158,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "三多里配送站",
+                    "site_id": "S09",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1010
+                  },
+                  "coordinates": [
+                    121.445276,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "兴仁里集散点",
+                    "site_id": "S10",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 540
+                  },
+                  "coordinates": [
+                    121.432956,
+                    31.2265
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "小学路口驿站",
+                    "site_id": "S11",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 420
+                  },
+                  "coordinates": [
+                    121.439732,
+                    31.221308
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "新港河配送站",
+                    "site_id": "S12",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1260
+                  },
+                  "coordinates": [
+                    121.44312,
+                    31.230984
+                  ]
+                }
+              ],
+              "districts": [
+                {
+                  "properties": {
+                    "district_id": "D1",
+                    "district": "旧仓里社区",
+                    "value": 610
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ],
+                    [
+                      121.4308,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D2",
+                    "district": "三多里社区",
+                    "value": 1260
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.2324
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D3",
+                    "district": "兴仁里社区",
+                    "value": 920
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4308,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D4",
+                    "district": "江淮大道社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D5",
+                    "district": "纺织新村社区",
+                    "value": 380
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ],
+                    [
+                      121.4308,
+                      31.22414
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D6",
+                    "district": "南苑社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ]
+                  ]
+                }
+              ],
+              "route": [
+                [
+                  121.431724,
+                  31.22414
+                ],
+                [
+                  121.432956,
+                  31.2265
+                ],
+                [
+                  121.436036,
+                  31.229096
+                ],
+                [
+                  121.4385,
+                  31.226264
+                ],
+                [
+                  121.440348,
+                  31.22414
+                ],
+                [
+                  121.444352,
+                  31.229096
+                ],
+                [
+                  121.445276,
+                  31.226264
+                ]
+              ]
+            }
+          },
+          "desktop": {
+            "viewport": [
+              1280,
+              900
+            ],
+            "dpr": 1,
+            "center": [
+              31.2268,
+              121.4388
+            ],
+            "bounds": "121.41690731048585,31.211847168148132,121.4606809616089,31.24175591400924",
+            "zoom": 15,
+            "mapSize": [
+              1020,
+              815
+            ],
+            "selected": null,
+            "visibleLabelBoxes": 24,
+            "overlappingPairs": 10,
+            "sheetOverTargetBoundingBoxPx2": null,
+            "sheetOverPopupBoundingBoxPx2": null,
+            "renderedData": {
+              "sites": [
+                {
+                  "properties": {
+                    "name": "江岸路综合配送中心（北区临时中转点）",
+                    "site_id": "S01",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1840
+                  },
+                  "coordinates": [
+                    121.431724,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "临江路集散点",
+                    "site_id": "S02",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 920
+                  },
+                  "coordinates": [
+                    121.436036,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "旧仓里驿站",
+                    "site_id": "S03",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 610
+                  },
+                  "coordinates": [
+                    121.4385,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "江淮大道配送站",
+                    "site_id": "S04",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1520
+                  },
+                  "coordinates": [
+                    121.440348,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "东圩里集散点",
+                    "site_id": "S05",
+                    "class_name": "集散点",
+                    "status": "alert",
+                    "throughput": 730
+                  },
+                  "coordinates": [
+                    121.444352,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "纺织新村驿站",
+                    "site_id": "S06",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 380
+                  },
+                  "coordinates": [
+                    121.434188,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "沿河路配送站",
+                    "site_id": "S07",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1130
+                  },
+                  "coordinates": [
+                    121.437884,
+                    31.230984
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "南苑驿站",
+                    "site_id": "S08",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 290
+                  },
+                  "coordinates": [
+                    121.44158,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "三多里配送站",
+                    "site_id": "S09",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1010
+                  },
+                  "coordinates": [
+                    121.445276,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "兴仁里集散点",
+                    "site_id": "S10",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 540
+                  },
+                  "coordinates": [
+                    121.432956,
+                    31.2265
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "小学路口驿站",
+                    "site_id": "S11",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 420
+                  },
+                  "coordinates": [
+                    121.439732,
+                    31.221308
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "新港河配送站",
+                    "site_id": "S12",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1260
+                  },
+                  "coordinates": [
+                    121.44312,
+                    31.230984
+                  ]
+                }
+              ],
+              "districts": [
+                {
+                  "properties": {
+                    "district_id": "D1",
+                    "district": "旧仓里社区",
+                    "value": 610
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ],
+                    [
+                      121.4308,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D2",
+                    "district": "三多里社区",
+                    "value": 1260
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.2324
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D3",
+                    "district": "兴仁里社区",
+                    "value": 920
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4308,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D4",
+                    "district": "江淮大道社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D5",
+                    "district": "纺织新村社区",
+                    "value": 380
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ],
+                    [
+                      121.4308,
+                      31.22414
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D6",
+                    "district": "南苑社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ]
+                  ]
+                }
+              ],
+              "route": [
+                [
+                  121.431724,
+                  31.22414
+                ],
+                [
+                  121.432956,
+                  31.2265
+                ],
+                [
+                  121.436036,
+                  31.229096
+                ],
+                [
+                  121.4385,
+                  31.226264
+                ],
+                [
+                  121.440348,
+                  31.22414
+                ],
+                [
+                  121.444352,
+                  31.229096
+                ],
+                [
+                  121.445276,
+                  31.226264
+                ]
+              ]
+            }
+          },
+          "mobile": {
+            "viewport": [
+              390,
+              844
+            ],
+            "dpr": 1,
+            "center": [
+              31.226784375312906,
+              121.43879413604736
+            ],
+            "bounds": "121.4304256439209,31.213975956122024,121.44716262817383,31.239591058826626",
+            "zoom": 15,
+            "mapSize": [
+              390,
+              698
+            ],
+            "selected": "S11",
+            "visibleLabelBoxes": 24,
+            "overlappingPairs": 10,
+            "sheetOverTargetBoundingBoxPx2": 100,
+            "sheetOverPopupBoundingBoxPx2": 17992.5,
+            "renderedData": {
+              "sites": [
+                {
+                  "properties": {
+                    "name": "江岸路综合配送中心（北区临时中转点）",
+                    "site_id": "S01",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1840
+                  },
+                  "coordinates": [
+                    121.431724,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "临江路集散点",
+                    "site_id": "S02",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 920
+                  },
+                  "coordinates": [
+                    121.436036,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "旧仓里驿站",
+                    "site_id": "S03",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 610
+                  },
+                  "coordinates": [
+                    121.4385,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "江淮大道配送站",
+                    "site_id": "S04",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1520
+                  },
+                  "coordinates": [
+                    121.440348,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "东圩里集散点",
+                    "site_id": "S05",
+                    "class_name": "集散点",
+                    "status": "alert",
+                    "throughput": 730
+                  },
+                  "coordinates": [
+                    121.444352,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "纺织新村驿站",
+                    "site_id": "S06",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 380
+                  },
+                  "coordinates": [
+                    121.434188,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "沿河路配送站",
+                    "site_id": "S07",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1130
+                  },
+                  "coordinates": [
+                    121.437884,
+                    31.230984
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "南苑驿站",
+                    "site_id": "S08",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 290
+                  },
+                  "coordinates": [
+                    121.44158,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "三多里配送站",
+                    "site_id": "S09",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1010
+                  },
+                  "coordinates": [
+                    121.445276,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "兴仁里集散点",
+                    "site_id": "S10",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 540
+                  },
+                  "coordinates": [
+                    121.432956,
+                    31.2265
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "小学路口驿站",
+                    "site_id": "S11",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 420
+                  },
+                  "coordinates": [
+                    121.439732,
+                    31.221308
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "新港河配送站",
+                    "site_id": "S12",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1260
+                  },
+                  "coordinates": [
+                    121.44312,
+                    31.230984
+                  ]
+                }
+              ],
+              "districts": [
+                {
+                  "properties": {
+                    "district_id": "D1",
+                    "district": "旧仓里社区",
+                    "value": 610
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ],
+                    [
+                      121.4308,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D2",
+                    "district": "三多里社区",
+                    "value": 1260
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.2324
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D3",
+                    "district": "兴仁里社区",
+                    "value": 920
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4308,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D4",
+                    "district": "江淮大道社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D5",
+                    "district": "纺织新村社区",
+                    "value": 380
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ],
+                    [
+                      121.4308,
+                      31.22414
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D6",
+                    "district": "南苑社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ]
+                  ]
+                }
+              ],
+              "route": [
+                [
+                  121.431724,
+                  31.22414
+                ],
+                [
+                  121.432956,
+                  31.2265
+                ],
+                [
+                  121.436036,
+                  31.229096
+                ],
+                [
+                  121.4385,
+                  31.226264
+                ],
+                [
+                  121.440348,
+                  31.22414
+                ],
+                [
+                  121.444352,
+                  31.229096
+                ],
+                [
+                  121.445276,
+                  31.226264
+                ]
+              ]
+            }
+          },
+          "images": {
+            "desktopName": "A-baseline-desktop.png",
+            "desktopSha256": "ccc9493dc0f5eaf2a66efcae6c2a92d058af1f34758f3dd2e6ea783246916da9",
+            "mobileName": "A-baseline-mobile.png",
+            "mobileSha256": "4032880775373a80a5fdf27f01f01effdc6f6dcc8bb402b95422e0190571cc45"
+          },
+          "errors": [],
+          "externalRequests": []
+        },
+        "improved": {
+          "initial": {
+            "viewport": [
+              1280,
+              900
+            ],
+            "dpr": 1,
+            "center": [
+              31.226500223526298,
+              121.43850000000002
+            ],
+            "bounds": "121.42755031585695,31.219022460260756,121.44943714141847,31.23397688117882",
+            "zoom": 16,
+            "mapSize": [
+              1020,
+              815
+            ],
+            "selected": null,
+            "visibleLabelBoxes": 24,
+            "overlappingPairs": 0,
+            "sheetOverTargetBoundingBoxPx2": null,
+            "sheetOverPopupBoundingBoxPx2": null,
+            "renderedData": {
+              "sites": [
+                {
+                  "properties": {
+                    "name": "江岸路综合配送中心（北区临时中转点）",
+                    "site_id": "S01",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1840
+                  },
+                  "coordinates": [
+                    121.431724,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "临江路集散点",
+                    "site_id": "S02",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 920
+                  },
+                  "coordinates": [
+                    121.436036,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "旧仓里驿站",
+                    "site_id": "S03",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 610
+                  },
+                  "coordinates": [
+                    121.4385,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "江淮大道配送站",
+                    "site_id": "S04",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1520
+                  },
+                  "coordinates": [
+                    121.440348,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "东圩里集散点",
+                    "site_id": "S05",
+                    "class_name": "集散点",
+                    "status": "alert",
+                    "throughput": 730
+                  },
+                  "coordinates": [
+                    121.444352,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "纺织新村驿站",
+                    "site_id": "S06",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 380
+                  },
+                  "coordinates": [
+                    121.434188,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "沿河路配送站",
+                    "site_id": "S07",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1130
+                  },
+                  "coordinates": [
+                    121.437884,
+                    31.230984
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "南苑驿站",
+                    "site_id": "S08",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 290
+                  },
+                  "coordinates": [
+                    121.44158,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "三多里配送站",
+                    "site_id": "S09",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1010
+                  },
+                  "coordinates": [
+                    121.445276,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "兴仁里集散点",
+                    "site_id": "S10",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 540
+                  },
+                  "coordinates": [
+                    121.432956,
+                    31.2265
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "小学路口驿站",
+                    "site_id": "S11",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 420
+                  },
+                  "coordinates": [
+                    121.439732,
+                    31.221308
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "新港河配送站",
+                    "site_id": "S12",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1260
+                  },
+                  "coordinates": [
+                    121.44312,
+                    31.230984
+                  ]
+                }
+              ],
+              "districts": [
+                {
+                  "properties": {
+                    "district_id": "D1",
+                    "district": "旧仓里社区",
+                    "value": 610
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ],
+                    [
+                      121.4308,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D2",
+                    "district": "三多里社区",
+                    "value": 1260
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.2324
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D3",
+                    "district": "兴仁里社区",
+                    "value": 920
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4308,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D4",
+                    "district": "江淮大道社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D5",
+                    "district": "纺织新村社区",
+                    "value": 380
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ],
+                    [
+                      121.4308,
+                      31.22414
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D6",
+                    "district": "南苑社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ]
+                  ]
+                }
+              ],
+              "route": [
+                [
+                  121.431724,
+                  31.22414
+                ],
+                [
+                  121.432956,
+                  31.2265
+                ],
+                [
+                  121.436036,
+                  31.229096
+                ],
+                [
+                  121.4385,
+                  31.226264
+                ],
+                [
+                  121.440348,
+                  31.22414
+                ],
+                [
+                  121.444352,
+                  31.229096
+                ],
+                [
+                  121.445276,
+                  31.226264
+                ]
+              ]
+            }
+          },
+          "desktop": {
+            "viewport": [
+              1280,
+              900
+            ],
+            "dpr": 1,
+            "center": [
+              31.2268,
+              121.4388
+            ],
+            "bounds": "121.41690731048585,31.211847168148132,121.4606809616089,31.24175591400924",
+            "zoom": 15,
+            "mapSize": [
+              1020,
+              815
+            ],
+            "selected": null,
+            "visibleLabelBoxes": 14,
+            "overlappingPairs": 0,
+            "sheetOverTargetBoundingBoxPx2": null,
+            "sheetOverPopupBoundingBoxPx2": null,
+            "renderedData": {
+              "sites": [
+                {
+                  "properties": {
+                    "name": "江岸路综合配送中心（北区临时中转点）",
+                    "site_id": "S01",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1840
+                  },
+                  "coordinates": [
+                    121.431724,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "临江路集散点",
+                    "site_id": "S02",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 920
+                  },
+                  "coordinates": [
+                    121.436036,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "旧仓里驿站",
+                    "site_id": "S03",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 610
+                  },
+                  "coordinates": [
+                    121.4385,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "江淮大道配送站",
+                    "site_id": "S04",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1520
+                  },
+                  "coordinates": [
+                    121.440348,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "东圩里集散点",
+                    "site_id": "S05",
+                    "class_name": "集散点",
+                    "status": "alert",
+                    "throughput": 730
+                  },
+                  "coordinates": [
+                    121.444352,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "纺织新村驿站",
+                    "site_id": "S06",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 380
+                  },
+                  "coordinates": [
+                    121.434188,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "沿河路配送站",
+                    "site_id": "S07",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1130
+                  },
+                  "coordinates": [
+                    121.437884,
+                    31.230984
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "南苑驿站",
+                    "site_id": "S08",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 290
+                  },
+                  "coordinates": [
+                    121.44158,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "三多里配送站",
+                    "site_id": "S09",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1010
+                  },
+                  "coordinates": [
+                    121.445276,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "兴仁里集散点",
+                    "site_id": "S10",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 540
+                  },
+                  "coordinates": [
+                    121.432956,
+                    31.2265
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "小学路口驿站",
+                    "site_id": "S11",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 420
+                  },
+                  "coordinates": [
+                    121.439732,
+                    31.221308
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "新港河配送站",
+                    "site_id": "S12",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1260
+                  },
+                  "coordinates": [
+                    121.44312,
+                    31.230984
+                  ]
+                }
+              ],
+              "districts": [
+                {
+                  "properties": {
+                    "district_id": "D1",
+                    "district": "旧仓里社区",
+                    "value": 610
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ],
+                    [
+                      121.4308,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D2",
+                    "district": "三多里社区",
+                    "value": 1260
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.2324
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D3",
+                    "district": "兴仁里社区",
+                    "value": 920
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4308,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D4",
+                    "district": "江淮大道社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D5",
+                    "district": "纺织新村社区",
+                    "value": 380
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ],
+                    [
+                      121.4308,
+                      31.22414
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D6",
+                    "district": "南苑社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ]
+                  ]
+                }
+              ],
+              "route": [
+                [
+                  121.431724,
+                  31.22414
+                ],
+                [
+                  121.432956,
+                  31.2265
+                ],
+                [
+                  121.436036,
+                  31.229096
+                ],
+                [
+                  121.4385,
+                  31.226264
+                ],
+                [
+                  121.440348,
+                  31.22414
+                ],
+                [
+                  121.444352,
+                  31.229096
+                ],
+                [
+                  121.445276,
+                  31.226264
+                ]
+              ]
+            }
+          },
+          "mobile": {
+            "viewport": [
+              390,
+              844
+            ],
+            "dpr": 1,
+            "center": [
+              31.220251931369045,
+              121.43879413604736
+            ],
+            "bounds": "121.4304256439209,31.207442627089005,121.44716262817383,31.23305950017843",
+            "zoom": 15,
+            "mapSize": [
+              390,
+              698
+            ],
+            "selected": "S11",
+            "visibleLabelBoxes": 14,
+            "overlappingPairs": 0,
+            "sheetOverTargetBoundingBoxPx2": 0,
+            "sheetOverPopupBoundingBoxPx2": 0,
+            "renderedData": {
+              "sites": [
+                {
+                  "properties": {
+                    "name": "江岸路综合配送中心（北区临时中转点）",
+                    "site_id": "S01",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1840
+                  },
+                  "coordinates": [
+                    121.431724,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "临江路集散点",
+                    "site_id": "S02",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 920
+                  },
+                  "coordinates": [
+                    121.436036,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "旧仓里驿站",
+                    "site_id": "S03",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 610
+                  },
+                  "coordinates": [
+                    121.4385,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "江淮大道配送站",
+                    "site_id": "S04",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1520
+                  },
+                  "coordinates": [
+                    121.440348,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "东圩里集散点",
+                    "site_id": "S05",
+                    "class_name": "集散点",
+                    "status": "alert",
+                    "throughput": 730
+                  },
+                  "coordinates": [
+                    121.444352,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "纺织新村驿站",
+                    "site_id": "S06",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 380
+                  },
+                  "coordinates": [
+                    121.434188,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "沿河路配送站",
+                    "site_id": "S07",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1130
+                  },
+                  "coordinates": [
+                    121.437884,
+                    31.230984
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "南苑驿站",
+                    "site_id": "S08",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 290
+                  },
+                  "coordinates": [
+                    121.44158,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "三多里配送站",
+                    "site_id": "S09",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1010
+                  },
+                  "coordinates": [
+                    121.445276,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "兴仁里集散点",
+                    "site_id": "S10",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 540
+                  },
+                  "coordinates": [
+                    121.432956,
+                    31.2265
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "小学路口驿站",
+                    "site_id": "S11",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 420
+                  },
+                  "coordinates": [
+                    121.439732,
+                    31.221308
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "新港河配送站",
+                    "site_id": "S12",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1260
+                  },
+                  "coordinates": [
+                    121.44312,
+                    31.230984
+                  ]
+                }
+              ],
+              "districts": [
+                {
+                  "properties": {
+                    "district_id": "D1",
+                    "district": "旧仓里社区",
+                    "value": 610
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ],
+                    [
+                      121.4308,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D2",
+                    "district": "三多里社区",
+                    "value": 1260
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.2324
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D3",
+                    "district": "兴仁里社区",
+                    "value": 920
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4308,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D4",
+                    "district": "江淮大道社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D5",
+                    "district": "纺织新村社区",
+                    "value": 380
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ],
+                    [
+                      121.4308,
+                      31.22414
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D6",
+                    "district": "南苑社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ]
+                  ]
+                }
+              ],
+              "route": [
+                [
+                  121.431724,
+                  31.22414
+                ],
+                [
+                  121.432956,
+                  31.2265
+                ],
+                [
+                  121.436036,
+                  31.229096
+                ],
+                [
+                  121.4385,
+                  31.226264
+                ],
+                [
+                  121.440348,
+                  31.22414
+                ],
+                [
+                  121.444352,
+                  31.229096
+                ],
+                [
+                  121.445276,
+                  31.226264
+                ]
+              ]
+            }
+          },
+          "images": {
+            "desktopName": "A-improved-desktop.png",
+            "desktopSha256": "e3e947cdc988d7106f0a0ce4f4a051f205d13ba9bb07416b4b118526f59ef096",
+            "mobileName": "A-improved-mobile.png",
+            "mobileSha256": "5ee01dc641c887917d9638e22fba3d5f2bc75062bc04c5e6b060b1180b966a3b"
+          },
+          "errors": [],
+          "externalRequests": []
+        }
+      },
+      "finalStyleSha256": "164a4290fbc6a679aa3cdcaee6b792980ec9d9f8e5b7afb8e429207fe5c7b140"
+    },
+    "B": {
+      "initialStyleSha256": "bfd861e34e86a5863c4f676eadabfde574253930c28eab69bd35ffa6bfa3709f",
+      "variants": {
+        "baseline": {
+          "initial": {
+            "viewport": [
+              1280,
+              900
+            ],
+            "dpr": 1,
+            "center": [
+              31.226500223526298,
+              121.43850000000002
+            ],
+            "bounds": "121.42755031585695,31.219022460260756,121.44943714141847,31.23397688117882",
+            "zoom": 16,
+            "mapSize": [
+              1020,
+              815
+            ],
+            "selected": null,
+            "visibleLabelBoxes": 24,
+            "overlappingPairs": 0,
+            "sheetOverTargetBoundingBoxPx2": null,
+            "sheetOverPopupBoundingBoxPx2": null,
+            "renderedData": {
+              "sites": [
+                {
+                  "properties": {
+                    "name": "江岸路综合配送中心（北区临时中转点）",
+                    "site_id": "S01",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1840
+                  },
+                  "coordinates": [
+                    121.431724,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "临江路集散点",
+                    "site_id": "S02",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 920
+                  },
+                  "coordinates": [
+                    121.436036,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "旧仓里驿站",
+                    "site_id": "S03",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 610
+                  },
+                  "coordinates": [
+                    121.4385,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "江淮大道配送站",
+                    "site_id": "S04",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1520
+                  },
+                  "coordinates": [
+                    121.440348,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "东圩里集散点",
+                    "site_id": "S05",
+                    "class_name": "集散点",
+                    "status": "alert",
+                    "throughput": 730
+                  },
+                  "coordinates": [
+                    121.444352,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "纺织新村驿站",
+                    "site_id": "S06",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 380
+                  },
+                  "coordinates": [
+                    121.434188,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "沿河路配送站",
+                    "site_id": "S07",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1130
+                  },
+                  "coordinates": [
+                    121.437884,
+                    31.230984
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "南苑驿站",
+                    "site_id": "S08",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 290
+                  },
+                  "coordinates": [
+                    121.44158,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "三多里配送站",
+                    "site_id": "S09",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1010
+                  },
+                  "coordinates": [
+                    121.445276,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "兴仁里集散点",
+                    "site_id": "S10",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 540
+                  },
+                  "coordinates": [
+                    121.432956,
+                    31.2265
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "小学路口驿站",
+                    "site_id": "S11",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 420
+                  },
+                  "coordinates": [
+                    121.439732,
+                    31.221308
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "新港河配送站",
+                    "site_id": "S12",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1260
+                  },
+                  "coordinates": [
+                    121.44312,
+                    31.230984
+                  ]
+                }
+              ],
+              "districts": [
+                {
+                  "properties": {
+                    "district_id": "D1",
+                    "district": "旧仓里社区",
+                    "value": 610
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ],
+                    [
+                      121.4308,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D2",
+                    "district": "三多里社区",
+                    "value": 1260
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.2324
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D3",
+                    "district": "兴仁里社区",
+                    "value": 920
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4308,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D4",
+                    "district": "江淮大道社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D5",
+                    "district": "纺织新村社区",
+                    "value": 380
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ],
+                    [
+                      121.4308,
+                      31.22414
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D6",
+                    "district": "南苑社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ]
+                  ]
+                }
+              ],
+              "route": [
+                [
+                  121.431724,
+                  31.22414
+                ],
+                [
+                  121.432956,
+                  31.2265
+                ],
+                [
+                  121.436036,
+                  31.229096
+                ],
+                [
+                  121.4385,
+                  31.226264
+                ],
+                [
+                  121.440348,
+                  31.22414
+                ],
+                [
+                  121.444352,
+                  31.229096
+                ],
+                [
+                  121.445276,
+                  31.226264
+                ]
+              ]
+            }
+          },
+          "desktop": {
+            "viewport": [
+              1280,
+              900
+            ],
+            "dpr": 1,
+            "center": [
+              31.2268,
+              121.4388
+            ],
+            "bounds": "121.41690731048585,31.211847168148132,121.4606809616089,31.24175591400924",
+            "zoom": 15,
+            "mapSize": [
+              1020,
+              815
+            ],
+            "selected": null,
+            "visibleLabelBoxes": 24,
+            "overlappingPairs": 10,
+            "sheetOverTargetBoundingBoxPx2": null,
+            "sheetOverPopupBoundingBoxPx2": null,
+            "renderedData": {
+              "sites": [
+                {
+                  "properties": {
+                    "name": "江岸路综合配送中心（北区临时中转点）",
+                    "site_id": "S01",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1840
+                  },
+                  "coordinates": [
+                    121.431724,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "临江路集散点",
+                    "site_id": "S02",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 920
+                  },
+                  "coordinates": [
+                    121.436036,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "旧仓里驿站",
+                    "site_id": "S03",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 610
+                  },
+                  "coordinates": [
+                    121.4385,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "江淮大道配送站",
+                    "site_id": "S04",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1520
+                  },
+                  "coordinates": [
+                    121.440348,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "东圩里集散点",
+                    "site_id": "S05",
+                    "class_name": "集散点",
+                    "status": "alert",
+                    "throughput": 730
+                  },
+                  "coordinates": [
+                    121.444352,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "纺织新村驿站",
+                    "site_id": "S06",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 380
+                  },
+                  "coordinates": [
+                    121.434188,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "沿河路配送站",
+                    "site_id": "S07",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1130
+                  },
+                  "coordinates": [
+                    121.437884,
+                    31.230984
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "南苑驿站",
+                    "site_id": "S08",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 290
+                  },
+                  "coordinates": [
+                    121.44158,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "三多里配送站",
+                    "site_id": "S09",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1010
+                  },
+                  "coordinates": [
+                    121.445276,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "兴仁里集散点",
+                    "site_id": "S10",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 540
+                  },
+                  "coordinates": [
+                    121.432956,
+                    31.2265
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "小学路口驿站",
+                    "site_id": "S11",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 420
+                  },
+                  "coordinates": [
+                    121.439732,
+                    31.221308
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "新港河配送站",
+                    "site_id": "S12",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1260
+                  },
+                  "coordinates": [
+                    121.44312,
+                    31.230984
+                  ]
+                }
+              ],
+              "districts": [
+                {
+                  "properties": {
+                    "district_id": "D1",
+                    "district": "旧仓里社区",
+                    "value": 610
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ],
+                    [
+                      121.4308,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D2",
+                    "district": "三多里社区",
+                    "value": 1260
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.2324
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D3",
+                    "district": "兴仁里社区",
+                    "value": 920
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4308,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D4",
+                    "district": "江淮大道社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D5",
+                    "district": "纺织新村社区",
+                    "value": 380
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ],
+                    [
+                      121.4308,
+                      31.22414
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D6",
+                    "district": "南苑社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ]
+                  ]
+                }
+              ],
+              "route": [
+                [
+                  121.431724,
+                  31.22414
+                ],
+                [
+                  121.432956,
+                  31.2265
+                ],
+                [
+                  121.436036,
+                  31.229096
+                ],
+                [
+                  121.4385,
+                  31.226264
+                ],
+                [
+                  121.440348,
+                  31.22414
+                ],
+                [
+                  121.444352,
+                  31.229096
+                ],
+                [
+                  121.445276,
+                  31.226264
+                ]
+              ]
+            }
+          },
+          "mobile": {
+            "viewport": [
+              390,
+              844
+            ],
+            "dpr": 1,
+            "center": [
+              31.226784375312906,
+              121.43879413604736
+            ],
+            "bounds": "121.4304256439209,31.213975956122024,121.44716262817383,31.239591058826626",
+            "zoom": 15,
+            "mapSize": [
+              390,
+              698
+            ],
+            "selected": "S11",
+            "visibleLabelBoxes": 24,
+            "overlappingPairs": 10,
+            "sheetOverTargetBoundingBoxPx2": 100,
+            "sheetOverPopupBoundingBoxPx2": 17992.5,
+            "renderedData": {
+              "sites": [
+                {
+                  "properties": {
+                    "name": "江岸路综合配送中心（北区临时中转点）",
+                    "site_id": "S01",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1840
+                  },
+                  "coordinates": [
+                    121.431724,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "临江路集散点",
+                    "site_id": "S02",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 920
+                  },
+                  "coordinates": [
+                    121.436036,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "旧仓里驿站",
+                    "site_id": "S03",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 610
+                  },
+                  "coordinates": [
+                    121.4385,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "江淮大道配送站",
+                    "site_id": "S04",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1520
+                  },
+                  "coordinates": [
+                    121.440348,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "东圩里集散点",
+                    "site_id": "S05",
+                    "class_name": "集散点",
+                    "status": "alert",
+                    "throughput": 730
+                  },
+                  "coordinates": [
+                    121.444352,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "纺织新村驿站",
+                    "site_id": "S06",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 380
+                  },
+                  "coordinates": [
+                    121.434188,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "沿河路配送站",
+                    "site_id": "S07",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1130
+                  },
+                  "coordinates": [
+                    121.437884,
+                    31.230984
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "南苑驿站",
+                    "site_id": "S08",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 290
+                  },
+                  "coordinates": [
+                    121.44158,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "三多里配送站",
+                    "site_id": "S09",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1010
+                  },
+                  "coordinates": [
+                    121.445276,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "兴仁里集散点",
+                    "site_id": "S10",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 540
+                  },
+                  "coordinates": [
+                    121.432956,
+                    31.2265
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "小学路口驿站",
+                    "site_id": "S11",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 420
+                  },
+                  "coordinates": [
+                    121.439732,
+                    31.221308
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "新港河配送站",
+                    "site_id": "S12",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1260
+                  },
+                  "coordinates": [
+                    121.44312,
+                    31.230984
+                  ]
+                }
+              ],
+              "districts": [
+                {
+                  "properties": {
+                    "district_id": "D1",
+                    "district": "旧仓里社区",
+                    "value": 610
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ],
+                    [
+                      121.4308,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D2",
+                    "district": "三多里社区",
+                    "value": 1260
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.2324
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D3",
+                    "district": "兴仁里社区",
+                    "value": 920
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4308,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D4",
+                    "district": "江淮大道社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D5",
+                    "district": "纺织新村社区",
+                    "value": 380
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ],
+                    [
+                      121.4308,
+                      31.22414
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D6",
+                    "district": "南苑社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ]
+                  ]
+                }
+              ],
+              "route": [
+                [
+                  121.431724,
+                  31.22414
+                ],
+                [
+                  121.432956,
+                  31.2265
+                ],
+                [
+                  121.436036,
+                  31.229096
+                ],
+                [
+                  121.4385,
+                  31.226264
+                ],
+                [
+                  121.440348,
+                  31.22414
+                ],
+                [
+                  121.444352,
+                  31.229096
+                ],
+                [
+                  121.445276,
+                  31.226264
+                ]
+              ]
+            }
+          },
+          "images": {
+            "desktopName": "B-baseline-desktop.png",
+            "desktopSha256": "ccc9493dc0f5eaf2a66efcae6c2a92d058af1f34758f3dd2e6ea783246916da9",
+            "mobileName": "B-baseline-mobile.png",
+            "mobileSha256": "4032880775373a80a5fdf27f01f01effdc6f6dcc8bb402b95422e0190571cc45"
+          },
+          "errors": [],
+          "externalRequests": []
+        },
+        "improved": {
+          "initial": {
+            "viewport": [
+              1280,
+              900
+            ],
+            "dpr": 1,
+            "center": [
+              31.226500223526298,
+              121.43850000000002
+            ],
+            "bounds": "121.42755031585695,31.219022460260756,121.44943714141847,31.23397688117882",
+            "zoom": 16,
+            "mapSize": [
+              1020,
+              815
+            ],
+            "selected": null,
+            "visibleLabelBoxes": 24,
+            "overlappingPairs": 0,
+            "sheetOverTargetBoundingBoxPx2": null,
+            "sheetOverPopupBoundingBoxPx2": null,
+            "renderedData": {
+              "sites": [
+                {
+                  "properties": {
+                    "name": "江岸路综合配送中心（北区临时中转点）",
+                    "site_id": "S01",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1840
+                  },
+                  "coordinates": [
+                    121.431724,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "临江路集散点",
+                    "site_id": "S02",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 920
+                  },
+                  "coordinates": [
+                    121.436036,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "旧仓里驿站",
+                    "site_id": "S03",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 610
+                  },
+                  "coordinates": [
+                    121.4385,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "江淮大道配送站",
+                    "site_id": "S04",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1520
+                  },
+                  "coordinates": [
+                    121.440348,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "东圩里集散点",
+                    "site_id": "S05",
+                    "class_name": "集散点",
+                    "status": "alert",
+                    "throughput": 730
+                  },
+                  "coordinates": [
+                    121.444352,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "纺织新村驿站",
+                    "site_id": "S06",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 380
+                  },
+                  "coordinates": [
+                    121.434188,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "沿河路配送站",
+                    "site_id": "S07",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1130
+                  },
+                  "coordinates": [
+                    121.437884,
+                    31.230984
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "南苑驿站",
+                    "site_id": "S08",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 290
+                  },
+                  "coordinates": [
+                    121.44158,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "三多里配送站",
+                    "site_id": "S09",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1010
+                  },
+                  "coordinates": [
+                    121.445276,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "兴仁里集散点",
+                    "site_id": "S10",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 540
+                  },
+                  "coordinates": [
+                    121.432956,
+                    31.2265
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "小学路口驿站",
+                    "site_id": "S11",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 420
+                  },
+                  "coordinates": [
+                    121.439732,
+                    31.221308
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "新港河配送站",
+                    "site_id": "S12",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1260
+                  },
+                  "coordinates": [
+                    121.44312,
+                    31.230984
+                  ]
+                }
+              ],
+              "districts": [
+                {
+                  "properties": {
+                    "district_id": "D1",
+                    "district": "旧仓里社区",
+                    "value": 610
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ],
+                    [
+                      121.4308,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D2",
+                    "district": "三多里社区",
+                    "value": 1260
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.2324
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D3",
+                    "district": "兴仁里社区",
+                    "value": 920
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4308,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D4",
+                    "district": "江淮大道社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D5",
+                    "district": "纺织新村社区",
+                    "value": 380
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ],
+                    [
+                      121.4308,
+                      31.22414
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D6",
+                    "district": "南苑社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ]
+                  ]
+                }
+              ],
+              "route": [
+                [
+                  121.431724,
+                  31.22414
+                ],
+                [
+                  121.432956,
+                  31.2265
+                ],
+                [
+                  121.436036,
+                  31.229096
+                ],
+                [
+                  121.4385,
+                  31.226264
+                ],
+                [
+                  121.440348,
+                  31.22414
+                ],
+                [
+                  121.444352,
+                  31.229096
+                ],
+                [
+                  121.445276,
+                  31.226264
+                ]
+              ]
+            }
+          },
+          "desktop": {
+            "viewport": [
+              1280,
+              900
+            ],
+            "dpr": 1,
+            "center": [
+              31.2268,
+              121.4388
+            ],
+            "bounds": "121.41690731048585,31.211847168148132,121.4606809616089,31.24175591400924",
+            "zoom": 15,
+            "mapSize": [
+              1020,
+              815
+            ],
+            "selected": null,
+            "visibleLabelBoxes": 14,
+            "overlappingPairs": 0,
+            "sheetOverTargetBoundingBoxPx2": null,
+            "sheetOverPopupBoundingBoxPx2": null,
+            "renderedData": {
+              "sites": [
+                {
+                  "properties": {
+                    "name": "江岸路综合配送中心（北区临时中转点）",
+                    "site_id": "S01",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1840
+                  },
+                  "coordinates": [
+                    121.431724,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "临江路集散点",
+                    "site_id": "S02",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 920
+                  },
+                  "coordinates": [
+                    121.436036,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "旧仓里驿站",
+                    "site_id": "S03",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 610
+                  },
+                  "coordinates": [
+                    121.4385,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "江淮大道配送站",
+                    "site_id": "S04",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1520
+                  },
+                  "coordinates": [
+                    121.440348,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "东圩里集散点",
+                    "site_id": "S05",
+                    "class_name": "集散点",
+                    "status": "alert",
+                    "throughput": 730
+                  },
+                  "coordinates": [
+                    121.444352,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "纺织新村驿站",
+                    "site_id": "S06",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 380
+                  },
+                  "coordinates": [
+                    121.434188,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "沿河路配送站",
+                    "site_id": "S07",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1130
+                  },
+                  "coordinates": [
+                    121.437884,
+                    31.230984
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "南苑驿站",
+                    "site_id": "S08",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 290
+                  },
+                  "coordinates": [
+                    121.44158,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "三多里配送站",
+                    "site_id": "S09",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1010
+                  },
+                  "coordinates": [
+                    121.445276,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "兴仁里集散点",
+                    "site_id": "S10",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 540
+                  },
+                  "coordinates": [
+                    121.432956,
+                    31.2265
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "小学路口驿站",
+                    "site_id": "S11",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 420
+                  },
+                  "coordinates": [
+                    121.439732,
+                    31.221308
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "新港河配送站",
+                    "site_id": "S12",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1260
+                  },
+                  "coordinates": [
+                    121.44312,
+                    31.230984
+                  ]
+                }
+              ],
+              "districts": [
+                {
+                  "properties": {
+                    "district_id": "D1",
+                    "district": "旧仓里社区",
+                    "value": 610
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ],
+                    [
+                      121.4308,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D2",
+                    "district": "三多里社区",
+                    "value": 1260
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.2324
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D3",
+                    "district": "兴仁里社区",
+                    "value": 920
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4308,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D4",
+                    "district": "江淮大道社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D5",
+                    "district": "纺织新村社区",
+                    "value": 380
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ],
+                    [
+                      121.4308,
+                      31.22414
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D6",
+                    "district": "南苑社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ]
+                  ]
+                }
+              ],
+              "route": [
+                [
+                  121.431724,
+                  31.22414
+                ],
+                [
+                  121.432956,
+                  31.2265
+                ],
+                [
+                  121.436036,
+                  31.229096
+                ],
+                [
+                  121.4385,
+                  31.226264
+                ],
+                [
+                  121.440348,
+                  31.22414
+                ],
+                [
+                  121.444352,
+                  31.229096
+                ],
+                [
+                  121.445276,
+                  31.226264
+                ]
+              ]
+            }
+          },
+          "mobile": {
+            "viewport": [
+              390,
+              844
+            ],
+            "dpr": 1,
+            "center": [
+              31.220251931369045,
+              121.43879413604736
+            ],
+            "bounds": "121.4304256439209,31.207442627089005,121.44716262817383,31.23305950017843",
+            "zoom": 15,
+            "mapSize": [
+              390,
+              698
+            ],
+            "selected": "S11",
+            "visibleLabelBoxes": 14,
+            "overlappingPairs": 0,
+            "sheetOverTargetBoundingBoxPx2": 0,
+            "sheetOverPopupBoundingBoxPx2": 0,
+            "renderedData": {
+              "sites": [
+                {
+                  "properties": {
+                    "name": "江岸路综合配送中心（北区临时中转点）",
+                    "site_id": "S01",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1840
+                  },
+                  "coordinates": [
+                    121.431724,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "临江路集散点",
+                    "site_id": "S02",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 920
+                  },
+                  "coordinates": [
+                    121.436036,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "旧仓里驿站",
+                    "site_id": "S03",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 610
+                  },
+                  "coordinates": [
+                    121.4385,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "江淮大道配送站",
+                    "site_id": "S04",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1520
+                  },
+                  "coordinates": [
+                    121.440348,
+                    31.22414
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "东圩里集散点",
+                    "site_id": "S05",
+                    "class_name": "集散点",
+                    "status": "alert",
+                    "throughput": 730
+                  },
+                  "coordinates": [
+                    121.444352,
+                    31.229096
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "纺织新村驿站",
+                    "site_id": "S06",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 380
+                  },
+                  "coordinates": [
+                    121.434188,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "沿河路配送站",
+                    "site_id": "S07",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1130
+                  },
+                  "coordinates": [
+                    121.437884,
+                    31.230984
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "南苑驿站",
+                    "site_id": "S08",
+                    "class_name": "驿站",
+                    "status": "normal",
+                    "throughput": 290
+                  },
+                  "coordinates": [
+                    121.44158,
+                    31.222016
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "三多里配送站",
+                    "site_id": "S09",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1010
+                  },
+                  "coordinates": [
+                    121.445276,
+                    31.226264
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "兴仁里集散点",
+                    "site_id": "S10",
+                    "class_name": "集散点",
+                    "status": "normal",
+                    "throughput": 540
+                  },
+                  "coordinates": [
+                    121.432956,
+                    31.2265
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "小学路口驿站",
+                    "site_id": "S11",
+                    "class_name": "驿站",
+                    "status": "alert",
+                    "throughput": 420
+                  },
+                  "coordinates": [
+                    121.439732,
+                    31.221308
+                  ]
+                },
+                {
+                  "properties": {
+                    "name": "新港河配送站",
+                    "site_id": "S12",
+                    "class_name": "配送站",
+                    "status": "normal",
+                    "throughput": 1260
+                  },
+                  "coordinates": [
+                    121.44312,
+                    31.230984
+                  ]
+                }
+              ],
+              "districts": [
+                {
+                  "properties": {
+                    "district_id": "D1",
+                    "district": "旧仓里社区",
+                    "value": 610
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ],
+                    [
+                      121.4308,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D2",
+                    "district": "三多里社区",
+                    "value": 1260
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.4462,
+                      31.2324
+                    ],
+                    [
+                      121.436036,
+                      31.2324
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D3",
+                    "district": "兴仁里社区",
+                    "value": 920
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ],
+                    [
+                      121.4308,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D4",
+                    "district": "江淮大道社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.436036,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4462,
+                      31.229096
+                    ],
+                    [
+                      121.436036,
+                      31.229096
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D5",
+                    "district": "纺织新村社区",
+                    "value": 380
+                  },
+                  "coordinates": [
+                    [
+                      121.4308,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ],
+                    [
+                      121.4308,
+                      31.22414
+                    ]
+                  ]
+                },
+                {
+                  "properties": {
+                    "district_id": "D6",
+                    "district": "南苑社区",
+                    "value": null
+                  },
+                  "coordinates": [
+                    [
+                      121.4385,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.2206
+                    ],
+                    [
+                      121.4462,
+                      31.22414
+                    ],
+                    [
+                      121.4385,
+                      31.22414
+                    ]
+                  ]
+                }
+              ],
+              "route": [
+                [
+                  121.431724,
+                  31.22414
+                ],
+                [
+                  121.432956,
+                  31.2265
+                ],
+                [
+                  121.436036,
+                  31.229096
+                ],
+                [
+                  121.4385,
+                  31.226264
+                ],
+                [
+                  121.440348,
+                  31.22414
+                ],
+                [
+                  121.444352,
+                  31.229096
+                ],
+                [
+                  121.445276,
+                  31.226264
+                ]
+              ]
+            }
+          },
+          "images": {
+            "desktopName": "B-improved-desktop.png",
+            "desktopSha256": "e3e947cdc988d7106f0a0ce4f4a051f205d13ba9bb07416b4b118526f59ef096",
+            "mobileName": "B-improved-mobile.png",
+            "mobileSha256": "5ee01dc641c887917d9638e22fba3d5f2bc75062bc04c5e6b060b1180b966a3b"
+          },
+          "errors": [],
+          "externalRequests": []
+        }
+      },
+      "finalStyleSha256": "bfd861e34e86a5863c4f676eadabfde574253930c28eab69bd35ffa6bfa3709f"
+    }
+  }
+}

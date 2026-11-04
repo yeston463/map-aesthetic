@@ -1,0 +1,44 @@
+{
+  "kind": "evaluator_calibration_not_agent_AB",
+  "exitCode": 0,
+  "sourceSha256": "b07abd5f3d3ae45fc2f7b0bf14c8eaee1a05ba704025a12c537f8272dd91f67c",
+  "stdout": "Evaluator finished. Verdict: ERROR. Output written to <review-output>/result.json",
+  "evaluatorResult": {
+    "target": "<temporary-reference-fixture-origin>",
+    "timestamp": "2026-11-02T12:40:04.220Z",
+    "hard_checks": {
+      "http_status": {
+        "pass": true,
+        "status": 200
+      },
+      "data_integrity": {
+        "sites_count": false,
+        "districts_count": false,
+        "route_points": false,
+        "pass": false
+      },
+      "classification_thresholds": {
+        "observed": [
+          400,
+          800,
+          1200
+        ],
+        "expected": [
+          400,
+          800,
+          1200
+        ],
+        "pass": true
+      },
+      "attribution_preserved": {
+        "text": "Leaflet | 合成栅格底图（本地生成，非真实地点）",
+        "pass": true
+      }
+    },
+    "visual_checks": {},
+    "maintainability_checks": {},
+    "observations": {},
+    "verdict": "ERROR",
+    "error": "page.evaluate: TypeError: window.__case.applyStyle is not a function\n    at eval (eval at evaluate (:370:30), <anonymous>:4:23)\n    at UtilityScript.evaluate (<anonymous>:372:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+  }
+}

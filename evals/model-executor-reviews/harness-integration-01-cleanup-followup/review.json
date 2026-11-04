@@ -1,0 +1,183 @@
+{
+  "scope": "Offline tests and mock cleanup only; main-entry tests output redirected to fresh sibling directories; no Docker or external provider calls",
+  "unit_tests": {
+    "run": 36,
+    "failures": 0,
+    "errors": 0
+  },
+  "reverse_tests": [
+    {
+      "name": "test_01_adapter_broken_endpoint_fails_no_mock_fallback",
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "outputs_redirected": false,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_02_docker_tool_execution_failure_returns_failure",
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "outputs_redirected": false,
+      "docker_subprocess_mocked": true
+    },
+    {
+      "name": "test_03_unreconciled_or_mismatched_host_output_fails_gate",
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "outputs_redirected": false,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_04_mock_transport_rejected_in_docker_mode",
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "outputs_redirected": false,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_05_illegal_tool_calls_rejected_by_gateway",
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "outputs_redirected": false,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_06_exhausted_budget_terminates_loop_no_further_dispatches",
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "outputs_redirected": false,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_07_incomplete_or_failed_single_arm_fails_composite_gate",
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "outputs_redirected": false,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_08_cleanup_query_before_failure_fails_gate",
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "outputs_redirected": false,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_09_cleanup_post_query_failure_fails_gate",
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "outputs_redirected": false,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_10_cleanup_remaining_containers_fails_gate",
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "outputs_redirected": false,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_11_host_reconciliation_wrong_sentinel_token_fails_gate",
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "outputs_redirected": false,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_12_fake_server_readback_failed_or_false_blocks_completion",
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "outputs_redirected": false,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_13_fake_server_wrong_sentinel_token_blocks_completion",
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "outputs_redirected": false,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_14_cleanup_ownership_mismatch_fails_gate",
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "outputs_redirected": false,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_15_harness_runner_cleanup_failure_propagates_to_runner_exit_1",
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "outputs_redirected": true,
+      "docker_subprocess_mocked": false
+    },
+    {
+      "name": "test_16_harness_runner_clean_success_yields_exit_2_pending",
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "outputs_redirected": true,
+      "docker_subprocess_mocked": false
+    }
+  ],
+  "cleanup_query_failure": {
+    "mocked_calls": 1,
+    "reported_success": false
+  },
+  "wrong_token_reconciliation": false,
+  "failed_readback_marked_verified": false,
+  "current_archived_container_ids": {
+    "arm-a": "cid_a_mock",
+    "arm-b": "cid_b_mock"
+  },
+  "old_live_host_outputs_still_match_recorded_hashes": {
+    "arm-a": false,
+    "arm-b": false
+  },
+  "prior_trees_match": {
+    "rev01": true,
+    "rev02": true,
+    "rev03": true,
+    "rev04": true,
+    "rev05": true,
+    "rev06": true,
+    "sandbox-preflight-01": true,
+    "sandbox-preflight-02": true,
+    "docker-executor-01": true,
+    "docker-executor-02": true,
+    "docker-executor-03": true,
+    "docker-executor-04": true,
+    "docker-regression-01": true,
+    "harness-01": true
+  },
+  "code_sha256": {
+    "acceptance_controller.py": "7595c28f2bb56d524cb2990f66e849aae2a3cf537731270600a8441ee928fd53",
+    "budget_controller.py": "2798f6a3f646ba58ce36d9a58c8a1c6ba99a37f9f6149a4b557204a9d5e34379",
+    "context_builder.py": "5b0c472c899d63e2383bb2a6edc1dc89da3895876cbf819b34043555b1d2cf59",
+    "docker_manager.py": "9f6e78008700a969339c4e3012f334c4cd59ec32b0a1f11972a5f088e72da1b6",
+    "evidence_writer.py": "1dc2a4aad13b86402229926a0f2708dfb1c329f56982e88f6b97a0f32e287b5b",
+    "harness_runner.py": "4bcf5122d4eb183e5ea11762802e286ba0e7905bda8827914902261fa9436bf3",
+    "local_fake_server.py": "a30fadc4bda85d6ecf90914a54e4089d747ac07334f6692f6bcd4038b236996e",
+    "model_adapter.py": "d0df0d09719692b21612f3502d0356a50faa6e74a4894b256a5d1ed834e7ef8c",
+    "snapshot_materials.py": "8618cfdd4947ce9345fbff1e4850fd6a150ae52cfdd250d0624ff8e4d4939504",
+    "test_integration_reverse_checks.py": "2421d297fd82709a3ed537557ec2b8f89c2d2015ee1ce40f441f0af19b89a3b6",
+    "test_offline_harness.py": "ca1fe0a98cf42d243cd23bbbe4bbfcab73822c976e7da0dd39a4be01b124b884",
+    "tool_gateway.py": "46b48e04146453db65ec63747b07bbead0e5cae946ed2068228830381cae99ca",
+    "verify_reviewer_counterexamples.py": "d4c65aa0be71c80f7f4ba93bd779b9ea406197493126333f70610d846b7d6b32"
+  }
+}

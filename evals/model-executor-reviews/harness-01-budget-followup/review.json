@@ -1,0 +1,146 @@
+{
+  "scope": "Offline tests plus loopback-only fake HTTP with synthetic credentials; no external API or Docker",
+  "unit_tests": {
+    "run": 33,
+    "failures": 0,
+    "errors": 0
+  },
+  "previous_minimal_counterexample": {
+    "verdict": "PREFLIGHT_FAILED",
+    "exit": 1,
+    "real_status": "NOT_RUN"
+  },
+  "tool_timeout_calls": [
+    {
+      "timeout": 1.0
+    }
+  ],
+  "workspace_absolute_result": {
+    "success": true,
+    "content": "synthetic-inside-token",
+    "size_bytes": 22,
+    "resolved_path": "/workspace/inside_sentinel.txt"
+  },
+  "evidence_overwrite_prevented": true,
+  "retry_budget_counterexample": {
+    "configured_max_model_requests": 1,
+    "configured_max_total_time_seconds": 1,
+    "http_attempts": 2,
+    "http_dispatch_elapsed_seconds": [
+      0.018,
+      0.532
+    ],
+    "recorded_budget": {
+      "contract": {
+        "max_model_requests": 1,
+        "max_tool_calls": 10,
+        "max_total_time_seconds": 1,
+        "per_tool_timeout_seconds": 1,
+        "max_output_tokens_per_request": 2048,
+        "max_retries_per_step": 2,
+        "max_total_http_attempts": 3,
+        "token_cutoff_mode": "request_level_max_tokens_param_plus_post_hoc_accounting"
+      },
+      "elapsed_seconds": 1.0,
+      "requests_dispatched": 1,
+      "http_attempts_dispatched": 2,
+      "tool_calls_dispatched": 0,
+      "retries_count": 1,
+      "is_terminated": true,
+      "termination_reason": "MAX_TIME_EXCEEDED: deadline expired during retry sleep",
+      "token_usage": {
+        "prompt_tokens_total": 0,
+        "completion_tokens_total": 0,
+        "tokens_total": 0,
+        "records_count": 1,
+        "accounting_nature": "post_hoc_reported_usage (not cloud-level hard killswitch)"
+      },
+      "audit_log_entries": 4
+    },
+    "response_finish_reason": "budget_exceeded",
+    "explicit_physical_cap_one": {
+      "http_attempts": 1,
+      "budget": {
+        "contract": {
+          "max_model_requests": 1,
+          "max_tool_calls": 10,
+          "max_total_time_seconds": 3,
+          "per_tool_timeout_seconds": 1,
+          "max_output_tokens_per_request": 2048,
+          "max_retries_per_step": 2,
+          "max_total_http_attempts": 1,
+          "token_cutoff_mode": "request_level_max_tokens_param_plus_post_hoc_accounting"
+        },
+        "elapsed_seconds": 0.502,
+        "requests_dispatched": 1,
+        "http_attempts_dispatched": 1,
+        "tool_calls_dispatched": 0,
+        "retries_count": 0,
+        "is_terminated": true,
+        "termination_reason": "MAX_HTTP_ATTEMPTS_EXCEEDED: attempts=1, limit=1",
+        "token_usage": {
+          "prompt_tokens_total": 0,
+          "completion_tokens_total": 0,
+          "tokens_total": 0,
+          "records_count": 1,
+          "accounting_nature": "post_hoc_reported_usage (not cloud-level hard killswitch)"
+        },
+        "audit_log_entries": 3
+      },
+      "finish_reason": "budget_exceeded"
+    }
+  },
+  "execution_string_false_flags": {
+    "verdict": "PREFLIGHT_FAILED",
+    "real_status": "EXECUTION_FAILED",
+    "exit": 1
+  },
+  "unrelated_request_and_empty_response": {
+    "records": {
+      "executed": true,
+      "passed": true,
+      "requests": [
+        {
+          "unrelated": true
+        }
+      ],
+      "responses": [
+        {}
+      ],
+      "usage": {
+        "total_tokens": 1
+      }
+    },
+    "verdict": "VERIFIED_PASS",
+    "real_status": "VERIFIED_PASS",
+    "composite": "COMPLETE_EXECUTOR_READY",
+    "exit": 0
+  },
+  "prior_trees_match": {
+    "rev01": true,
+    "rev02": true,
+    "rev03": true,
+    "rev04": true,
+    "rev05": true,
+    "rev06": true,
+    "sandbox-preflight-01": true,
+    "sandbox-preflight-02": true,
+    "docker-executor-01": true,
+    "docker-executor-02": true,
+    "docker-executor-03": true,
+    "docker-executor-04": true,
+    "docker-regression-01": true
+  },
+  "code_sha256": {
+    "acceptance_controller.py": "1801e405536e48fe7f72bc166b3c1669cd99c1373e8c11dc0c19ecfcd766b4e8",
+    "budget_controller.py": "2798f6a3f646ba58ce36d9a58c8a1c6ba99a37f9f6149a4b557204a9d5e34379",
+    "context_builder.py": "5b0c472c899d63e2383bb2a6edc1dc89da3895876cbf819b34043555b1d2cf59",
+    "evidence_writer.py": "1dc2a4aad13b86402229926a0f2708dfb1c329f56982e88f6b97a0f32e287b5b",
+    "harness_runner.py": "b2b3a3a80b4c65ff75c0b69695e2a3c14f2d08ec6f9deca51ed149317470609a",
+    "model_adapter.py": "4d382e40995189727957ee33904fcf7349c220d6391a9cfe21be5cc60febfae2",
+    "snapshot_materials.py": "3e12dc103f5565186716b3c433f3e9b9b0992d472341ebff996d6cd3aa24c85c",
+    "test_offline_harness.py": "0727998421eca6841f26981b233a019622a8c3aefaa928fa2e1022bd7382747c",
+    "tool_gateway.py": "46afbd33094f6dceffcdbccdedc7a48a501a68f1b1b3ecb181cc010cf5c079eb",
+    "verify_reviewer_counterexamples.py": "68b5371d2c8b38e72fbd6899e0bce8695d39146d6aeb05dbfa4a49957d52d3fe"
+  }
+}

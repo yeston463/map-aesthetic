@@ -1,0 +1,102 @@
+{
+  "scope": "Offline unit tests and copy-only evidence inputs; local HTTP only in existing tests, no external provider or Docker",
+  "unit_tests": {
+    "run": 33,
+    "failures": 0,
+    "errors": 0
+  },
+  "old_unrelated_empty_response": {
+    "verdict": "PREFLIGHT_FAILED",
+    "real_status": "EXECUTION_FAILED",
+    "composite": "HARNESS_GATE_FAILED",
+    "exit": 1,
+    "failures": [
+      "REAL_EXECUTION_SCHEMA_ERROR: 'source' must be one of ['fake_mock', 'local_fake_http', 'real_provider'], got None",
+      "REAL_EXECUTION_SCHEMA_ERROR: 'run_id' is missing or empty in real_model_execution_records",
+      "REAL_EXECUTION_SCHEMA_ERROR: 'arm' must be one of ['arm-a', 'arm-b', 'both'], got None",
+      "REAL_EXECUTION_EVIDENCE_ERROR: request [0] missing required fields ['arm', 'messages', 'model', 'request_id', 'run_id']",
+      "REAL_EXECUTION_EVIDENCE_ERROR: response [0] is empty or not a dict",
+      "USAGE_AGGREGATION_INCONSISTENCY: top-level total_tokens (1) does not match sum of individual response total_tokens (0)",
+      "REAL_EXECUTION_EVIDENCE_INCONSISTENCY: 'passed' is True but responses contain error status or finish_reason='error'",
+      "REAL_EXECUTION_EVIDENCE_INCONSISTENCY: 'passed' is True but execution evidence failed structural/correlation checks"
+    ]
+  },
+  "cross_run": {
+    "verdict": "PREFLIGHT_FAILED",
+    "real_status": "EXECUTION_FAILED",
+    "composite": "HARNESS_GATE_FAILED",
+    "exit": 1,
+    "failures": [
+      "UNPAIRED_REQUEST_RESPONSE_EVENT: response [0] with key (1, 'wrong-run', 'arm-a') has no corresponding request",
+      "UNPAIRED_REQUEST_RESPONSE_EVENT: request (1, 'h01-edd8a072', 'arm-a') has no matching response",
+      "REAL_EXECUTION_EVIDENCE_INCONSISTENCY: 'passed' is True but execution evidence failed structural/correlation checks"
+    ]
+  },
+  "cross_arm": {
+    "verdict": "PREFLIGHT_FAILED",
+    "real_status": "EXECUTION_FAILED",
+    "composite": "HARNESS_GATE_FAILED",
+    "exit": 1,
+    "failures": [
+      "UNPAIRED_REQUEST_RESPONSE_EVENT: response [0] with key (1, 'h01-edd8a072', 'arm-b') has no corresponding request",
+      "UNPAIRED_REQUEST_RESPONSE_EVENT: request (1, 'h01-edd8a072', 'arm-a') has no matching response",
+      "REAL_EXECUTION_EVIDENCE_INCONSISTENCY: 'passed' is True but execution evidence failed structural/correlation checks"
+    ]
+  },
+  "synthetic_record_by_source": {
+    "fake_mock": {
+      "verdict": "VERIFIED_PASS",
+      "real_status": "VERIFIED_PASS",
+      "composite": "COMPLETE_EXECUTOR_READY",
+      "exit": 0,
+      "failures": []
+    },
+    "local_fake_http": {
+      "verdict": "VERIFIED_PASS",
+      "real_status": "VERIFIED_PASS",
+      "composite": "COMPLETE_EXECUTOR_READY",
+      "exit": 0,
+      "failures": []
+    },
+    "real_provider": {
+      "verdict": "VERIFIED_PASS",
+      "real_status": "VERIFIED_PASS",
+      "composite": "COMPLETE_EXECUTOR_READY",
+      "exit": 0,
+      "failures": []
+    }
+  },
+  "helper_when_messages_absent": [
+    {
+      "role": "user",
+      "content": "diagnostic_step_1"
+    }
+  ],
+  "prior_trees_match": {
+    "rev01": true,
+    "rev02": true,
+    "rev03": true,
+    "rev04": true,
+    "rev05": true,
+    "rev06": true,
+    "sandbox-preflight-01": true,
+    "sandbox-preflight-02": true,
+    "docker-executor-01": true,
+    "docker-executor-02": true,
+    "docker-executor-03": true,
+    "docker-executor-04": true,
+    "docker-regression-01": true
+  },
+  "code_sha256": {
+    "acceptance_controller.py": "fe6d168a5fdf430bf6da9d43996beb14fb47b5994beb765ae4e912c52cb0792b",
+    "budget_controller.py": "2798f6a3f646ba58ce36d9a58c8a1c6ba99a37f9f6149a4b557204a9d5e34379",
+    "context_builder.py": "5b0c472c899d63e2383bb2a6edc1dc89da3895876cbf819b34043555b1d2cf59",
+    "evidence_writer.py": "1dc2a4aad13b86402229926a0f2708dfb1c329f56982e88f6b97a0f32e287b5b",
+    "harness_runner.py": "b2b3a3a80b4c65ff75c0b69695e2a3c14f2d08ec6f9deca51ed149317470609a",
+    "model_adapter.py": "4d382e40995189727957ee33904fcf7349c220d6391a9cfe21be5cc60febfae2",
+    "snapshot_materials.py": "3e12dc103f5565186716b3c433f3e9b9b0992d472341ebff996d6cd3aa24c85c",
+    "test_offline_harness.py": "c3ee657bd8509aa28cab2673645773e446c40ebcd07e1ebf69822d293b69246f",
+    "tool_gateway.py": "46afbd33094f6dceffcdbccdedc7a48a501a68f1b1b3ecb181cc010cf5c079eb",
+    "verify_reviewer_counterexamples.py": "3ae2a15a31e94aadc870fb69bed235706c2cd3c3eaa6e3ae050d56e277db1939"
+  }
+}

@@ -1,0 +1,2592 @@
+{
+  "results": [
+    {
+      "layer": "functional",
+      "name": "[leaflet:baseline] no page errors",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:baseline] no external requests",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:baseline] site list click opens a popup",
+      "ok": true
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:baseline] loaded input bytes match the manifest",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:baseline] layer counts match the source",
+      "ok": true,
+      "detail": "{\"sites\":12,\"districts\":6,\"labels\":24,\"routePoints\":7,\"context\":38}"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:baseline] basemap attribution retained",
+      "ok": true,
+      "detail": "Leaflet | 合成栅格底图（本地生成，非真实地点）"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:baseline] repeated switching accumulates nothing",
+      "ok": true,
+      "detail": "{\"layers\":[43,43],\"popups\":[12,12]}"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:baseline] rendered site coordinates and properties preserved",
+      "ok": true
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:baseline] rendered route geometry preserved",
+      "ok": true
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:baseline] thematic properties preserved",
+      "ok": true
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:baseline] rendered thematic boundaries preserve source coordinates",
+      "ok": true
+    },
+    {
+      "layer": "observation",
+      "name": "[leaflet:baseline] label collisions (recorded, not asserted)",
+      "recorded": true,
+      "detail": "{\"overlappingPairs\":10,\"criticalOverlaps\":1,\"visible\":24}"
+    },
+    {
+      "layer": "observation",
+      "name": "[leaflet:baseline] popup over its own site (recorded)",
+      "recorded": true,
+      "detail": "{\"popupOverTarget\":0,\"insideMap\":true}"
+    },
+    {
+      "layer": "observation",
+      "name": "[leaflet:baseline] mobile occlusion (recorded)",
+      "recorded": true,
+      "detail": "{\"sheetOverTarget\":100,\"sheetOverPopup\":9628,\"popupInsideMap\":true}"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:baseline] no late errors or failed local resources",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:baseline] no late external requests",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:improved] no page errors",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:improved] no external requests",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:improved] site list click opens a popup",
+      "ok": true
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:improved] loaded input bytes match the manifest",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:improved] layer counts match the source",
+      "ok": true,
+      "detail": "{\"sites\":12,\"districts\":6,\"labels\":24,\"routePoints\":7,\"context\":38}"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:improved] basemap attribution retained",
+      "ok": true,
+      "detail": "Leaflet | 合成栅格底图（本地生成，非真实地点）"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:improved] repeated switching accumulates nothing",
+      "ok": true,
+      "detail": "{\"layers\":[44,44],\"popups\":[12,12]}"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:improved] rendered site coordinates and properties preserved",
+      "ok": true
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:improved] rendered route geometry preserved",
+      "ok": true
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:improved] thematic properties preserved",
+      "ok": true
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:improved] rendered thematic boundaries preserve source coordinates",
+      "ok": true
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:improved] five diverging classes have five legend entries",
+      "ok": true
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:improved] missing area uses a real fill hatch",
+      "ok": true
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:improved] unknown class has the declared disabled fallback",
+      "ok": true
+    },
+    {
+      "layer": "aesthetic",
+      "name": "[leaflet:improved] R1 district labels never collide",
+      "ok": true,
+      "detail": "{\"overlappingPairs\":0,\"criticalOverlaps\":0,\"visible\":14}"
+    },
+    {
+      "layer": "aesthetic",
+      "name": "[leaflet:improved] R2 no label pair collides",
+      "ok": true,
+      "detail": "{\"overlappingPairs\":0,\"criticalOverlaps\":0,\"visible\":14}"
+    },
+    {
+      "layer": "aesthetic",
+      "name": "[leaflet:improved] popup does not cover its own site",
+      "ok": true,
+      "detail": "{\"popupOverTarget\":0,\"insideMap\":true}"
+    },
+    {
+      "layer": "aesthetic",
+      "name": "[leaflet:improved] R3 mobile sheet does not cover the selected site",
+      "ok": true,
+      "detail": "{\"sheetOverTarget\":0,\"sheetOverPopup\":0,\"popupInsideMap\":true}"
+    },
+    {
+      "layer": "aesthetic",
+      "name": "[leaflet:improved] R3 mobile popup stays inside the map",
+      "ok": true,
+      "detail": "{\"sheetOverTarget\":0,\"sheetOverPopup\":0,\"popupInsideMap\":true}"
+    },
+    {
+      "layer": "aesthetic",
+      "name": "[leaflet:improved] R3 mobile sheet does not cover the popup",
+      "ok": true,
+      "detail": "{\"sheetOverTarget\":0,\"sheetOverPopup\":0,\"popupInsideMap\":true}"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:improved] mobile sheet handle stays visible and receives input",
+      "ok": true
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:improved] no late errors or failed local resources",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:improved] no late external requests",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-filter] no page errors",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-filter] no external requests",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-filter] site list click opens a popup",
+      "ok": true
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-filter] loaded input bytes match the manifest",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-filter] layer counts match the source",
+      "ok": true,
+      "detail": "{\"sites\":12,\"districts\":6,\"labels\":24,\"routePoints\":7,\"context\":38}"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-filter] basemap attribution retained",
+      "ok": true,
+      "detail": "Leaflet | 合成栅格底图（本地生成，非真实地点）"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-filter] repeated switching accumulates nothing",
+      "ok": true,
+      "detail": "{\"layers\":[44,44],\"popups\":[12,12]}"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-filter] rendered site coordinates and properties preserved",
+      "ok": true
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-filter] rendered route geometry preserved",
+      "ok": true
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-filter] thematic properties preserved",
+      "ok": true
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-filter] rendered thematic boundaries preserve source coordinates",
+      "ok": true
+    },
+    {
+      "layer": "observation",
+      "name": "[leaflet:attempt-filter] label collisions (recorded, not asserted)",
+      "recorded": true,
+      "detail": "{\"overlappingPairs\":0,\"criticalOverlaps\":0,\"visible\":14}"
+    },
+    {
+      "layer": "observation",
+      "name": "[leaflet:attempt-filter] popup over its own site (recorded)",
+      "recorded": true,
+      "detail": "{\"popupOverTarget\":0,\"insideMap\":true}"
+    },
+    {
+      "layer": "observation",
+      "name": "[leaflet:attempt-filter] mobile occlusion (recorded)",
+      "recorded": true,
+      "detail": "{\"sheetOverTarget\":0,\"sheetOverPopup\":0,\"popupInsideMap\":true}"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-filter] no late errors or failed local resources",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-filter] no late external requests",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-opacity] no page errors",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-opacity] no external requests",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-opacity] site list click opens a popup",
+      "ok": true
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-opacity] loaded input bytes match the manifest",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-opacity] layer counts match the source",
+      "ok": true,
+      "detail": "{\"sites\":12,\"districts\":6,\"labels\":24,\"routePoints\":7,\"context\":38}"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-opacity] basemap attribution retained",
+      "ok": true,
+      "detail": "Leaflet | 合成栅格底图（本地生成，非真实地点）"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-opacity] repeated switching accumulates nothing",
+      "ok": true,
+      "detail": "{\"layers\":[44,44],\"popups\":[12,12]}"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-opacity] rendered site coordinates and properties preserved",
+      "ok": true
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-opacity] rendered route geometry preserved",
+      "ok": true
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-opacity] thematic properties preserved",
+      "ok": true
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-opacity] rendered thematic boundaries preserve source coordinates",
+      "ok": true
+    },
+    {
+      "layer": "observation",
+      "name": "[leaflet:attempt-opacity] label collisions (recorded, not asserted)",
+      "recorded": true,
+      "detail": "{\"overlappingPairs\":0,\"criticalOverlaps\":0,\"visible\":14}"
+    },
+    {
+      "layer": "observation",
+      "name": "[leaflet:attempt-opacity] popup over its own site (recorded)",
+      "recorded": true,
+      "detail": "{\"popupOverTarget\":0,\"insideMap\":true}"
+    },
+    {
+      "layer": "observation",
+      "name": "[leaflet:attempt-opacity] mobile occlusion (recorded)",
+      "recorded": true,
+      "detail": "{\"sheetOverTarget\":0,\"sheetOverPopup\":0,\"popupInsideMap\":true}"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-opacity] no late errors or failed local resources",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet:attempt-opacity] no late external requests",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "layer": "functional",
+      "name": "[leaflet] comparison viewport and camera match",
+      "ok": true,
+      "detail": "{\"baseline\":{\"x\":0,\"y\":53,\"width\":1020,\"height\":1015},\"improved\":{\"x\":0,\"y\":53,\"width\":1020,\"height\":1015}}"
+    },
+    {
+      "layer": "aesthetic",
+      "name": "[leaflet] refinement reduces label collisions",
+      "ok": true,
+      "detail": "{\"baseline\":10,\"improved\":0}"
+    },
+    {
+      "layer": "aesthetic",
+      "name": "[leaflet] improved legend entries are bound to the style object",
+      "ok": true,
+      "detail": "[\"#137C6C\",\"#177C6F\",\"#6260A4\",\"#A15C27\",\"#B3261E\",\"#DEEEE8\",\"#A8CFC1\",\"#68AC95\",\"#32826C\",\"#C8C8C1\"]"
+    },
+    {
+      "layer": "aesthetic",
+      "name": "[leaflet] improved legend gives no colour two meanings",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "layer": "aesthetic",
+      "name": "[leaflet] baseline legend is not bound to the style object",
+      "ok": true,
+      "detail": "[null,null,null,null,null,null]"
+    },
+    {
+      "layer": "observation",
+      "name": "[leaflet] baseline legend colours reused across meanings (observed defect)",
+      "recorded": true,
+      "detail": "[[\"正常站点\",\"低业务量\"]]"
+    }
+  ],
+  "captured": {
+    "leaflet": {
+      "baseline": {
+        "shot": {
+          "variant": "baseline",
+          "counts": {
+            "sites": 12,
+            "districts": 6,
+            "labels": 24,
+            "routePoints": 7,
+            "context": 38
+          },
+          "tally": {
+            "layersAdded": 43,
+            "listenersBound": 65,
+            "restyles": 10,
+            "popupsBound": 12
+          },
+          "dataSha": {
+            "context.geojson": "9703e7eeec4e448b6ff111993b4a1e46dcaace9bc616d510a2261be7ce84de99",
+            "route.geojson": "492f5fba98767c85f15ebbf3b888d8d3fd71c8e98038c5e97e97d8c374a2e15e",
+            "sites.geojson": "ea42a59383c48fac5c36b0db6e07ed0983b54a7e6186aabe9e4694621ff635b4",
+            "labels.geojson": "06810f588e07d32b76f437b96076696c86ef0771c780aa3ef2125a0a03073c5b",
+            "districts.geojson": "60b5ce75dd315d88d4ad50243d09fff412be381831ea08cd5e26226c3b507717"
+          },
+          "features": {
+            "route": "#3388ff",
+            "siteFill": "#1c8b65",
+            "siteStroke": "#9c36c8",
+            "alertStroke": "#c64040",
+            "districtValue": "#a8cfc1",
+            "districtMissing": "#d9e7d7",
+            "label": "#333333"
+          },
+          "samplePoints": {
+            "route": {
+              "x": 503,
+              "y": 521
+            },
+            "site": {
+              "x": 403,
+              "y": 637
+            },
+            "district": {
+              "x": 385,
+              "y": 399
+            },
+            "districtMissing": {
+              "x": 564,
+              "y": 512
+            },
+            "rasterGround": {
+              "x": 122,
+              "y": 223
+            },
+            "label": {
+              "x": 431,
+              "y": 399
+            }
+          },
+          "probe": {
+            "routeLine": [
+              {
+                "x": 345,
+                "y": 579
+              },
+              {
+                "x": 374,
+                "y": 515
+              },
+              {
+                "x": 446,
+                "y": 444
+              },
+              {
+                "x": 503,
+                "y": 521
+              },
+              {
+                "x": 546,
+                "y": 579
+              },
+              {
+                "x": 640,
+                "y": 444
+              },
+              {
+                "x": 661,
+                "y": 521
+              }
+            ],
+            "site": {
+              "x": 403,
+              "y": 637
+            },
+            "district": {
+              "x0": 324,
+              "y0": 354,
+              "x1": 446,
+              "y1": 444
+            },
+            "districtMissing": {
+              "x0": 446,
+              "y0": 444,
+              "x1": 683,
+              "y1": 579
+            },
+            "districts": [
+              {
+                "id": "D1",
+                "value": 610,
+                "paintedClass": "#a8cfc1",
+                "region": {
+                  "x0": 324,
+                  "y0": 354,
+                  "x1": 446,
+                  "y1": 444
+                }
+              },
+              {
+                "id": "D2",
+                "value": 1260,
+                "paintedClass": "#175445",
+                "region": {
+                  "x0": 446,
+                  "y0": 354,
+                  "x1": 683,
+                  "y1": 444
+                }
+              },
+              {
+                "id": "D3",
+                "value": 920,
+                "paintedClass": "#68ac95",
+                "region": {
+                  "x0": 324,
+                  "y0": 444,
+                  "x1": 446,
+                  "y1": 579
+                }
+              },
+              {
+                "id": "D4",
+                "value": null,
+                "paintedClass": null,
+                "region": {
+                  "x0": 446,
+                  "y0": 444,
+                  "x1": 683,
+                  "y1": 579
+                }
+              },
+              {
+                "id": "D5",
+                "value": 380,
+                "paintedClass": "#d9e7d7",
+                "region": {
+                  "x0": 324,
+                  "y0": 579,
+                  "x1": 503,
+                  "y1": 676
+                }
+              },
+              {
+                "id": "D6",
+                "value": null,
+                "paintedClass": null,
+                "region": {
+                  "x0": 503,
+                  "y0": 579,
+                  "x1": 683,
+                  "y1": 676
+                }
+              }
+            ],
+            "label": {
+              "x0": 401,
+              "y0": 389,
+              "x1": 461,
+              "y1": 409
+            },
+            "ground": {
+              "x": 314,
+              "y": 681
+            }
+          },
+          "labels": {
+            "visible": 24,
+            "overlappingPairs": 10,
+            "criticalOverlaps": 1,
+            "pairs": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          "selected": "S01",
+          "popupInsideMap": true,
+          "popupOverTarget": 0,
+          "sheetOverTarget": 0,
+          "sheetOverPopup": 0,
+          "sheetVisible": false,
+          "legend": [
+            {
+              "text": "主配送线",
+              "color": "rgb(51, 136, 255)",
+              "bound": null
+            },
+            {
+              "text": "正常站点",
+              "color": "rgb(28, 139, 101)",
+              "bound": null
+            },
+            {
+              "text": "异常站点",
+              "color": "rgb(198, 64, 64)",
+              "bound": null
+            },
+            {
+              "text": "低业务量",
+              "color": "rgb(28, 139, 101)",
+              "bound": null
+            },
+            {
+              "text": "中业务量",
+              "color": "rgb(161, 92, 39)",
+              "bound": null
+            },
+            {
+              "text": "高业务量",
+              "color": "rgb(98, 96, 164)",
+              "bound": null
+            }
+          ],
+          "attribution": "Leaflet | 合成栅格底图（本地生成，非真实地点）",
+          "deviceScaleFactor": 1,
+          "mapBox": {
+            "width": 1020,
+            "height": 1015
+          }
+        },
+        "pixels": {
+          "variant": "baseline",
+          "counts": {
+            "sites": 12,
+            "districts": 6,
+            "labels": 24,
+            "routePoints": 7,
+            "context": 38
+          },
+          "tally": {
+            "layersAdded": 43,
+            "listenersBound": 65,
+            "restyles": 10,
+            "popupsBound": 12
+          },
+          "dataSha": {
+            "context.geojson": "9703e7eeec4e448b6ff111993b4a1e46dcaace9bc616d510a2261be7ce84de99",
+            "route.geojson": "492f5fba98767c85f15ebbf3b888d8d3fd71c8e98038c5e97e97d8c374a2e15e",
+            "sites.geojson": "ea42a59383c48fac5c36b0db6e07ed0983b54a7e6186aabe9e4694621ff635b4",
+            "labels.geojson": "06810f588e07d32b76f437b96076696c86ef0771c780aa3ef2125a0a03073c5b",
+            "districts.geojson": "60b5ce75dd315d88d4ad50243d09fff412be381831ea08cd5e26226c3b507717"
+          },
+          "features": {
+            "route": "#3388ff",
+            "siteFill": "#1c8b65",
+            "siteStroke": "#1c8b65",
+            "alertStroke": "#c64040",
+            "districtValue": "#a8cfc1",
+            "districtMissing": "#d9e7d7",
+            "label": "#333333"
+          },
+          "samplePoints": {
+            "route": {
+              "x": 503,
+              "y": 521
+            },
+            "site": {
+              "x": 403,
+              "y": 637
+            },
+            "district": {
+              "x": 385,
+              "y": 399
+            },
+            "districtMissing": {
+              "x": 564,
+              "y": 512
+            },
+            "rasterGround": {
+              "x": 122,
+              "y": 223
+            },
+            "label": {
+              "x": 431,
+              "y": 399
+            }
+          },
+          "probe": {
+            "routeLine": [
+              {
+                "x": 345,
+                "y": 579
+              },
+              {
+                "x": 374,
+                "y": 515
+              },
+              {
+                "x": 446,
+                "y": 444
+              },
+              {
+                "x": 503,
+                "y": 521
+              },
+              {
+                "x": 546,
+                "y": 579
+              },
+              {
+                "x": 640,
+                "y": 444
+              },
+              {
+                "x": 661,
+                "y": 521
+              }
+            ],
+            "site": {
+              "x": 403,
+              "y": 637
+            },
+            "district": {
+              "x0": 324,
+              "y0": 354,
+              "x1": 446,
+              "y1": 444
+            },
+            "districtMissing": {
+              "x0": 446,
+              "y0": 444,
+              "x1": 683,
+              "y1": 579
+            },
+            "districts": [
+              {
+                "id": "D1",
+                "value": 610,
+                "paintedClass": "#a8cfc1",
+                "region": {
+                  "x0": 324,
+                  "y0": 354,
+                  "x1": 446,
+                  "y1": 444
+                }
+              },
+              {
+                "id": "D2",
+                "value": 1260,
+                "paintedClass": "#175445",
+                "region": {
+                  "x0": 446,
+                  "y0": 354,
+                  "x1": 683,
+                  "y1": 444
+                }
+              },
+              {
+                "id": "D3",
+                "value": 920,
+                "paintedClass": "#68ac95",
+                "region": {
+                  "x0": 324,
+                  "y0": 444,
+                  "x1": 446,
+                  "y1": 579
+                }
+              },
+              {
+                "id": "D4",
+                "value": null,
+                "paintedClass": null,
+                "region": {
+                  "x0": 446,
+                  "y0": 444,
+                  "x1": 683,
+                  "y1": 579
+                }
+              },
+              {
+                "id": "D5",
+                "value": 380,
+                "paintedClass": "#d9e7d7",
+                "region": {
+                  "x0": 324,
+                  "y0": 579,
+                  "x1": 503,
+                  "y1": 676
+                }
+              },
+              {
+                "id": "D6",
+                "value": null,
+                "paintedClass": null,
+                "region": {
+                  "x0": 503,
+                  "y0": 579,
+                  "x1": 683,
+                  "y1": 676
+                }
+              }
+            ],
+            "label": {
+              "x0": 401,
+              "y0": 389,
+              "x1": 461,
+              "y1": 409
+            },
+            "ground": {
+              "x": 314,
+              "y": 681
+            }
+          },
+          "labels": {
+            "visible": 24,
+            "overlappingPairs": 10,
+            "criticalOverlaps": 1,
+            "pairs": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                2,
+                1
+              ]
+            ]
+          },
+          "selected": null,
+          "popupInsideMap": null,
+          "popupOverTarget": null,
+          "sheetOverTarget": 0,
+          "sheetOverPopup": 0,
+          "sheetVisible": false,
+          "legend": [
+            {
+              "text": "主配送线",
+              "color": "rgb(51, 136, 255)",
+              "bound": null
+            },
+            {
+              "text": "正常站点",
+              "color": "rgb(28, 139, 101)",
+              "bound": null
+            },
+            {
+              "text": "异常站点",
+              "color": "rgb(198, 64, 64)",
+              "bound": null
+            },
+            {
+              "text": "低业务量",
+              "color": "rgb(28, 139, 101)",
+              "bound": null
+            },
+            {
+              "text": "中业务量",
+              "color": "rgb(161, 92, 39)",
+              "bound": null
+            },
+            {
+              "text": "高业务量",
+              "color": "rgb(98, 96, 164)",
+              "bound": null
+            }
+          ],
+          "attribution": "Leaflet | 合成栅格底图（本地生成，非真实地点）",
+          "deviceScaleFactor": 1,
+          "mapBox": {
+            "width": 1020,
+            "height": 1015
+          }
+        },
+        "fixed": {
+          "center": {
+            "lat": 31.226766026383594,
+            "lng": 121.43879413604736
+          },
+          "zoom": 15,
+          "metersPerPixel": 4.085187332646789
+        },
+        "clip": {
+          "x": 0,
+          "y": 53,
+          "width": 1020,
+          "height": 1015
+        },
+        "prefix": "leaflet",
+        "imageSha256": "93634ab64be31656c33dfc8593ac98aa0579989eb6c4f1ef2bd68676bade32ea"
+      },
+      "improved": {
+        "shot": {
+          "variant": "improved",
+          "counts": {
+            "sites": 12,
+            "districts": 6,
+            "labels": 24,
+            "routePoints": 7,
+            "context": 38
+          },
+          "tally": {
+            "layersAdded": 44,
+            "listenersBound": 65,
+            "restyles": 12,
+            "popupsBound": 12
+          },
+          "dataSha": {
+            "sites.geojson": "ea42a59383c48fac5c36b0db6e07ed0983b54a7e6186aabe9e4694621ff635b4",
+            "context.geojson": "9703e7eeec4e448b6ff111993b4a1e46dcaace9bc616d510a2261be7ce84de99",
+            "route.geojson": "492f5fba98767c85f15ebbf3b888d8d3fd71c8e98038c5e97e97d8c374a2e15e",
+            "labels.geojson": "06810f588e07d32b76f437b96076696c86ef0771c780aa3ef2125a0a03073c5b",
+            "districts.geojson": "60b5ce75dd315d88d4ad50243d09fff412be381831ea08cd5e26226c3b507717"
+          },
+          "features": {
+            "route": "#137C6C",
+            "siteFill": "#A15C27",
+            "siteStroke": "#1A1A1A",
+            "alertStroke": "#B3261E",
+            "districtValue": "#A8CFC1",
+            "districtMissing": "#C8C8C1",
+            "label": "#405C56"
+          },
+          "samplePoints": {
+            "route": {
+              "x": 503,
+              "y": 521
+            },
+            "site": {
+              "x": 403,
+              "y": 637
+            },
+            "district": {
+              "x": 385,
+              "y": 399
+            },
+            "districtMissing": {
+              "x": 564,
+              "y": 512
+            },
+            "rasterGround": {
+              "x": 122,
+              "y": 223
+            },
+            "label": {
+              "x": 431,
+              "y": 399
+            }
+          },
+          "probe": {
+            "routeLine": [
+              {
+                "x": 345,
+                "y": 579
+              },
+              {
+                "x": 374,
+                "y": 515
+              },
+              {
+                "x": 446,
+                "y": 444
+              },
+              {
+                "x": 503,
+                "y": 521
+              },
+              {
+                "x": 546,
+                "y": 579
+              },
+              {
+                "x": 640,
+                "y": 444
+              },
+              {
+                "x": 661,
+                "y": 521
+              }
+            ],
+            "site": {
+              "x": 403,
+              "y": 637
+            },
+            "district": {
+              "x0": 324,
+              "y0": 354,
+              "x1": 446,
+              "y1": 444
+            },
+            "districtMissing": {
+              "x0": 446,
+              "y0": 444,
+              "x1": 683,
+              "y1": 579
+            },
+            "districts": [
+              {
+                "id": "D1",
+                "value": 610,
+                "paintedClass": "#A8CFC1",
+                "region": {
+                  "x0": 324,
+                  "y0": 354,
+                  "x1": 446,
+                  "y1": 444
+                }
+              },
+              {
+                "id": "D2",
+                "value": 1260,
+                "paintedClass": "#32826C",
+                "region": {
+                  "x0": 446,
+                  "y0": 354,
+                  "x1": 683,
+                  "y1": 444
+                }
+              },
+              {
+                "id": "D3",
+                "value": 920,
+                "paintedClass": "#68AC95",
+                "region": {
+                  "x0": 324,
+                  "y0": 444,
+                  "x1": 446,
+                  "y1": 579
+                }
+              },
+              {
+                "id": "D4",
+                "value": null,
+                "paintedClass": null,
+                "region": {
+                  "x0": 446,
+                  "y0": 444,
+                  "x1": 683,
+                  "y1": 579
+                }
+              },
+              {
+                "id": "D5",
+                "value": 380,
+                "paintedClass": "#DEEEE8",
+                "region": {
+                  "x0": 324,
+                  "y0": 579,
+                  "x1": 503,
+                  "y1": 676
+                }
+              },
+              {
+                "id": "D6",
+                "value": null,
+                "paintedClass": null,
+                "region": {
+                  "x0": 503,
+                  "y0": 579,
+                  "x1": 683,
+                  "y1": 676
+                }
+              }
+            ],
+            "label": {
+              "x0": 401,
+              "y0": 389,
+              "x1": 461,
+              "y1": 409
+            },
+            "ground": {
+              "x": 314,
+              "y": 681
+            }
+          },
+          "labels": {
+            "visible": 14,
+            "overlappingPairs": 0,
+            "criticalOverlaps": 0,
+            "pairs": []
+          },
+          "selected": "S01",
+          "popupInsideMap": true,
+          "popupOverTarget": 0,
+          "sheetOverTarget": 0,
+          "sheetOverPopup": 0,
+          "sheetVisible": false,
+          "legend": [
+            {
+              "text": "主配送线",
+              "color": "rgb(19, 124, 108)",
+              "bound": "#137C6C"
+            },
+            {
+              "text": "配送站",
+              "color": "rgb(23, 124, 111)",
+              "bound": "#177C6F"
+            },
+            {
+              "text": "集散点",
+              "color": "rgb(98, 96, 164)",
+              "bound": "#6260A4"
+            },
+            {
+              "text": "驿站",
+              "color": "rgb(161, 92, 39)",
+              "bound": "#A15C27"
+            },
+            {
+              "text": "异常状态（外圈）",
+              "color": "rgba(0, 0, 0, 0)",
+              "bound": "#B3261E"
+            },
+            {
+              "text": "< 400",
+              "color": "rgb(222, 238, 232)",
+              "bound": "#DEEEE8"
+            },
+            {
+              "text": "400 – 800",
+              "color": "rgb(168, 207, 193)",
+              "bound": "#A8CFC1"
+            },
+            {
+              "text": "800 – 1200",
+              "color": "rgb(104, 172, 149)",
+              "bound": "#68AC95"
+            },
+            {
+              "text": "≥ 1200",
+              "color": "rgb(50, 130, 108)",
+              "bound": "#32826C"
+            },
+            {
+              "text": "无数据",
+              "color": "rgb(200, 200, 193)",
+              "bound": "#C8C8C1"
+            }
+          ],
+          "attribution": "Leaflet | 合成栅格底图（本地生成，非真实地点）",
+          "deviceScaleFactor": 1,
+          "mapBox": {
+            "width": 1020,
+            "height": 1015
+          }
+        },
+        "pixels": {
+          "variant": "improved",
+          "counts": {
+            "sites": 12,
+            "districts": 6,
+            "labels": 24,
+            "routePoints": 7,
+            "context": 38
+          },
+          "tally": {
+            "layersAdded": 44,
+            "listenersBound": 65,
+            "restyles": 12,
+            "popupsBound": 12
+          },
+          "dataSha": {
+            "sites.geojson": "ea42a59383c48fac5c36b0db6e07ed0983b54a7e6186aabe9e4694621ff635b4",
+            "context.geojson": "9703e7eeec4e448b6ff111993b4a1e46dcaace9bc616d510a2261be7ce84de99",
+            "route.geojson": "492f5fba98767c85f15ebbf3b888d8d3fd71c8e98038c5e97e97d8c374a2e15e",
+            "labels.geojson": "06810f588e07d32b76f437b96076696c86ef0771c780aa3ef2125a0a03073c5b",
+            "districts.geojson": "60b5ce75dd315d88d4ad50243d09fff412be381831ea08cd5e26226c3b507717"
+          },
+          "features": {
+            "route": "#137C6C",
+            "siteFill": "#A15C27",
+            "siteStroke": "#FFFFFF",
+            "alertStroke": "#B3261E",
+            "districtValue": "#A8CFC1",
+            "districtMissing": "#C8C8C1",
+            "label": "#405C56"
+          },
+          "samplePoints": {
+            "route": {
+              "x": 503,
+              "y": 521
+            },
+            "site": {
+              "x": 403,
+              "y": 637
+            },
+            "district": {
+              "x": 385,
+              "y": 399
+            },
+            "districtMissing": {
+              "x": 564,
+              "y": 512
+            },
+            "rasterGround": {
+              "x": 122,
+              "y": 223
+            },
+            "label": {
+              "x": 431,
+              "y": 399
+            }
+          },
+          "probe": {
+            "routeLine": [
+              {
+                "x": 345,
+                "y": 579
+              },
+              {
+                "x": 374,
+                "y": 515
+              },
+              {
+                "x": 446,
+                "y": 444
+              },
+              {
+                "x": 503,
+                "y": 521
+              },
+              {
+                "x": 546,
+                "y": 579
+              },
+              {
+                "x": 640,
+                "y": 444
+              },
+              {
+                "x": 661,
+                "y": 521
+              }
+            ],
+            "site": {
+              "x": 403,
+              "y": 637
+            },
+            "district": {
+              "x0": 324,
+              "y0": 354,
+              "x1": 446,
+              "y1": 444
+            },
+            "districtMissing": {
+              "x0": 446,
+              "y0": 444,
+              "x1": 683,
+              "y1": 579
+            },
+            "districts": [
+              {
+                "id": "D1",
+                "value": 610,
+                "paintedClass": "#A8CFC1",
+                "region": {
+                  "x0": 324,
+                  "y0": 354,
+                  "x1": 446,
+                  "y1": 444
+                }
+              },
+              {
+                "id": "D2",
+                "value": 1260,
+                "paintedClass": "#32826C",
+                "region": {
+                  "x0": 446,
+                  "y0": 354,
+                  "x1": 683,
+                  "y1": 444
+                }
+              },
+              {
+                "id": "D3",
+                "value": 920,
+                "paintedClass": "#68AC95",
+                "region": {
+                  "x0": 324,
+                  "y0": 444,
+                  "x1": 446,
+                  "y1": 579
+                }
+              },
+              {
+                "id": "D4",
+                "value": null,
+                "paintedClass": null,
+                "region": {
+                  "x0": 446,
+                  "y0": 444,
+                  "x1": 683,
+                  "y1": 579
+                }
+              },
+              {
+                "id": "D5",
+                "value": 380,
+                "paintedClass": "#DEEEE8",
+                "region": {
+                  "x0": 324,
+                  "y0": 579,
+                  "x1": 503,
+                  "y1": 676
+                }
+              },
+              {
+                "id": "D6",
+                "value": null,
+                "paintedClass": null,
+                "region": {
+                  "x0": 503,
+                  "y0": 579,
+                  "x1": 683,
+                  "y1": 676
+                }
+              }
+            ],
+            "label": {
+              "x0": 401,
+              "y0": 389,
+              "x1": 461,
+              "y1": 409
+            },
+            "ground": {
+              "x": 314,
+              "y": 681
+            }
+          },
+          "labels": {
+            "visible": 14,
+            "overlappingPairs": 0,
+            "criticalOverlaps": 0,
+            "pairs": []
+          },
+          "selected": null,
+          "popupInsideMap": null,
+          "popupOverTarget": null,
+          "sheetOverTarget": 0,
+          "sheetOverPopup": 0,
+          "sheetVisible": false,
+          "legend": [
+            {
+              "text": "主配送线",
+              "color": "rgb(19, 124, 108)",
+              "bound": "#137C6C"
+            },
+            {
+              "text": "配送站",
+              "color": "rgb(23, 124, 111)",
+              "bound": "#177C6F"
+            },
+            {
+              "text": "集散点",
+              "color": "rgb(98, 96, 164)",
+              "bound": "#6260A4"
+            },
+            {
+              "text": "驿站",
+              "color": "rgb(161, 92, 39)",
+              "bound": "#A15C27"
+            },
+            {
+              "text": "异常状态（外圈）",
+              "color": "rgba(0, 0, 0, 0)",
+              "bound": "#B3261E"
+            },
+            {
+              "text": "< 400",
+              "color": "rgb(222, 238, 232)",
+              "bound": "#DEEEE8"
+            },
+            {
+              "text": "400 – 800",
+              "color": "rgb(168, 207, 193)",
+              "bound": "#A8CFC1"
+            },
+            {
+              "text": "800 – 1200",
+              "color": "rgb(104, 172, 149)",
+              "bound": "#68AC95"
+            },
+            {
+              "text": "≥ 1200",
+              "color": "rgb(50, 130, 108)",
+              "bound": "#32826C"
+            },
+            {
+              "text": "无数据",
+              "color": "rgb(200, 200, 193)",
+              "bound": "#C8C8C1"
+            }
+          ],
+          "attribution": "Leaflet | 合成栅格底图（本地生成，非真实地点）",
+          "deviceScaleFactor": 1,
+          "mapBox": {
+            "width": 1020,
+            "height": 1015
+          }
+        },
+        "fixed": {
+          "center": {
+            "lat": 31.226766026383594,
+            "lng": 121.43879413604736
+          },
+          "zoom": 15,
+          "metersPerPixel": 4.085187332646789
+        },
+        "clip": {
+          "x": 0,
+          "y": 53,
+          "width": 1020,
+          "height": 1015
+        },
+        "prefix": "leaflet",
+        "imageSha256": "2c7329c55fcd9dc1fd3b2469e294b23ecfbc50be8be292c4301b22eb692f3347"
+      },
+      "attempt-filter": {
+        "shot": {
+          "variant": "attempt-filter",
+          "counts": {
+            "sites": 12,
+            "districts": 6,
+            "labels": 24,
+            "routePoints": 7,
+            "context": 38
+          },
+          "tally": {
+            "layersAdded": 44,
+            "listenersBound": 65,
+            "restyles": 10,
+            "popupsBound": 12
+          },
+          "dataSha": {
+            "context.geojson": "9703e7eeec4e448b6ff111993b4a1e46dcaace9bc616d510a2261be7ce84de99",
+            "sites.geojson": "ea42a59383c48fac5c36b0db6e07ed0983b54a7e6186aabe9e4694621ff635b4",
+            "districts.geojson": "60b5ce75dd315d88d4ad50243d09fff412be381831ea08cd5e26226c3b507717",
+            "route.geojson": "492f5fba98767c85f15ebbf3b888d8d3fd71c8e98038c5e97e97d8c374a2e15e",
+            "labels.geojson": "06810f588e07d32b76f437b96076696c86ef0771c780aa3ef2125a0a03073c5b"
+          },
+          "features": {
+            "route": "#137C6C",
+            "siteFill": "#A15C27",
+            "siteStroke": "#1A1A1A",
+            "alertStroke": "#B3261E",
+            "districtValue": "#A8CFC1",
+            "districtMissing": "#C8C8C1",
+            "label": "#405C56"
+          },
+          "samplePoints": {
+            "route": {
+              "x": 503,
+              "y": 521
+            },
+            "site": {
+              "x": 403,
+              "y": 637
+            },
+            "district": {
+              "x": 385,
+              "y": 399
+            },
+            "districtMissing": {
+              "x": 564,
+              "y": 512
+            },
+            "rasterGround": {
+              "x": 122,
+              "y": 223
+            },
+            "label": {
+              "x": 431,
+              "y": 399
+            }
+          },
+          "probe": {
+            "routeLine": [
+              {
+                "x": 345,
+                "y": 579
+              },
+              {
+                "x": 374,
+                "y": 515
+              },
+              {
+                "x": 446,
+                "y": 444
+              },
+              {
+                "x": 503,
+                "y": 521
+              },
+              {
+                "x": 546,
+                "y": 579
+              },
+              {
+                "x": 640,
+                "y": 444
+              },
+              {
+                "x": 661,
+                "y": 521
+              }
+            ],
+            "site": {
+              "x": 403,
+              "y": 637
+            },
+            "district": {
+              "x0": 324,
+              "y0": 354,
+              "x1": 446,
+              "y1": 444
+            },
+            "districtMissing": {
+              "x0": 446,
+              "y0": 444,
+              "x1": 683,
+              "y1": 579
+            },
+            "districts": [
+              {
+                "id": "D1",
+                "value": 610,
+                "paintedClass": "#A8CFC1",
+                "region": {
+                  "x0": 324,
+                  "y0": 354,
+                  "x1": 446,
+                  "y1": 444
+                }
+              },
+              {
+                "id": "D2",
+                "value": 1260,
+                "paintedClass": "#32826C",
+                "region": {
+                  "x0": 446,
+                  "y0": 354,
+                  "x1": 683,
+                  "y1": 444
+                }
+              },
+              {
+                "id": "D3",
+                "value": 920,
+                "paintedClass": "#68AC95",
+                "region": {
+                  "x0": 324,
+                  "y0": 444,
+                  "x1": 446,
+                  "y1": 579
+                }
+              },
+              {
+                "id": "D4",
+                "value": null,
+                "paintedClass": null,
+                "region": {
+                  "x0": 446,
+                  "y0": 444,
+                  "x1": 683,
+                  "y1": 579
+                }
+              },
+              {
+                "id": "D5",
+                "value": 380,
+                "paintedClass": "#DEEEE8",
+                "region": {
+                  "x0": 324,
+                  "y0": 579,
+                  "x1": 503,
+                  "y1": 676
+                }
+              },
+              {
+                "id": "D6",
+                "value": null,
+                "paintedClass": null,
+                "region": {
+                  "x0": 503,
+                  "y0": 579,
+                  "x1": 683,
+                  "y1": 676
+                }
+              }
+            ],
+            "label": {
+              "x0": 401,
+              "y0": 389,
+              "x1": 461,
+              "y1": 409
+            },
+            "ground": {
+              "x": 314,
+              "y": 681
+            }
+          },
+          "labels": {
+            "visible": 14,
+            "overlappingPairs": 0,
+            "criticalOverlaps": 0,
+            "pairs": []
+          },
+          "selected": "S01",
+          "popupInsideMap": true,
+          "popupOverTarget": 0,
+          "sheetOverTarget": 0,
+          "sheetOverPopup": 0,
+          "sheetVisible": false,
+          "legend": [
+            {
+              "text": "主配送线",
+              "color": "rgb(19, 124, 108)",
+              "bound": "#137C6C"
+            },
+            {
+              "text": "配送站",
+              "color": "rgb(23, 124, 111)",
+              "bound": "#177C6F"
+            },
+            {
+              "text": "集散点",
+              "color": "rgb(98, 96, 164)",
+              "bound": "#6260A4"
+            },
+            {
+              "text": "驿站",
+              "color": "rgb(161, 92, 39)",
+              "bound": "#A15C27"
+            },
+            {
+              "text": "异常状态（外圈）",
+              "color": "rgba(0, 0, 0, 0)",
+              "bound": "#B3261E"
+            },
+            {
+              "text": "< 400",
+              "color": "rgb(222, 238, 232)",
+              "bound": "#DEEEE8"
+            },
+            {
+              "text": "400 – 800",
+              "color": "rgb(168, 207, 193)",
+              "bound": "#A8CFC1"
+            },
+            {
+              "text": "800 – 1200",
+              "color": "rgb(104, 172, 149)",
+              "bound": "#68AC95"
+            },
+            {
+              "text": "≥ 1200",
+              "color": "rgb(50, 130, 108)",
+              "bound": "#32826C"
+            },
+            {
+              "text": "无数据",
+              "color": "rgb(200, 200, 193)",
+              "bound": "#C8C8C1"
+            }
+          ],
+          "attribution": "Leaflet | 合成栅格底图（本地生成，非真实地点）",
+          "deviceScaleFactor": 1,
+          "mapBox": {
+            "width": 1020,
+            "height": 1015
+          }
+        },
+        "pixels": {
+          "variant": "attempt-filter",
+          "counts": {
+            "sites": 12,
+            "districts": 6,
+            "labels": 24,
+            "routePoints": 7,
+            "context": 38
+          },
+          "tally": {
+            "layersAdded": 44,
+            "listenersBound": 65,
+            "restyles": 10,
+            "popupsBound": 12
+          },
+          "dataSha": {
+            "context.geojson": "9703e7eeec4e448b6ff111993b4a1e46dcaace9bc616d510a2261be7ce84de99",
+            "sites.geojson": "ea42a59383c48fac5c36b0db6e07ed0983b54a7e6186aabe9e4694621ff635b4",
+            "districts.geojson": "60b5ce75dd315d88d4ad50243d09fff412be381831ea08cd5e26226c3b507717",
+            "route.geojson": "492f5fba98767c85f15ebbf3b888d8d3fd71c8e98038c5e97e97d8c374a2e15e",
+            "labels.geojson": "06810f588e07d32b76f437b96076696c86ef0771c780aa3ef2125a0a03073c5b"
+          },
+          "features": {
+            "route": "#137C6C",
+            "siteFill": "#A15C27",
+            "siteStroke": "#FFFFFF",
+            "alertStroke": "#B3261E",
+            "districtValue": "#A8CFC1",
+            "districtMissing": "#C8C8C1",
+            "label": "#405C56"
+          },
+          "samplePoints": {
+            "route": {
+              "x": 503,
+              "y": 521
+            },
+            "site": {
+              "x": 403,
+              "y": 637
+            },
+            "district": {
+              "x": 385,
+              "y": 399
+            },
+            "districtMissing": {
+              "x": 564,
+              "y": 512
+            },
+            "rasterGround": {
+              "x": 122,
+              "y": 223
+            },
+            "label": {
+              "x": 431,
+              "y": 399
+            }
+          },
+          "probe": {
+            "routeLine": [
+              {
+                "x": 345,
+                "y": 579
+              },
+              {
+                "x": 374,
+                "y": 515
+              },
+              {
+                "x": 446,
+                "y": 444
+              },
+              {
+                "x": 503,
+                "y": 521
+              },
+              {
+                "x": 546,
+                "y": 579
+              },
+              {
+                "x": 640,
+                "y": 444
+              },
+              {
+                "x": 661,
+                "y": 521
+              }
+            ],
+            "site": {
+              "x": 403,
+              "y": 637
+            },
+            "district": {
+              "x0": 324,
+              "y0": 354,
+              "x1": 446,
+              "y1": 444
+            },
+            "districtMissing": {
+              "x0": 446,
+              "y0": 444,
+              "x1": 683,
+              "y1": 579
+            },
+            "districts": [
+              {
+                "id": "D1",
+                "value": 610,
+                "paintedClass": "#A8CFC1",
+                "region": {
+                  "x0": 324,
+                  "y0": 354,
+                  "x1": 446,
+                  "y1": 444
+                }
+              },
+              {
+                "id": "D2",
+                "value": 1260,
+                "paintedClass": "#32826C",
+                "region": {
+                  "x0": 446,
+                  "y0": 354,
+                  "x1": 683,
+                  "y1": 444
+                }
+              },
+              {
+                "id": "D3",
+                "value": 920,
+                "paintedClass": "#68AC95",
+                "region": {
+                  "x0": 324,
+                  "y0": 444,
+                  "x1": 446,
+                  "y1": 579
+                }
+              },
+              {
+                "id": "D4",
+                "value": null,
+                "paintedClass": null,
+                "region": {
+                  "x0": 446,
+                  "y0": 444,
+                  "x1": 683,
+                  "y1": 579
+                }
+              },
+              {
+                "id": "D5",
+                "value": 380,
+                "paintedClass": "#DEEEE8",
+                "region": {
+                  "x0": 324,
+                  "y0": 579,
+                  "x1": 503,
+                  "y1": 676
+                }
+              },
+              {
+                "id": "D6",
+                "value": null,
+                "paintedClass": null,
+                "region": {
+                  "x0": 503,
+                  "y0": 579,
+                  "x1": 683,
+                  "y1": 676
+                }
+              }
+            ],
+            "label": {
+              "x0": 401,
+              "y0": 389,
+              "x1": 461,
+              "y1": 409
+            },
+            "ground": {
+              "x": 314,
+              "y": 681
+            }
+          },
+          "labels": {
+            "visible": 14,
+            "overlappingPairs": 0,
+            "criticalOverlaps": 0,
+            "pairs": []
+          },
+          "selected": null,
+          "popupInsideMap": null,
+          "popupOverTarget": null,
+          "sheetOverTarget": 0,
+          "sheetOverPopup": 0,
+          "sheetVisible": false,
+          "legend": [
+            {
+              "text": "主配送线",
+              "color": "rgb(19, 124, 108)",
+              "bound": "#137C6C"
+            },
+            {
+              "text": "配送站",
+              "color": "rgb(23, 124, 111)",
+              "bound": "#177C6F"
+            },
+            {
+              "text": "集散点",
+              "color": "rgb(98, 96, 164)",
+              "bound": "#6260A4"
+            },
+            {
+              "text": "驿站",
+              "color": "rgb(161, 92, 39)",
+              "bound": "#A15C27"
+            },
+            {
+              "text": "异常状态（外圈）",
+              "color": "rgba(0, 0, 0, 0)",
+              "bound": "#B3261E"
+            },
+            {
+              "text": "< 400",
+              "color": "rgb(222, 238, 232)",
+              "bound": "#DEEEE8"
+            },
+            {
+              "text": "400 – 800",
+              "color": "rgb(168, 207, 193)",
+              "bound": "#A8CFC1"
+            },
+            {
+              "text": "800 – 1200",
+              "color": "rgb(104, 172, 149)",
+              "bound": "#68AC95"
+            },
+            {
+              "text": "≥ 1200",
+              "color": "rgb(50, 130, 108)",
+              "bound": "#32826C"
+            },
+            {
+              "text": "无数据",
+              "color": "rgb(200, 200, 193)",
+              "bound": "#C8C8C1"
+            }
+          ],
+          "attribution": "Leaflet | 合成栅格底图（本地生成，非真实地点）",
+          "deviceScaleFactor": 1,
+          "mapBox": {
+            "width": 1020,
+            "height": 1015
+          }
+        },
+        "fixed": {
+          "center": {
+            "lat": 31.226766026383594,
+            "lng": 121.43879413604736
+          },
+          "zoom": 15,
+          "metersPerPixel": 4.085187332646789
+        },
+        "clip": {
+          "x": 0,
+          "y": 53,
+          "width": 1020,
+          "height": 1015
+        },
+        "prefix": "leaflet",
+        "imageSha256": "5f2f50e0c19b6aa18de647bdd0c8210086cd7da079d3e06ed09a1f485bb91637"
+      },
+      "attempt-opacity": {
+        "shot": {
+          "variant": "attempt-opacity",
+          "counts": {
+            "sites": 12,
+            "districts": 6,
+            "labels": 24,
+            "routePoints": 7,
+            "context": 38
+          },
+          "tally": {
+            "layersAdded": 44,
+            "listenersBound": 65,
+            "restyles": 10,
+            "popupsBound": 12
+          },
+          "dataSha": {
+            "context.geojson": "9703e7eeec4e448b6ff111993b4a1e46dcaace9bc616d510a2261be7ce84de99",
+            "route.geojson": "492f5fba98767c85f15ebbf3b888d8d3fd71c8e98038c5e97e97d8c374a2e15e",
+            "sites.geojson": "ea42a59383c48fac5c36b0db6e07ed0983b54a7e6186aabe9e4694621ff635b4",
+            "districts.geojson": "60b5ce75dd315d88d4ad50243d09fff412be381831ea08cd5e26226c3b507717",
+            "labels.geojson": "06810f588e07d32b76f437b96076696c86ef0771c780aa3ef2125a0a03073c5b"
+          },
+          "features": {
+            "route": "#137C6C",
+            "siteFill": "#A15C27",
+            "siteStroke": "#1A1A1A",
+            "alertStroke": "#B3261E",
+            "districtValue": "#A8CFC1",
+            "districtMissing": "#C8C8C1",
+            "label": "#405C56"
+          },
+          "samplePoints": {
+            "route": {
+              "x": 503,
+              "y": 521
+            },
+            "site": {
+              "x": 403,
+              "y": 637
+            },
+            "district": {
+              "x": 385,
+              "y": 399
+            },
+            "districtMissing": {
+              "x": 564,
+              "y": 512
+            },
+            "rasterGround": {
+              "x": 122,
+              "y": 223
+            },
+            "label": {
+              "x": 431,
+              "y": 399
+            }
+          },
+          "probe": {
+            "routeLine": [
+              {
+                "x": 345,
+                "y": 579
+              },
+              {
+                "x": 374,
+                "y": 515
+              },
+              {
+                "x": 446,
+                "y": 444
+              },
+              {
+                "x": 503,
+                "y": 521
+              },
+              {
+                "x": 546,
+                "y": 579
+              },
+              {
+                "x": 640,
+                "y": 444
+              },
+              {
+                "x": 661,
+                "y": 521
+              }
+            ],
+            "site": {
+              "x": 403,
+              "y": 637
+            },
+            "district": {
+              "x0": 324,
+              "y0": 354,
+              "x1": 446,
+              "y1": 444
+            },
+            "districtMissing": {
+              "x0": 446,
+              "y0": 444,
+              "x1": 683,
+              "y1": 579
+            },
+            "districts": [
+              {
+                "id": "D1",
+                "value": 610,
+                "paintedClass": "#A8CFC1",
+                "region": {
+                  "x0": 324,
+                  "y0": 354,
+                  "x1": 446,
+                  "y1": 444
+                }
+              },
+              {
+                "id": "D2",
+                "value": 1260,
+                "paintedClass": "#32826C",
+                "region": {
+                  "x0": 446,
+                  "y0": 354,
+                  "x1": 683,
+                  "y1": 444
+                }
+              },
+              {
+                "id": "D3",
+                "value": 920,
+                "paintedClass": "#68AC95",
+                "region": {
+                  "x0": 324,
+                  "y0": 444,
+                  "x1": 446,
+                  "y1": 579
+                }
+              },
+              {
+                "id": "D4",
+                "value": null,
+                "paintedClass": null,
+                "region": {
+                  "x0": 446,
+                  "y0": 444,
+                  "x1": 683,
+                  "y1": 579
+                }
+              },
+              {
+                "id": "D5",
+                "value": 380,
+                "paintedClass": "#DEEEE8",
+                "region": {
+                  "x0": 324,
+                  "y0": 579,
+                  "x1": 503,
+                  "y1": 676
+                }
+              },
+              {
+                "id": "D6",
+                "value": null,
+                "paintedClass": null,
+                "region": {
+                  "x0": 503,
+                  "y0": 579,
+                  "x1": 683,
+                  "y1": 676
+                }
+              }
+            ],
+            "label": {
+              "x0": 401,
+              "y0": 389,
+              "x1": 461,
+              "y1": 409
+            },
+            "ground": {
+              "x": 314,
+              "y": 681
+            }
+          },
+          "labels": {
+            "visible": 14,
+            "overlappingPairs": 0,
+            "criticalOverlaps": 0,
+            "pairs": []
+          },
+          "selected": "S01",
+          "popupInsideMap": true,
+          "popupOverTarget": 0,
+          "sheetOverTarget": 0,
+          "sheetOverPopup": 0,
+          "sheetVisible": false,
+          "legend": [
+            {
+              "text": "主配送线",
+              "color": "rgb(19, 124, 108)",
+              "bound": "#137C6C"
+            },
+            {
+              "text": "配送站",
+              "color": "rgb(23, 124, 111)",
+              "bound": "#177C6F"
+            },
+            {
+              "text": "集散点",
+              "color": "rgb(98, 96, 164)",
+              "bound": "#6260A4"
+            },
+            {
+              "text": "驿站",
+              "color": "rgb(161, 92, 39)",
+              "bound": "#A15C27"
+            },
+            {
+              "text": "异常状态（外圈）",
+              "color": "rgba(0, 0, 0, 0)",
+              "bound": "#B3261E"
+            },
+            {
+              "text": "< 400",
+              "color": "rgb(222, 238, 232)",
+              "bound": "#DEEEE8"
+            },
+            {
+              "text": "400 – 800",
+              "color": "rgb(168, 207, 193)",
+              "bound": "#A8CFC1"
+            },
+            {
+              "text": "800 – 1200",
+              "color": "rgb(104, 172, 149)",
+              "bound": "#68AC95"
+            },
+            {
+              "text": "≥ 1200",
+              "color": "rgb(50, 130, 108)",
+              "bound": "#32826C"
+            },
+            {
+              "text": "无数据",
+              "color": "rgb(200, 200, 193)",
+              "bound": "#C8C8C1"
+            }
+          ],
+          "attribution": "Leaflet | 合成栅格底图（本地生成，非真实地点）",
+          "deviceScaleFactor": 1,
+          "mapBox": {
+            "width": 1020,
+            "height": 1015
+          }
+        },
+        "pixels": {
+          "variant": "attempt-opacity",
+          "counts": {
+            "sites": 12,
+            "districts": 6,
+            "labels": 24,
+            "routePoints": 7,
+            "context": 38
+          },
+          "tally": {
+            "layersAdded": 44,
+            "listenersBound": 65,
+            "restyles": 10,
+            "popupsBound": 12
+          },
+          "dataSha": {
+            "context.geojson": "9703e7eeec4e448b6ff111993b4a1e46dcaace9bc616d510a2261be7ce84de99",
+            "route.geojson": "492f5fba98767c85f15ebbf3b888d8d3fd71c8e98038c5e97e97d8c374a2e15e",
+            "sites.geojson": "ea42a59383c48fac5c36b0db6e07ed0983b54a7e6186aabe9e4694621ff635b4",
+            "districts.geojson": "60b5ce75dd315d88d4ad50243d09fff412be381831ea08cd5e26226c3b507717",
+            "labels.geojson": "06810f588e07d32b76f437b96076696c86ef0771c780aa3ef2125a0a03073c5b"
+          },
+          "features": {
+            "route": "#137C6C",
+            "siteFill": "#A15C27",
+            "siteStroke": "#FFFFFF",
+            "alertStroke": "#B3261E",
+            "districtValue": "#A8CFC1",
+            "districtMissing": "#C8C8C1",
+            "label": "#405C56"
+          },
+          "samplePoints": {
+            "route": {
+              "x": 503,
+              "y": 521
+            },
+            "site": {
+              "x": 403,
+              "y": 637
+            },
+            "district": {
+              "x": 385,
+              "y": 399
+            },
+            "districtMissing": {
+              "x": 564,
+              "y": 512
+            },
+            "rasterGround": {
+              "x": 122,
+              "y": 223
+            },
+            "label": {
+              "x": 431,
+              "y": 399
+            }
+          },
+          "probe": {
+            "routeLine": [
+              {
+                "x": 345,
+                "y": 579
+              },
+              {
+                "x": 374,
+                "y": 515
+              },
+              {
+                "x": 446,
+                "y": 444
+              },
+              {
+                "x": 503,
+                "y": 521
+              },
+              {
+                "x": 546,
+                "y": 579
+              },
+              {
+                "x": 640,
+                "y": 444
+              },
+              {
+                "x": 661,
+                "y": 521
+              }
+            ],
+            "site": {
+              "x": 403,
+              "y": 637
+            },
+            "district": {
+              "x0": 324,
+              "y0": 354,
+              "x1": 446,
+              "y1": 444
+            },
+            "districtMissing": {
+              "x0": 446,
+              "y0": 444,
+              "x1": 683,
+              "y1": 579
+            },
+            "districts": [
+              {
+                "id": "D1",
+                "value": 610,
+                "paintedClass": "#A8CFC1",
+                "region": {
+                  "x0": 324,
+                  "y0": 354,
+                  "x1": 446,
+                  "y1": 444
+                }
+              },
+              {
+                "id": "D2",
+                "value": 1260,
+                "paintedClass": "#32826C",
+                "region": {
+                  "x0": 446,
+                  "y0": 354,
+                  "x1": 683,
+                  "y1": 444
+                }
+              },
+              {
+                "id": "D3",
+                "value": 920,
+                "paintedClass": "#68AC95",
+                "region": {
+                  "x0": 324,
+                  "y0": 444,
+                  "x1": 446,
+                  "y1": 579
+                }
+              },
+              {
+                "id": "D4",
+                "value": null,
+                "paintedClass": null,
+                "region": {
+                  "x0": 446,
+                  "y0": 444,
+                  "x1": 683,
+                  "y1": 579
+                }
+              },
+              {
+                "id": "D5",
+                "value": 380,
+                "paintedClass": "#DEEEE8",
+                "region": {
+                  "x0": 324,
+                  "y0": 579,
+                  "x1": 503,
+                  "y1": 676
+                }
+              },
+              {
+                "id": "D6",
+                "value": null,
+                "paintedClass": null,
+                "region": {
+                  "x0": 503,
+                  "y0": 579,
+                  "x1": 683,
+                  "y1": 676
+                }
+              }
+            ],
+            "label": {
+              "x0": 401,
+              "y0": 389,
+              "x1": 461,
+              "y1": 409
+            },
+            "ground": {
+              "x": 314,
+              "y": 681
+            }
+          },
+          "labels": {
+            "visible": 14,
+            "overlappingPairs": 0,
+            "criticalOverlaps": 0,
+            "pairs": []
+          },
+          "selected": null,
+          "popupInsideMap": null,
+          "popupOverTarget": null,
+          "sheetOverTarget": 0,
+          "sheetOverPopup": 0,
+          "sheetVisible": false,
+          "legend": [
+            {
+              "text": "主配送线",
+              "color": "rgb(19, 124, 108)",
+              "bound": "#137C6C"
+            },
+            {
+              "text": "配送站",
+              "color": "rgb(23, 124, 111)",
+              "bound": "#177C6F"
+            },
+            {
+              "text": "集散点",
+              "color": "rgb(98, 96, 164)",
+              "bound": "#6260A4"
+            },
+            {
+              "text": "驿站",
+              "color": "rgb(161, 92, 39)",
+              "bound": "#A15C27"
+            },
+            {
+              "text": "异常状态（外圈）",
+              "color": "rgba(0, 0, 0, 0)",
+              "bound": "#B3261E"
+            },
+            {
+              "text": "< 400",
+              "color": "rgb(222, 238, 232)",
+              "bound": "#DEEEE8"
+            },
+            {
+              "text": "400 – 800",
+              "color": "rgb(168, 207, 193)",
+              "bound": "#A8CFC1"
+            },
+            {
+              "text": "800 – 1200",
+              "color": "rgb(104, 172, 149)",
+              "bound": "#68AC95"
+            },
+            {
+              "text": "≥ 1200",
+              "color": "rgb(50, 130, 108)",
+              "bound": "#32826C"
+            },
+            {
+              "text": "无数据",
+              "color": "rgb(200, 200, 193)",
+              "bound": "#C8C8C1"
+            }
+          ],
+          "attribution": "Leaflet | 合成栅格底图（本地生成，非真实地点）",
+          "deviceScaleFactor": 1,
+          "mapBox": {
+            "width": 1020,
+            "height": 1015
+          }
+        },
+        "fixed": {
+          "center": {
+            "lat": 31.226766026383594,
+            "lng": 121.43879413604736
+          },
+          "zoom": 15,
+          "metersPerPixel": 4.085187332646789
+        },
+        "clip": {
+          "x": 0,
+          "y": 53,
+          "width": 1020,
+          "height": 1015
+        },
+        "prefix": "leaflet",
+        "imageSha256": "bf37b1f493a08969a3695893d8e3cf2e9b09a8f1591ab2b963e31477fcceab2a"
+      }
+    }
+  }
+}

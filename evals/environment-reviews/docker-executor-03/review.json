@@ -1,0 +1,68 @@
+{
+  "scope": "Read-only replay and isolated copy mutations; all cleanup subprocess calls mocked; no Docker operations",
+  "baseline_gate": {
+    "verdict": "VERIFIED_PASS",
+    "passed": true,
+    "failures": [],
+    "inconclusive": []
+  },
+  "counterexamples": {
+    "empty_controls": {
+      "verdict": "VERIFIED_PASS",
+      "passed": true,
+      "failures": [],
+      "inconclusive": []
+    },
+    "missing_one_control": {
+      "verdict": "VERIFIED_PASS",
+      "passed": true,
+      "failures": [],
+      "inconclusive": []
+    },
+    "all_raw_observations_missing": {
+      "verdict": "VERIFIED_PASS",
+      "passed": true,
+      "failures": [],
+      "inconclusive": []
+    },
+    "all_transport_records_exit_127": {
+      "verdict": "VERIFIED_PASS",
+      "passed": true,
+      "failures": [],
+      "inconclusive": []
+    }
+  },
+  "cleanup_query_failure": {
+    "mocked_calls": 2,
+    "reported_success": true,
+    "reported_ownership_match": true
+  },
+  "unit_tests": {
+    "run": 26,
+    "failures": 0,
+    "errors": 0
+  },
+  "decision_matches_recorded": true,
+  "prior_trees_match": {
+    "rev01": true,
+    "rev02": true,
+    "rev03": true,
+    "rev04": true,
+    "rev05": true,
+    "rev06": true,
+    "sandbox-preflight-01": true,
+    "sandbox-preflight-02": true,
+    "docker-executor-01": true,
+    "docker-executor-02": true
+  },
+  "packages": {
+    "arm-a": {
+      "count": 42,
+      "drift": []
+    },
+    "arm-b": {
+      "count": 67,
+      "drift": []
+    }
+  }
+}

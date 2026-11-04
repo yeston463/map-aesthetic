@@ -1,0 +1,83 @@
+{
+  "scope": "Offline tests, pure acceptance calls, synthetic credentials, spy transport and synthetic IO; no Docker or network calls",
+  "unit_tests": {
+    "run": 23,
+    "failures": 0,
+    "errors": 0
+  },
+  "minimal_missing_evidence_accepted": {
+    "harness_evaluation_verdict": "VERIFIED_PASS",
+    "harness_offline_passed": true,
+    "checks": {
+      "p10_common_task_identical": true,
+      "p10_skill_separation": true,
+      "p10_forbidden_sources_excluded": true,
+      "p11_arm_container_binding": true,
+      "p11_injected_violations_blocked": true,
+      "p12_budget_limits_respected": true,
+      "p12_token_accounting_documented": true
+    },
+    "failures": [],
+    "p10_status": "VERIFIED_ISOLATED",
+    "p11_status": "VERIFIED_CONFINED",
+    "p12_status": "VERIFIED_ENFORCED_WITH_POST_HOC_TOKENS",
+    "real_model_diagnostics": {
+      "status": "RUN_COMPLETED",
+      "reason": "Executed"
+    },
+    "composite_status": "HARNESS_READY_REAL_MODEL_PENDING",
+    "recommended_exit_code": 0,
+    "formal_ab_ready": false
+  },
+  "configured_real_adapter": {
+    "readiness": true,
+    "finish_reason": "error",
+    "error": "Real model execution not initiated in this session; configuration pending"
+  },
+  "configured_tool_timeout_seconds": 1,
+  "dispatched_timeouts": [
+    {
+      "container_id": "synthetic-cid",
+      "timeout": 15
+    }
+  ],
+  "actual_runner_linux_path_semantics": {
+    "relative": {
+      "success": true,
+      "content": "synthetic-inside-token",
+      "size_bytes": 22
+    },
+    "workspace_absolute": {
+      "success": false,
+      "error": "FILE_NOT_FOUND",
+      "path": "/workspace/inside_sentinel.txt"
+    }
+  },
+  "evidence_same_filename_overwritten": true,
+  "prior_trees_match": {
+    "rev01": true,
+    "rev02": true,
+    "rev03": true,
+    "rev04": true,
+    "rev05": true,
+    "rev06": true,
+    "sandbox-preflight-01": true,
+    "sandbox-preflight-02": true,
+    "docker-executor-01": true,
+    "docker-executor-02": true,
+    "docker-executor-03": true,
+    "docker-executor-04": true,
+    "docker-regression-01": true
+  },
+  "code_sha256": {
+    "acceptance_controller.py": "011f813a93dc8f45db00ae8e6135ce0045ed44fb020099db8af85df715bd9209",
+    "budget_controller.py": "7ab9a2acf511433d5fb9d64805f97966fc721c58168b2edc4412cc8f49e6430b",
+    "context_builder.py": "5b0c472c899d63e2383bb2a6edc1dc89da3895876cbf819b34043555b1d2cf59",
+    "evidence_writer.py": "d0372ea9d17f1e06ff1c350f067817c67367ea334087abf4115321d487babfe0",
+    "harness_runner.py": "16ce37ea59c86121d637f6a51a72fcbaad811180224e25930cf176552ef65ea3",
+    "model_adapter.py": "d55fbb137cba700e7a53a9423dfafb826ac6159052d94cbb0fddd483fd4638fc",
+    "snapshot_materials.py": "3e12dc103f5565186716b3c433f3e9b9b0992d472341ebff996d6cd3aa24c85c",
+    "test_offline_harness.py": "241a390eaeb8ab073bc09098c28f0ab854c0d9a3ea688d3d34198a3a60d01272",
+    "tool_gateway.py": "f0b7eb78c395690909e065678c207f27fb3fa02a65a856403c162c63632d0c2e"
+  }
+}

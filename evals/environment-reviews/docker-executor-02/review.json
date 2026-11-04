@@ -1,0 +1,76 @@
+{
+  "scope": "Read-only record replay, historical trees, unit tests and synthetic classifier inputs; no Docker or link operations",
+  "decision_matches_recorded": true,
+  "decision": {
+    "verdict": "PREFLIGHT_INCONCLUSIVE",
+    "exit": 2,
+    "defects": [
+      "VERIFICATION_NOT_ESTABLISHED:P10_context_injection:NOT_VERIFIED",
+      "VERIFICATION_NOT_ESTABLISHED:P11_tool_permission_profile:NOT_VERIFIED",
+      "VERIFICATION_NOT_ESTABLISHED:P12_budget_enforcement:NOT_VERIFIED"
+    ]
+  },
+  "prior_trees_match": {
+    "rev01": true,
+    "rev02": true,
+    "rev03": true,
+    "rev04": true,
+    "rev05": true,
+    "rev06": true,
+    "sandbox-preflight-01": true,
+    "sandbox-preflight-02": true,
+    "docker-executor-01": true
+  },
+  "unit_tests": {
+    "run": 14,
+    "failures": 0,
+    "errors": 0
+  },
+  "packages": {
+    "arm-a": {
+      "input_count": 42,
+      "manifest_drift": []
+    },
+    "arm-b": {
+      "input_count": 67,
+      "manifest_drift": []
+    }
+  },
+  "P05": {
+    "raw": {
+      "arm_a": "LINK_OK:True:True",
+      "arm_b": "LINK_OK:True:True"
+    },
+    "summary": {
+      "creation_exit_code": 0,
+      "is_reparse_point": true,
+      "read_through_link": false
+    },
+    "classification": {
+      "status": "BLOCKED",
+      "reason": "REPARSE_POINT_CONTAINED_DANGLING_IN_CONTAINER"
+    }
+  },
+  "execution_error_misclassified": {
+    "input_exit": 127,
+    "input_stderr": "python: No such file or directory",
+    "verdict": "BLOCKED",
+    "reason": "TARGET_UNMOUNTED_BOUNDARY_HELD"
+  },
+  "P07_raw": {
+    "arm_a_attempt_to_b_8081": {
+      "outcome": "CONNECTION_REFUSED",
+      "http_status": null,
+      "reason": "[Errno 111] Connection refused",
+      "executed_in": "de02_container_arm_a_de02-b3f641e8",
+      "raw_exit_code": 0
+    },
+    "arm_b_queries_its_own_8080": {
+      "outcome": "REACHED",
+      "http_status": 200,
+      "body": "SRV_TOKEN_B_de02-b3f641e8",
+      "executed_in": "de02_container_arm_b_de02-b3f641e8",
+      "raw_exit_code": 0
+    }
+  }
+}

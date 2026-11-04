@@ -2,11 +2,12 @@
 
 [English](README.md) · [详细项目设计](docs/project-design.zh-CN.md)
 
-面向 AI 编程代理的 **Web 地图审美调整 skill**。围绕地图用途，协同调整底图、
-业务图层、标注、图例、控件和弹窗，并在原项目中落实可验证的改动。
+面向 AI 编程代理的 **Web 地图审美调整 skill**。围绕地图业务用途，协同调整底图、
+业务图层、标注、图例、控件和弹窗，并在原项目中落实可验证的工程改动。
 
-**当前状态：0.1.0 首版。** 已提供五类地图 SDK 的适配参考、统一主题契约、三款
-主题和本地 Leaflet 演示。商用地图接入及生产性能尚未实测，覆盖状态见下表。
+**当前状态：v0.2.0 本地候选版本。** 包含 Leaflet 与 MapLibre 可执行合成案例、
+场景指南和度量工具。Mapbox GL JS 及其他服务商运行环境仍待验证。
+已提供的一次代理 A/B 对照因[参考答案及跨组访问](evals/ab-reviews/2026-11-02/README.md)失效，尚无有效的独立效果结论。
 
 ![真实浏览器截图：同一组合成数据的前后对照](docs/images/demo-desktop.png)
 
@@ -20,11 +21,12 @@
 Skill 提供可重复执行的过程：
 
 1. 识别 SDK、版本、底图来源、业务图层与现有设计体系。
-2. 找出可观察的问题，例如道路过亮、面填色挡住地名、图例与图层颜色不一致。
-3. 确定视觉方向，定义界面 token 与制图 token。
-4. 根据真实能力映射到原 SDK，修改代码与配置。
-5. 对比代表性尺度、选中和弹窗状态，以及桌面与移动布局。
-6. 交付代码、配置、证据和能力限制。
+2. 找出可观察的问题，例如道路过亮、面填色挡住地名、长注记密集叠压、移动端抽屉遮挡。
+3. 查阅[场景化审美决策指南](skills/map-aesthetic/references/scenarios/README.md)，确定视觉方向与调整策略。
+4. 定义界面 token 与制图 token，遵守统一[主题契约](skills/map-aesthetic/references/theme-contract.md)。
+5. 根据真实能力映射到原 SDK，修改代码与配置（Pane 分级、路线描边、注记避让、安全边距）。
+6. 对比代表性尺度、选中和弹窗状态，以及桌面与移动布局。
+7. 交付代码 diff、固定视域前后截图、自动化量化指标与能力限制。
 
 只有截图时，交付诊断与实施规范。没有可用密钥时，完成可实施部分，列出所需
 配置和控制台步骤。所有验证结论标明实际证据。
@@ -33,15 +35,55 @@ Skill 提供可重复执行的过程：
 
 | 地图引擎 | 已提供的适配指导 | 当前运行验证 |
 | --- | --- | --- |
-| [Leaflet](skills/map-aesthetic/references/adapters/leaflet.md) | 栅格/矢量边界、点线面、pane、控件、生命周期 | 本地合成数据演示；详见[验证记录](docs/verification.md) |
-| [ArcGIS JS SDK](skills/map-aesthetic/references/adapters/arcgis.md) | 图层类型、渲染器、标注、矢量底图、UI | 文档覆盖，待真实项目验证 |
-| [Mapbox GL JS](skills/map-aesthetic/references/adapters/mapbox.md) | 经典样式、Standard 配置与 slots、样式重载 | 文档覆盖，待真实项目验证 |
-| [高德](skills/map-aesthetic/references/adapters/amap.md) | 已发布样式、要素显隐、覆盖物、控件 | 文档覆盖，待真实 Key 验证 |
-| [百度](skills/map-aesthetic/references/adapters/baidu.md) | 版本识别、个性化样式、覆盖物、兼容设置 | 文档覆盖，待真实 AK 验证 |
+| [Leaflet](skills/map-aesthetic/references/adapters/leaflet.md) | 栅格/矢量边界、点线面、pane、控件、生命周期 | 本地合成栅格案例 ([cases/leaflet-raster/](cases/leaflet-raster/)) 与矢量演示；结果见当前验证记录 |
+| [ArcGIS JS](skills/map-aesthetic/references/adapters/arcgis.md) | 图层类型、渲染器、标注、矢量底图、UI | 文档覆盖，待目标项目运行验证 |
+| [Mapbox GL JS](skills/map-aesthetic/references/adapters/mapbox.md) | 经典样式、Standard 配置与 slots、样式重载 | 文档与[未验证接入示例](cases/mapbox-style/mapbox-gl-variant.js)，非 Mapbox 运行实测 |
+| MapLibre GL JS 6.16.0 | 本地 GeoJSON 矢量样式恢复案例 | [本地案例](cases/mapbox-style/)，不证明 Mapbox 兼容 |
+| [AMap / 高德](skills/map-aesthetic/references/adapters/amap.md) | 已发布样式、要素显隐、覆盖物、控件 | 文档覆盖，待目标项目运行验证 |
+| [Baidu / 百度](skills/map-aesthetic/references/adapters/baidu.md) | 版本识别、个性化样式、覆盖物、兼容设置 | 文档覆盖，待目标项目运行验证 |
 
 “适配器”在本项目中指按需读取的实施指南，项目没有提供跨 SDK 运行时包装器。
-通用主题表达视觉意图，各 SDK 保留自身配置与能力边界。普通栅格瓦片中的路网
-和文字已合成，不能通过通用 token 单独改色。
+普通栅格瓦片中的路网和文字已烘焙进像素，不能通过通用 token 单独改色。
+
+## 可运行改造案例 (Cases)
+
+仓库在 `cases/` 下提供了两个完全独立的本地可运行改造工程：
+
+1. **Leaflet 栅格底图改造案例** ([cases/leaflet-raster/](cases/leaflet-raster/))：
+   - 面对**道路与文字不可改色的静态栅格瓦片**，保留底图来源、坐标与数据含义。
+   - 解决业务不突出、24 个注记中 10 处文字叠压、弹窗遮挡自身、移动端抽屉遮挡南部站点 100% 等典型缺陷。
+   - 交付基线版本、改进版本、代码补丁 ([IMPROVEMENT.patch](cases/leaflet-raster/IMPROVEMENT.patch))、固定视域前后截图、CIEDE2000 色差度量及探索性变体（瓦片层滤镜与透明度）记录。
+2. **MapLibre 本地矢量样式与重载案例** ([cases/mapbox-style/](cases/mapbox-style/))：
+   - 基于 Mapbox Style Spec v8，验证底图与业务主次、路线描边、中文地名光晕，以及日夜主题切换（`quiet-analysis` vs `night-operations`）。
+   - 借助 [restore.js](cases/mapbox-style/restore.js) 守卫实现 `style.load` 拓扑恢复，验证本 fixture 的八次串行切换、资源数量和选中状态；未测量堆内存或所有监听器。
+   - 提供未经真实 SDK 验证的 Mapbox GL JS 接入示例 ([mapbox-gl-variant.js](cases/mapbox-style/mapbox-gl-variant.js)) 与云端配置清单 ([REMAINING_STEPS.md](cases/mapbox-style/REMAINING_STEPS.md))。
+
+启动本地案例门户：
+
+```sh
+npm run case:serve
+```
+
+在浏览器打开 `http://127.0.0.1:4174/cases/`。执行自动化回归与像素测量：
+
+```sh
+npm run case:verify
+python scripts/measure_case_pixels.py
+```
+
+验证器会自行启动临时本地服务；像素度量需要先安装 Python 开发依赖。
+案例回归检查与代理 A/B 实验分开，后者尚未执行。
+
+## 场景化审美决策指南
+
+按前端地图高频痛点组织的参考文档位于 [skills/map-aesthetic/references/scenarios/](skills/map-aesthetic/references/scenarios/README.md)：
+
+- [点位密集](skills/map-aesthetic/references/scenarios/dense-points.md)：依尺度阶梯化符号半径、加高对比外描边、按业务指标分级筛选。
+- [路线与道路混淆](skills/map-aesthetic/references/scenarios/route-road-confusion.md)：双层描边结构（`casingWidthPx > widthPx`）、色相隔离。
+- [专题面与地名竞争](skills/map-aesthetic/references/scenarios/thematic-choropleth-vs-labels.md)：图层下沉（slot 机制）、透明度与边界校准、无数据条纹图案隔离。
+- [中文长标注遮挡](skills/map-aesthetic/references/scenarios/chinese-long-labels.md)：地面分辨率分级、括号与冗余后缀规则缩略、1.5–2px 文字光晕。
+- [深色主题对比不足](skills/map-aesthetic/references/scenarios/dark-mode-contrast.md)：水陆色差锚定（dE2000 ≥ 5.0）、连续色带明度反转、抑制刺眼眩光。
+- [移动面板和弹窗遮挡](skills/map-aesthetic/references/scenarios/mobile-sheet-popup-occlusion.md)：弹窗垂直位移（`offset`）、增大平移安全边距、底部抽屉预留高度。
 
 ## 安装 skill
 
@@ -78,42 +120,31 @@ Copy-Item -LiteralPath '.\skills\map-aesthetic' -Destination $mapSkillDestinatio
 重启。其他支持 Agent Skills 的工具可读取同一 `SKILL.md`，其自动发现机制尚未
 在本项目验证。`agents/openai.yaml` 仅提供可选的 Codex UI 元数据。
 
-## 调用示例
+## 使用方式
 
 ```text
-使用 $map-aesthetic 调整这个高德物流地图。
-保留当前 SDK、底图提供商、数据含义和业务交互。
-降低底图干扰，突出运输路线与异常站点，统一图例、控件和弹窗。
-检查远中近景、选中状态、桌面及移动端，并说明未验证的部分。
+请使用 $map-aesthetic 优化当前的配送物流地图。保留现有 SDK、地图源、数据含义与交互。
+降低底图视觉噪点，强化主干路线与异常站点，统一图例与弹窗，并验证桌面与移动端在远景、
+工作视图与近景下的层级表现。
 ```
 
-```text
-使用 $map-aesthetic 审查这组地图截图。
-指出底图与业务数据主次、标注密度、弹窗遮挡和图例问题。
-提供可实施规范，区分截图能观察到的事实与需要代码才能确认的原因。
-```
+同时支持：视觉审计、参考图审美对齐、日夜主题切换、注记层级梳理及纯截图诊断。
 
-```text
-使用 $map-aesthetic 给现有 Mapbox 地图加入日夜主题。
-检查样式切换后业务图层、选中状态和事件绑定能否保持正确。
-```
+## 运行演示工程
 
-## 本地演示
-
-需要 Node 22.12+、npm。首次安装依赖需要网络；演示运行时使用本地合成矢量
-数据，不请求第三方底图、远程字体或地图服务，不需要 Key。
+需要 Node 22.12+ 和 npm。本地演示不发起任何外部网络瓦片请求：
 
 ```sh
 npm ci
 npm run dev
 ```
 
-打开 Vite 打印的本地地址。查看同源数据的前后对照，切换三款主题，选择站点，
-缩放观察信息密度变化。演示中的局部坐标平面和地理要素均为虚构。
+在浏览器打开 Vite 打印的本地地址（`http://127.0.0.1:4173/`）。可对比同一套合成数据在
+优化前后的视觉表现，切换日夜主题并测试响应式布局。
 
-## 验证与开发
+## 运行项目验证
 
-验证脚本需要 Python 3.10+；安装 skill 的日常使用不要求运行这些脚本。
+验证脚本支持 Python 3.10+：
 
 ```sh
 python -m pip install -r requirements-dev.txt
@@ -123,36 +154,48 @@ python -m unittest discover -s tests -v
 npm run build
 npx playwright install chromium
 npm run test:browser
+npm run test:node
+npm run case:verify
+python scripts/measure_case_pixels.py
 ```
 
-主题可单独验证：
+主题文件可单独校验：
 
 ```sh
 python skills/map-aesthetic/scripts/validate_theme.py path/to/theme.json
 ```
 
-验证覆盖 JSON 结构、三组界面文字对比度、CIEDE2000 面色分离与类别可分辨性、
-描边宽度与尺度顺序等约束。它拒绝"看不出来"的面色，但不证明图层可读性、
-完整色觉无障碍、标注遮挡或引擎支持；色带亮度单调也不等于感知上确实代表多少。
-查看[实际验证记录](docs/verification.md)与[行为评估场景](evals/cases.md)。
+校验器严格检测数据结构、3 对界面对比度、CIEDE2000 色差、缺失值语义隔离、
+发散色带奇数对称性及类别绑定一致性。
 
-官方文档引用单独检查。厂商文档站多为单页应用，页面被删除后仍可能返回 HTTP 200，
-因此检查器为每条 adapter 引用绑定了"页面必须出现的关键词"：
+引用链接独立校验：
 
 ```sh
-python scripts/check_citations.py
+python scripts/check_citations.py --offline   # 校验断言表，不耗费网络
+python scripts/check_citations.py             # 联网请求并确认断言文字
 ```
 
-退出码 2 表示网络阻断了结论，不等于引用通过。
+返回码 2 表示网络阻断，不表示断言通过。
 
-## 阅读顺序
+## 目录结构
 
-- 使用者：[skill 主文件](skills/map-aesthetic/SKILL.md)、对应引擎参考。
-- 设计者：[制图规则](skills/map-aesthetic/references/cartographic-design.md)、[主题契约](skills/map-aesthetic/references/theme-contract.md)。
-- 项目维护者：[详细设计](docs/project-design.zh-CN.md)、[贡献指南](CONTRIBUTING.md)、[发布步骤](docs/releasing.md)。
-- 验收者：[视觉 QA](skills/map-aesthetic/references/visual-qa.md)、[报告模板](skills/map-aesthetic/assets/templates/audit-report.md)。
+```text
+skills/map-aesthetic/   可安装 skill、参考指南、主题预设、场景指南、主题校验器
+cases/                  可独立运行的 Leaflet 栅格案例与 Mapbox 矢量案例工程
+demo/                   无凭证依赖的 Leaflet 矢量前后对比演示
+docs/                   详细项目设计、验证记录、发布流程与真实运行截图
+evals/                  行为评估规范、可执行结果记录与原始对比测试副本
+tests/                  主题校验器与安装包独立性测试
+tests-browser/          演示工程的端到端浏览器测试
+scripts/                项目检查、案例验证与像素度量脚本
+.github/                CI 流水线与 GitHub 模板
+```
 
-## 许可证
+## 贡献与发布
 
-项目原创文件采用 MIT。依赖保留各自许可证；地图厂商 SDK、地图数据、账号权限
-和服务条款单独适用。见[第三方说明](THIRD_PARTY.md)。项目与所列地图厂商无隶属关系。
+参与贡献请先阅读[贡献指南](CONTRIBUTING.md)、[行为评估用例](evals/cases.md)、
+[验证记录](docs/verification.md)以及[发布流程](docs/releasing.md)。
+详细演进规划参见[项目设计](docs/project-design.zh-CN.md)。
+
+本项目原创代码基于 MIT 许可证开源。依赖库保留自身许可证；商业地图 SDK 与服务条款保持独立。
+详见[第三方声明](THIRD_PARTY.md)。本项目独立于所述商业地图提供商。

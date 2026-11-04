@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
   "id": "quiet-analysis",
   "name": "Quiet Analysis",
   "mode": "light",
@@ -19,7 +19,16 @@
     "sequential": ["#DEEEE8", "#A8CFC1", "#68AC95", "#32826C", "#175445"],
     "route": { "color": "#137C6C", "casingColor": "#FFFFFF", "widthPx": 4, "casingWidthPx": 7 },
     "site": { "color": "#177C6F", "radiusPx": 6, "strokeColor": "#FFFFFF", "strokeWidthPx": 2 },
-    "selection": { "color": "#A7531A", "haloColor": "#FFFFFF", "widthPx": 3 },
+    "selection": { "color": "#1A1A1A", "haloColor": "#FFFFFF", "widthPx": 3, "keepClassVisible": true },
+    "area": { "fillOpacity": 0.55, "boundaryColor": "#A9BDB4", "boundaryWidthPx": 1 },
+    "missing": { "color": "#C8C8C1", "fillOpacity": 0.5, "pattern": "diagonal-hatch", "label": "无数据" },
+    "diverging": { "ramp": ["#2F6E8C", "#8FBDD3", "#EFEFEA", "#D9A98C", "#A8542B"], "midpoint": "mean" },
+    "classes": [
+      { "id": "配送站", "color": "#177C6F" },
+      { "id": "集散点", "color": "#6260A4" },
+      { "id": "驿站", "color": "#A15C27" }
+    ],
+    "states": { "hover": "#126A9B", "alert": "#B3261E", "disabled": "#9AA4A0" },
     "labels": { "sizePx": 12, "haloWidthPx": 2, "density": "balanced" },
     "scale": { "detailBelowMpp": 8, "overviewAboveMpp": 24 }
   }
