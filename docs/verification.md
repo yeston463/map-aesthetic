@@ -23,7 +23,7 @@ Ubuntu were not rerun locally. Host CJK fonts affect text and PNG reproducibilit
 | `npm run case:verify` | 85/85 assertions passed; 10 observations counted separately |
 | `python scripts/measure_case_pixels.py` | Passed on the captured report and matching image hashes |
 | `python scripts/check_citations.py --offline` | Structure only: 36 URLs, 35 claims, 34 adapter citations; no network |
-| `python scripts/check_project.py` | Passed after A/B and preflight review updates: metadata, 56 Markdown files, README parity, workflows, lockfile dependencies, presets |
+| `python scripts/check_project.py` | Passed after A/B and preflight review updates: metadata, 57 Markdown files, README parity, workflows, lockfile dependencies, presets |
 | Skill-creator `quick_validate.py` | Passed |
 | `python scripts/package_skill.py` | Passed: self-contained skill ZIP with 24 files |
 

@@ -1,0 +1,1155 @@
+{
+  "review_date": "2026-11-04",
+  "experiment_revision": "EXP-20261104-MAP-AB-01-rev03",
+  "decision": "NEEDS_REVISION",
+  "formal_ab_authorized_by_this_review": false,
+  "scope": "Independent read-only source audit, pure-function replay and new local Node/browser controls; no Docker operations, provider calls or formal A/B",
+  "source_receipts": {
+    "tools/artifact_loader.py": {
+      "sha256": "6ada866599484cf6a220506cab8621323dc8ef327b4709141bbe453a4e425720",
+      "matches_independent_before_snapshot": true
+    },
+    "tools/verify_run_provenance.py": {
+      "sha256": "3ed9aa8dddca080a3c349549dec66cc21c5db0a80aa9d84abe4eb486d33849f8",
+      "matches_independent_before_snapshot": true
+    },
+    "tools/run_calibration.py": {
+      "sha256": "9e9c09584732fe289fee6f8676eabc4836aca19bc47afb41656cfe769e75f0e4",
+      "matches_independent_before_snapshot": true
+    },
+    "tools/run_rehearsal.py": {
+      "sha256": "722f48273c5065175dd97c7e79a46573aada422ca7cbfa929423f739a255e56b",
+      "matches_independent_before_snapshot": true
+    },
+    "tools/build_plan.py": {
+      "sha256": "80cedc14ca2b629aa91b5059fd2d191ec76974ab807bcf593202fb32be84223c",
+      "matches_independent_before_snapshot": true
+    },
+    "evaluator/code_only_evaluator.mjs": {
+      "sha256": "23ba9572048a18fed59a6f830ec3aaf815e391728f5a513cad4c3b8fa5aa3de3",
+      "matches_independent_before_snapshot": true
+    },
+    "evaluator/required_checks.mjs": {
+      "sha256": "5fb55c02c7191b99f6e1f06ffa1f7c587a19e403d65703100ec6e678af81e643",
+      "matches_independent_before_snapshot": true
+    },
+    "plan/experiment_spec.json": {
+      "sha256": "1f8d0b885772b9a753cb98208d9d445a878a63c98c52dd46dcd2505f28903bd4",
+      "matches_independent_before_snapshot": true
+    },
+    "calibration/calibration_report.json": {
+      "sha256": "40d536edabe6702aca315d4cbcb8d1cce6ffef4cec6efbfb21172cb6bb9513e2",
+      "matches_independent_before_snapshot": true
+    }
+  },
+  "input_manifest_replay": {
+    "baseline_package": {
+      "declared": 38,
+      "extra": [],
+      "missing": [],
+      "wrong_hash_or_size": []
+    },
+    "skill_package": {
+      "declared": 25,
+      "extra": [],
+      "missing": [],
+      "wrong_hash_or_size": []
+    }
+  },
+  "public_contract_copies": {
+    "copies": 3,
+    "byte_identical": true
+  },
+  "recorded_calibration_replay": {
+    "kind": "Re-judged existing expected/actual records, not a fresh execution of all controls",
+    "total": 27,
+    "passed": 27,
+    "rows": [
+      {
+        "id": "k01_valid_deliverable_loads",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/k01_valid_deliverable_loads_actual.json",
+        "supplemental_raw_sha256": "cf7bc54f525ad32281a257e03d8bc2e3653e96d2cf8bf1543bb82cdeda7ab0fd",
+        "family": "loader",
+        "expected": {
+          "verdict": "LOADED",
+          "exit_code": 0,
+          "named_check": null,
+          "reason": null
+        },
+        "actual": {
+          "verdict": "LOADED",
+          "exit_code": 0,
+          "named_check": null,
+          "reason": null
+        }
+      },
+      {
+        "id": "k02_deliverable_missing",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/k02_deliverable_missing_actual.json",
+        "supplemental_raw_sha256": "7526526271daeb0c957df5dd23b928704d6398097720c8692c7f3c319eb28eac",
+        "family": "loader",
+        "expected": {
+          "verdict": "REFUSED",
+          "exit_code": 2,
+          "named_check": "code_delivery_checks.style_module_delivered",
+          "reason": "DELIVERABLE_MISSING"
+        },
+        "actual": {
+          "verdict": "REFUSED",
+          "exit_code": 2,
+          "named_check": "code_delivery_checks.style_module_delivered",
+          "reason": "DELIVERABLE_MISSING"
+        }
+      },
+      {
+        "id": "k03_empty_code",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/k03_empty_code_actual.json",
+        "supplemental_raw_sha256": "3f63e63f15449b8959f8d9f47b0618cd3854d107f635c8d98227fb5048c94659",
+        "family": "loader",
+        "expected": {
+          "verdict": "REFUSED",
+          "exit_code": 2,
+          "named_check": "code_delivery_checks.style_module_delivered",
+          "reason": "DELIVERABLE_EMPTY"
+        },
+        "actual": {
+          "verdict": "REFUSED",
+          "exit_code": 2,
+          "named_check": "code_delivery_checks.style_module_delivered",
+          "reason": "DELIVERABLE_EMPTY"
+        }
+      },
+      {
+        "id": "k04_syntax_error",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/k04_syntax_error_actual.json",
+        "supplemental_raw_sha256": "cc6247a4593890faa6a98911e774c1055250561b101e41767f004bfe1d63b51d",
+        "family": "loader",
+        "expected": {
+          "verdict": "REFUSED",
+          "exit_code": 2,
+          "named_check": "hard_checks.interface_contract",
+          "reason": "SYNTAX_OR_EXECUTION_ERROR"
+        },
+        "actual": {
+          "verdict": "REFUSED",
+          "exit_code": 2,
+          "named_check": "hard_checks.interface_contract",
+          "reason": "SYNTAX_OR_EXECUTION_ERROR"
+        }
+      },
+      {
+        "id": "k05_import_time_throw",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/k05_import_time_throw_actual.json",
+        "supplemental_raw_sha256": "38206a3dc94d8e9eb01d2ae71288f951b14f8ee349e997cecbc22ffa9718aedd",
+        "family": "loader",
+        "expected": {
+          "verdict": "REFUSED",
+          "exit_code": 2,
+          "named_check": "hard_checks.interface_contract",
+          "reason": "SYNTAX_OR_EXECUTION_ERROR"
+        },
+        "actual": {
+          "verdict": "REFUSED",
+          "exit_code": 2,
+          "named_check": "hard_checks.interface_contract",
+          "reason": "SYNTAX_OR_EXECUTION_ERROR"
+        }
+      },
+      {
+        "id": "k06_missing_required_export",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/k06_missing_required_export_actual.json",
+        "supplemental_raw_sha256": "f16cb5b14e191b9b8d472e3327bf84c684676603e1d46a197ad0f86ffc1d6d44",
+        "family": "loader",
+        "expected": {
+          "verdict": "REFUSED",
+          "exit_code": 2,
+          "named_check": "code_delivery_checks.interface_exports_complete",
+          "reason": "INTERFACE_EXPORT_MISSING"
+        },
+        "actual": {
+          "verdict": "REFUSED",
+          "exit_code": 2,
+          "named_check": "code_delivery_checks.interface_exports_complete",
+          "reason": "INTERFACE_EXPORT_MISSING"
+        }
+      },
+      {
+        "id": "k07_data_file_modified",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/k07_data_file_modified_actual.json",
+        "supplemental_raw_sha256": "b2f6c53cf12bcd9a5aa424de84080f29adc1bccb4c009da04abb9893c629d33b",
+        "family": "loader",
+        "expected": {
+          "verdict": "REFUSED",
+          "exit_code": 2,
+          "named_check": "hard_checks.data_integrity",
+          "reason": "DATA_INTEGRITY_VIOLATION"
+        },
+        "actual": {
+          "verdict": "REFUSED",
+          "exit_code": 2,
+          "named_check": "hard_checks.data_integrity",
+          "reason": "DATA_INTEGRITY_VIOLATION"
+        }
+      },
+      {
+        "id": "k08_protected_non_data_file_modified",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/k08_protected_non_data_file_modified_actual.json",
+        "supplemental_raw_sha256": "ff1d9a1423567def2f3914c1d469cefb82c7049cb319a1cb92412c7193a63885",
+        "family": "loader",
+        "expected": {
+          "verdict": "REFUSED",
+          "exit_code": 2,
+          "named_check": "controller_run_environment",
+          "reason": "PROTECTED_INPUT_MODIFIED"
+        },
+        "actual": {
+          "verdict": "REFUSED",
+          "exit_code": 2,
+          "named_check": "controller_run_environment",
+          "reason": "PROTECTED_INPUT_MODIFIED"
+        }
+      },
+      {
+        "id": "k09_required_input_deleted",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/k09_required_input_deleted_actual.json",
+        "supplemental_raw_sha256": "3cea64346007d464dd4f481e3bb27dc25ee69c3e6d182716ed617860e61e5b64",
+        "family": "loader",
+        "expected": {
+          "verdict": "REFUSED",
+          "exit_code": 2,
+          "named_check": "controller_run_environment",
+          "reason": "INPUT_MISSING"
+        },
+        "actual": {
+          "verdict": "REFUSED",
+          "exit_code": 2,
+          "named_check": "controller_run_environment",
+          "reason": "INPUT_MISSING"
+        }
+      },
+      {
+        "id": "k10_foreign_skill_file_in_baseline_arm",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/k10_foreign_skill_file_in_baseline_arm_actual.json",
+        "supplemental_raw_sha256": "52eeb73f0f41cfa96d8e6ceb422c314f5445851345e6a9cbbd7a9c111d6d52e2",
+        "family": "loader",
+        "expected": {
+          "verdict": "REFUSED",
+          "exit_code": 2,
+          "named_check": "controller_run_environment",
+          "reason": "UNEXPECTED_WORKSPACE_FILE"
+        },
+        "actual": {
+          "verdict": "REFUSED",
+          "exit_code": 2,
+          "named_check": "controller_run_environment",
+          "reason": "UNEXPECTED_WORKSPACE_FILE"
+        }
+      },
+      {
+        "id": "k11_stale_evaluation_directory_refused",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/k11_stale_evaluation_directory_refused_actual.json",
+        "supplemental_raw_sha256": "7846ca098f24d1fc1d0dbd8f1f2aee82a399570b4114b09f69dad2cdd8ae400d",
+        "family": "loader",
+        "expected": {
+          "verdict": "REFUSED",
+          "exit_code": 2,
+          "named_check": "controller_run_environment",
+          "reason": "EVALUATION_DIR_NOT_FRESH"
+        },
+        "actual": {
+          "verdict": "REFUSED",
+          "exit_code": 2,
+          "named_check": "controller_run_environment",
+          "reason": "EVALUATION_DIR_NOT_FRESH"
+        }
+      },
+      {
+        "id": "k12_skill_arm_tree_contains_the_skill",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/k12_skill_arm_tree_contains_the_skill_actual.json",
+        "supplemental_raw_sha256": "a91b87ef7c348eccd4df6763d8f24af443ed5560de8b81df74339d9ea12a44f1",
+        "family": "loader",
+        "expected": {
+          "verdict": "LOADED",
+          "exit_code": 0,
+          "named_check": null,
+          "reason": null
+        },
+        "actual": {
+          "verdict": "LOADED",
+          "exit_code": 0,
+          "named_check": null,
+          "reason": null
+        }
+      },
+      {
+        "id": "k13_run_id_cannot_escape_the_out_root",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/k13_run_id_cannot_escape_the_out_root_actual.json",
+        "supplemental_raw_sha256": "4dce010caa4625cd5a45f4c9baffa24c9eb477c58bcd17c6154c99bc17358d04",
+        "family": "loader",
+        "expected": {
+          "verdict": "REFUSED",
+          "exit_code": 2,
+          "named_check": "artifact_loader.path_rules",
+          "reason": "PATH_NOT_CONTAINED"
+        },
+        "actual": {
+          "verdict": "REFUSED",
+          "exit_code": 2,
+          "named_check": "artifact_loader.path_rules",
+          "reason": "PATH_NOT_CONTAINED"
+        }
+      },
+      {
+        "id": "e01_valid_style_passes_all_declared_gates",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/e01_valid_style_passes_all_declared_gates_actual.json",
+        "supplemental_raw_sha256": "633c225e4d82a64d55cd412eabfec60c3b7bd71644ee43e4ef32622b4c1a3167",
+        "family": "evaluator",
+        "expected": {
+          "verdict": "PASS",
+          "exit_code": 0,
+          "named_check": null,
+          "reason": null
+        },
+        "actual": {
+          "verdict": "PASS",
+          "exit_code": 0,
+          "named_check": null,
+          "reason": null
+        }
+      },
+      {
+        "id": "e02_missing_tile_stops_the_run_at_readiness",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/e02_missing_tile_stops_the_run_at_readiness_actual.json",
+        "supplemental_raw_sha256": "7a6fcc5c59dd0716d9205f0b8484ca76288634d3b2cc11df8c0bdcd4e7f34b38",
+        "family": "evaluator",
+        "expected": {
+          "verdict": "FAIL",
+          "exit_code": 1,
+          "named_check": "hard_checks.page_readiness",
+          "reason": "READINESS_WAIT_FAILED"
+        },
+        "actual": {
+          "verdict": "FAIL",
+          "exit_code": 1,
+          "named_check": "hard_checks.page_readiness",
+          "reason": "READINESS_WAIT_FAILED"
+        }
+      },
+      {
+        "id": "e03_label_suppression_removed_collides",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/e03_label_suppression_removed_collides_actual.json",
+        "supplemental_raw_sha256": "4ba907bfba3fc8cfa27cac5df45b4d4c0dfe31d4e6ddec7780cea03a5c6dcb45",
+        "family": "evaluator",
+        "expected": {
+          "verdict": "FAIL",
+          "exit_code": 1,
+          "named_check": "visual_checks.label_collisions_desktop",
+          "reason": "LABEL_BOXES_OVERLAP"
+        },
+        "actual": {
+          "verdict": "FAIL",
+          "exit_code": 1,
+          "named_check": "visual_checks.label_collisions_desktop",
+          "reason": "LABEL_BOXES_OVERLAP"
+        }
+      },
+      {
+        "id": "e04_desktop_panel_covers_the_page",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/e04_desktop_panel_covers_the_page_actual.json",
+        "supplemental_raw_sha256": "cf4715533ce60c86c6c2894b2ec524fe3de1d5521f1fd06eef62f5d785ce90c7",
+        "family": "evaluator",
+        "expected": {
+          "verdict": "FAIL",
+          "exit_code": 1,
+          "named_check": "visual_checks.desktop_target_visibility",
+          "reason": "TARGET_OCCLUDED_BY_PANEL"
+        },
+        "actual": {
+          "verdict": "FAIL",
+          "exit_code": 1,
+          "named_check": "visual_checks.desktop_target_visibility",
+          "reason": "TARGET_OCCLUDED_BY_PANEL"
+        }
+      },
+      {
+        "id": "e05_mobile_sheet_covers_the_marker",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/e05_mobile_sheet_covers_the_marker_actual.json",
+        "supplemental_raw_sha256": "02b0abe4fe7b7a8e6d0b3d0981b7de06982c60b231289c36571bef80f553b904",
+        "family": "evaluator",
+        "expected": {
+          "verdict": "FAIL",
+          "exit_code": 1,
+          "named_check": "visual_checks.mobile_target_visibility",
+          "reason": "TARGET_OCCLUDED_BY_SHEET"
+        },
+        "actual": {
+          "verdict": "FAIL",
+          "exit_code": 1,
+          "named_check": "visual_checks.mobile_target_visibility",
+          "reason": "TARGET_OCCLUDED_BY_SHEET"
+        }
+      },
+      {
+        "id": "e05c_page_error_is_caught",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/e05c_page_error_is_caught_actual.json",
+        "supplemental_raw_sha256": "07eea536626e424d44622e15bdf840a80fc203c8a5f387bf8004893076d2690c",
+        "family": "evaluator",
+        "expected": {
+          "verdict": "FAIL",
+          "exit_code": 1,
+          "named_check": "hard_checks.no_page_errors",
+          "reason": "PAGE_ERRORS_OR_WARNINGS"
+        },
+        "actual": {
+          "verdict": "FAIL",
+          "exit_code": 1,
+          "named_check": "hard_checks.no_page_errors",
+          "reason": "PAGE_ERRORS_OR_WARNINGS"
+        }
+      },
+      {
+        "id": "e06_capture_without_run_binding_is_refused",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/e06_capture_without_run_binding_is_refused_actual.json",
+        "supplemental_raw_sha256": "7ce12378987694a0b58f27d3f5802119c9fb58c61b685cfb87e9fa75806cfc9d",
+        "family": "evaluator",
+        "expected": {
+          "verdict": "FAIL",
+          "exit_code": 1,
+          "named_check": "controller_capture_checks.controller_capture_bindings",
+          "reason": "CAPTURE_BINDING_MISMATCH"
+        },
+        "actual": {
+          "verdict": "FAIL",
+          "exit_code": 1,
+          "named_check": "controller_capture_checks.controller_capture_bindings",
+          "reason": "CAPTURE_BINDING_MISMATCH"
+        }
+      },
+      {
+        "id": "e07_status_ring_collapsed",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/e07_status_ring_collapsed_actual.json",
+        "supplemental_raw_sha256": "b5e7f21af08ba325e4ba75aff200178ca8dc575c4e5490b54847b6b4c9731f5a",
+        "family": "evaluator",
+        "expected": {
+          "verdict": "FAIL",
+          "exit_code": 1,
+          "named_check": "hard_checks.status_encoding",
+          "reason": "STATUS_NOT_DIFFERENTIABLE"
+        },
+        "actual": {
+          "verdict": "FAIL",
+          "exit_code": 1,
+          "named_check": "hard_checks.status_encoding",
+          "reason": "STATUS_NOT_DIFFERENTIABLE"
+        }
+      },
+      {
+        "id": "e08_classification_thresholds_changed",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/e08_classification_thresholds_changed_actual.json",
+        "supplemental_raw_sha256": "4fc8912c5e637ec6534eb2468c1179f164863b439f3f9368770a6eb0e2ab655f",
+        "family": "evaluator",
+        "expected": {
+          "verdict": "FAIL",
+          "exit_code": 1,
+          "named_check": "hard_checks.classification_thresholds",
+          "reason": "THRESHOLDS_CHANGED"
+        },
+        "actual": {
+          "verdict": "FAIL",
+          "exit_code": 1,
+          "named_check": "hard_checks.classification_thresholds",
+          "reason": "THRESHOLDS_CHANGED"
+        }
+      },
+      {
+        "id": "e09_radius_in_the_wrong_slot_renders_nothing",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/e09_radius_in_the_wrong_slot_renders_nothing_actual.json",
+        "supplemental_raw_sha256": "d8775851df9741a11a664d1e094796b75317aca9388d0930693f98470c4f3890",
+        "family": "evaluator",
+        "expected": {
+          "verdict": "FAIL",
+          "exit_code": 1,
+          "named_check": "visual_checks.desktop_target_visibility",
+          "reason": "TARGET_NOT_RENDERED"
+        },
+        "actual": {
+          "verdict": "FAIL",
+          "exit_code": 1,
+          "named_check": "visual_checks.desktop_target_visibility",
+          "reason": "TARGET_NOT_RENDERED"
+        }
+      },
+      {
+        "id": "p01_retained_evidence_verifies_clean",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/p01_retained_evidence_verifies_clean_actual.json",
+        "supplemental_raw_sha256": "459ec2325824972490cc5f809aab1776a133536cddbe53376ef4b464f92db1c3",
+        "family": "provenance",
+        "expected": {
+          "verdict": "OK",
+          "exit_code": 0,
+          "named_check": "run_provenance",
+          "reason": null
+        },
+        "actual": {
+          "verdict": "OK",
+          "exit_code": 0,
+          "named_check": "run_provenance",
+          "reason": null
+        }
+      },
+      {
+        "id": "p02_renamed_capture_is_detected",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/p02_renamed_capture_is_detected_actual.json",
+        "supplemental_raw_sha256": "a77fa369bc606f95072604acfb0cf1745df1abfe232e39d9619a0d43fb534329",
+        "family": "provenance",
+        "expected": {
+          "verdict": "REFUSED",
+          "exit_code": 1,
+          "named_check": "run_provenance",
+          "reason": "CAPTURE_OR_SIDECAR_ABSENT"
+        },
+        "actual": {
+          "verdict": "REFUSED",
+          "exit_code": 1,
+          "named_check": "run_provenance",
+          "reason": "CAPTURE_OR_SIDECAR_ABSENT"
+        }
+      },
+      {
+        "id": "p03_capture_from_other_code_is_detected",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/p03_capture_from_other_code_is_detected_actual.json",
+        "supplemental_raw_sha256": "60d8a3f7a7c72a710420810e085ed5dd0d10d31fa725bc249e8107e9140a2ec7",
+        "family": "provenance",
+        "expected": {
+          "verdict": "REFUSED",
+          "exit_code": 1,
+          "named_check": "run_provenance",
+          "reason": "CAPTURE_NOT_FROM_THIS_CODE"
+        },
+        "actual": {
+          "verdict": "REFUSED",
+          "exit_code": 1,
+          "named_check": "run_provenance",
+          "reason": "CAPTURE_NOT_FROM_THIS_CODE"
+        }
+      },
+      {
+        "id": "p04_sidecar_state_disagreement_is_detected",
+        "accepted_by_current_comparator": true,
+        "problems": [],
+        "supplemental_raw_file": "calibration/raw/p04_sidecar_state_disagreement_is_detected_actual.json",
+        "supplemental_raw_sha256": "6401411939db9088e879ac22d86b691af7a5b9a0b7a6604939b8de3bd37d6422",
+        "family": "provenance",
+        "expected": {
+          "verdict": "REFUSED",
+          "exit_code": 1,
+          "named_check": "run_provenance",
+          "reason": "STATE_DISAGREES"
+        },
+        "actual": {
+          "verdict": "REFUSED",
+          "exit_code": 1,
+          "named_check": "run_provenance",
+          "reason": "STATE_DISAGREES"
+        }
+      }
+    ]
+  },
+  "comparator_self_test_executed": [
+    {
+      "case": "accepts the matching row",
+      "comparator_said_pass": true,
+      "expected_comparator_said": true,
+      "correct": true,
+      "problems": []
+    },
+    {
+      "case": "rejects a row with no exit code",
+      "comparator_said_pass": false,
+      "expected_comparator_said": false,
+      "correct": true,
+      "problems": [
+        "INCOMPLETE_ROW:actual is missing ['exit_code']"
+      ]
+    },
+    {
+      "case": "rejects a row with no named check",
+      "comparator_said_pass": false,
+      "expected_comparator_said": false,
+      "correct": true,
+      "problems": [
+        "INCOMPLETE_ROW:actual is missing ['named_check']"
+      ]
+    },
+    {
+      "case": "rejects ERROR where FAIL was pre-registered",
+      "comparator_said_pass": false,
+      "expected_comparator_said": false,
+      "correct": true,
+      "problems": [
+        "verdict='ERROR' wanted 'FAIL'"
+      ]
+    },
+    {
+      "case": "rejects exit 2 where exit 1 was pre-registered",
+      "comparator_said_pass": false,
+      "expected_comparator_said": false,
+      "correct": true,
+      "problems": [
+        "exit_code=2 wanted 1"
+      ]
+    },
+    {
+      "case": "rejects a different failed check",
+      "comparator_said_pass": false,
+      "expected_comparator_said": false,
+      "correct": true,
+      "problems": [
+        "named_check='hard_checks.data_integrity' wanted 'hard_checks.resource_load'"
+      ]
+    },
+    {
+      "case": "rejects a different reason",
+      "comparator_said_pass": false,
+      "expected_comparator_said": false,
+      "correct": true,
+      "problems": [
+        "reason='TILE_TIMEOUT' wanted 'REQUEST_FAILED_OR_4XX'"
+      ]
+    },
+    {
+      "case": "rejects an empty detail discriminator",
+      "comparator_said_pass": false,
+      "expected_comparator_said": false,
+      "correct": true,
+      "problems": [
+        "detail: bad_requests is empty"
+      ]
+    }
+  ],
+  "retained_rehearsal_provenance_replayed": {
+    "arm-a": {
+      "ok": true,
+      "refusals": [],
+      "tree_files": 39
+    },
+    "arm-b": {
+      "ok": true,
+      "refusals": [],
+      "tree_files": 64
+    }
+  },
+  "run_schedule_recomputed_matches": true,
+  "budget_contract_independently_loaded": {
+    "declared": {
+      "max_model_requests": 15,
+      "max_tool_calls": 30,
+      "max_total_time_seconds": 600.0,
+      "per_tool_timeout_seconds": 60.0,
+      "max_output_tokens_per_request": 2048,
+      "max_retries_per_step": 2,
+      "max_total_http_attempts": 45,
+      "token_cutoff_mode": "request_level_max_tokens_param_plus_post_hoc_accounting"
+    },
+    "effective": {
+      "max_model_requests": 15,
+      "max_tool_calls": 30,
+      "max_total_time_seconds": 600.0,
+      "per_tool_timeout_seconds": 60.0,
+      "max_output_tokens_per_request": 2048,
+      "max_retries_per_step": 2,
+      "max_total_http_attempts": 45,
+      "token_cutoff_mode": "request_level_max_tokens_param_plus_post_hoc_accounting"
+    },
+    "unknown_key_refused": true,
+    "source_sha256": "2e6d67da0c8dfcf991648d3e80d67d69e28646e639c7058495a8950e40f80c23"
+  },
+  "composite_rule_without_raters": {
+    "outcome": "PENDING_REVIEW",
+    "winner": null,
+    "reason": "both arms passed the functional gate but no completed blind panel exists, and the rule forbids filling in a default score"
+  },
+  "fresh_render_controls": {
+    "known_good": {
+      "verdict": "PASS",
+      "exit_code": 0,
+      "failed_gates": [],
+      "controller_binding_gate": {
+        "pass": true,
+        "reason": null,
+        "detail": {
+          "problems": [],
+          "run_id": "correct-good",
+          "arm": "arm-a",
+          "expected_style_sha256": "7e66f5b28ca9b7800b63331899c481fc6afce38ee524779e83a4c8c200b9e54e"
+        }
+      }
+    },
+    "zero_area_marker": {
+      "verdict": "FAIL",
+      "exit_code": 1,
+      "failed_gates": [
+        "visual_checks.desktop_target_visibility:TARGET_NOT_RENDERED",
+        "visual_checks.mobile_target_visibility:TARGET_NOT_RENDERED"
+      ],
+      "controller_binding_gate": {
+        "pass": true,
+        "reason": null,
+        "detail": {
+          "problems": [],
+          "run_id": "correct-bad",
+          "arm": "arm-a",
+          "expected_style_sha256": "6705ca84f9aa6028de81017e5ea0cd1763339deafd34f91cbd22ec2975d8dfb3"
+        }
+      }
+    }
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "priority": "P1",
+      "title": "Delivered module executes in two unrestricted host Node paths",
+      "source_locations": [
+        "tools/artifact_loader.py:87",
+        "tools/artifact_loader.py:239",
+        "evaluator/code_only_evaluator.mjs:277"
+      ],
+      "fresh_executed_counterexample": {
+        "decoy_outside_workspace": true,
+        "marker_outside_workspace": true,
+        "loader_verdict": "LOADED",
+        "loader_exit_code": 0,
+        "host_read_and_write_during_loader": true,
+        "raw_and_installed_equal": true,
+        "evaluator": {
+          "verdict": "PASS",
+          "exit_code": 0,
+          "failed_gates": [],
+          "controller_binding_gate": {
+            "pass": true,
+            "reason": null,
+            "detail": {
+              "problems": [],
+              "run_id": "host-import-effect",
+              "arm": "arm-a",
+              "expected_style_sha256": "37cd48dc3a30af70ab4bc43b61257ba88eef91340d648a8c8c4d0f9d07de26f9"
+            }
+          }
+        },
+        "host_read_and_write_during_evaluator": true
+      },
+      "decoy_scope": "Only owned files outside the synthetic arm workspace; no real credential, user config or reference-answer read"
+    },
+    {
+      "id": "F2",
+      "priority": "P1",
+      "title": "Capture digest is not bound to the module response rendered by the browser",
+      "source_locations": [
+        "evaluator/code_only_evaluator.mjs:53",
+        "evaluator/code_only_evaluator.mjs:238",
+        "evaluator/code_only_evaluator.mjs:689"
+      ],
+      "fresh_executed_counterexample": {
+        "claimed_code_sha256": "6705ca84f9aa6028de81017e5ea0cd1763339deafd34f91cbd22ec2975d8dfb3",
+        "actually_served_code_sha256": "7e66f5b28ca9b7800b63331899c481fc6afce38ee524779e83a4c8c200b9e54e",
+        "raw_and_claimed_installed_equal": true,
+        "evaluator": {
+          "verdict": "PASS",
+          "exit_code": 0,
+          "failed_gates": [],
+          "controller_binding_gate": {
+            "pass": true,
+            "reason": null,
+            "detail": {
+              "problems": [],
+              "run_id": "wrong-served-tree",
+              "arm": "arm-a",
+              "expected_style_sha256": "6705ca84f9aa6028de81017e5ea0cd1763339deafd34f91cbd22ec2975d8dfb3"
+            }
+          }
+        },
+        "post_verifier": {
+          "ok": true,
+          "refusals": []
+        }
+      },
+      "scope_limit": "Direct evaluator invocation with mismatched BASE_URL and STAGING_DIR. Does not assert the standard launcher inevitably chooses a wrong tree."
+    },
+    {
+      "id": "F3",
+      "priority": "P2",
+      "title": "M2 does not construct a stale-directory fixture and original also accepts",
+      "source_locations": [
+        "tools/run_calibration.py:843",
+        "tools/run_calibration.py:870"
+      ],
+      "fresh_executed_counterexample": {
+        "same_input_condition": "The exact fresh-workspace/no-op defect shape used by rev03 mutation_probes for M2; independent fresh copies",
+        "outcomes": {
+          "unmodified": {
+            "exit_code": 0,
+            "success": true,
+            "failure_state": null,
+            "load_record": "causal-M2/unmodified/loads/mut_M2_allow_reusing_a_stale_tree/loading/load_record_arm-a.json"
+          },
+          "M2_guard_disabled": {
+            "exit_code": 0,
+            "success": true,
+            "failure_state": null,
+            "load_record": "causal-M2/M2_guard_disabled/loads/mut_M2_allow_reusing_a_stale_tree/loading/load_record_arm-a.json"
+          }
+        },
+        "no_behavior_change": true,
+        "finding": "M2 does not create its claimed stale evaluation directory. The original code also accepts this sample, so symptom_gone is not causal evidence."
+      },
+      "scope_limit": "Invalid mutation evidence, not proof the actual stale-directory guard fails"
+    },
+    {
+      "id": "F4",
+      "priority": "P2",
+      "title": "Workspace allowlist accepts sibling path prefixes",
+      "source_locations": [
+        "tools/artifact_loader.py:158"
+      ],
+      "fresh_executed_controls": [
+        {
+          "path": "output/extra.txt",
+          "status": "CONSISTENT",
+          "primary_error": null,
+          "unexpected": []
+        },
+        {
+          "path": "evidence/extra.txt",
+          "status": "CONSISTENT",
+          "primary_error": null,
+          "unexpected": []
+        },
+        {
+          "path": "output-escape.txt",
+          "status": "CONSISTENT",
+          "primary_error": null,
+          "unexpected": []
+        },
+        {
+          "path": "evidence-poison.txt",
+          "status": "CONSISTENT",
+          "primary_error": null,
+          "unexpected": []
+        },
+        {
+          "path": "other.txt",
+          "status": "VIOLATION",
+          "primary_error": "UNEXPECTED_WORKSPACE_FILE",
+          "unexpected": [
+            "other.txt"
+          ]
+        }
+      ],
+      "scope_limit": "Reconciliation function only; not proof of gateway bypass or copying these extra files into the evaluation tree"
+    }
+  ],
+  "independent_immutability": {
+    "unchanged": true,
+    "totals": {
+      "roots_compared": 11,
+      "files_before": 7455,
+      "files_after": 7455,
+      "roots_unchanged": 11
+    },
+    "roots": {
+      "EXP-20261104-MAP-AB-01": {
+        "status": "UNCHANGED",
+        "files_before": 67,
+        "files_after": 67,
+        "total_bytes_before": 449026,
+        "total_bytes_after": 449026,
+        "tree_digest_before": "fce4a3010956bd7acb078bafe02753d4a2eddd86d38600b50f20a6d0ffacc675",
+        "tree_digest_after": "fce4a3010956bd7acb078bafe02753d4a2eddd86d38600b50f20a6d0ffacc675",
+        "tree_digest_matches": true,
+        "added": [],
+        "removed": [],
+        "modified": [],
+        "added_count": 0,
+        "removed_count": 0,
+        "modified_count": 0,
+        "reparse_points_before": 0,
+        "reparse_points_after": 0,
+        "reparse_points_changed": false
+      },
+      "EXP-20261104-MAP-AB-01-rev02": {
+        "status": "UNCHANGED",
+        "files_before": 323,
+        "files_after": 323,
+        "total_bytes_before": 6181617,
+        "total_bytes_after": 6181617,
+        "tree_digest_before": "f083fcf156fa542d0d65dff9f4245e87a5e3720b060aac9f7323cbb7eff08585",
+        "tree_digest_after": "f083fcf156fa542d0d65dff9f4245e87a5e3720b060aac9f7323cbb7eff08585",
+        "tree_digest_matches": true,
+        "added": [],
+        "removed": [],
+        "modified": [],
+        "added_count": 0,
+        "removed_count": 0,
+        "modified_count": 0,
+        "reparse_points_before": 0,
+        "reparse_points_after": 0,
+        "reparse_points_changed": false
+      },
+      "EXP-20261102-AUDIT-AB-01": {
+        "status": "UNCHANGED",
+        "files_before": 59,
+        "files_after": 59,
+        "total_bytes_before": 285404,
+        "total_bytes_after": 285404,
+        "tree_digest_before": "93d18ae0cf58fe61ef7ae79d9bcec50de3476694532b9bb6ed7b0339ff493f7a",
+        "tree_digest_after": "93d18ae0cf58fe61ef7ae79d9bcec50de3476694532b9bb6ed7b0339ff493f7a",
+        "tree_digest_matches": true,
+        "added": [],
+        "removed": [],
+        "modified": [],
+        "added_count": 0,
+        "removed_count": 0,
+        "modified_count": 0,
+        "reparse_points_before": 0,
+        "reparse_points_after": 0,
+        "reparse_points_changed": false
+      },
+      "EXP-20261102-AUDIT-AB-01-rev02": {
+        "status": "UNCHANGED",
+        "files_before": 232,
+        "files_after": 232,
+        "total_bytes_before": 1067928,
+        "total_bytes_after": 1067928,
+        "tree_digest_before": "197faad7893e2cf5e60bc4afcdc09c652738ba5fd2110a6c271c9d541bfd13c5",
+        "tree_digest_after": "197faad7893e2cf5e60bc4afcdc09c652738ba5fd2110a6c271c9d541bfd13c5",
+        "tree_digest_matches": true,
+        "added": [],
+        "removed": [],
+        "modified": [],
+        "added_count": 0,
+        "removed_count": 0,
+        "modified_count": 0,
+        "reparse_points_before": 13,
+        "reparse_points_after": 13,
+        "reparse_points_changed": false
+      },
+      "EXP-20261102-AUDIT-AB-01-rev03": {
+        "status": "UNCHANGED",
+        "files_before": 702,
+        "files_after": 702,
+        "total_bytes_before": 11469282,
+        "total_bytes_after": 11469282,
+        "tree_digest_before": "7ba5bf9549de4acad9e79d8f746e47bb6ca8b328617dca83d5715e0f6830d0aa",
+        "tree_digest_after": "7ba5bf9549de4acad9e79d8f746e47bb6ca8b328617dca83d5715e0f6830d0aa",
+        "tree_digest_matches": true,
+        "added": [],
+        "removed": [],
+        "modified": [],
+        "added_count": 0,
+        "removed_count": 0,
+        "modified_count": 0,
+        "reparse_points_before": 0,
+        "reparse_points_after": 0,
+        "reparse_points_changed": false
+      },
+      "EXP-20261102-AUDIT-AB-01-rev04": {
+        "status": "UNCHANGED",
+        "files_before": 1300,
+        "files_after": 1300,
+        "total_bytes_before": 21659061,
+        "total_bytes_after": 21659061,
+        "tree_digest_before": "06acb9165c1cce772cada32458ae877f953ec2cb39c0d48bf96d22102a810484",
+        "tree_digest_after": "06acb9165c1cce772cada32458ae877f953ec2cb39c0d48bf96d22102a810484",
+        "tree_digest_matches": true,
+        "added": [],
+        "removed": [],
+        "modified": [],
+        "added_count": 0,
+        "removed_count": 0,
+        "modified_count": 0,
+        "reparse_points_before": 0,
+        "reparse_points_after": 0,
+        "reparse_points_changed": false
+      },
+      "EXP-20261102-AUDIT-AB-01-rev05": {
+        "status": "UNCHANGED",
+        "files_before": 1686,
+        "files_after": 1686,
+        "total_bytes_before": 28214484,
+        "total_bytes_after": 28214484,
+        "tree_digest_before": "dbe2933eab10f7824884d5a8cde70c851f0fb81afaf68188c05f259488d3daba",
+        "tree_digest_after": "dbe2933eab10f7824884d5a8cde70c851f0fb81afaf68188c05f259488d3daba",
+        "tree_digest_matches": true,
+        "added": [],
+        "removed": [],
+        "modified": [],
+        "added_count": 0,
+        "removed_count": 0,
+        "modified_count": 0,
+        "reparse_points_before": 0,
+        "reparse_points_after": 0,
+        "reparse_points_changed": false
+      },
+      "EXP-20261102-AUDIT-AB-01-rev06": {
+        "status": "UNCHANGED",
+        "files_before": 1996,
+        "files_after": 1996,
+        "total_bytes_before": 35491713,
+        "total_bytes_after": 35491713,
+        "tree_digest_before": "a5c9e49b517a5aae6ac528820a8c8856718ce9cca8805071e1c82a65de7d7c9b",
+        "tree_digest_after": "a5c9e49b517a5aae6ac528820a8c8856718ce9cca8805071e1c82a65de7d7c9b",
+        "tree_digest_matches": true,
+        "added": [],
+        "removed": [],
+        "modified": [],
+        "added_count": 0,
+        "removed_count": 0,
+        "modified_count": 0,
+        "reparse_points_before": 0,
+        "reparse_points_after": 0,
+        "reparse_points_changed": false
+      },
+      "model-executor": {
+        "status": "UNCHANGED",
+        "files_before": 409,
+        "files_after": 409,
+        "total_bytes_before": 12114499,
+        "total_bytes_after": 12114499,
+        "tree_digest_before": "10c31391ac37e4a3ff1de0022a6582d78e8045f6d14f6f59af23d21c62f5713d",
+        "tree_digest_after": "10c31391ac37e4a3ff1de0022a6582d78e8045f6d14f6f59af23d21c62f5713d",
+        "tree_digest_matches": true,
+        "added": [],
+        "removed": [],
+        "modified": [],
+        "added_count": 0,
+        "removed_count": 0,
+        "modified_count": 0,
+        "reparse_points_before": 0,
+        "reparse_points_after": 0,
+        "reparse_points_changed": false
+      },
+      "repo-evals": {
+        "status": "UNCHANGED",
+        "files_before": 97,
+        "files_after": 97,
+        "total_bytes_before": 3760344,
+        "total_bytes_after": 3760344,
+        "tree_digest_before": "dcb2c25150f8abac8d7ab675b111609272d2c0a037e8e8a402a7c2a125511beb",
+        "tree_digest_after": "dcb2c25150f8abac8d7ab675b111609272d2c0a037e8e8a402a7c2a125511beb",
+        "tree_digest_matches": true,
+        "added": [],
+        "removed": [],
+        "modified": [],
+        "added_count": 0,
+        "removed_count": 0,
+        "modified_count": 0,
+        "reparse_points_before": 0,
+        "reparse_points_after": 0,
+        "reparse_points_changed": false
+      },
+      "reviewed-map-ab-rev03": {
+        "status": "UNCHANGED",
+        "files_before": 584,
+        "files_after": 584,
+        "total_bytes_before": 8160905,
+        "total_bytes_after": 8160905,
+        "tree_digest_before": "b1ef1706706ec8830da00e7f9b5605dbe5be50279c72d989c0969fbef0c0dec4",
+        "tree_digest_after": "b1ef1706706ec8830da00e7f9b5605dbe5be50279c72d989c0969fbef0c0dec4",
+        "tree_digest_matches": true,
+        "added": [],
+        "removed": [],
+        "modified": [],
+        "added_count": 0,
+        "removed_count": 0,
+        "modified_count": 0,
+        "reparse_points_before": 0,
+        "reparse_points_after": 0,
+        "reparse_points_changed": false
+      }
+    },
+    "claim_scope": "Independent before/after interval of replay and first counterexamples, before review documents were added; later M2 uses owned implementation copies and key source hashes were checked again"
+  },
+  "uncovered_negative_gates_declared_by_revision": [
+    "hard_checks.page_reachable",
+    "hard_checks.attribution_preserved",
+    "hard_checks.selection_preserves_identity",
+    "hard_checks.repeated_interaction_stability",
+    "visual_checks.camera_within_data_extent"
+  ],
+  "remaining_execution_decisions": [
+    "rater identity and headcount",
+    "formal launch authorization",
+    "endpoint and credential injection handling",
+    "container image availability"
+  ],
+  "local_evidence_retention": {
+    "directory": ".tmp/map-ab-rev03-audit-vuk46g44",
+    "git_ignored": true,
+    "contains": [
+      "owned fresh workspaces",
+      "owned Node/browser outputs",
+      "before/after snapshots",
+      "M2 original/mutant copies"
+    ]
+  },
+  "actions": {
+    "docker_operations": 0,
+    "external_model_requests": 0,
+    "formal_ab_runs": 0,
+    "source_experiment_modifications": 0,
+    "commit": false,
+    "push": false
+  }
+}
