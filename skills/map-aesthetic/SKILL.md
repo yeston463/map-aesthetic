@@ -29,10 +29,31 @@ change when source is available, and evidence appropriate to the available acces
 
 ## Load only the relevant guidance
 
-Read [cartographic design](references/cartographic-design.md). For common visual
-defects (dense points, route/road confusion, choropleth competing with labels,
-Chinese long label collisions, dark mode contrast, or mobile sheet/popup occlusion),
-consult the [scenario guides](references/scenarios/README.md).
+Read [cartographic design](references/cartographic-design.md) and
+[anti-patterns](references/anti-patterns.md). The first says what a map should do;
+the second says what it must not do, and where the two overlap the second is the
+stricter. For the methods that transfer across samples (and where they do **not**
+apply), read [transferable principles](references/transferable-principles.md) — it
+records what the sample iterations proved, and explicitly says the palette or
+layout of one sample is **not** a fixed answer for every map. For common visual
+defects (dense points, route/road confusion,
+choropleth competing with labels, Chinese long label collisions, dark mode
+contrast, or mobile sheet/popup occlusion), consult the
+[scenario guides](references/scenarios/README.md).
+
+A map is not the interface. When the work touches the panel, the legend, the
+controls, the popup or the states around the map, also read
+[interaction](references/interaction.md) for the motion numbers and the popup and
+sheet rules, and [interface copy](references/interface-copy.md) for the wording of
+everything outside the map. The executable form of the review is
+[consistency checks](references/consistency-checks.md).
+
+The guidance is a specification, not a report of what the bundled demo does.
+[Implementation status](references/implementation-status.md) records which
+claims are implemented, which are targets, and which were defects in this
+document; [evaluation status](references/evaluation-status.md) records what has
+and has not been shown about the skill's effect on an agent's output. Read both
+before describing a passing check as compliance or as evidence of usefulness.
 
 Select the SDK reference matching the actual project:
 
@@ -98,6 +119,9 @@ Use [visual QA](references/visual-qa.md) to select representative states. Verify
 map canvas and DOM together, plus selection, popups, resize, theme transitions,
 and retained data semantics. Use comparable extents and screen sizes for before
 and after evidence. Fix observed regressions and recheck affected states.
+When a mobile panel overlaps the map, inspect the entire popup frame and target
+against both the panel and viewport after panning settles; disabling auto-pan
+without another boundary adjustment can leave the popup clipped.
 
 If theme JSON is produced, validate it with
 `python <skill-dir>/scripts/validate_theme.py <theme.json>` when Python and
@@ -105,6 +129,52 @@ If theme JSON is produced, validate it with
 reject surfaces that cannot be told apart; they do not prove label readability,
 full color-vision accessibility, or SDK support. Report unavailable
 checks without silently treating them as passed.
+
+### Make the judgement executable
+
+A taste that cannot be stated as a rule cannot be checked, and a rule that cannot
+be checked is an opinion. Two levels of check are available.
+
+The source can be read before anything is served:
+
+```bash
+python <skill-dir>/scripts/check_anti_patterns.py <path>
+```
+
+It finds the red lines that live in the code: a pure saturated colour, a
+thematic area filled opaque over a basemap, a popup opened without a custom
+class, a marker layer with no clustering, a hidden attribution, a tile layer with
+no attribution, a basemap URL from a provider that needs checking.
+
+Where a browser is available, run the page against
+`node <skill-dir>/scripts/consistency.mjs <url> --widths 1440,1024,768,390`.
+It opens the page in headless Chrome and reports each finding as FAIL or WARN with
+the element, the fault and a one-line fix: text contrast and size, one button
+family, one heading scale, one radius family, a focus ring, annotation overlap and
+overflow, a popup that covers its own feature, legend-to-map colour
+correspondence, a named data source, filler and placeholder wording, scroll-driven
+motion, off-token durations, and the anti-patterns that show in a rendered page:
+a pure colour, an opaque thematic fill, a missing pointer cursor, the engine's
+default popup, a dense field of pins, an illegible attribution, and figures set
+without tabular figures.
+
+FAIL must be fixed or reported as false. WARN is for the eye. The checker is
+evidence, not a verdict: a rule it cannot decide still needs a person, and a
+passing run does not make the page good. A rule that returns SKIP was not
+decided at all — open the state that exercises it before counting a run as
+clean. Both checkers have paired violation/compliance fixtures in the
+repository, so a rule that can never fire is a test failure rather than a
+silent pass.
+
+When a contrast fault is found, do not guess a replacement colour. Solve for one:
+
+```bash
+python <skill-dir>/scripts/solve_contrast.py --ground "#f2f4f6" --color "#78828d" --target 4.5
+```
+
+It works in OKLCH, so the hue is preserved and the result is the same colour made
+readable rather than a different colour that happens to pass. It also says which
+way to move, and says so when the hue cannot reach the target.
 
 Deliver proportionally to the request:
 

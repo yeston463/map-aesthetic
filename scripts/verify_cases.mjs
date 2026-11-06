@@ -22,7 +22,8 @@ import { startCaseServer } from '../cases/serve.mjs';
 
 const ROOT = resolve(import.meta.dirname, '..');
 let BASE = process.env.CASE_BASE;
-const EVIDENCE = resolve(ROOT, 'cases/evidence');
+const EVIDENCE = process.env.CASE_EVIDENCE_DIR
+  ? resolve(process.env.CASE_EVIDENCE_DIR) : resolve(ROOT, 'cases/evidence');
 mkdirSync(EVIDENCE, { recursive: true });
 
 const results = [];
@@ -126,6 +127,8 @@ function measure(page) {
       return { visible: boxes.length, overlappingPairs: pairs.length, criticalOverlaps: critical.length, pairs };
     })();
     const popup = window.__case.popupBox();
+    // The content alone can fit while the popup frame and close button are clipped.
+    const popupShell = document.querySelector('.leaflet-popup')?.getBoundingClientRect() ?? null;
     const sheetElement = document.querySelector('[data-testid="sheet"]');
     const sheet = sheetElement ? sheetElement.getBoundingClientRect() : null;
     const sheetRect = sheet ? { left: sheet.left, right: sheet.right, top: sheet.top, bottom: sheet.bottom } : null;
@@ -141,6 +144,8 @@ function measure(page) {
     const sheetVisible = Boolean(sheetRect) && sheetRect.bottom > mapRect.top + 1
       && sheetElement && getComputedStyle(sheetElement).display !== 'none';
     const popupRect = popup ? { left: popup.left, right: popup.right, top: popup.top, bottom: popup.bottom } : null;
+    const popupShellRect = popupShell ? { left: popupShell.left, right: popupShell.right,
+      top: popupShell.top, bottom: popupShell.bottom } : null;
     const markerRect = marker ? { left: marker.left, right: marker.right, top: marker.top, bottom: marker.bottom } : null;
     return {
       variant: window.__case.variant,
@@ -152,11 +157,11 @@ function measure(page) {
       probe: window.__case.probeGeometry(),
       labels: overlaps,
       selected,
-      popupInsideMap: popup ? popup.left >= mapRect.left - 1 && popup.right <= mapRect.right + 1
-        && popup.top >= mapRect.top - 1 && popup.bottom <= mapRect.bottom + 1 : null,
+      popupInsideMap: popupShell ? popupShell.left >= mapRect.left - 1 && popupShell.right <= mapRect.right + 1
+        && popupShell.top >= mapRect.top - 1 && popupShell.bottom <= mapRect.bottom + 1 : null,
       popupOverTarget: intersect(popupRect, markerRect),
       sheetOverTarget: sheetVisible ? intersect(sheetRect, markerRect) : 0,
-      sheetOverPopup: sheetVisible ? intersect(sheetRect, popupRect) : 0,
+      sheetOverPopup: sheetVisible ? intersect(sheetRect, popupShellRect) : 0,
       sheetVisible: Boolean(sheetVisible),
       legend: window.__case.legendColors(),
       attribution: document.querySelector('[data-testid="attribution-readout"]').textContent,

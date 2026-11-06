@@ -341,34 +341,58 @@ function renderSites() {
   });
 }
 
-// Leaflet 1.9.4 has no Map.setPadding: a `if (map.setPadding)` guard there turns the
-// fix into a silent no-op. The reserved area is applied by panning explicitly, and the
-// verifier asserts the result rather than trusting the call.
+// Leaflet's popup auto-pan only knows the map viewport. When a mobile sheet is
+// present it can undo our sheet-aware pan, so the application owns both adjustments.
 function sheetReservedTop() {
   const narrow = window.matchMedia('(max-width: 760px)').matches;
-  if (!narrow || !style.sheet.collapsible || document.body.classList.contains('sheet-collapsed')) return null;
+  if (!narrow || !style.sheet.collapsible) return null;
   const sheet = query('sheet');
   if (!sheet || getComputedStyle(sheet).display === 'none') return null;
   return sheet.getBoundingClientRect().top;
 }
 
+function openSitePopup(marker) {
+  const popup = marker.getPopup();
+  if (!popup) return;
+  popup.options.autoPan = sheetReservedTop() === null ? style.popup.autoPan : false;
+  marker.openPopup();
+}
+
 function revealAboveSheet(marker) {
   const reservedTop = sheetReservedTop();
-  if (!reservedTop || !marker) return null;
-  const containerTop = map.getContainer().getBoundingClientRect().top;
-  const absolute = containerTop + map.latLngToContainerPoint(marker.getLatLng()).y;
-  const wanted = reservedTop - 24;
-  if (absolute <= wanted) return 0;
-  const shift = Math.round(absolute - wanted);
-  map.panBy([0, shift], { animate: false });
-  return shift;
+  if (reservedTop === null || !marker) return null;
+  const mapBox = map.getContainer().getBoundingClientRect();
+  const boxes = [marker.getElement()?.getBoundingClientRect(),
+    marker.getPopup()?.getElement()?.getBoundingClientRect()].filter(Boolean);
+  if (!boxes.length) return null;
+
+  // Fit the entire popup (including its tip) and marker within the unobstructed
+  // part of the map. Pan the map, not the popup offset, to keep the tip anchored.
+  const left = Math.min(...boxes.map(box => box.left));
+  const right = Math.max(...boxes.map(box => box.right));
+  const top = Math.min(...boxes.map(box => box.top));
+  const bottom = Math.max(...boxes.map(box => box.bottom));
+  const margin = 8;
+  const safeLeft = mapBox.left + margin;
+  const safeRight = mapBox.right - margin;
+  const safeTop = mapBox.top + margin;
+  const safeBottom = Math.min(reservedTop, mapBox.bottom) - margin;
+  let x = left < safeLeft ? left - safeLeft : right > safeRight ? right - safeRight : 0;
+  let y = bottom > safeBottom ? bottom - safeBottom : top < safeTop ? top - safeTop : 0;
+  // If the available area is too small for both bounds, retain the upper edge.
+  if (top - y < safeTop) y = top - safeTop;
+  const awayFromZero = value => value > 0 ? Math.ceil(value) : Math.floor(value);
+  x = awayFromZero(x);
+  y = awayFromZero(y);
+  if (x || y) map.panBy([x, y], { animate: false });
+  return { x, y };
 }
 
 function selectSite(id) {
   selectedId = id;
   paintSites();
   siteLayers.forEach(marker => {
-    if (marker.feature.site_id === id) marker.openPopup();
+    if (marker.feature.site_id === id) openSitePopup(marker);
     else if (marker.getPopup()?.isOpen()) marker.closePopup();
   });
   document.querySelectorAll('.sites button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.site === id)));
@@ -390,7 +414,7 @@ query('sheet-toggle').addEventListener('click', () => {
   document.body.classList.toggle('sheet-collapsed');
   query('sheet-toggle').setAttribute('aria-expanded', String(!document.body.classList.contains('sheet-collapsed')));
   const marker = siteLayers.find(item => item.feature.site_id === selectedId);
-  if (marker?.getPopup()?.isOpen()) { marker.closePopup(); marker.openPopup(); }
+  if (marker?.getPopup()?.isOpen()) { marker.closePopup(); openSitePopup(marker); }
   revealAboveSheet(marker);
   paintLabels();
 });

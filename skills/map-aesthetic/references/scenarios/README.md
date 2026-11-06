@@ -12,6 +12,7 @@
 | **中文长标注遮挡** | 地名带括号备注和冗余后缀，横向叠压碰撞，文字粘连 | 依地面分辨率（MPP）分级展现，规则截短冗余括号，增加 1.5–2px 文字光晕 | [chinese-long-labels.md](chinese-long-labels.md) |
 | **深色主题对比不足** | 暗夜模式死黑一片、丢失水陆边界，或顺序色带明度反转 | 垫实背景基底反差（dE2000 ≥ 5.0），反转连续色带明度坡度，柔化刺眼眩光 | [dark-mode-contrast.md](dark-mode-contrast.md) |
 | **移动面板和弹窗遮挡** | 手机端底部抽屉吞没南部站点，弹窗气泡盖住被选中的标记 | 垫开垂直偏移量（`offset`），留足 `autoPanPadding`，注入底部安全预留高度 | [mobile-sheet-popup-occlusion.md](mobile-sheet-popup-occlusion.md) |
+| **文化设施地图（验证案例）** | 分类数据 + 按量分级，无路线，与配送场景不同 | 分类色板 + graduated symbol；底图克制、标注避让、移动端抽屉，并复用 Skill 自带色差校验 | [cultural-facilities-atlas.md](cultural-facilities-atlas.md) |
 
 ## 通用执行原则
 
