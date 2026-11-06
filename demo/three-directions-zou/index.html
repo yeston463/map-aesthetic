@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>江岸配送地图</title>
+  <link rel="stylesheet" href="../three-directions/vendor/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="./ui.css">
+</head>
+<body class="theme-light-operations">
+<div class="shell">
+  <header class="bar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">岸</span>
+      <div><strong>江岸片区</strong><span data-testid="variant-label">清简运营</span></div>
+    </div>
+    <nav class="switcher" role="tablist" aria-label="地图视觉方向">
+      <button type="button" role="tab" data-style="light-operations" aria-selected="true"><span>01</span><b>清简运营</b></button>
+      <button type="button" role="tab" data-style="warm-city-guide" aria-selected="false"><span>02</span><b>纸墨街区</b></button>
+      <button type="button" role="tab" data-style="dark-monitoring" aria-selected="false"><span>03</span><b>墨金夜图</b></button>
+    </nav>
+    <div class="bar-note">合成场景 <span>·</span> 视觉探索</div>
+  </header>
+
+  <section class="page-heading">
+    <div class="page-heading-main">
+      <span class="heading-index">01 / 地图</span>
+      <div><h1>江岸配送图</h1><p>沿一条线路，查看片区与站点。</p></div>
+    </div>
+    <div class="heading-aside"><span>区域观察</span><p><b data-testid="metric-sites">—</b> 个站点 <i>·</i> <b data-testid="metric-districts">—</b> 个片区</p></div>
+  </section>
+
+  <main class="stage">
+    <section class="map-card" aria-label="地图区域">
+      <div class="map-toolbar">
+        <div class="map-title"><span class="map-index">01</span><strong>配送网络</strong><span>线路与站点分布</span></div>
+        <div class="bar-actions">
+          <label class="field"><span>片区指标</span><select data-testid="measure-select">
+            <option value="absolute">业务量</option><option value="deviation">相对均值偏差</option>
+          </select></label>
+          <button type="button" data-testid="zoom-overview">全景</button>
+          <button type="button" data-testid="zoom-street">街巷</button>
+        </div>
+      </div>
+      <div class="map-surface">
+        <div id="map" class="map" data-testid="map" role="region" aria-label="江岸片区配送地图，可平移缩放并选择站点"></div>
+        <div class="map-caption" aria-hidden="true"><span>江岸片区</span><small>路线与站点</small></div>
+        <div class="sheet" data-testid="sheet">
+          <button type="button" class="sheet-handle" data-testid="sheet-toggle" aria-expanded="false">
+            <span><b>站点目录</b><small>选择站点查看详情</small></span><span class="sheet-toggle-state">展开 +</span>
+          </button>
+          <div class="sheet-body" data-testid="sheet-body"><ul class="sites sites-compact" data-testid="site-list-sheet"></ul></div>
+        </div>
+      </div>
+      <footer class="status">
+        <span data-testid="ready" data-state="loading">载入中</span>
+        <span>缩放 <output data-testid="zoom-readout">—</output></span>
+        <span class="status-labels">注记 <output data-testid="label-readout">—</output></span>
+        <span>选中 <output data-testid="selection-readout">无</output></span>
+        <span class="attribution">底图 <output data-testid="attribution-readout">—</output></span>
+      </footer>
+    </section>
+
+    <aside class="panel" data-testid="panel">
+      <section class="panel-intro">
+        <div class="eyebrow">区域概览 <span> / 01</span></div>
+        <h2>线路与站点</h2>
+        <p data-testid="intent-text"></p>
+        <div class="metric-row">
+          <div><strong data-testid="panel-sites">—</strong><span>服务站点</span></div>
+          <div><strong data-testid="panel-alerts">—</strong><span>异常站点</span></div>
+          <div><strong data-testid="panel-districts">—</strong><span>业务片区</span></div>
+        </div>
+      </section>
+
+      <section class="panel-section legend-section">
+        <div class="section-title"><h3>图例</h3><span>地图符号</span></div>
+        <ul class="legend" data-testid="legend"></ul>
+      </section>
+      <details class="panel-section layer-section">
+        <summary><span>图层设置</span><span>展开 +</span></summary>
+        <ul class="layer-list" data-testid="layer-list"></ul>
+        <label class="check"><input type="checkbox" data-testid="raster-toggle"> 显示原始栅格对照</label>
+      </details>
+      <section class="panel-section sites-section">
+        <div class="section-title"><h3>站点目录</h3><span>点击定位</span></div>
+        <ul class="sites" data-testid="site-list"></ul>
+      </section>
+      <p class="provenance" data-testid="provenance">示例数据 · 非真实地点</p>
+    </aside>
+  </main>
+</div>
+<script src="../three-directions/vendor/leaflet/dist/leaflet.js"></script>
+<script type="module" src="./app.js"></script>
+</body>
+</html>

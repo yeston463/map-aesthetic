@@ -1,0 +1,153 @@
+{
+  "note": "A rule is covered only when a violation fixture reports it AND a compliant fixture stays silent.",
+  "browser_rules": {
+    "text-contrast": {
+      "baseline": "PASS",
+      "violation": "FAIL"
+    },
+    "body-size": {
+      "baseline": "PASS",
+      "violation": "WARN"
+    },
+    "tap-target": {
+      "baseline": "PASS",
+      "violation": "WARN"
+    },
+    "button-styles": {
+      "baseline": "PASS",
+      "violation": "FAIL"
+    },
+    "heading-scale": {
+      "baseline": "PASS",
+      "violation": "FAIL"
+    },
+    "radius-family": {
+      "baseline": "PASS",
+      "violation": "WARN"
+    },
+    "focus-visible": {
+      "baseline": "PASS",
+      "violation": "FAIL"
+    },
+    "raw-colour": {
+      "baseline": "PASS",
+      "violation": "FAIL"
+    },
+    "opaque-fill": {
+      "baseline": "PASS",
+      "violation": "FAIL"
+    },
+    "cursor-pointer": {
+      "baseline": "PASS",
+      "violation": "WARN"
+    },
+    "default-popup": {
+      "baseline": "PASS",
+      "violation": "WARN"
+    },
+    "pin-density": {
+      "baseline": "PASS",
+      "violation": "WARN"
+    },
+    "attribution-legible": {
+      "baseline": "PASS",
+      "violation": "FAIL"
+    },
+    "tabular-numbers": {
+      "baseline": "PASS",
+      "violation": "WARN"
+    },
+    "annotation-overlap": {
+      "baseline": "PASS",
+      "violation": "FAIL"
+    },
+    "annotation-outside": {
+      "baseline": "PASS",
+      "violation": "FAIL"
+    },
+    "popup-covers-feature": {
+      "baseline": "PASS",
+      "violation": "FAIL"
+    },
+    "legend-correspondence": {
+      "baseline": "PASS",
+      "violation": "FAIL"
+    },
+    "attribution-present": {
+      "baseline": "PASS",
+      "violation": "FAIL"
+    },
+    "controls-reachable": {
+      "baseline": "PASS",
+      "violation": "WARN"
+    },
+    "filler-words": {
+      "baseline": "PASS",
+      "violation": "WARN"
+    },
+    "placeholder-text": {
+      "baseline": "PASS",
+      "violation": "FAIL"
+    },
+    "label-not-noun": {
+      "baseline": "PASS",
+      "violation": "WARN"
+    },
+    "scroll-reveal": {
+      "baseline": "PASS",
+      "violation": "FAIL"
+    },
+    "motion-duration": {
+      "baseline": "PASS",
+      "violation": "WARN"
+    },
+    "reduced-motion": {
+      "baseline": "PASS",
+      "violation": "WARN"
+    }
+  },
+  "static_rules": {
+    "raw-colour": {
+      "badSeverity": "fail",
+      "cleanFindings": 0
+    },
+    "opaque-fill": {
+      "badSeverity": "fail",
+      "cleanFindings": 0
+    },
+    "default-popup": {
+      "badSeverity": "warn",
+      "cleanFindings": 0
+    },
+    "pin-density": {
+      "badSeverity": "warn",
+      "cleanFindings": 0
+    },
+    "attribution-hidden": {
+      "badSeverity": "fail",
+      "cleanFindings": 0
+    },
+    "cursor-pointer": {
+      "badSeverity": "warn",
+      "cleanFindings": 0
+    },
+    "tabular-numbers": {
+      "badSeverity": "warn",
+      "cleanFindings": 0
+    },
+    "basemap-provider": {
+      "badSeverity": "fail",
+      "cleanFindings": 0
+    },
+    "attribution-missing": {
+      "badSeverity": "fail",
+      "cleanFindings": 0
+    }
+  },
+  "totals": {
+    "browser_covered": 26,
+    "browser_expected": 26,
+    "static_covered": 9,
+    "static_expected": 9
+  }
+}

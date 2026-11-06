@@ -1,0 +1,661 @@
+{
+  "variants": [
+    {
+      "variant": "a",
+      "viewport": "desktop",
+      "issues": [],
+      "zoomBand": "detail",
+      "layers": {
+        "zones": true,
+        "routes": true,
+        "sites": true
+      },
+      "selected": {
+        "map": {
+          "left": 330,
+          "top": 68,
+          "right": 1440,
+          "bottom": 900,
+          "width": 1110,
+          "height": 832
+        },
+        "close": {
+          "left": 731,
+          "top": 555.265625,
+          "right": 765,
+          "bottom": 589.265625,
+          "width": 34,
+          "height": 34
+        },
+        "popup": {
+          "left": 567,
+          "top": 555.265625,
+          "right": 765,
+          "bottom": 740,
+          "width": 198,
+          "height": 184.734375
+        },
+        "sheet": {
+          "left": 0,
+          "top": 68,
+          "right": 330,
+          "bottom": 900,
+          "width": 330,
+          "height": 832
+        },
+        "labels": [
+          {
+            "left": 1049,
+            "top": 91.3046875,
+            "right": 1083,
+            "bottom": 106.6953125,
+            "width": 34,
+            "height": 15.390625,
+            "text": "常德路"
+          },
+          {
+            "left": 511.3359375,
+            "top": 307.3046875,
+            "right": 556.6640625,
+            "bottom": 322.6953125,
+            "width": 45.328125,
+            "height": 15.390625,
+            "text": "武宁南路"
+          },
+          {
+            "left": 1133.703125,
+            "top": 479.53125,
+            "right": 1184.296875,
+            "bottom": 494.46875,
+            "width": 50.59375,
+            "height": 14.9375,
+            "text": "梅陇园区"
+          },
+          {
+            "left": 755,
+            "top": 302.5,
+            "right": 815,
+            "bottom": 317,
+            "width": 60,
+            "height": 14.5,
+            "text": "临江路集散点"
+          },
+          {
+            "left": 872,
+            "top": 446.5,
+            "right": 922,
+            "bottom": 461,
+            "width": 50,
+            "height": 14.5,
+            "text": "旧仓里驿站"
+          },
+          {
+            "left": 979,
+            "top": 578.5,
+            "right": 1049,
+            "bottom": 593,
+            "width": 70,
+            "height": 14.5,
+            "text": "江淮大道配送站"
+          },
+          {
+            "left": 1198,
+            "top": 272.5,
+            "right": 1258,
+            "bottom": 287,
+            "width": 60,
+            "height": 14.5,
+            "text": "东圩里集散点"
+          },
+          {
+            "left": 636,
+            "top": 740.5,
+            "right": 696,
+            "bottom": 755,
+            "width": 60,
+            "height": 14.5,
+            "text": "纺织新村驿站"
+          },
+          {
+            "left": 1232,
+            "top": 420.5,
+            "right": 1292,
+            "bottom": 435,
+            "width": 60,
+            "height": 14.5,
+            "text": "三多里配送站"
+          },
+          {
+            "left": 589,
+            "top": 470.5,
+            "right": 649,
+            "bottom": 485,
+            "width": 60,
+            "height": 14.5,
+            "text": "兴仁里集散点"
+          },
+          {
+            "left": 965,
+            "top": 778.5,
+            "right": 1025,
+            "bottom": 793,
+            "width": 60,
+            "height": 14.5,
+            "text": "小学路口驿站"
+          },
+          {
+            "left": 1166,
+            "top": 153.5,
+            "right": 1226,
+            "bottom": 168,
+            "width": 60,
+            "height": 14.5,
+            "text": "新港河配送站"
+          }
+        ],
+        "markerCount": 9,
+        "badgeCount": 9,
+        "zoomBand": "detail",
+        "slot": "early",
+        "layers": {
+          "zones": true,
+          "routes": true,
+          "sites": true
+        }
+      }
+    },
+    {
+      "variant": "a",
+      "viewport": "mobile-390",
+      "issues": [],
+      "zoomBand": "mid",
+      "layers": {
+        "zones": true,
+        "routes": true,
+        "sites": true
+      },
+      "selected": {
+        "map": {
+          "left": 0,
+          "top": 56,
+          "right": 390,
+          "bottom": 789,
+          "width": 390,
+          "height": 733
+        },
+        "close": {
+          "left": 330,
+          "top": 141.765625,
+          "right": 374,
+          "bottom": 185.765625,
+          "width": 44,
+          "height": 44
+        },
+        "popup": {
+          "left": 218,
+          "top": 141.765625,
+          "right": 374,
+          "bottom": 348,
+          "width": 156,
+          "height": 206.234375
+        },
+        "sheet": {
+          "left": 0,
+          "top": 789,
+          "right": 390,
+          "bottom": 844,
+          "width": 390,
+          "height": 55
+        },
+        "labels": [
+          {
+            "left": 25,
+            "top": 522.3046875,
+            "right": 59,
+            "bottom": 537.6953125,
+            "width": 34,
+            "height": 15.390625,
+            "text": "愚园路"
+          },
+          {
+            "left": 47.6796875,
+            "top": 465.1796875,
+            "right": 82.3203125,
+            "bottom": 478.8203125,
+            "width": 34.640625,
+            "height": 13.640625,
+            "text": "三里坊"
+          },
+          {
+            "left": 224.90625,
+            "top": 494.1796875,
+            "right": 271.09375,
+            "bottom": 507.8203125,
+            "width": 46.1875,
+            "height": 13.640625,
+            "text": "梅陇园区"
+          },
+          {
+            "left": 79.59375,
+            "top": 361.796875,
+            "right": 138.40625,
+            "bottom": 376,
+            "width": 58.8125,
+            "height": 14.203125,
+            "text": "临江路集散点"
+          },
+          {
+            "left": 131.5,
+            "top": 422.796875,
+            "right": 180.5,
+            "bottom": 437,
+            "width": 49,
+            "height": 14.203125,
+            "text": "旧仓里驿站"
+          },
+          {
+            "left": 170.6953125,
+            "top": 477.796875,
+            "right": 239.3046875,
+            "bottom": 492,
+            "width": 68.609375,
+            "height": 14.203125,
+            "text": "江淮大道配送站"
+          },
+          {
+            "left": 266.59375,
+            "top": 349.796875,
+            "right": 325.40625,
+            "bottom": 364,
+            "width": 58.8125,
+            "height": 14.203125,
+            "text": "东圩里集散点"
+          },
+          {
+            "left": 29.59375,
+            "top": 546.796875,
+            "right": 88.40625,
+            "bottom": 561,
+            "width": 58.8125,
+            "height": 14.203125,
+            "text": "纺织新村驿站"
+          },
+          {
+            "left": 280.59375,
+            "top": 411.796875,
+            "right": 339.40625,
+            "bottom": 426,
+            "width": 58.8125,
+            "height": 14.203125,
+            "text": "三多里配送站"
+          },
+          {
+            "left": 9.59375,
+            "top": 432.796875,
+            "right": 68.40625,
+            "bottom": 447,
+            "width": 58.8125,
+            "height": 14.203125,
+            "text": "兴仁里集散点"
+          },
+          {
+            "left": 168.59375,
+            "top": 561.796875,
+            "right": 227.40625,
+            "bottom": 576,
+            "width": 58.8125,
+            "height": 14.203125,
+            "text": "小学路口驿站"
+          },
+          {
+            "left": 252.59375,
+            "top": 334,
+            "right": 311.40625,
+            "bottom": 348.203125,
+            "width": 58.8125,
+            "height": 14.203125,
+            "text": "新港河配送站"
+          }
+        ],
+        "markerCount": 9,
+        "badgeCount": 9,
+        "zoomBand": "mid",
+        "slot": "early",
+        "layers": {
+          "zones": true,
+          "routes": true,
+          "sites": true
+        }
+      }
+    },
+    {
+      "variant": "b",
+      "viewport": "desktop",
+      "issues": [],
+      "zoomBand": "detail",
+      "layers": {
+        "zones": true,
+        "routes": true,
+        "sites": true
+      },
+      "selected": {
+        "map": {
+          "left": 0,
+          "top": 68,
+          "right": 1110,
+          "bottom": 900,
+          "width": 1110,
+          "height": 832
+        },
+        "close": {
+          "left": 401,
+          "top": 555.265625,
+          "right": 435,
+          "bottom": 589.265625,
+          "width": 34,
+          "height": 34
+        },
+        "popup": {
+          "left": 237,
+          "top": 555.265625,
+          "right": 435,
+          "bottom": 740,
+          "width": 198,
+          "height": 184.734375
+        },
+        "sheet": {
+          "left": 1110,
+          "top": 68,
+          "right": 1440,
+          "bottom": 900,
+          "width": 330,
+          "height": 832
+        },
+        "labels": [
+          {
+            "left": 719,
+            "top": 91.3046875,
+            "right": 753,
+            "bottom": 106.6953125,
+            "width": 34,
+            "height": 15.390625,
+            "text": "常德路"
+          },
+          {
+            "left": 181.3359375,
+            "top": 307.3046875,
+            "right": 226.6640625,
+            "bottom": 322.6953125,
+            "width": 45.328125,
+            "height": 15.390625,
+            "text": "武宁南路"
+          },
+          {
+            "left": 804.8046875,
+            "top": 480.8515625,
+            "right": 853.1953125,
+            "bottom": 495.1484375,
+            "width": 48.390625,
+            "height": 14.296875,
+            "text": "梅陇园区"
+          },
+          {
+            "left": 425,
+            "top": 302.5,
+            "right": 485,
+            "bottom": 317,
+            "width": 60,
+            "height": 14.5,
+            "text": "临江路集散点"
+          },
+          {
+            "left": 542,
+            "top": 446.5,
+            "right": 592,
+            "bottom": 461,
+            "width": 50,
+            "height": 14.5,
+            "text": "旧仓里驿站"
+          },
+          {
+            "left": 649,
+            "top": 578.5,
+            "right": 719,
+            "bottom": 593,
+            "width": 70,
+            "height": 14.5,
+            "text": "江淮大道配送站"
+          },
+          {
+            "left": 868,
+            "top": 272.5,
+            "right": 928,
+            "bottom": 287,
+            "width": 60,
+            "height": 14.5,
+            "text": "东圩里集散点"
+          },
+          {
+            "left": 306,
+            "top": 740.5,
+            "right": 366,
+            "bottom": 755,
+            "width": 60,
+            "height": 14.5,
+            "text": "纺织新村驿站"
+          },
+          {
+            "left": 902,
+            "top": 420.5,
+            "right": 962,
+            "bottom": 435,
+            "width": 60,
+            "height": 14.5,
+            "text": "三多里配送站"
+          },
+          {
+            "left": 259,
+            "top": 470.5,
+            "right": 319,
+            "bottom": 485,
+            "width": 60,
+            "height": 14.5,
+            "text": "兴仁里集散点"
+          },
+          {
+            "left": 635,
+            "top": 778.5,
+            "right": 695,
+            "bottom": 793,
+            "width": 60,
+            "height": 14.5,
+            "text": "小学路口驿站"
+          },
+          {
+            "left": 836,
+            "top": 153.5,
+            "right": 896,
+            "bottom": 168,
+            "width": 60,
+            "height": 14.5,
+            "text": "新港河配送站"
+          }
+        ],
+        "markerCount": 9,
+        "badgeCount": 9,
+        "zoomBand": "detail",
+        "slot": "early",
+        "layers": {
+          "zones": true,
+          "routes": true,
+          "sites": true
+        }
+      }
+    },
+    {
+      "variant": "b",
+      "viewport": "mobile-390",
+      "issues": [],
+      "zoomBand": "mid",
+      "layers": {
+        "zones": true,
+        "routes": true,
+        "sites": true
+      },
+      "selected": {
+        "map": {
+          "left": 0,
+          "top": 56,
+          "right": 390,
+          "bottom": 789,
+          "width": 390,
+          "height": 733
+        },
+        "close": {
+          "left": 330,
+          "top": 141.765625,
+          "right": 374,
+          "bottom": 185.765625,
+          "width": 44,
+          "height": 44
+        },
+        "popup": {
+          "left": 218,
+          "top": 141.765625,
+          "right": 374,
+          "bottom": 348,
+          "width": 156,
+          "height": 206.234375
+        },
+        "sheet": {
+          "left": 0,
+          "top": 789,
+          "right": 390,
+          "bottom": 844,
+          "width": 390,
+          "height": 55
+        },
+        "labels": [
+          {
+            "left": 25,
+            "top": 522.3046875,
+            "right": 59,
+            "bottom": 537.6953125,
+            "width": 34,
+            "height": 15.390625,
+            "text": "愚园路"
+          },
+          {
+            "left": 47.6796875,
+            "top": 465.1796875,
+            "right": 82.3203125,
+            "bottom": 478.8203125,
+            "width": 34.640625,
+            "height": 13.640625,
+            "text": "三里坊"
+          },
+          {
+            "left": 224.90625,
+            "top": 494.1796875,
+            "right": 271.09375,
+            "bottom": 507.8203125,
+            "width": 46.1875,
+            "height": 13.640625,
+            "text": "梅陇园区"
+          },
+          {
+            "left": 79.59375,
+            "top": 361.796875,
+            "right": 138.40625,
+            "bottom": 376,
+            "width": 58.8125,
+            "height": 14.203125,
+            "text": "临江路集散点"
+          },
+          {
+            "left": 131.5,
+            "top": 422.796875,
+            "right": 180.5,
+            "bottom": 437,
+            "width": 49,
+            "height": 14.203125,
+            "text": "旧仓里驿站"
+          },
+          {
+            "left": 170.6953125,
+            "top": 477.796875,
+            "right": 239.3046875,
+            "bottom": 492,
+            "width": 68.609375,
+            "height": 14.203125,
+            "text": "江淮大道配送站"
+          },
+          {
+            "left": 266.59375,
+            "top": 349.796875,
+            "right": 325.40625,
+            "bottom": 364,
+            "width": 58.8125,
+            "height": 14.203125,
+            "text": "东圩里集散点"
+          },
+          {
+            "left": 29.59375,
+            "top": 546.796875,
+            "right": 88.40625,
+            "bottom": 561,
+            "width": 58.8125,
+            "height": 14.203125,
+            "text": "纺织新村驿站"
+          },
+          {
+            "left": 280.59375,
+            "top": 411.796875,
+            "right": 339.40625,
+            "bottom": 426,
+            "width": 58.8125,
+            "height": 14.203125,
+            "text": "三多里配送站"
+          },
+          {
+            "left": 9.59375,
+            "top": 432.796875,
+            "right": 68.40625,
+            "bottom": 447,
+            "width": 58.8125,
+            "height": 14.203125,
+            "text": "兴仁里集散点"
+          },
+          {
+            "left": 168.59375,
+            "top": 561.796875,
+            "right": 227.40625,
+            "bottom": 576,
+            "width": 58.8125,
+            "height": 14.203125,
+            "text": "小学路口驿站"
+          },
+          {
+            "left": 252.59375,
+            "top": 334,
+            "right": 311.40625,
+            "bottom": 348.203125,
+            "width": 58.8125,
+            "height": 14.203125,
+            "text": "新港河配送站"
+          }
+        ],
+        "markerCount": 9,
+        "badgeCount": 9,
+        "zoomBand": "mid",
+        "slot": "early",
+        "layers": {
+          "zones": true,
+          "routes": true,
+          "sites": true
+        }
+      }
+    }
+  ],
+  "passed": true
+}

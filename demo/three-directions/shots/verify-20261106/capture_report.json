@@ -1,0 +1,1358 @@
+{
+  "kind": "three_directions_capture",
+  "base": "http://127.0.0.1:63157/demo/three-directions",
+  "site": "S01",
+  "states": [
+    {
+      "style": "light-operations",
+      "viewport": "desktop",
+      "file": "light-operations-desktop.png",
+      "consoleErrors": [],
+      "geometry": {
+        "map": {
+          "left": 0,
+          "right": 1008,
+          "top": 68,
+          "bottom": 868,
+          "width": 1008,
+          "height": 800
+        },
+        "sheet": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0
+        },
+        "sheetVisible": false,
+        "frame": {
+          "left": 40,
+          "right": 337,
+          "top": 475.828125,
+          "bottom": 569,
+          "width": 297,
+          "height": 93.171875
+        },
+        "close": {
+          "left": 293,
+          "right": 337,
+          "top": 475.828125,
+          "bottom": 519.828125,
+          "width": 44,
+          "height": 44
+        },
+        "tip": {
+          "left": 168.5,
+          "right": 208.5,
+          "top": 568,
+          "bottom": 588,
+          "width": 40,
+          "height": 20
+        },
+        "marker": {
+          "x": 178,
+          "y": 586,
+          "width": 22,
+          "height": 22,
+          "top": 586,
+          "right": 200,
+          "bottom": 608,
+          "left": 178
+        },
+        "frameInsideMap": true,
+        "closeInsideMap": true,
+        "markerInsideMap": true,
+        "frameOverSheet": 0,
+        "closeOverSheet": 0,
+        "markerOverSheet": 0,
+        "tipOffsetPx": 0.5,
+        "legendEntries": 10,
+        "renderedDigest": "1357:8d8540c8",
+        "basemapDigest": "3149:fe81a20c",
+        "basemapCounts": {
+          "blocks": 27,
+          "water": 1,
+          "arterials": 3,
+          "locals": 7
+        },
+        "visibleAnnotations": [
+          {
+            "cls": "area",
+            "text": "江岸片区"
+          },
+          {
+            "cls": "street",
+            "text": "江淮大道"
+          },
+          {
+            "cls": "street",
+            "text": "临江路"
+          },
+          {
+            "cls": "street",
+            "text": "旧仓里"
+          },
+          {
+            "cls": "street",
+            "text": "三多里"
+          },
+          {
+            "cls": "water",
+            "text": "新港河"
+          },
+          {
+            "cls": "site",
+            "text": "江岸路综合配送中心"
+          },
+          {
+            "cls": "site",
+            "text": "江淮大道配送站"
+          },
+          {
+            "cls": "site",
+            "text": "新港河配送站"
+          }
+        ],
+        "basemapColors": {
+          "ground": "rgb(242, 244, 246)",
+          "block": "#e7eaed",
+          "water": "#d4e4ef",
+          "arterialCasing": "#c9cfd6",
+          "arterialCore": "#ffffff",
+          "localCore": "#fbfcfc"
+        },
+        "annotationBoxes": [
+          {
+            "left": 332.9140625,
+            "right": 389.0859375,
+            "top": 246,
+            "bottom": 260.9375,
+            "cls": "area",
+            "siteId": null,
+            "text": "江岸片区"
+          },
+          {
+            "left": 497.15625,
+            "right": 540.84375,
+            "top": 594,
+            "bottom": 606.0625,
+            "cls": "street",
+            "siteId": null,
+            "text": "江淮大道"
+          },
+          {
+            "left": 387.6171875,
+            "right": 420.3828125,
+            "top": 427,
+            "bottom": 439.0625,
+            "cls": "street",
+            "siteId": null,
+            "text": "临江路"
+          },
+          {
+            "left": 258.6171875,
+            "right": 291.3828125,
+            "top": 286,
+            "bottom": 298.0625,
+            "cls": "street",
+            "siteId": null,
+            "text": "旧仓里"
+          },
+          {
+            "left": 602.6171875,
+            "right": 635.3828125,
+            "top": 260,
+            "bottom": 272.0625,
+            "cls": "street",
+            "siteId": null,
+            "text": "三多里"
+          },
+          {
+            "left": 469.859375,
+            "right": 508.140625,
+            "top": 449.359375,
+            "bottom": 462,
+            "cls": "water",
+            "siteId": null,
+            "text": "新港河"
+          },
+          {
+            "left": 200,
+            "right": 304.546875,
+            "top": 593.390625,
+            "bottom": 606.609375,
+            "cls": "site",
+            "siteId": "S01",
+            "text": "江岸路综合配送中心"
+          },
+          {
+            "left": 601,
+            "right": 682.3125,
+            "top": 593.390625,
+            "bottom": 606.609375,
+            "cls": "site",
+            "siteId": "S04",
+            "text": "江淮大道配送站"
+          },
+          {
+            "left": 731,
+            "right": 800.703125,
+            "top": 220.390625,
+            "bottom": 233.609375,
+            "cls": "site",
+            "siteId": "S12",
+            "text": "新港河配送站"
+          }
+        ],
+        "annotationDropped": [],
+        "dataSha": {
+          "context.geojson": "9703e7eeec4e448b6ff111993b4a1e46dcaace9bc616d510a2261be7ce84de99",
+          "sites.geojson": "ea42a59383c48fac5c36b0db6e07ed0983b54a7e6186aabe9e4694621ff635b4",
+          "districts.geojson": "60b5ce75dd315d88d4ad50243d09fff412be381831ea08cd5e26226c3b507717",
+          "route.geojson": "492f5fba98767c85f15ebbf3b888d8d3fd71c8e98038c5e97e97d8c374a2e15e",
+          "labels.geojson": "06810f588e07d32b76f437b96076696c86ef0771c780aa3ef2125a0a03073c5b"
+        },
+        "selected": "S01"
+      }
+    },
+    {
+      "style": "warm-city-guide",
+      "viewport": "desktop",
+      "file": "warm-city-guide-desktop.png",
+      "consoleErrors": [],
+      "geometry": {
+        "map": {
+          "left": 0,
+          "right": 1008,
+          "top": 76,
+          "bottom": 868,
+          "width": 1008,
+          "height": 792
+        },
+        "sheet": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0
+        },
+        "sheetVisible": false,
+        "frame": {
+          "left": 28,
+          "right": 367,
+          "top": 464.65625,
+          "bottom": 573,
+          "width": 339,
+          "height": 108.34375
+        },
+        "close": {
+          "left": 323,
+          "right": 367,
+          "top": 464.65625,
+          "bottom": 508.65625,
+          "width": 44,
+          "height": 44
+        },
+        "tip": {
+          "left": 177.5,
+          "right": 217.5,
+          "top": 572,
+          "bottom": 592,
+          "width": 40,
+          "height": 20
+        },
+        "marker": {
+          "x": 186,
+          "y": 593,
+          "width": 24,
+          "height": 24,
+          "top": 593,
+          "right": 210,
+          "bottom": 617,
+          "left": 186
+        },
+        "frameInsideMap": true,
+        "closeInsideMap": true,
+        "markerInsideMap": true,
+        "frameOverSheet": 0,
+        "closeOverSheet": 0,
+        "markerOverSheet": 0,
+        "tipOffsetPx": 0.5,
+        "legendEntries": 10,
+        "renderedDigest": "1357:8d8540c8",
+        "basemapDigest": "3149:fe81a20c",
+        "basemapCounts": {
+          "blocks": 27,
+          "water": 1,
+          "arterials": 3,
+          "locals": 7
+        },
+        "visibleAnnotations": [
+          {
+            "cls": "area",
+            "text": "江岸片区"
+          },
+          {
+            "cls": "street",
+            "text": "江淮大道"
+          },
+          {
+            "cls": "street",
+            "text": "临江路"
+          },
+          {
+            "cls": "street",
+            "text": "旧仓里"
+          },
+          {
+            "cls": "street",
+            "text": "三多里"
+          },
+          {
+            "cls": "water",
+            "text": "新港河"
+          },
+          {
+            "cls": "site",
+            "text": "江岸路综合配送中心"
+          },
+          {
+            "cls": "site",
+            "text": "临江路集散点"
+          },
+          {
+            "cls": "site",
+            "text": "旧仓里驿站"
+          },
+          {
+            "cls": "site",
+            "text": "江淮大道配送站"
+          },
+          {
+            "cls": "site",
+            "text": "东圩里集散点"
+          },
+          {
+            "cls": "site",
+            "text": "纺织新村驿站"
+          },
+          {
+            "cls": "site",
+            "text": "沿河路配送站"
+          },
+          {
+            "cls": "site",
+            "text": "南苑驿站"
+          },
+          {
+            "cls": "site",
+            "text": "三多里配送站"
+          },
+          {
+            "cls": "site",
+            "text": "兴仁里集散点"
+          },
+          {
+            "cls": "site",
+            "text": "小学路口驿站"
+          },
+          {
+            "cls": "site",
+            "text": "新港河配送站"
+          }
+        ],
+        "basemapColors": {
+          "ground": "rgb(246, 239, 225)",
+          "block": "#eee2cb",
+          "water": "#bcd6cd",
+          "arterialCasing": "#c9b28c",
+          "arterialCore": "#fdf7ec",
+          "localCore": "#d8c6a6"
+        },
+        "annotationBoxes": [
+          {
+            "left": 332.796875,
+            "right": 407.203125,
+            "top": 220.75,
+            "bottom": 238,
+            "cls": "area",
+            "siteId": null,
+            "text": "江岸片区"
+          },
+          {
+            "left": 502.9140625,
+            "right": 553.0859375,
+            "top": 575.359375,
+            "bottom": 588,
+            "cls": "street",
+            "siteId": null,
+            "text": "江淮大道"
+          },
+          {
+            "left": 394.1875,
+            "right": 431.8125,
+            "top": 408.359375,
+            "bottom": 421,
+            "cls": "street",
+            "siteId": null,
+            "text": "临江路"
+          },
+          {
+            "left": 265.1875,
+            "right": 302.8125,
+            "top": 267.359375,
+            "bottom": 280,
+            "cls": "street",
+            "siteId": null,
+            "text": "旧仓里"
+          },
+          {
+            "left": 609.1875,
+            "right": 646.8125,
+            "top": 241.359375,
+            "bottom": 254,
+            "cls": "street",
+            "siteId": null,
+            "text": "三多里"
+          },
+          {
+            "left": 453.390625,
+            "right": 493,
+            "top": 470.6796875,
+            "bottom": 483.3203125,
+            "cls": "water",
+            "siteId": null,
+            "text": "新港河"
+          },
+          {
+            "left": 209,
+            "right": 327.96875,
+            "top": 597.6796875,
+            "bottom": 614.3203125,
+            "cls": "site",
+            "siteId": "S01",
+            "text": "江岸路综合配送中心"
+          },
+          {
+            "left": 409,
+            "right": 493.640625,
+            "top": 327.6796875,
+            "bottom": 344.3203125,
+            "cls": "site",
+            "siteId": "S02",
+            "text": "临江路集散点"
+          },
+          {
+            "left": 524,
+            "right": 597.203125,
+            "top": 481.6796875,
+            "bottom": 498.3203125,
+            "cls": "site",
+            "siteId": "S03",
+            "text": "旧仓里驿站"
+          },
+          {
+            "left": 610,
+            "right": 706.09375,
+            "top": 597.6796875,
+            "bottom": 614.3203125,
+            "cls": "site",
+            "siteId": "S04",
+            "text": "江淮大道配送站"
+          },
+          {
+            "left": 797,
+            "right": 881.640625,
+            "top": 327.6796875,
+            "bottom": 344.3203125,
+            "cls": "site",
+            "siteId": "S05",
+            "text": "东圩里集散点"
+          },
+          {
+            "left": 323,
+            "right": 407.640625,
+            "top": 713.6796875,
+            "bottom": 730.3203125,
+            "cls": "site",
+            "siteId": "S06",
+            "text": "纺织新村驿站"
+          },
+          {
+            "left": 496,
+            "right": 580.640625,
+            "top": 224.6796875,
+            "bottom": 241.3203125,
+            "cls": "site",
+            "siteId": "S07",
+            "text": "沿河路配送站"
+          },
+          {
+            "left": 668,
+            "right": 729.765625,
+            "top": 713.6796875,
+            "bottom": 730.3203125,
+            "cls": "site",
+            "siteId": "S08",
+            "text": "南苑驿站"
+          },
+          {
+            "left": 840,
+            "right": 924.640625,
+            "top": 481.6796875,
+            "bottom": 498.3203125,
+            "cls": "site",
+            "siteId": "S09",
+            "text": "三多里配送站"
+          },
+          {
+            "left": 266,
+            "right": 350.640625,
+            "top": 468.6796875,
+            "bottom": 485.3203125,
+            "cls": "site",
+            "siteId": "S10",
+            "text": "兴仁里集散点"
+          },
+          {
+            "left": 582,
+            "right": 666.640625,
+            "top": 751.6796875,
+            "bottom": 768.3203125,
+            "cls": "site",
+            "siteId": "S11",
+            "text": "小学路口驿站"
+          },
+          {
+            "left": 740,
+            "right": 824.640625,
+            "top": 224.6796875,
+            "bottom": 241.3203125,
+            "cls": "site",
+            "siteId": "S12",
+            "text": "新港河配送站"
+          }
+        ],
+        "annotationDropped": [],
+        "dataSha": {
+          "sites.geojson": "ea42a59383c48fac5c36b0db6e07ed0983b54a7e6186aabe9e4694621ff635b4",
+          "route.geojson": "492f5fba98767c85f15ebbf3b888d8d3fd71c8e98038c5e97e97d8c374a2e15e",
+          "context.geojson": "9703e7eeec4e448b6ff111993b4a1e46dcaace9bc616d510a2261be7ce84de99",
+          "districts.geojson": "60b5ce75dd315d88d4ad50243d09fff412be381831ea08cd5e26226c3b507717",
+          "labels.geojson": "06810f588e07d32b76f437b96076696c86ef0771c780aa3ef2125a0a03073c5b"
+        },
+        "selected": "S01"
+      }
+    },
+    {
+      "style": "dark-monitoring",
+      "viewport": "desktop",
+      "file": "dark-monitoring-desktop.png",
+      "consoleErrors": [],
+      "geometry": {
+        "map": {
+          "left": 0,
+          "right": 1008,
+          "top": 68,
+          "bottom": 868,
+          "width": 1008,
+          "height": 800
+        },
+        "sheet": {
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0
+        },
+        "sheetVisible": false,
+        "frame": {
+          "left": 39,
+          "right": 338,
+          "top": 426.421875,
+          "bottom": 569,
+          "width": 299,
+          "height": 142.578125
+        },
+        "close": {
+          "left": 294,
+          "right": 338,
+          "top": 426.421875,
+          "bottom": 470.421875,
+          "width": 44,
+          "height": 44
+        },
+        "tip": {
+          "left": 168.5,
+          "right": 208.5,
+          "top": 568,
+          "bottom": 588,
+          "width": 40,
+          "height": 20
+        },
+        "marker": {
+          "x": 178,
+          "y": 586,
+          "width": 22,
+          "height": 22,
+          "top": 586,
+          "right": 200,
+          "bottom": 608,
+          "left": 178
+        },
+        "frameInsideMap": true,
+        "closeInsideMap": true,
+        "markerInsideMap": true,
+        "frameOverSheet": 0,
+        "closeOverSheet": 0,
+        "markerOverSheet": 0,
+        "tipOffsetPx": 0.5,
+        "legendEntries": 10,
+        "renderedDigest": "1357:8d8540c8",
+        "basemapDigest": "3149:fe81a20c",
+        "basemapCounts": {
+          "blocks": 27,
+          "water": 1,
+          "arterials": 3,
+          "locals": 7
+        },
+        "visibleAnnotations": [
+          {
+            "cls": "area",
+            "text": "江岸片区"
+          },
+          {
+            "cls": "street",
+            "text": "江淮大道"
+          },
+          {
+            "cls": "street",
+            "text": "临江路"
+          },
+          {
+            "cls": "street",
+            "text": "旧仓里"
+          },
+          {
+            "cls": "street",
+            "text": "三多里"
+          },
+          {
+            "cls": "water",
+            "text": "新港河"
+          },
+          {
+            "cls": "site",
+            "text": "江岸路综合配送中心 1840"
+          },
+          {
+            "cls": "site",
+            "text": "临江路 920"
+          },
+          {
+            "cls": "site",
+            "text": "旧仓里 610"
+          },
+          {
+            "cls": "site",
+            "text": "江淮大道 1520"
+          },
+          {
+            "cls": "site",
+            "text": "东圩里 730"
+          },
+          {
+            "cls": "site",
+            "text": "沿河路 1130"
+          },
+          {
+            "cls": "site",
+            "text": "三多里 1010"
+          },
+          {
+            "cls": "site",
+            "text": "新港河 1260"
+          }
+        ],
+        "basemapColors": {
+          "ground": "rgb(8, 12, 18)",
+          "block": "#101820",
+          "water": "#123243",
+          "arterialCasing": "#26313d",
+          "arterialCore": "#4a5a6b",
+          "localCore": "#2c3742"
+        },
+        "annotationBoxes": [
+          {
+            "left": 335.0390625,
+            "right": 386.9609375,
+            "top": 247,
+            "bottom": 259.640625,
+            "cls": "area",
+            "siteId": null,
+            "text": "江岸片区"
+          },
+          {
+            "left": 497.796875,
+            "right": 540.203125,
+            "top": 595,
+            "bottom": 606.5,
+            "cls": "street",
+            "siteId": null,
+            "text": "江淮大道"
+          },
+          {
+            "left": 388.09375,
+            "right": 419.90625,
+            "top": 428,
+            "bottom": 439.5,
+            "cls": "street",
+            "siteId": null,
+            "text": "临江路"
+          },
+          {
+            "left": 259.09375,
+            "right": 290.90625,
+            "top": 287,
+            "bottom": 298.5,
+            "cls": "street",
+            "siteId": null,
+            "text": "旧仓里"
+          },
+          {
+            "left": 603.09375,
+            "right": 634.90625,
+            "top": 261,
+            "bottom": 272.5,
+            "cls": "street",
+            "siteId": null,
+            "text": "三多里"
+          },
+          {
+            "left": 470.09375,
+            "right": 507.90625,
+            "top": 449.9375,
+            "bottom": 462,
+            "cls": "water",
+            "siteId": null,
+            "text": "新港河"
+          },
+          {
+            "left": 200,
+            "right": 329.609375,
+            "top": 593.6796875,
+            "bottom": 606.3203125,
+            "cls": "site",
+            "siteId": "S01",
+            "text": "江岸路综合配送中心 1840"
+          },
+          {
+            "left": 400,
+            "right": 463.953125,
+            "top": 323.6796875,
+            "bottom": 336.3203125,
+            "cls": "site",
+            "siteId": "S02",
+            "text": "临江路 920"
+          },
+          {
+            "left": 515,
+            "right": 578.953125,
+            "top": 477.6796875,
+            "bottom": 490.3203125,
+            "cls": "site",
+            "siteId": "S03",
+            "text": "旧仓里 610"
+          },
+          {
+            "left": 601,
+            "right": 682.515625,
+            "top": 593.6796875,
+            "bottom": 606.3203125,
+            "cls": "site",
+            "siteId": "S04",
+            "text": "江淮大道 1520"
+          },
+          {
+            "left": 788,
+            "right": 851.953125,
+            "top": 323.6796875,
+            "bottom": 336.3203125,
+            "cls": "site",
+            "siteId": "S05",
+            "text": "东圩里 730"
+          },
+          {
+            "left": 487,
+            "right": 557.296875,
+            "top": 220.6796875,
+            "bottom": 233.3203125,
+            "cls": "site",
+            "siteId": "S07",
+            "text": "沿河路 1130"
+          },
+          {
+            "left": 831,
+            "right": 901.296875,
+            "top": 477.6796875,
+            "bottom": 490.3203125,
+            "cls": "site",
+            "siteId": "S09",
+            "text": "三多里 1010"
+          },
+          {
+            "left": 731,
+            "right": 801.296875,
+            "top": 220.6796875,
+            "bottom": 233.3203125,
+            "cls": "site",
+            "siteId": "S12",
+            "text": "新港河 1260"
+          }
+        ],
+        "annotationDropped": [],
+        "dataSha": {
+          "context.geojson": "9703e7eeec4e448b6ff111993b4a1e46dcaace9bc616d510a2261be7ce84de99",
+          "sites.geojson": "ea42a59383c48fac5c36b0db6e07ed0983b54a7e6186aabe9e4694621ff635b4",
+          "route.geojson": "492f5fba98767c85f15ebbf3b888d8d3fd71c8e98038c5e97e97d8c374a2e15e",
+          "districts.geojson": "60b5ce75dd315d88d4ad50243d09fff412be381831ea08cd5e26226c3b507717",
+          "labels.geojson": "06810f588e07d32b76f437b96076696c86ef0771c780aa3ef2125a0a03073c5b"
+        },
+        "selected": "S01"
+      }
+    },
+    {
+      "style": "light-operations",
+      "viewport": "mobile",
+      "file": "light-operations-mobile.png",
+      "consoleErrors": [],
+      "geometry": {
+        "map": {
+          "left": 0,
+          "right": 390,
+          "top": 203,
+          "bottom": 768,
+          "width": 390,
+          "height": 565
+        },
+        "sheet": {
+          "left": 0,
+          "right": 390,
+          "top": 413.53125,
+          "bottom": 768,
+          "width": 390,
+          "height": 354.46875
+        },
+        "sheetVisible": true,
+        "frame": {
+          "left": 8,
+          "right": 305,
+          "top": 272.828125,
+          "bottom": 366,
+          "width": 297,
+          "height": 93.171875
+        },
+        "close": {
+          "left": 261,
+          "right": 305,
+          "top": 272.828125,
+          "bottom": 316.828125,
+          "width": 44,
+          "height": 44
+        },
+        "tip": {
+          "left": 136.5,
+          "right": 176.5,
+          "top": 365,
+          "bottom": 385,
+          "width": 40,
+          "height": 20
+        },
+        "marker": {
+          "x": 146,
+          "y": 383,
+          "width": 22,
+          "height": 22,
+          "top": 383,
+          "right": 168,
+          "bottom": 405,
+          "left": 146
+        },
+        "frameInsideMap": true,
+        "closeInsideMap": true,
+        "markerInsideMap": true,
+        "frameOverSheet": 0,
+        "closeOverSheet": 0,
+        "markerOverSheet": 0,
+        "tipOffsetPx": 0.5,
+        "legendEntries": 10,
+        "renderedDigest": "1357:8d8540c8",
+        "basemapDigest": "3149:fe81a20c",
+        "basemapCounts": {
+          "blocks": 27,
+          "water": 1,
+          "arterials": 3,
+          "locals": 7
+        },
+        "visibleAnnotations": [
+          {
+            "cls": "water",
+            "text": "新港河"
+          }
+        ],
+        "basemapColors": {
+          "ground": "rgb(242, 244, 246)",
+          "block": "#e7eaed",
+          "water": "#d4e4ef",
+          "arterialCasing": "#c9cfd6",
+          "arterialCore": "#ffffff",
+          "localCore": "#fbfcfc"
+        },
+        "annotationBoxes": [
+          {
+            "left": 212.859375,
+            "right": 251.140625,
+            "top": 344.359375,
+            "bottom": 357,
+            "cls": "water",
+            "siteId": null,
+            "text": "新港河"
+          }
+        ],
+        "annotationDropped": [
+          {
+            "text": "江岸路综合配送中心",
+            "cls": "site",
+            "reason": "COVERS_A_SITE_MARKER"
+          },
+          {
+            "text": "江岸片区",
+            "cls": "area",
+            "reason": "COVERS_A_SITE_MARKER"
+          }
+        ],
+        "dataSha": {
+          "context.geojson": "9703e7eeec4e448b6ff111993b4a1e46dcaace9bc616d510a2261be7ce84de99",
+          "sites.geojson": "ea42a59383c48fac5c36b0db6e07ed0983b54a7e6186aabe9e4694621ff635b4",
+          "route.geojson": "492f5fba98767c85f15ebbf3b888d8d3fd71c8e98038c5e97e97d8c374a2e15e",
+          "districts.geojson": "60b5ce75dd315d88d4ad50243d09fff412be381831ea08cd5e26226c3b507717",
+          "labels.geojson": "06810f588e07d32b76f437b96076696c86ef0771c780aa3ef2125a0a03073c5b"
+        },
+        "selected": "S01"
+      }
+    },
+    {
+      "style": "warm-city-guide",
+      "viewport": "mobile",
+      "file": "warm-city-guide-mobile.png",
+      "consoleErrors": [],
+      "geometry": {
+        "map": {
+          "left": 0,
+          "right": 390,
+          "top": 211,
+          "bottom": 768,
+          "width": 390,
+          "height": 557
+        },
+        "sheet": {
+          "left": 0,
+          "right": 390,
+          "top": 396.640625,
+          "bottom": 768,
+          "width": 390,
+          "height": 371.359375
+        },
+        "sheetVisible": true,
+        "frame": {
+          "left": 8,
+          "right": 347,
+          "top": 235.65625,
+          "bottom": 344,
+          "width": 339,
+          "height": 108.34375
+        },
+        "close": {
+          "left": 303,
+          "right": 347,
+          "top": 235.65625,
+          "bottom": 279.65625,
+          "width": 44,
+          "height": 44
+        },
+        "tip": {
+          "left": 157.5,
+          "right": 197.5,
+          "top": 343,
+          "bottom": 363,
+          "width": 40,
+          "height": 20
+        },
+        "marker": {
+          "x": 166,
+          "y": 364,
+          "width": 24,
+          "height": 24,
+          "top": 364,
+          "right": 190,
+          "bottom": 388,
+          "left": 166
+        },
+        "frameInsideMap": true,
+        "closeInsideMap": true,
+        "markerInsideMap": true,
+        "frameOverSheet": 0,
+        "closeOverSheet": 0,
+        "markerOverSheet": 0,
+        "tipOffsetPx": 0.5,
+        "legendEntries": 10,
+        "renderedDigest": "1357:8d8540c8",
+        "basemapDigest": "3149:fe81a20c",
+        "basemapCounts": {
+          "blocks": 27,
+          "water": 1,
+          "arterials": 3,
+          "locals": 7
+        },
+        "visibleAnnotations": [
+          {
+            "cls": "street",
+            "text": "江淮大道"
+          },
+          {
+            "cls": "street",
+            "text": "临江路"
+          },
+          {
+            "cls": "street",
+            "text": "旧仓里"
+          },
+          {
+            "cls": "street",
+            "text": "三多里"
+          },
+          {
+            "cls": "water",
+            "text": "新港河"
+          },
+          {
+            "cls": "site",
+            "text": "江淮大道配送站"
+          }
+        ],
+        "basemapColors": {
+          "ground": "rgb(246, 239, 225)",
+          "block": "#eee2cb",
+          "water": "#bcd6cd",
+          "arterialCasing": "#c9b28c",
+          "arterialCore": "#fdf7ec",
+          "localCore": "#d8c6a6"
+        },
+        "annotationBoxes": [
+          {
+            "left": 235.9140625,
+            "right": 286.0859375,
+            "top": 355.359375,
+            "bottom": 368,
+            "cls": "street",
+            "siteId": null,
+            "text": "江淮大道"
+          },
+          {
+            "left": 213.1875,
+            "right": 250.8125,
+            "top": 314.359375,
+            "bottom": 327,
+            "cls": "street",
+            "siteId": null,
+            "text": "临江路"
+          },
+          {
+            "left": 181.1875,
+            "right": 218.8125,
+            "top": 278.359375,
+            "bottom": 291,
+            "cls": "street",
+            "siteId": null,
+            "text": "旧仓里"
+          },
+          {
+            "left": 267.1875,
+            "right": 304.8125,
+            "top": 272.359375,
+            "bottom": 285,
+            "cls": "street",
+            "siteId": null,
+            "text": "三多里"
+          },
+          {
+            "left": 233.1953125,
+            "right": 272.8046875,
+            "top": 326.359375,
+            "bottom": 339,
+            "cls": "water",
+            "siteId": null,
+            "text": "新港河"
+          },
+          {
+            "left": 290,
+            "right": 386.09375,
+            "top": 368.6796875,
+            "bottom": 385.3203125,
+            "cls": "site",
+            "siteId": "S04",
+            "text": "江淮大道配送站"
+          }
+        ],
+        "annotationDropped": [
+          {
+            "text": "江岸路综合配送中心",
+            "cls": "site",
+            "reason": "COVERS_A_SITE_MARKER"
+          },
+          {
+            "text": "江岸片区",
+            "cls": "area",
+            "reason": "COVERS_A_SITE_MARKER"
+          },
+          {
+            "text": "三多里配送站",
+            "cls": "site",
+            "reason": "COVERS_A_SITE_MARKER"
+          },
+          {
+            "text": "新港河配送站",
+            "cls": "site",
+            "reason": "COVERS_A_SITE_MARKER"
+          },
+          {
+            "text": "沿河路配送站",
+            "cls": "site",
+            "reason": "COVERS_A_SITE_MARKER"
+          }
+        ],
+        "dataSha": {
+          "context.geojson": "9703e7eeec4e448b6ff111993b4a1e46dcaace9bc616d510a2261be7ce84de99",
+          "sites.geojson": "ea42a59383c48fac5c36b0db6e07ed0983b54a7e6186aabe9e4694621ff635b4",
+          "route.geojson": "492f5fba98767c85f15ebbf3b888d8d3fd71c8e98038c5e97e97d8c374a2e15e",
+          "districts.geojson": "60b5ce75dd315d88d4ad50243d09fff412be381831ea08cd5e26226c3b507717",
+          "labels.geojson": "06810f588e07d32b76f437b96076696c86ef0771c780aa3ef2125a0a03073c5b"
+        },
+        "selected": "S01"
+      }
+    },
+    {
+      "style": "dark-monitoring",
+      "viewport": "mobile",
+      "file": "dark-monitoring-mobile.png",
+      "consoleErrors": [],
+      "geometry": {
+        "map": {
+          "left": 0,
+          "right": 390,
+          "top": 203,
+          "bottom": 768,
+          "width": 390,
+          "height": 565
+        },
+        "sheet": {
+          "left": 0,
+          "right": 390,
+          "top": 430.40625,
+          "bottom": 768,
+          "width": 390,
+          "height": 337.59375
+        },
+        "sheetVisible": true,
+        "frame": {
+          "left": 8,
+          "right": 307,
+          "top": 240.421875,
+          "bottom": 383,
+          "width": 299,
+          "height": 142.578125
+        },
+        "close": {
+          "left": 263,
+          "right": 307,
+          "top": 240.421875,
+          "bottom": 284.421875,
+          "width": 44,
+          "height": 44
+        },
+        "tip": {
+          "left": 137.5,
+          "right": 177.5,
+          "top": 382,
+          "bottom": 402,
+          "width": 40,
+          "height": 20
+        },
+        "marker": {
+          "x": 147,
+          "y": 400,
+          "width": 22,
+          "height": 22,
+          "top": 400,
+          "right": 169,
+          "bottom": 422,
+          "left": 147
+        },
+        "frameInsideMap": true,
+        "closeInsideMap": true,
+        "markerInsideMap": true,
+        "frameOverSheet": 0,
+        "closeOverSheet": 0,
+        "markerOverSheet": 0,
+        "tipOffsetPx": 0.5,
+        "legendEntries": 10,
+        "renderedDigest": "1357:8d8540c8",
+        "basemapDigest": "3149:fe81a20c",
+        "basemapCounts": {
+          "blocks": 27,
+          "water": 1,
+          "arterials": 3,
+          "locals": 7
+        },
+        "visibleAnnotations": [
+          {
+            "cls": "water",
+            "text": "新港河"
+          },
+          {
+            "cls": "site",
+            "text": "江淮大道 1520"
+          },
+          {
+            "cls": "site",
+            "text": "新港河 1260"
+          }
+        ],
+        "basemapColors": {
+          "ground": "rgb(8, 12, 18)",
+          "block": "#101820",
+          "water": "#123243",
+          "arterialCasing": "#26313d",
+          "arterialCore": "#4a5a6b",
+          "localCore": "#2c3742"
+        },
+        "annotationBoxes": [
+          {
+            "left": 214.09375,
+            "right": 251.90625,
+            "top": 361.9375,
+            "bottom": 374,
+            "cls": "water",
+            "siteId": null,
+            "text": "新港河"
+          },
+          {
+            "left": 270,
+            "right": 351.515625,
+            "top": 407.6796875,
+            "bottom": 420.3203125,
+            "cls": "site",
+            "siteId": "S04",
+            "text": "江淮大道 1520"
+          },
+          {
+            "left": 302,
+            "right": 372.296875,
+            "top": 313.6796875,
+            "bottom": 326.3203125,
+            "cls": "site",
+            "siteId": "S12",
+            "text": "新港河 1260"
+          }
+        ],
+        "annotationDropped": [
+          {
+            "text": "江岸路综合配送中心 1840",
+            "cls": "site",
+            "reason": "COVERS_A_SITE_MARKER"
+          },
+          {
+            "text": "江岸片区",
+            "cls": "area",
+            "reason": "COVERS_A_SITE_MARKER"
+          },
+          {
+            "text": "沿河路 1130",
+            "cls": "site",
+            "reason": "COVERS_A_SITE_MARKER"
+          }
+        ],
+        "dataSha": {
+          "context.geojson": "9703e7eeec4e448b6ff111993b4a1e46dcaace9bc616d510a2261be7ce84de99",
+          "sites.geojson": "ea42a59383c48fac5c36b0db6e07ed0983b54a7e6186aabe9e4694621ff635b4",
+          "route.geojson": "492f5fba98767c85f15ebbf3b888d8d3fd71c8e98038c5e97e97d8c374a2e15e",
+          "districts.geojson": "60b5ce75dd315d88d4ad50243d09fff412be381831ea08cd5e26226c3b507717",
+          "labels.geojson": "06810f588e07d32b76f437b96076696c86ef0771c780aa3ef2125a0a03073c5b"
+        },
+        "selected": "S01"
+      }
+    }
+  ],
+  "integrity": {
+    "annotationsNeverOverlap": true,
+    "annotationsStayInsideMap": true,
+    "annotationCounts": {
+      "light-operations/desktop": 9,
+      "warm-city-guide/desktop": 18,
+      "dark-monitoring/desktop": 14,
+      "light-operations/mobile": 1,
+      "warm-city-guide/mobile": 6,
+      "dark-monitoring/mobile": 3
+    },
+    "annotationClasses": {
+      "light-operations/desktop": {
+        "area": 1,
+        "street": 4,
+        "water": 1,
+        "site": 3
+      },
+      "warm-city-guide/desktop": {
+        "area": 1,
+        "street": 4,
+        "water": 1,
+        "site": 12
+      },
+      "dark-monitoring/desktop": {
+        "area": 1,
+        "street": 4,
+        "water": 1,
+        "site": 8
+      },
+      "light-operations/mobile": {
+        "water": 1
+      },
+      "warm-city-guide/mobile": {
+        "street": 4,
+        "water": 1,
+        "site": 1
+      },
+      "dark-monitoring/mobile": {
+        "water": 1,
+        "site": 2
+      }
+    },
+    "distinctRenderedDigests": [
+      "1357:8d8540c8"
+    ],
+    "sameRenderedData": true,
+    "sameInputDigests": true,
+    "distinctBasemapDigests": [
+      "3149:fe81a20c"
+    ],
+    "sameBasemapGeometry": true,
+    "distinctBasemapPalettes": 3,
+    "eachDirectionHasItsOwnBasemap": true,
+    "allStatesClean": true,
+    "allPopupsInsideMap": true,
+    "noSheetOcclusion": true,
+    "maxTipOffsetPx": 0.5
+  }
+}

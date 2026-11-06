@@ -1,0 +1,5520 @@
+{
+  "base": "http://127.0.0.1:4174/demo/three-directions-zou/",
+  "site": "S01",
+  "states": [
+    {
+      "style": "light-operations",
+      "viewport": "desktop",
+      "problems": [],
+      "dataSha256": "e10490005734291642563c2fe0a58d7c1329f991fd496fdc80dce2b9e8ce4fe3",
+      "selected": {
+        "map": {
+          "left": 31,
+          "top": 231,
+          "right": 1077,
+          "bottom": 845,
+          "width": 1046,
+          "height": 614
+        },
+        "sheet": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0
+        },
+        "frame": {
+          "left": 179,
+          "top": 506.625,
+          "right": 483,
+          "bottom": 601,
+          "width": 304,
+          "height": 94.375
+        },
+        "close": {
+          "left": 451,
+          "top": 506.625,
+          "right": 483,
+          "bottom": 538.625,
+          "width": 32,
+          "height": 32
+        },
+        "marker": {
+          "left": 320,
+          "top": 618,
+          "right": 342,
+          "bottom": 640,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 311,
+          "top": 600,
+          "right": 351,
+          "bottom": 620,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 278.5390625,
+            "right": 371.4609375,
+            "top": 588.75,
+            "bottom": 606,
+            "text": "江岸路综合配送中",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 432.1484375,
+            "right": 501.8515625,
+            "top": 397.75,
+            "bottom": 415,
+            "text": "临江路集散点",
+            "tier": 1,
+            "siteId": "S02"
+          },
+          {
+            "left": 568.34375,
+            "right": 649.65625,
+            "top": 588.75,
+            "bottom": 606,
+            "text": "江淮大道配送站",
+            "tier": 1,
+            "siteId": "S04"
+          },
+          {
+            "left": 493.1484375,
+            "right": 562.8515625,
+            "top": 325.75,
+            "bottom": 343,
+            "text": "沿河路配送站",
+            "tier": 1,
+            "siteId": "S07"
+          },
+          {
+            "left": 736.1484375,
+            "right": 805.8515625,
+            "top": 507.75,
+            "bottom": 525,
+            "text": "三多里配送站",
+            "tier": 1,
+            "siteId": "S09"
+          },
+          {
+            "left": 665.1484375,
+            "right": 734.8515625,
+            "top": 325.75,
+            "bottom": 343,
+            "text": "新港河配送站",
+            "tier": 1,
+            "siteId": "S12"
+          },
+          {
+            "left": 423.5390625,
+            "right": 470.4609375,
+            "top": 360.375,
+            "bottom": 377.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 672.3984375,
+            "right": 707.6015625,
+            "top": 660.375,
+            "bottom": 677.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 459.3984375,
+            "right": 494.6015625,
+            "top": 488.375,
+            "bottom": 505.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 368.3984375,
+            "right": 403.6015625,
+            "top": 388.375,
+            "bottom": 405.625,
+            "text": "旧仓里",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 611.3984375,
+            "right": 646.6015625,
+            "top": 369.375,
+            "bottom": 386.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "light-operations",
+        "expanded": "true"
+      },
+      "switched": {
+        "map": {
+          "left": 31,
+          "top": 231,
+          "right": 1077,
+          "bottom": 845,
+          "width": 1046,
+          "height": 614
+        },
+        "sheet": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0
+        },
+        "frame": {
+          "left": 179,
+          "top": 501,
+          "right": 483,
+          "bottom": 601,
+          "width": 304,
+          "height": 100
+        },
+        "close": {
+          "left": 451,
+          "top": 501,
+          "right": 483,
+          "bottom": 533,
+          "width": 32,
+          "height": 32
+        },
+        "marker": {
+          "left": 319,
+          "top": 617,
+          "right": 343,
+          "bottom": 641,
+          "width": 24,
+          "height": 24
+        },
+        "tip": {
+          "left": 311,
+          "top": 600,
+          "right": 351,
+          "bottom": 620,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 265.375,
+            "right": 384.625,
+            "top": 586.25,
+            "bottom": 605,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 427.25,
+            "right": 506.75,
+            "top": 395.25,
+            "bottom": 414,
+            "text": "临江路集散点",
+            "tier": 1,
+            "siteId": "S02"
+          },
+          {
+            "left": 514.875,
+            "right": 581.125,
+            "top": 505.25,
+            "bottom": 524,
+            "text": "旧仓里驿站",
+            "tier": 1,
+            "siteId": "S03"
+          },
+          {
+            "left": 562.625,
+            "right": 655.375,
+            "top": 586.25,
+            "bottom": 605,
+            "text": "江淮大道配送站",
+            "tier": 1,
+            "siteId": "S04"
+          },
+          {
+            "left": 701.25,
+            "right": 780.75,
+            "top": 395.25,
+            "bottom": 414,
+            "text": "东圩里集散点",
+            "tier": 1,
+            "siteId": "S05"
+          },
+          {
+            "left": 366.25,
+            "right": 445.75,
+            "top": 668.25,
+            "bottom": 687,
+            "text": "纺织新村驿站",
+            "tier": 1,
+            "siteId": "S06"
+          },
+          {
+            "left": 488.25,
+            "right": 567.75,
+            "top": 323.25,
+            "bottom": 342,
+            "text": "沿河路配送站",
+            "tier": 1,
+            "siteId": "S07"
+          },
+          {
+            "left": 731.25,
+            "right": 810.75,
+            "top": 505.25,
+            "bottom": 524,
+            "text": "三多里配送站",
+            "tier": 1,
+            "siteId": "S09"
+          },
+          {
+            "left": 325.25,
+            "right": 404.75,
+            "top": 496.25,
+            "bottom": 515,
+            "text": "兴仁里集散点",
+            "tier": 1,
+            "siteId": "S10"
+          },
+          {
+            "left": 549.25,
+            "right": 628.75,
+            "top": 696.25,
+            "bottom": 715,
+            "text": "小学路口驿站",
+            "tier": 1,
+            "siteId": "S11"
+          },
+          {
+            "left": 660.25,
+            "right": 739.75,
+            "top": 323.25,
+            "bottom": 342,
+            "text": "新港河配送站",
+            "tier": 1,
+            "siteId": "S12"
+          },
+          {
+            "left": 423.078125,
+            "right": 470.921875,
+            "top": 360.375,
+            "bottom": 377.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 672.0546875,
+            "right": 707.9453125,
+            "top": 660.375,
+            "bottom": 677.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 459.0546875,
+            "right": 494.9453125,
+            "top": 488.375,
+            "bottom": 505.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 368.0546875,
+            "right": 403.9453125,
+            "top": 388.375,
+            "bottom": 405.625,
+            "text": "旧仓里",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 611.0546875,
+            "right": 646.9453125,
+            "top": 369.375,
+            "bottom": 386.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 648.0390625,
+            "right": 671.9609375,
+            "top": 706.375,
+            "bottom": 723.625,
+            "text": "南苑",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 571.0546875,
+            "right": 606.9453125,
+            "top": 724.375,
+            "bottom": 741.625,
+            "text": "小学路",
+            "tier": 2,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "warm-city-guide",
+        "expanded": "true"
+      }
+    },
+    {
+      "style": "warm-city-guide",
+      "viewport": "desktop",
+      "problems": [],
+      "dataSha256": "e10490005734291642563c2fe0a58d7c1329f991fd496fdc80dce2b9e8ce4fe3",
+      "selected": {
+        "map": {
+          "left": 31,
+          "top": 231,
+          "right": 1077,
+          "bottom": 845,
+          "width": 1046,
+          "height": 614
+        },
+        "sheet": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0
+        },
+        "frame": {
+          "left": 179,
+          "top": 497,
+          "right": 483,
+          "bottom": 597,
+          "width": 304,
+          "height": 100
+        },
+        "close": {
+          "left": 451,
+          "top": 497,
+          "right": 483,
+          "bottom": 529,
+          "width": 32,
+          "height": 32
+        },
+        "marker": {
+          "left": 319,
+          "top": 617,
+          "right": 343,
+          "bottom": 641,
+          "width": 24,
+          "height": 24
+        },
+        "tip": {
+          "left": 311,
+          "top": 596,
+          "right": 351,
+          "bottom": 616,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 265.375,
+            "right": 384.625,
+            "top": 586.25,
+            "bottom": 605,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 427.25,
+            "right": 506.75,
+            "top": 395.25,
+            "bottom": 414,
+            "text": "临江路集散点",
+            "tier": 1,
+            "siteId": "S02"
+          },
+          {
+            "left": 514.875,
+            "right": 581.125,
+            "top": 505.25,
+            "bottom": 524,
+            "text": "旧仓里驿站",
+            "tier": 1,
+            "siteId": "S03"
+          },
+          {
+            "left": 562.625,
+            "right": 655.375,
+            "top": 586.25,
+            "bottom": 605,
+            "text": "江淮大道配送站",
+            "tier": 1,
+            "siteId": "S04"
+          },
+          {
+            "left": 701.25,
+            "right": 780.75,
+            "top": 395.25,
+            "bottom": 414,
+            "text": "东圩里集散点",
+            "tier": 1,
+            "siteId": "S05"
+          },
+          {
+            "left": 366.25,
+            "right": 445.75,
+            "top": 668.25,
+            "bottom": 687,
+            "text": "纺织新村驿站",
+            "tier": 1,
+            "siteId": "S06"
+          },
+          {
+            "left": 488.25,
+            "right": 567.75,
+            "top": 323.25,
+            "bottom": 342,
+            "text": "沿河路配送站",
+            "tier": 1,
+            "siteId": "S07"
+          },
+          {
+            "left": 731.25,
+            "right": 810.75,
+            "top": 505.25,
+            "bottom": 524,
+            "text": "三多里配送站",
+            "tier": 1,
+            "siteId": "S09"
+          },
+          {
+            "left": 325.25,
+            "right": 404.75,
+            "top": 496.25,
+            "bottom": 515,
+            "text": "兴仁里集散点",
+            "tier": 1,
+            "siteId": "S10"
+          },
+          {
+            "left": 549.25,
+            "right": 628.75,
+            "top": 696.25,
+            "bottom": 715,
+            "text": "小学路口驿站",
+            "tier": 1,
+            "siteId": "S11"
+          },
+          {
+            "left": 660.25,
+            "right": 739.75,
+            "top": 323.25,
+            "bottom": 342,
+            "text": "新港河配送站",
+            "tier": 1,
+            "siteId": "S12"
+          },
+          {
+            "left": 423.078125,
+            "right": 470.921875,
+            "top": 360.375,
+            "bottom": 377.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 672.0546875,
+            "right": 707.9453125,
+            "top": 660.375,
+            "bottom": 677.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 459.0546875,
+            "right": 494.9453125,
+            "top": 488.375,
+            "bottom": 505.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 368.0546875,
+            "right": 403.9453125,
+            "top": 388.375,
+            "bottom": 405.625,
+            "text": "旧仓里",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 611.0546875,
+            "right": 646.9453125,
+            "top": 369.375,
+            "bottom": 386.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 648.0390625,
+            "right": 671.9609375,
+            "top": 706.375,
+            "bottom": 723.625,
+            "text": "南苑",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 571.0546875,
+            "right": 606.9453125,
+            "top": 724.375,
+            "bottom": 741.625,
+            "text": "小学路",
+            "tier": 2,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "warm-city-guide",
+        "expanded": "true"
+      },
+      "switched": {
+        "map": {
+          "left": 31,
+          "top": 231,
+          "right": 1077,
+          "bottom": 845,
+          "width": 1046,
+          "height": 614
+        },
+        "sheet": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0
+        },
+        "frame": {
+          "left": 179,
+          "top": 512,
+          "right": 483,
+          "bottom": 597,
+          "width": 304,
+          "height": 85
+        },
+        "close": {
+          "left": 451,
+          "top": 512,
+          "right": 483,
+          "bottom": 544,
+          "width": 32,
+          "height": 32
+        },
+        "marker": {
+          "left": 320,
+          "top": 618,
+          "right": 342,
+          "bottom": 640,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 311,
+          "top": 596,
+          "right": 351,
+          "bottom": 616,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 269.9140625,
+            "right": 380.0859375,
+            "top": 587,
+            "bottom": 605,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 430.2734375,
+            "right": 503.7265625,
+            "top": 396,
+            "bottom": 414,
+            "text": "临江路集散点",
+            "tier": 1,
+            "siteId": "S02"
+          },
+          {
+            "left": 517.3984375,
+            "right": 578.6015625,
+            "top": 506,
+            "bottom": 524,
+            "text": "旧仓里驿站",
+            "tier": 1,
+            "siteId": "S03"
+          },
+          {
+            "left": 566.15625,
+            "right": 651.84375,
+            "top": 587,
+            "bottom": 605,
+            "text": "江淮大道配送站",
+            "tier": 1,
+            "siteId": "S04"
+          },
+          {
+            "left": 704.2734375,
+            "right": 777.7265625,
+            "top": 396,
+            "bottom": 414,
+            "text": "东圩里集散点",
+            "tier": 1,
+            "siteId": "S05"
+          },
+          {
+            "left": 369.2734375,
+            "right": 442.7265625,
+            "top": 669,
+            "bottom": 687,
+            "text": "纺织新村驿站",
+            "tier": 1,
+            "siteId": "S06"
+          },
+          {
+            "left": 491.2734375,
+            "right": 564.7265625,
+            "top": 324,
+            "bottom": 342,
+            "text": "沿河路配送站",
+            "tier": 1,
+            "siteId": "S07"
+          },
+          {
+            "left": 734.2734375,
+            "right": 807.7265625,
+            "top": 506,
+            "bottom": 524,
+            "text": "三多里配送站",
+            "tier": 1,
+            "siteId": "S09"
+          },
+          {
+            "left": 328.2734375,
+            "right": 401.7265625,
+            "top": 497,
+            "bottom": 515,
+            "text": "兴仁里集散点",
+            "tier": 1,
+            "siteId": "S10"
+          },
+          {
+            "left": 552.2734375,
+            "right": 625.7265625,
+            "top": 697,
+            "bottom": 715,
+            "text": "小学路口驿站",
+            "tier": 1,
+            "siteId": "S11"
+          },
+          {
+            "left": 663.2734375,
+            "right": 736.7265625,
+            "top": 324,
+            "bottom": 342,
+            "text": "新港河配送站",
+            "tier": 1,
+            "siteId": "S12"
+          },
+          {
+            "left": 423.078125,
+            "right": 470.921875,
+            "top": 360.375,
+            "bottom": 377.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 672.0546875,
+            "right": 707.9453125,
+            "top": 660.375,
+            "bottom": 677.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 459.0546875,
+            "right": 494.9453125,
+            "top": 488.375,
+            "bottom": 505.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 368.0546875,
+            "right": 403.9453125,
+            "top": 388.375,
+            "bottom": 405.625,
+            "text": "旧仓里",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 611.0546875,
+            "right": 646.9453125,
+            "top": 369.375,
+            "bottom": 386.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "dark-monitoring",
+        "expanded": "true"
+      }
+    },
+    {
+      "style": "dark-monitoring",
+      "viewport": "desktop",
+      "problems": [],
+      "dataSha256": "e10490005734291642563c2fe0a58d7c1329f991fd496fdc80dce2b9e8ce4fe3",
+      "selected": {
+        "map": {
+          "left": 31,
+          "top": 231,
+          "right": 1077,
+          "bottom": 845,
+          "width": 1046,
+          "height": 614
+        },
+        "sheet": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0
+        },
+        "frame": {
+          "left": 179,
+          "top": 516,
+          "right": 483,
+          "bottom": 601,
+          "width": 304,
+          "height": 85
+        },
+        "close": {
+          "left": 451,
+          "top": 516,
+          "right": 483,
+          "bottom": 548,
+          "width": 32,
+          "height": 32
+        },
+        "marker": {
+          "left": 320,
+          "top": 618,
+          "right": 342,
+          "bottom": 640,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 311,
+          "top": 600,
+          "right": 351,
+          "bottom": 620,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 269.9140625,
+            "right": 380.0859375,
+            "top": 587,
+            "bottom": 605,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 430.2734375,
+            "right": 503.7265625,
+            "top": 396,
+            "bottom": 414,
+            "text": "临江路集散点",
+            "tier": 1,
+            "siteId": "S02"
+          },
+          {
+            "left": 517.3984375,
+            "right": 578.6015625,
+            "top": 506,
+            "bottom": 524,
+            "text": "旧仓里驿站",
+            "tier": 1,
+            "siteId": "S03"
+          },
+          {
+            "left": 566.15625,
+            "right": 651.84375,
+            "top": 587,
+            "bottom": 605,
+            "text": "江淮大道配送站",
+            "tier": 1,
+            "siteId": "S04"
+          },
+          {
+            "left": 704.2734375,
+            "right": 777.7265625,
+            "top": 396,
+            "bottom": 414,
+            "text": "东圩里集散点",
+            "tier": 1,
+            "siteId": "S05"
+          },
+          {
+            "left": 369.2734375,
+            "right": 442.7265625,
+            "top": 669,
+            "bottom": 687,
+            "text": "纺织新村驿站",
+            "tier": 1,
+            "siteId": "S06"
+          },
+          {
+            "left": 491.2734375,
+            "right": 564.7265625,
+            "top": 324,
+            "bottom": 342,
+            "text": "沿河路配送站",
+            "tier": 1,
+            "siteId": "S07"
+          },
+          {
+            "left": 734.2734375,
+            "right": 807.7265625,
+            "top": 506,
+            "bottom": 524,
+            "text": "三多里配送站",
+            "tier": 1,
+            "siteId": "S09"
+          },
+          {
+            "left": 328.2734375,
+            "right": 401.7265625,
+            "top": 497,
+            "bottom": 515,
+            "text": "兴仁里集散点",
+            "tier": 1,
+            "siteId": "S10"
+          },
+          {
+            "left": 552.2734375,
+            "right": 625.7265625,
+            "top": 697,
+            "bottom": 715,
+            "text": "小学路口驿站",
+            "tier": 1,
+            "siteId": "S11"
+          },
+          {
+            "left": 663.2734375,
+            "right": 736.7265625,
+            "top": 324,
+            "bottom": 342,
+            "text": "新港河配送站",
+            "tier": 1,
+            "siteId": "S12"
+          },
+          {
+            "left": 423.078125,
+            "right": 470.921875,
+            "top": 360.375,
+            "bottom": 377.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 672.0546875,
+            "right": 707.9453125,
+            "top": 660.375,
+            "bottom": 677.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 459.0546875,
+            "right": 494.9453125,
+            "top": 488.375,
+            "bottom": 505.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 368.0546875,
+            "right": 403.9453125,
+            "top": 388.375,
+            "bottom": 405.625,
+            "text": "旧仓里",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 611.0546875,
+            "right": 646.9453125,
+            "top": 369.375,
+            "bottom": 386.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "dark-monitoring",
+        "expanded": "true"
+      },
+      "switched": {
+        "map": {
+          "left": 31,
+          "top": 231,
+          "right": 1077,
+          "bottom": 845,
+          "width": 1046,
+          "height": 614
+        },
+        "sheet": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "width": 0,
+          "height": 0
+        },
+        "frame": {
+          "left": 179,
+          "top": 506.625,
+          "right": 483,
+          "bottom": 601,
+          "width": 304,
+          "height": 94.375
+        },
+        "close": {
+          "left": 451,
+          "top": 506.625,
+          "right": 483,
+          "bottom": 538.625,
+          "width": 32,
+          "height": 32
+        },
+        "marker": {
+          "left": 320,
+          "top": 618,
+          "right": 342,
+          "bottom": 640,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 311,
+          "top": 600,
+          "right": 351,
+          "bottom": 620,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 278.5390625,
+            "right": 371.4609375,
+            "top": 588.75,
+            "bottom": 606,
+            "text": "江岸路综合配送中",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 432.1484375,
+            "right": 501.8515625,
+            "top": 397.75,
+            "bottom": 415,
+            "text": "临江路集散点",
+            "tier": 1,
+            "siteId": "S02"
+          },
+          {
+            "left": 568.34375,
+            "right": 649.65625,
+            "top": 588.75,
+            "bottom": 606,
+            "text": "江淮大道配送站",
+            "tier": 1,
+            "siteId": "S04"
+          },
+          {
+            "left": 493.1484375,
+            "right": 562.8515625,
+            "top": 325.75,
+            "bottom": 343,
+            "text": "沿河路配送站",
+            "tier": 1,
+            "siteId": "S07"
+          },
+          {
+            "left": 736.1484375,
+            "right": 805.8515625,
+            "top": 507.75,
+            "bottom": 525,
+            "text": "三多里配送站",
+            "tier": 1,
+            "siteId": "S09"
+          },
+          {
+            "left": 665.1484375,
+            "right": 734.8515625,
+            "top": 325.75,
+            "bottom": 343,
+            "text": "新港河配送站",
+            "tier": 1,
+            "siteId": "S12"
+          },
+          {
+            "left": 423.5390625,
+            "right": 470.4609375,
+            "top": 360.375,
+            "bottom": 377.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 672.3984375,
+            "right": 707.6015625,
+            "top": 660.375,
+            "bottom": 677.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 459.3984375,
+            "right": 494.6015625,
+            "top": 488.375,
+            "bottom": 505.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 368.3984375,
+            "right": 403.6015625,
+            "top": 388.375,
+            "bottom": 405.625,
+            "text": "旧仓里",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 611.3984375,
+            "right": 646.6015625,
+            "top": 369.375,
+            "bottom": 386.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "light-operations",
+        "expanded": "true"
+      }
+    },
+    {
+      "style": "light-operations",
+      "viewport": "mobile-320",
+      "problems": [],
+      "dataSha256": "e10490005734291642563c2fe0a58d7c1329f991fd496fdc80dce2b9e8ce4fe3",
+      "selected": {
+        "map": {
+          "left": 9,
+          "top": 168,
+          "right": 311,
+          "bottom": 697,
+          "width": 302,
+          "height": 529
+        },
+        "sheet": {
+          "left": 9,
+          "top": 648,
+          "right": 311,
+          "bottom": 697,
+          "width": 302,
+          "height": 49
+        },
+        "frame": {
+          "left": 17,
+          "top": 326.625,
+          "right": 260,
+          "bottom": 442,
+          "width": 243,
+          "height": 115.375
+        },
+        "close": {
+          "left": 216,
+          "top": 326.625,
+          "right": 260,
+          "bottom": 370.625,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 128,
+          "top": 459,
+          "right": 150,
+          "bottom": 481,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 118.5,
+          "top": 441,
+          "right": 158.5,
+          "bottom": 461,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 86.5390625,
+            "right": 179.4609375,
+            "top": 438.75,
+            "bottom": 456,
+            "text": "江岸路综合配送中",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 212.34375,
+            "right": 293.65625,
+            "top": 438.75,
+            "bottom": 456,
+            "text": "江淮大道配送站",
+            "tier": 1,
+            "siteId": "S04"
+          },
+          {
+            "left": 160.5390625,
+            "right": 207.4609375,
+            "top": 349.375,
+            "bottom": 366.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 269.3984375,
+            "right": 304.6015625,
+            "top": 475.375,
+            "bottom": 492.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 179.3984375,
+            "right": 214.6015625,
+            "top": 403.375,
+            "bottom": 420.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 243.3984375,
+            "right": 278.6015625,
+            "top": 353.375,
+            "bottom": 370.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "light-operations",
+        "expanded": "false"
+      },
+      "expanded": {
+        "map": {
+          "left": 9,
+          "top": 168,
+          "right": 311,
+          "bottom": 697,
+          "width": 302,
+          "height": 529
+        },
+        "sheet": {
+          "left": 9,
+          "top": 458.953125,
+          "right": 311,
+          "bottom": 697,
+          "width": 302,
+          "height": 238.046875
+        },
+        "frame": {
+          "left": 17,
+          "top": 295.625,
+          "right": 260,
+          "bottom": 411,
+          "width": 243,
+          "height": 115.375
+        },
+        "close": {
+          "left": 216,
+          "top": 295.625,
+          "right": 260,
+          "bottom": 339.625,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 128,
+          "top": 428,
+          "right": 150,
+          "bottom": 450,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 118.5,
+          "top": 410,
+          "right": 158.5,
+          "bottom": 430,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 86.5390625,
+            "right": 179.4609375,
+            "top": 407.75,
+            "bottom": 425,
+            "text": "江岸路综合配送中",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 212.34375,
+            "right": 293.65625,
+            "top": 407.75,
+            "bottom": 425,
+            "text": "江淮大道配送站",
+            "tier": 1,
+            "siteId": "S04"
+          },
+          {
+            "left": 160.5390625,
+            "right": 207.4609375,
+            "top": 318.375,
+            "bottom": 335.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 269.3984375,
+            "right": 304.6015625,
+            "top": 444.375,
+            "bottom": 461.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 179.3984375,
+            "right": 214.6015625,
+            "top": 372.375,
+            "bottom": 389.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 243.3984375,
+            "right": 278.6015625,
+            "top": 322.375,
+            "bottom": 339.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "light-operations",
+        "expanded": "true"
+      },
+      "switched": {
+        "map": {
+          "left": 9,
+          "top": 168,
+          "right": 311,
+          "bottom": 697,
+          "width": 302,
+          "height": 529
+        },
+        "sheet": {
+          "left": 9,
+          "top": 458.953125,
+          "right": 311,
+          "bottom": 697,
+          "width": 302,
+          "height": 238.046875
+        },
+        "frame": {
+          "left": 17,
+          "top": 289,
+          "right": 260,
+          "bottom": 410,
+          "width": 243,
+          "height": 121
+        },
+        "close": {
+          "left": 216,
+          "top": 289,
+          "right": 260,
+          "bottom": 333,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 127,
+          "top": 426,
+          "right": 151,
+          "bottom": 450,
+          "width": 24,
+          "height": 24
+        },
+        "tip": {
+          "left": 118.5,
+          "top": 409,
+          "right": 158.5,
+          "bottom": 429,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 73.375,
+            "right": 192.625,
+            "top": 404.25,
+            "bottom": 423,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 160.078125,
+            "right": 207.921875,
+            "top": 317.375,
+            "bottom": 334.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 269.0546875,
+            "right": 304.9453125,
+            "top": 443.375,
+            "bottom": 460.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 207.078125,
+            "right": 254.921875,
+            "top": 421.375,
+            "bottom": 438.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 179.0546875,
+            "right": 214.9453125,
+            "top": 371.375,
+            "bottom": 388.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 243.0546875,
+            "right": 278.9453125,
+            "top": 321.375,
+            "bottom": 338.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 139.078125,
+            "right": 186.921875,
+            "top": 455.375,
+            "bottom": 472.625,
+            "text": "纺织新村",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 128.0546875,
+            "right": 163.9453125,
+            "top": 382.375,
+            "bottom": 399.625,
+            "text": "兴仁里",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 226.0546875,
+            "right": 261.9453125,
+            "top": 470.375,
+            "bottom": 487.625,
+            "text": "小学路",
+            "tier": 2,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "warm-city-guide",
+        "expanded": "true"
+      }
+    },
+    {
+      "style": "warm-city-guide",
+      "viewport": "mobile-320",
+      "problems": [],
+      "dataSha256": "e10490005734291642563c2fe0a58d7c1329f991fd496fdc80dce2b9e8ce4fe3",
+      "selected": {
+        "map": {
+          "left": 9,
+          "top": 168,
+          "right": 311,
+          "bottom": 697,
+          "width": 302,
+          "height": 529
+        },
+        "sheet": {
+          "left": 9,
+          "top": 648,
+          "right": 311,
+          "bottom": 697,
+          "width": 302,
+          "height": 49
+        },
+        "frame": {
+          "left": 17,
+          "top": 317,
+          "right": 260,
+          "bottom": 438,
+          "width": 243,
+          "height": 121
+        },
+        "close": {
+          "left": 216,
+          "top": 317,
+          "right": 260,
+          "bottom": 361,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 127,
+          "top": 458,
+          "right": 151,
+          "bottom": 482,
+          "width": 24,
+          "height": 24
+        },
+        "tip": {
+          "left": 118.5,
+          "top": 437,
+          "right": 158.5,
+          "bottom": 457,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 73.375,
+            "right": 192.625,
+            "top": 436.25,
+            "bottom": 455,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 160.078125,
+            "right": 207.921875,
+            "top": 349.375,
+            "bottom": 366.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 269.0546875,
+            "right": 304.9453125,
+            "top": 475.375,
+            "bottom": 492.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 207.078125,
+            "right": 254.921875,
+            "top": 453.375,
+            "bottom": 470.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 179.0546875,
+            "right": 214.9453125,
+            "top": 403.375,
+            "bottom": 420.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 243.0546875,
+            "right": 278.9453125,
+            "top": 353.375,
+            "bottom": 370.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 139.078125,
+            "right": 186.921875,
+            "top": 487.375,
+            "bottom": 504.625,
+            "text": "纺织新村",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 128.0546875,
+            "right": 163.9453125,
+            "top": 414.375,
+            "bottom": 431.625,
+            "text": "兴仁里",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 226.0546875,
+            "right": 261.9453125,
+            "top": 502.375,
+            "bottom": 519.625,
+            "text": "小学路",
+            "tier": 2,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "warm-city-guide",
+        "expanded": "false"
+      },
+      "expanded": {
+        "map": {
+          "left": 9,
+          "top": 168,
+          "right": 311,
+          "bottom": 697,
+          "width": 302,
+          "height": 529
+        },
+        "sheet": {
+          "left": 9,
+          "top": 458.953125,
+          "right": 311,
+          "bottom": 697,
+          "width": 302,
+          "height": 238.046875
+        },
+        "frame": {
+          "left": 17,
+          "top": 285,
+          "right": 260,
+          "bottom": 406,
+          "width": 243,
+          "height": 121
+        },
+        "close": {
+          "left": 216,
+          "top": 285,
+          "right": 260,
+          "bottom": 329,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 127,
+          "top": 426,
+          "right": 151,
+          "bottom": 450,
+          "width": 24,
+          "height": 24
+        },
+        "tip": {
+          "left": 118.5,
+          "top": 405,
+          "right": 158.5,
+          "bottom": 425,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 73.375,
+            "right": 192.625,
+            "top": 404.25,
+            "bottom": 423,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 160.078125,
+            "right": 207.921875,
+            "top": 317.375,
+            "bottom": 334.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 269.0546875,
+            "right": 304.9453125,
+            "top": 443.375,
+            "bottom": 460.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 207.078125,
+            "right": 254.921875,
+            "top": 421.375,
+            "bottom": 438.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 179.0546875,
+            "right": 214.9453125,
+            "top": 371.375,
+            "bottom": 388.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 243.0546875,
+            "right": 278.9453125,
+            "top": 321.375,
+            "bottom": 338.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 139.078125,
+            "right": 186.921875,
+            "top": 455.375,
+            "bottom": 472.625,
+            "text": "纺织新村",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 128.0546875,
+            "right": 163.9453125,
+            "top": 382.375,
+            "bottom": 399.625,
+            "text": "兴仁里",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 226.0546875,
+            "right": 261.9453125,
+            "top": 470.375,
+            "bottom": 487.625,
+            "text": "小学路",
+            "tier": 2,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "warm-city-guide",
+        "expanded": "true"
+      },
+      "switched": {
+        "map": {
+          "left": 9,
+          "top": 168,
+          "right": 311,
+          "bottom": 697,
+          "width": 302,
+          "height": 529
+        },
+        "sheet": {
+          "left": 9,
+          "top": 458.953125,
+          "right": 311,
+          "bottom": 697,
+          "width": 302,
+          "height": 238.046875
+        },
+        "frame": {
+          "left": 17,
+          "top": 277,
+          "right": 260,
+          "bottom": 406,
+          "width": 243,
+          "height": 129
+        },
+        "close": {
+          "left": 216,
+          "top": 277,
+          "right": 260,
+          "bottom": 321,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 128,
+          "top": 427,
+          "right": 150,
+          "bottom": 449,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 118.5,
+          "top": 405,
+          "right": 158.5,
+          "bottom": 425,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 77.9140625,
+            "right": 188.0859375,
+            "top": 405,
+            "bottom": 423,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 160.078125,
+            "right": 207.921875,
+            "top": 317.375,
+            "bottom": 334.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 269.0546875,
+            "right": 304.9453125,
+            "top": 443.375,
+            "bottom": 460.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 207.078125,
+            "right": 254.921875,
+            "top": 421.375,
+            "bottom": 438.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 179.0546875,
+            "right": 214.9453125,
+            "top": 371.375,
+            "bottom": 388.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 243.0546875,
+            "right": 278.9453125,
+            "top": 321.375,
+            "bottom": 338.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "dark-monitoring",
+        "expanded": "true"
+      }
+    },
+    {
+      "style": "dark-monitoring",
+      "viewport": "mobile-320",
+      "problems": [],
+      "dataSha256": "e10490005734291642563c2fe0a58d7c1329f991fd496fdc80dce2b9e8ce4fe3",
+      "selected": {
+        "map": {
+          "left": 9,
+          "top": 168,
+          "right": 311,
+          "bottom": 697,
+          "width": 302,
+          "height": 529
+        },
+        "sheet": {
+          "left": 9,
+          "top": 648,
+          "right": 311,
+          "bottom": 697,
+          "width": 302,
+          "height": 49
+        },
+        "frame": {
+          "left": 17,
+          "top": 313,
+          "right": 260,
+          "bottom": 442,
+          "width": 243,
+          "height": 129
+        },
+        "close": {
+          "left": 216,
+          "top": 313,
+          "right": 260,
+          "bottom": 357,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 128,
+          "top": 459,
+          "right": 150,
+          "bottom": 481,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 118.5,
+          "top": 441,
+          "right": 158.5,
+          "bottom": 461,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 77.9140625,
+            "right": 188.0859375,
+            "top": 437,
+            "bottom": 455,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 160.078125,
+            "right": 207.921875,
+            "top": 349.375,
+            "bottom": 366.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 269.0546875,
+            "right": 304.9453125,
+            "top": 475.375,
+            "bottom": 492.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 207.078125,
+            "right": 254.921875,
+            "top": 453.375,
+            "bottom": 470.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 179.0546875,
+            "right": 214.9453125,
+            "top": 403.375,
+            "bottom": 420.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 243.0546875,
+            "right": 278.9453125,
+            "top": 353.375,
+            "bottom": 370.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "dark-monitoring",
+        "expanded": "false"
+      },
+      "expanded": {
+        "map": {
+          "left": 9,
+          "top": 168,
+          "right": 311,
+          "bottom": 697,
+          "width": 302,
+          "height": 529
+        },
+        "sheet": {
+          "left": 9,
+          "top": 458.953125,
+          "right": 311,
+          "bottom": 697,
+          "width": 302,
+          "height": 238.046875
+        },
+        "frame": {
+          "left": 17,
+          "top": 282,
+          "right": 260,
+          "bottom": 411,
+          "width": 243,
+          "height": 129
+        },
+        "close": {
+          "left": 216,
+          "top": 282,
+          "right": 260,
+          "bottom": 326,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 128,
+          "top": 428,
+          "right": 150,
+          "bottom": 450,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 118.5,
+          "top": 410,
+          "right": 158.5,
+          "bottom": 430,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 77.9140625,
+            "right": 188.0859375,
+            "top": 406,
+            "bottom": 424,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 160.078125,
+            "right": 207.921875,
+            "top": 318.375,
+            "bottom": 335.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 269.0546875,
+            "right": 304.9453125,
+            "top": 444.375,
+            "bottom": 461.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 207.078125,
+            "right": 254.921875,
+            "top": 422.375,
+            "bottom": 439.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 179.0546875,
+            "right": 214.9453125,
+            "top": 372.375,
+            "bottom": 389.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 243.0546875,
+            "right": 278.9453125,
+            "top": 322.375,
+            "bottom": 339.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "dark-monitoring",
+        "expanded": "true"
+      },
+      "switched": {
+        "map": {
+          "left": 9,
+          "top": 168,
+          "right": 311,
+          "bottom": 697,
+          "width": 302,
+          "height": 529
+        },
+        "sheet": {
+          "left": 9,
+          "top": 458.953125,
+          "right": 311,
+          "bottom": 697,
+          "width": 302,
+          "height": 238.046875
+        },
+        "frame": {
+          "left": 17,
+          "top": 295.625,
+          "right": 260,
+          "bottom": 411,
+          "width": 243,
+          "height": 115.375
+        },
+        "close": {
+          "left": 216,
+          "top": 295.625,
+          "right": 260,
+          "bottom": 339.625,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 128,
+          "top": 428,
+          "right": 150,
+          "bottom": 450,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 118.5,
+          "top": 410,
+          "right": 158.5,
+          "bottom": 430,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 86.5390625,
+            "right": 179.4609375,
+            "top": 407.75,
+            "bottom": 425,
+            "text": "江岸路综合配送中",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 212.34375,
+            "right": 293.65625,
+            "top": 407.75,
+            "bottom": 425,
+            "text": "江淮大道配送站",
+            "tier": 1,
+            "siteId": "S04"
+          },
+          {
+            "left": 160.5390625,
+            "right": 207.4609375,
+            "top": 318.375,
+            "bottom": 335.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 269.3984375,
+            "right": 304.6015625,
+            "top": 444.375,
+            "bottom": 461.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 179.3984375,
+            "right": 214.6015625,
+            "top": 372.375,
+            "bottom": 389.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 243.3984375,
+            "right": 278.6015625,
+            "top": 322.375,
+            "bottom": 339.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "light-operations",
+        "expanded": "true"
+      }
+    },
+    {
+      "style": "light-operations",
+      "viewport": "mobile-375",
+      "problems": [],
+      "dataSha256": "e10490005734291642563c2fe0a58d7c1329f991fd496fdc80dce2b9e8ce4fe3",
+      "selected": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 362,
+          "bottom": 769,
+          "width": 349,
+          "height": 601
+        },
+        "sheet": {
+          "left": 13,
+          "top": 720,
+          "right": 362,
+          "bottom": 769,
+          "width": 349,
+          "height": 49
+        },
+        "frame": {
+          "left": 21,
+          "top": 370.625,
+          "right": 319,
+          "bottom": 486,
+          "width": 298,
+          "height": 115.375
+        },
+        "close": {
+          "left": 275,
+          "top": 370.625,
+          "right": 319,
+          "bottom": 414.625,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 159,
+          "top": 503,
+          "right": 181,
+          "bottom": 525,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 150,
+          "top": 485,
+          "right": 190,
+          "bottom": 505,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 117.5390625,
+            "right": 210.4609375,
+            "top": 481.75,
+            "bottom": 499,
+            "text": "江岸路综合配送中",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 265.34375,
+            "right": 346.65625,
+            "top": 481.75,
+            "bottom": 499,
+            "text": "江淮大道配送站",
+            "tier": 1,
+            "siteId": "S04"
+          },
+          {
+            "left": 201.5390625,
+            "right": 248.4609375,
+            "top": 373.375,
+            "bottom": 390.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 222.3984375,
+            "right": 257.6015625,
+            "top": 437.375,
+            "bottom": 454.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 298.3984375,
+            "right": 333.6015625,
+            "top": 378.375,
+            "bottom": 395.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "light-operations",
+        "expanded": "false"
+      },
+      "expanded": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 362,
+          "bottom": 769,
+          "width": 349,
+          "height": 601
+        },
+        "sheet": {
+          "left": 13,
+          "top": 498.5625,
+          "right": 362,
+          "bottom": 769,
+          "width": 349,
+          "height": 270.4375
+        },
+        "frame": {
+          "left": 21,
+          "top": 335.625,
+          "right": 319,
+          "bottom": 451,
+          "width": 298,
+          "height": 115.375
+        },
+        "close": {
+          "left": 275,
+          "top": 335.625,
+          "right": 319,
+          "bottom": 379.625,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 159,
+          "top": 468,
+          "right": 181,
+          "bottom": 490,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 150,
+          "top": 450,
+          "right": 190,
+          "bottom": 470,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 117.5390625,
+            "right": 210.4609375,
+            "top": 446.75,
+            "bottom": 464,
+            "text": "江岸路综合配送中",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 265.34375,
+            "right": 346.65625,
+            "top": 446.75,
+            "bottom": 464,
+            "text": "江淮大道配送站",
+            "tier": 1,
+            "siteId": "S04"
+          },
+          {
+            "left": 201.5390625,
+            "right": 248.4609375,
+            "top": 338.375,
+            "bottom": 355.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 222.3984375,
+            "right": 257.6015625,
+            "top": 402.375,
+            "bottom": 419.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 298.3984375,
+            "right": 333.6015625,
+            "top": 343.375,
+            "bottom": 360.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "light-operations",
+        "expanded": "true"
+      },
+      "switched": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 362,
+          "bottom": 769,
+          "width": 349,
+          "height": 601
+        },
+        "sheet": {
+          "left": 13,
+          "top": 498.5625,
+          "right": 362,
+          "bottom": 769,
+          "width": 349,
+          "height": 270.4375
+        },
+        "frame": {
+          "left": 21,
+          "top": 329,
+          "right": 319,
+          "bottom": 450,
+          "width": 298,
+          "height": 121
+        },
+        "close": {
+          "left": 275,
+          "top": 329,
+          "right": 319,
+          "bottom": 373,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 158,
+          "top": 466,
+          "right": 182,
+          "bottom": 490,
+          "width": 24,
+          "height": 24
+        },
+        "tip": {
+          "left": 150,
+          "top": 449,
+          "right": 190,
+          "bottom": 469,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 104.375,
+            "right": 223.625,
+            "top": 443.25,
+            "bottom": 462,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 201.078125,
+            "right": 248.921875,
+            "top": 337.375,
+            "bottom": 354.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 257.078125,
+            "right": 304.921875,
+            "top": 460.375,
+            "bottom": 477.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 222.0546875,
+            "right": 257.9453125,
+            "top": 401.375,
+            "bottom": 418.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 298.0546875,
+            "right": 333.9453125,
+            "top": 342.375,
+            "bottom": 359.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 175.078125,
+            "right": 222.921875,
+            "top": 501.375,
+            "bottom": 518.625,
+            "text": "纺织新村",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 319.0390625,
+            "right": 342.9609375,
+            "top": 510.375,
+            "bottom": 527.625,
+            "text": "南苑",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 161.0546875,
+            "right": 196.9453125,
+            "top": 414.375,
+            "bottom": 431.625,
+            "text": "兴仁里",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 278.0546875,
+            "right": 313.9453125,
+            "top": 519.375,
+            "bottom": 536.625,
+            "text": "小学路",
+            "tier": 2,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "warm-city-guide",
+        "expanded": "true"
+      }
+    },
+    {
+      "style": "warm-city-guide",
+      "viewport": "mobile-375",
+      "problems": [],
+      "dataSha256": "e10490005734291642563c2fe0a58d7c1329f991fd496fdc80dce2b9e8ce4fe3",
+      "selected": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 362,
+          "bottom": 769,
+          "width": 349,
+          "height": 601
+        },
+        "sheet": {
+          "left": 13,
+          "top": 720,
+          "right": 362,
+          "bottom": 769,
+          "width": 349,
+          "height": 49
+        },
+        "frame": {
+          "left": 21,
+          "top": 361,
+          "right": 319,
+          "bottom": 482,
+          "width": 298,
+          "height": 121
+        },
+        "close": {
+          "left": 275,
+          "top": 361,
+          "right": 319,
+          "bottom": 405,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 158,
+          "top": 502,
+          "right": 182,
+          "bottom": 526,
+          "width": 24,
+          "height": 24
+        },
+        "tip": {
+          "left": 150,
+          "top": 481,
+          "right": 190,
+          "bottom": 501,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 104.375,
+            "right": 223.625,
+            "top": 479.25,
+            "bottom": 498,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 201.078125,
+            "right": 248.921875,
+            "top": 373.375,
+            "bottom": 390.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 257.078125,
+            "right": 304.921875,
+            "top": 496.375,
+            "bottom": 513.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 222.0546875,
+            "right": 257.9453125,
+            "top": 437.375,
+            "bottom": 454.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 298.0546875,
+            "right": 333.9453125,
+            "top": 378.375,
+            "bottom": 395.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 175.078125,
+            "right": 222.921875,
+            "top": 537.375,
+            "bottom": 554.625,
+            "text": "纺织新村",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 319.0390625,
+            "right": 342.9609375,
+            "top": 546.375,
+            "bottom": 563.625,
+            "text": "南苑",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 161.0546875,
+            "right": 196.9453125,
+            "top": 450.375,
+            "bottom": 467.625,
+            "text": "兴仁里",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 278.0546875,
+            "right": 313.9453125,
+            "top": 555.375,
+            "bottom": 572.625,
+            "text": "小学路",
+            "tier": 2,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "warm-city-guide",
+        "expanded": "false"
+      },
+      "expanded": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 362,
+          "bottom": 769,
+          "width": 349,
+          "height": 601
+        },
+        "sheet": {
+          "left": 13,
+          "top": 498.5625,
+          "right": 362,
+          "bottom": 769,
+          "width": 349,
+          "height": 270.4375
+        },
+        "frame": {
+          "left": 21,
+          "top": 325,
+          "right": 319,
+          "bottom": 446,
+          "width": 298,
+          "height": 121
+        },
+        "close": {
+          "left": 275,
+          "top": 325,
+          "right": 319,
+          "bottom": 369,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 158,
+          "top": 466,
+          "right": 182,
+          "bottom": 490,
+          "width": 24,
+          "height": 24
+        },
+        "tip": {
+          "left": 150,
+          "top": 445,
+          "right": 190,
+          "bottom": 465,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 104.375,
+            "right": 223.625,
+            "top": 443.25,
+            "bottom": 462,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 201.078125,
+            "right": 248.921875,
+            "top": 337.375,
+            "bottom": 354.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 257.078125,
+            "right": 304.921875,
+            "top": 460.375,
+            "bottom": 477.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 222.0546875,
+            "right": 257.9453125,
+            "top": 401.375,
+            "bottom": 418.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 298.0546875,
+            "right": 333.9453125,
+            "top": 342.375,
+            "bottom": 359.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 175.078125,
+            "right": 222.921875,
+            "top": 501.375,
+            "bottom": 518.625,
+            "text": "纺织新村",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 319.0390625,
+            "right": 342.9609375,
+            "top": 510.375,
+            "bottom": 527.625,
+            "text": "南苑",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 161.0546875,
+            "right": 196.9453125,
+            "top": 414.375,
+            "bottom": 431.625,
+            "text": "兴仁里",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 278.0546875,
+            "right": 313.9453125,
+            "top": 519.375,
+            "bottom": 536.625,
+            "text": "小学路",
+            "tier": 2,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "warm-city-guide",
+        "expanded": "true"
+      },
+      "switched": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 362,
+          "bottom": 769,
+          "width": 349,
+          "height": 601
+        },
+        "sheet": {
+          "left": 13,
+          "top": 498.5625,
+          "right": 362,
+          "bottom": 769,
+          "width": 349,
+          "height": 270.4375
+        },
+        "frame": {
+          "left": 21,
+          "top": 340,
+          "right": 319,
+          "bottom": 446,
+          "width": 298,
+          "height": 106
+        },
+        "close": {
+          "left": 275,
+          "top": 340,
+          "right": 319,
+          "bottom": 384,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 159,
+          "top": 467,
+          "right": 181,
+          "bottom": 489,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 150,
+          "top": 445,
+          "right": 190,
+          "bottom": 465,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 108.9140625,
+            "right": 219.0859375,
+            "top": 444,
+            "bottom": 462,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 201.078125,
+            "right": 248.921875,
+            "top": 337.375,
+            "bottom": 354.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 257.078125,
+            "right": 304.921875,
+            "top": 460.375,
+            "bottom": 477.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 222.0546875,
+            "right": 257.9453125,
+            "top": 401.375,
+            "bottom": 418.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 298.0546875,
+            "right": 333.9453125,
+            "top": 342.375,
+            "bottom": 359.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "dark-monitoring",
+        "expanded": "true"
+      }
+    },
+    {
+      "style": "dark-monitoring",
+      "viewport": "mobile-375",
+      "problems": [],
+      "dataSha256": "e10490005734291642563c2fe0a58d7c1329f991fd496fdc80dce2b9e8ce4fe3",
+      "selected": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 362,
+          "bottom": 769,
+          "width": 349,
+          "height": 601
+        },
+        "sheet": {
+          "left": 13,
+          "top": 720,
+          "right": 362,
+          "bottom": 769,
+          "width": 349,
+          "height": 49
+        },
+        "frame": {
+          "left": 21,
+          "top": 380,
+          "right": 319,
+          "bottom": 486,
+          "width": 298,
+          "height": 106
+        },
+        "close": {
+          "left": 275,
+          "top": 380,
+          "right": 319,
+          "bottom": 424,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 159,
+          "top": 503,
+          "right": 181,
+          "bottom": 525,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 150,
+          "top": 485,
+          "right": 190,
+          "bottom": 505,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 108.9140625,
+            "right": 219.0859375,
+            "top": 480,
+            "bottom": 498,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 201.078125,
+            "right": 248.921875,
+            "top": 373.375,
+            "bottom": 390.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 257.078125,
+            "right": 304.921875,
+            "top": 496.375,
+            "bottom": 513.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 222.0546875,
+            "right": 257.9453125,
+            "top": 437.375,
+            "bottom": 454.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 298.0546875,
+            "right": 333.9453125,
+            "top": 378.375,
+            "bottom": 395.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "dark-monitoring",
+        "expanded": "false"
+      },
+      "expanded": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 362,
+          "bottom": 769,
+          "width": 349,
+          "height": 601
+        },
+        "sheet": {
+          "left": 13,
+          "top": 498.5625,
+          "right": 362,
+          "bottom": 769,
+          "width": 349,
+          "height": 270.4375
+        },
+        "frame": {
+          "left": 21,
+          "top": 345,
+          "right": 319,
+          "bottom": 451,
+          "width": 298,
+          "height": 106
+        },
+        "close": {
+          "left": 275,
+          "top": 345,
+          "right": 319,
+          "bottom": 389,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 159,
+          "top": 468,
+          "right": 181,
+          "bottom": 490,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 150,
+          "top": 450,
+          "right": 190,
+          "bottom": 470,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 108.9140625,
+            "right": 219.0859375,
+            "top": 445,
+            "bottom": 463,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 201.078125,
+            "right": 248.921875,
+            "top": 338.375,
+            "bottom": 355.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 257.078125,
+            "right": 304.921875,
+            "top": 461.375,
+            "bottom": 478.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 222.0546875,
+            "right": 257.9453125,
+            "top": 402.375,
+            "bottom": 419.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 298.0546875,
+            "right": 333.9453125,
+            "top": 343.375,
+            "bottom": 360.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "dark-monitoring",
+        "expanded": "true"
+      },
+      "switched": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 362,
+          "bottom": 769,
+          "width": 349,
+          "height": 601
+        },
+        "sheet": {
+          "left": 13,
+          "top": 498.5625,
+          "right": 362,
+          "bottom": 769,
+          "width": 349,
+          "height": 270.4375
+        },
+        "frame": {
+          "left": 21,
+          "top": 335.625,
+          "right": 319,
+          "bottom": 451,
+          "width": 298,
+          "height": 115.375
+        },
+        "close": {
+          "left": 275,
+          "top": 335.625,
+          "right": 319,
+          "bottom": 379.625,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 159,
+          "top": 468,
+          "right": 181,
+          "bottom": 490,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 150,
+          "top": 450,
+          "right": 190,
+          "bottom": 470,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 117.5390625,
+            "right": 210.4609375,
+            "top": 446.75,
+            "bottom": 464,
+            "text": "江岸路综合配送中",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 265.34375,
+            "right": 346.65625,
+            "top": 446.75,
+            "bottom": 464,
+            "text": "江淮大道配送站",
+            "tier": 1,
+            "siteId": "S04"
+          },
+          {
+            "left": 201.5390625,
+            "right": 248.4609375,
+            "top": 338.375,
+            "bottom": 355.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 222.3984375,
+            "right": 257.6015625,
+            "top": 402.375,
+            "bottom": 419.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 298.3984375,
+            "right": 333.6015625,
+            "top": 343.375,
+            "bottom": 360.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "light-operations",
+        "expanded": "true"
+      }
+    },
+    {
+      "style": "light-operations",
+      "viewport": "mobile-390",
+      "problems": [],
+      "dataSha256": "e10490005734291642563c2fe0a58d7c1329f991fd496fdc80dce2b9e8ce4fe3",
+      "selected": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 377,
+          "bottom": 801,
+          "width": 364,
+          "height": 633
+        },
+        "sheet": {
+          "left": 13,
+          "top": 752,
+          "right": 377,
+          "bottom": 801,
+          "width": 364,
+          "height": 49
+        },
+        "frame": {
+          "left": 21,
+          "top": 407.625,
+          "right": 334,
+          "bottom": 502,
+          "width": 313,
+          "height": 94.375
+        },
+        "close": {
+          "left": 290,
+          "top": 407.625,
+          "right": 334,
+          "bottom": 451.625,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 167,
+          "top": 519,
+          "right": 189,
+          "bottom": 541,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 157.5,
+          "top": 501,
+          "right": 197.5,
+          "bottom": 521,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 125.5390625,
+            "right": 218.4609375,
+            "top": 497.75,
+            "bottom": 515,
+            "text": "江岸路综合配送中",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 273.34375,
+            "right": 354.65625,
+            "top": 497.75,
+            "bottom": 515,
+            "text": "江淮大道配送站",
+            "tier": 1,
+            "siteId": "S04"
+          },
+          {
+            "left": 209.5390625,
+            "right": 256.4609375,
+            "top": 389.375,
+            "bottom": 406.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 337.3984375,
+            "right": 372.6015625,
+            "top": 539.375,
+            "bottom": 556.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 230.3984375,
+            "right": 265.6015625,
+            "top": 453.375,
+            "bottom": 470.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 306.3984375,
+            "right": 341.6015625,
+            "top": 394.375,
+            "bottom": 411.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "light-operations",
+        "expanded": "false"
+      },
+      "expanded": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 377,
+          "bottom": 801,
+          "width": 364,
+          "height": 633
+        },
+        "sheet": {
+          "left": 13,
+          "top": 516.15625,
+          "right": 377,
+          "bottom": 801,
+          "width": 364,
+          "height": 284.84375
+        },
+        "frame": {
+          "left": 21,
+          "top": 374.625,
+          "right": 334,
+          "bottom": 469,
+          "width": 313,
+          "height": 94.375
+        },
+        "close": {
+          "left": 290,
+          "top": 374.625,
+          "right": 334,
+          "bottom": 418.625,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 167,
+          "top": 486,
+          "right": 189,
+          "bottom": 508,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 157.5,
+          "top": 468,
+          "right": 197.5,
+          "bottom": 488,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 125.5390625,
+            "right": 218.4609375,
+            "top": 464.75,
+            "bottom": 482,
+            "text": "江岸路综合配送中",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 273.34375,
+            "right": 354.65625,
+            "top": 464.75,
+            "bottom": 482,
+            "text": "江淮大道配送站",
+            "tier": 1,
+            "siteId": "S04"
+          },
+          {
+            "left": 209.5390625,
+            "right": 256.4609375,
+            "top": 356.375,
+            "bottom": 373.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 337.3984375,
+            "right": 372.6015625,
+            "top": 506.375,
+            "bottom": 523.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 230.3984375,
+            "right": 265.6015625,
+            "top": 420.375,
+            "bottom": 437.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 306.3984375,
+            "right": 341.6015625,
+            "top": 361.375,
+            "bottom": 378.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "light-operations",
+        "expanded": "true"
+      },
+      "switched": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 377,
+          "bottom": 801,
+          "width": 364,
+          "height": 633
+        },
+        "sheet": {
+          "left": 13,
+          "top": 516.15625,
+          "right": 377,
+          "bottom": 801,
+          "width": 364,
+          "height": 284.84375
+        },
+        "frame": {
+          "left": 21,
+          "top": 368,
+          "right": 334,
+          "bottom": 468,
+          "width": 313,
+          "height": 100
+        },
+        "close": {
+          "left": 290,
+          "top": 368,
+          "right": 334,
+          "bottom": 412,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 166,
+          "top": 484,
+          "right": 190,
+          "bottom": 508,
+          "width": 24,
+          "height": 24
+        },
+        "tip": {
+          "left": 157.5,
+          "top": 467,
+          "right": 197.5,
+          "bottom": 487,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 112.375,
+            "right": 231.625,
+            "top": 461.25,
+            "bottom": 480,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 209.078125,
+            "right": 256.921875,
+            "top": 355.375,
+            "bottom": 372.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 337.0546875,
+            "right": 372.9453125,
+            "top": 505.375,
+            "bottom": 522.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 265.078125,
+            "right": 312.921875,
+            "top": 478.375,
+            "bottom": 495.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 230.0546875,
+            "right": 265.9453125,
+            "top": 419.375,
+            "bottom": 436.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 306.0546875,
+            "right": 341.9453125,
+            "top": 360.375,
+            "bottom": 377.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 183.078125,
+            "right": 230.921875,
+            "top": 519.375,
+            "bottom": 536.625,
+            "text": "纺织新村",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 327.0390625,
+            "right": 350.9609375,
+            "top": 528.375,
+            "bottom": 545.625,
+            "text": "南苑",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 169.0546875,
+            "right": 204.9453125,
+            "top": 432.375,
+            "bottom": 449.625,
+            "text": "兴仁里",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 286.0546875,
+            "right": 321.9453125,
+            "top": 537.375,
+            "bottom": 554.625,
+            "text": "小学路",
+            "tier": 2,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "warm-city-guide",
+        "expanded": "true"
+      }
+    },
+    {
+      "style": "warm-city-guide",
+      "viewport": "mobile-390",
+      "problems": [],
+      "dataSha256": "e10490005734291642563c2fe0a58d7c1329f991fd496fdc80dce2b9e8ce4fe3",
+      "selected": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 377,
+          "bottom": 801,
+          "width": 364,
+          "height": 633
+        },
+        "sheet": {
+          "left": 13,
+          "top": 752,
+          "right": 377,
+          "bottom": 801,
+          "width": 364,
+          "height": 49
+        },
+        "frame": {
+          "left": 21,
+          "top": 398,
+          "right": 334,
+          "bottom": 498,
+          "width": 313,
+          "height": 100
+        },
+        "close": {
+          "left": 290,
+          "top": 398,
+          "right": 334,
+          "bottom": 442,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 166,
+          "top": 518,
+          "right": 190,
+          "bottom": 542,
+          "width": 24,
+          "height": 24
+        },
+        "tip": {
+          "left": 157.5,
+          "top": 497,
+          "right": 197.5,
+          "bottom": 517,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 112.375,
+            "right": 231.625,
+            "top": 495.25,
+            "bottom": 514,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 209.078125,
+            "right": 256.921875,
+            "top": 389.375,
+            "bottom": 406.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 337.0546875,
+            "right": 372.9453125,
+            "top": 539.375,
+            "bottom": 556.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 265.078125,
+            "right": 312.921875,
+            "top": 512.375,
+            "bottom": 529.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 230.0546875,
+            "right": 265.9453125,
+            "top": 453.375,
+            "bottom": 470.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 306.0546875,
+            "right": 341.9453125,
+            "top": 394.375,
+            "bottom": 411.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 183.078125,
+            "right": 230.921875,
+            "top": 553.375,
+            "bottom": 570.625,
+            "text": "纺织新村",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 327.0390625,
+            "right": 350.9609375,
+            "top": 562.375,
+            "bottom": 579.625,
+            "text": "南苑",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 169.0546875,
+            "right": 204.9453125,
+            "top": 466.375,
+            "bottom": 483.625,
+            "text": "兴仁里",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 286.0546875,
+            "right": 321.9453125,
+            "top": 571.375,
+            "bottom": 588.625,
+            "text": "小学路",
+            "tier": 2,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "warm-city-guide",
+        "expanded": "false"
+      },
+      "expanded": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 377,
+          "bottom": 801,
+          "width": 364,
+          "height": 633
+        },
+        "sheet": {
+          "left": 13,
+          "top": 516.15625,
+          "right": 377,
+          "bottom": 801,
+          "width": 364,
+          "height": 284.84375
+        },
+        "frame": {
+          "left": 21,
+          "top": 364,
+          "right": 334,
+          "bottom": 464,
+          "width": 313,
+          "height": 100
+        },
+        "close": {
+          "left": 290,
+          "top": 364,
+          "right": 334,
+          "bottom": 408,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 166,
+          "top": 484,
+          "right": 190,
+          "bottom": 508,
+          "width": 24,
+          "height": 24
+        },
+        "tip": {
+          "left": 157.5,
+          "top": 463,
+          "right": 197.5,
+          "bottom": 483,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 112.375,
+            "right": 231.625,
+            "top": 461.25,
+            "bottom": 480,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 209.078125,
+            "right": 256.921875,
+            "top": 355.375,
+            "bottom": 372.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 337.0546875,
+            "right": 372.9453125,
+            "top": 505.375,
+            "bottom": 522.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 265.078125,
+            "right": 312.921875,
+            "top": 478.375,
+            "bottom": 495.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 230.0546875,
+            "right": 265.9453125,
+            "top": 419.375,
+            "bottom": 436.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 306.0546875,
+            "right": 341.9453125,
+            "top": 360.375,
+            "bottom": 377.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 183.078125,
+            "right": 230.921875,
+            "top": 519.375,
+            "bottom": 536.625,
+            "text": "纺织新村",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 327.0390625,
+            "right": 350.9609375,
+            "top": 528.375,
+            "bottom": 545.625,
+            "text": "南苑",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 169.0546875,
+            "right": 204.9453125,
+            "top": 432.375,
+            "bottom": 449.625,
+            "text": "兴仁里",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 286.0546875,
+            "right": 321.9453125,
+            "top": 537.375,
+            "bottom": 554.625,
+            "text": "小学路",
+            "tier": 2,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "warm-city-guide",
+        "expanded": "true"
+      },
+      "switched": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 377,
+          "bottom": 801,
+          "width": 364,
+          "height": 633
+        },
+        "sheet": {
+          "left": 13,
+          "top": 516.15625,
+          "right": 377,
+          "bottom": 801,
+          "width": 364,
+          "height": 284.84375
+        },
+        "frame": {
+          "left": 21,
+          "top": 379,
+          "right": 334,
+          "bottom": 464,
+          "width": 313,
+          "height": 85
+        },
+        "close": {
+          "left": 290,
+          "top": 379,
+          "right": 334,
+          "bottom": 423,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 167,
+          "top": 485,
+          "right": 189,
+          "bottom": 507,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 157.5,
+          "top": 463,
+          "right": 197.5,
+          "bottom": 483,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 116.9140625,
+            "right": 227.0859375,
+            "top": 462,
+            "bottom": 480,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 209.078125,
+            "right": 256.921875,
+            "top": 355.375,
+            "bottom": 372.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 337.0546875,
+            "right": 372.9453125,
+            "top": 505.375,
+            "bottom": 522.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 265.078125,
+            "right": 312.921875,
+            "top": 478.375,
+            "bottom": 495.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 230.0546875,
+            "right": 265.9453125,
+            "top": 419.375,
+            "bottom": 436.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 306.0546875,
+            "right": 341.9453125,
+            "top": 360.375,
+            "bottom": 377.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "dark-monitoring",
+        "expanded": "true"
+      }
+    },
+    {
+      "style": "dark-monitoring",
+      "viewport": "mobile-390",
+      "problems": [],
+      "dataSha256": "e10490005734291642563c2fe0a58d7c1329f991fd496fdc80dce2b9e8ce4fe3",
+      "selected": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 377,
+          "bottom": 801,
+          "width": 364,
+          "height": 633
+        },
+        "sheet": {
+          "left": 13,
+          "top": 752,
+          "right": 377,
+          "bottom": 801,
+          "width": 364,
+          "height": 49
+        },
+        "frame": {
+          "left": 21,
+          "top": 417,
+          "right": 334,
+          "bottom": 502,
+          "width": 313,
+          "height": 85
+        },
+        "close": {
+          "left": 290,
+          "top": 417,
+          "right": 334,
+          "bottom": 461,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 167,
+          "top": 519,
+          "right": 189,
+          "bottom": 541,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 157.5,
+          "top": 501,
+          "right": 197.5,
+          "bottom": 521,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 116.9140625,
+            "right": 227.0859375,
+            "top": 496,
+            "bottom": 514,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 209.078125,
+            "right": 256.921875,
+            "top": 389.375,
+            "bottom": 406.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 337.0546875,
+            "right": 372.9453125,
+            "top": 539.375,
+            "bottom": 556.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 265.078125,
+            "right": 312.921875,
+            "top": 512.375,
+            "bottom": 529.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 230.0546875,
+            "right": 265.9453125,
+            "top": 453.375,
+            "bottom": 470.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 306.0546875,
+            "right": 341.9453125,
+            "top": 394.375,
+            "bottom": 411.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "dark-monitoring",
+        "expanded": "false"
+      },
+      "expanded": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 377,
+          "bottom": 801,
+          "width": 364,
+          "height": 633
+        },
+        "sheet": {
+          "left": 13,
+          "top": 516.15625,
+          "right": 377,
+          "bottom": 801,
+          "width": 364,
+          "height": 284.84375
+        },
+        "frame": {
+          "left": 21,
+          "top": 384,
+          "right": 334,
+          "bottom": 469,
+          "width": 313,
+          "height": 85
+        },
+        "close": {
+          "left": 290,
+          "top": 384,
+          "right": 334,
+          "bottom": 428,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 167,
+          "top": 486,
+          "right": 189,
+          "bottom": 508,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 157.5,
+          "top": 468,
+          "right": 197.5,
+          "bottom": 488,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 116.9140625,
+            "right": 227.0859375,
+            "top": 463,
+            "bottom": 481,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 209.078125,
+            "right": 256.921875,
+            "top": 356.375,
+            "bottom": 373.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 337.0546875,
+            "right": 372.9453125,
+            "top": 506.375,
+            "bottom": 523.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 265.078125,
+            "right": 312.921875,
+            "top": 479.375,
+            "bottom": 496.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 230.0546875,
+            "right": 265.9453125,
+            "top": 420.375,
+            "bottom": 437.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 306.0546875,
+            "right": 341.9453125,
+            "top": 361.375,
+            "bottom": 378.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "dark-monitoring",
+        "expanded": "true"
+      },
+      "switched": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 377,
+          "bottom": 801,
+          "width": 364,
+          "height": 633
+        },
+        "sheet": {
+          "left": 13,
+          "top": 516.15625,
+          "right": 377,
+          "bottom": 801,
+          "width": 364,
+          "height": 284.84375
+        },
+        "frame": {
+          "left": 21,
+          "top": 374.625,
+          "right": 334,
+          "bottom": 469,
+          "width": 313,
+          "height": 94.375
+        },
+        "close": {
+          "left": 290,
+          "top": 374.625,
+          "right": 334,
+          "bottom": 418.625,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 167,
+          "top": 486,
+          "right": 189,
+          "bottom": 508,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 157.5,
+          "top": 468,
+          "right": 197.5,
+          "bottom": 488,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 125.5390625,
+            "right": 218.4609375,
+            "top": 464.75,
+            "bottom": 482,
+            "text": "江岸路综合配送中",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 273.34375,
+            "right": 354.65625,
+            "top": 464.75,
+            "bottom": 482,
+            "text": "江淮大道配送站",
+            "tier": 1,
+            "siteId": "S04"
+          },
+          {
+            "left": 209.5390625,
+            "right": 256.4609375,
+            "top": 356.375,
+            "bottom": 373.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 337.3984375,
+            "right": 372.6015625,
+            "top": 506.375,
+            "bottom": 523.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 230.3984375,
+            "right": 265.6015625,
+            "top": 420.375,
+            "bottom": 437.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 306.3984375,
+            "right": 341.6015625,
+            "top": 361.375,
+            "bottom": 378.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "light-operations",
+        "expanded": "true"
+      }
+    },
+    {
+      "style": "light-operations",
+      "viewport": "mobile-412",
+      "problems": [],
+      "dataSha256": "e10490005734291642563c2fe0a58d7c1329f991fd496fdc80dce2b9e8ce4fe3",
+      "selected": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 399,
+          "bottom": 872,
+          "width": 386,
+          "height": 704
+        },
+        "sheet": {
+          "left": 13,
+          "top": 823,
+          "right": 399,
+          "bottom": 872,
+          "width": 386,
+          "height": 49
+        },
+        "frame": {
+          "left": 21,
+          "top": 442.625,
+          "right": 337,
+          "bottom": 537,
+          "width": 316,
+          "height": 94.375
+        },
+        "close": {
+          "left": 293,
+          "top": 442.625,
+          "right": 337,
+          "bottom": 486.625,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 168,
+          "top": 554,
+          "right": 190,
+          "bottom": 576,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 159,
+          "top": 536,
+          "right": 199,
+          "bottom": 556,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 126.5390625,
+            "right": 219.4609375,
+            "top": 532.75,
+            "bottom": 550,
+            "text": "江岸路综合配送中",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 274.34375,
+            "right": 355.65625,
+            "top": 532.75,
+            "bottom": 550,
+            "text": "江淮大道配送站",
+            "tier": 1,
+            "siteId": "S04"
+          },
+          {
+            "left": 326.1484375,
+            "right": 395.8515625,
+            "top": 400.75,
+            "bottom": 418,
+            "text": "新港河配送站",
+            "tier": 1,
+            "siteId": "S12"
+          },
+          {
+            "left": 210.5390625,
+            "right": 257.4609375,
+            "top": 424.375,
+            "bottom": 441.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 338.3984375,
+            "right": 373.6015625,
+            "top": 574.375,
+            "bottom": 591.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 231.3984375,
+            "right": 266.6015625,
+            "top": 488.375,
+            "bottom": 505.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 307.3984375,
+            "right": 342.6015625,
+            "top": 429.375,
+            "bottom": 446.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "light-operations",
+        "expanded": "false"
+      },
+      "expanded": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 399,
+          "bottom": 872,
+          "width": 386,
+          "height": 704
+        },
+        "sheet": {
+          "left": 13,
+          "top": 555.203125,
+          "right": 399,
+          "bottom": 872,
+          "width": 386,
+          "height": 316.796875
+        },
+        "frame": {
+          "left": 21,
+          "top": 413.625,
+          "right": 337,
+          "bottom": 508,
+          "width": 316,
+          "height": 94.375
+        },
+        "close": {
+          "left": 293,
+          "top": 413.625,
+          "right": 337,
+          "bottom": 457.625,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 168,
+          "top": 525,
+          "right": 190,
+          "bottom": 547,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 159,
+          "top": 507,
+          "right": 199,
+          "bottom": 527,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 126.5390625,
+            "right": 219.4609375,
+            "top": 503.75,
+            "bottom": 521,
+            "text": "江岸路综合配送中",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 274.34375,
+            "right": 355.65625,
+            "top": 503.75,
+            "bottom": 521,
+            "text": "江淮大道配送站",
+            "tier": 1,
+            "siteId": "S04"
+          },
+          {
+            "left": 326.1484375,
+            "right": 395.8515625,
+            "top": 371.75,
+            "bottom": 389,
+            "text": "新港河配送站",
+            "tier": 1,
+            "siteId": "S12"
+          },
+          {
+            "left": 210.5390625,
+            "right": 257.4609375,
+            "top": 395.375,
+            "bottom": 412.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 338.3984375,
+            "right": 373.6015625,
+            "top": 545.375,
+            "bottom": 562.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 231.3984375,
+            "right": 266.6015625,
+            "top": 459.375,
+            "bottom": 476.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 307.3984375,
+            "right": 342.6015625,
+            "top": 400.375,
+            "bottom": 417.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "light-operations",
+        "expanded": "true"
+      },
+      "switched": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 399,
+          "bottom": 872,
+          "width": 386,
+          "height": 704
+        },
+        "sheet": {
+          "left": 13,
+          "top": 555.203125,
+          "right": 399,
+          "bottom": 872,
+          "width": 386,
+          "height": 316.796875
+        },
+        "frame": {
+          "left": 21,
+          "top": 407,
+          "right": 337,
+          "bottom": 507,
+          "width": 316,
+          "height": 100
+        },
+        "close": {
+          "left": 293,
+          "top": 407,
+          "right": 337,
+          "bottom": 451,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 167,
+          "top": 523,
+          "right": 191,
+          "bottom": 547,
+          "width": 24,
+          "height": 24
+        },
+        "tip": {
+          "left": 159,
+          "top": 506,
+          "right": 199,
+          "bottom": 526,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 113.375,
+            "right": 232.625,
+            "top": 500.25,
+            "bottom": 519,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 210.078125,
+            "right": 257.921875,
+            "top": 394.375,
+            "bottom": 411.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 338.0546875,
+            "right": 373.9453125,
+            "top": 544.375,
+            "bottom": 561.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 266.078125,
+            "right": 313.921875,
+            "top": 517.375,
+            "bottom": 534.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 231.0546875,
+            "right": 266.9453125,
+            "top": 458.375,
+            "bottom": 475.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 307.0546875,
+            "right": 342.9453125,
+            "top": 399.375,
+            "bottom": 416.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 184.078125,
+            "right": 231.921875,
+            "top": 558.375,
+            "bottom": 575.625,
+            "text": "纺织新村",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 328.0390625,
+            "right": 351.9609375,
+            "top": 567.375,
+            "bottom": 584.625,
+            "text": "南苑",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 170.0546875,
+            "right": 205.9453125,
+            "top": 471.375,
+            "bottom": 488.625,
+            "text": "兴仁里",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 287.0546875,
+            "right": 322.9453125,
+            "top": 576.375,
+            "bottom": 593.625,
+            "text": "小学路",
+            "tier": 2,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "warm-city-guide",
+        "expanded": "true"
+      }
+    },
+    {
+      "style": "warm-city-guide",
+      "viewport": "mobile-412",
+      "problems": [],
+      "dataSha256": "e10490005734291642563c2fe0a58d7c1329f991fd496fdc80dce2b9e8ce4fe3",
+      "selected": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 399,
+          "bottom": 872,
+          "width": 386,
+          "height": 704
+        },
+        "sheet": {
+          "left": 13,
+          "top": 823,
+          "right": 399,
+          "bottom": 872,
+          "width": 386,
+          "height": 49
+        },
+        "frame": {
+          "left": 21,
+          "top": 433,
+          "right": 337,
+          "bottom": 533,
+          "width": 316,
+          "height": 100
+        },
+        "close": {
+          "left": 293,
+          "top": 433,
+          "right": 337,
+          "bottom": 477,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 167,
+          "top": 553,
+          "right": 191,
+          "bottom": 577,
+          "width": 24,
+          "height": 24
+        },
+        "tip": {
+          "left": 159,
+          "top": 532,
+          "right": 199,
+          "bottom": 552,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 113.375,
+            "right": 232.625,
+            "top": 530.25,
+            "bottom": 549,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 210.078125,
+            "right": 257.921875,
+            "top": 424.375,
+            "bottom": 441.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 338.0546875,
+            "right": 373.9453125,
+            "top": 574.375,
+            "bottom": 591.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 266.078125,
+            "right": 313.921875,
+            "top": 547.375,
+            "bottom": 564.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 231.0546875,
+            "right": 266.9453125,
+            "top": 488.375,
+            "bottom": 505.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 307.0546875,
+            "right": 342.9453125,
+            "top": 429.375,
+            "bottom": 446.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 184.078125,
+            "right": 231.921875,
+            "top": 588.375,
+            "bottom": 605.625,
+            "text": "纺织新村",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 328.0390625,
+            "right": 351.9609375,
+            "top": 597.375,
+            "bottom": 614.625,
+            "text": "南苑",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 170.0546875,
+            "right": 205.9453125,
+            "top": 501.375,
+            "bottom": 518.625,
+            "text": "兴仁里",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 287.0546875,
+            "right": 322.9453125,
+            "top": 606.375,
+            "bottom": 623.625,
+            "text": "小学路",
+            "tier": 2,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "warm-city-guide",
+        "expanded": "false"
+      },
+      "expanded": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 399,
+          "bottom": 872,
+          "width": 386,
+          "height": 704
+        },
+        "sheet": {
+          "left": 13,
+          "top": 555.203125,
+          "right": 399,
+          "bottom": 872,
+          "width": 386,
+          "height": 316.796875
+        },
+        "frame": {
+          "left": 21,
+          "top": 403,
+          "right": 337,
+          "bottom": 503,
+          "width": 316,
+          "height": 100
+        },
+        "close": {
+          "left": 293,
+          "top": 403,
+          "right": 337,
+          "bottom": 447,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 167,
+          "top": 523,
+          "right": 191,
+          "bottom": 547,
+          "width": 24,
+          "height": 24
+        },
+        "tip": {
+          "left": 159,
+          "top": 502,
+          "right": 199,
+          "bottom": 522,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 113.375,
+            "right": 232.625,
+            "top": 500.25,
+            "bottom": 519,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 210.078125,
+            "right": 257.921875,
+            "top": 394.375,
+            "bottom": 411.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 338.0546875,
+            "right": 373.9453125,
+            "top": 544.375,
+            "bottom": 561.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 266.078125,
+            "right": 313.921875,
+            "top": 517.375,
+            "bottom": 534.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 231.0546875,
+            "right": 266.9453125,
+            "top": 458.375,
+            "bottom": 475.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 307.0546875,
+            "right": 342.9453125,
+            "top": 399.375,
+            "bottom": 416.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 184.078125,
+            "right": 231.921875,
+            "top": 558.375,
+            "bottom": 575.625,
+            "text": "纺织新村",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 328.0390625,
+            "right": 351.9609375,
+            "top": 567.375,
+            "bottom": 584.625,
+            "text": "南苑",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 170.0546875,
+            "right": 205.9453125,
+            "top": 471.375,
+            "bottom": 488.625,
+            "text": "兴仁里",
+            "tier": 2,
+            "siteId": null
+          },
+          {
+            "left": 287.0546875,
+            "right": 322.9453125,
+            "top": 576.375,
+            "bottom": 593.625,
+            "text": "小学路",
+            "tier": 2,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "warm-city-guide",
+        "expanded": "true"
+      },
+      "switched": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 399,
+          "bottom": 872,
+          "width": 386,
+          "height": 704
+        },
+        "sheet": {
+          "left": 13,
+          "top": 555.203125,
+          "right": 399,
+          "bottom": 872,
+          "width": 386,
+          "height": 316.796875
+        },
+        "frame": {
+          "left": 21,
+          "top": 418,
+          "right": 337,
+          "bottom": 503,
+          "width": 316,
+          "height": 85
+        },
+        "close": {
+          "left": 293,
+          "top": 418,
+          "right": 337,
+          "bottom": 462,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 168,
+          "top": 524,
+          "right": 190,
+          "bottom": 546,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 159,
+          "top": 502,
+          "right": 199,
+          "bottom": 522,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 117.9140625,
+            "right": 228.0859375,
+            "top": 501,
+            "bottom": 519,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 210.078125,
+            "right": 257.921875,
+            "top": 394.375,
+            "bottom": 411.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 338.0546875,
+            "right": 373.9453125,
+            "top": 544.375,
+            "bottom": 561.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 266.078125,
+            "right": 313.921875,
+            "top": 517.375,
+            "bottom": 534.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 231.0546875,
+            "right": 266.9453125,
+            "top": 458.375,
+            "bottom": 475.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 307.0546875,
+            "right": 342.9453125,
+            "top": 399.375,
+            "bottom": 416.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "dark-monitoring",
+        "expanded": "true"
+      }
+    },
+    {
+      "style": "dark-monitoring",
+      "viewport": "mobile-412",
+      "problems": [],
+      "dataSha256": "e10490005734291642563c2fe0a58d7c1329f991fd496fdc80dce2b9e8ce4fe3",
+      "selected": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 399,
+          "bottom": 872,
+          "width": 386,
+          "height": 704
+        },
+        "sheet": {
+          "left": 13,
+          "top": 823,
+          "right": 399,
+          "bottom": 872,
+          "width": 386,
+          "height": 49
+        },
+        "frame": {
+          "left": 21,
+          "top": 452,
+          "right": 337,
+          "bottom": 537,
+          "width": 316,
+          "height": 85
+        },
+        "close": {
+          "left": 293,
+          "top": 452,
+          "right": 337,
+          "bottom": 496,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 168,
+          "top": 554,
+          "right": 190,
+          "bottom": 576,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 159,
+          "top": 536,
+          "right": 199,
+          "bottom": 556,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 117.9140625,
+            "right": 228.0859375,
+            "top": 531,
+            "bottom": 549,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 210.078125,
+            "right": 257.921875,
+            "top": 424.375,
+            "bottom": 441.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 338.0546875,
+            "right": 373.9453125,
+            "top": 574.375,
+            "bottom": 591.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 266.078125,
+            "right": 313.921875,
+            "top": 547.375,
+            "bottom": 564.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 231.0546875,
+            "right": 266.9453125,
+            "top": 488.375,
+            "bottom": 505.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 307.0546875,
+            "right": 342.9453125,
+            "top": 429.375,
+            "bottom": 446.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "dark-monitoring",
+        "expanded": "false"
+      },
+      "expanded": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 399,
+          "bottom": 872,
+          "width": 386,
+          "height": 704
+        },
+        "sheet": {
+          "left": 13,
+          "top": 555.203125,
+          "right": 399,
+          "bottom": 872,
+          "width": 386,
+          "height": 316.796875
+        },
+        "frame": {
+          "left": 21,
+          "top": 423,
+          "right": 337,
+          "bottom": 508,
+          "width": 316,
+          "height": 85
+        },
+        "close": {
+          "left": 293,
+          "top": 423,
+          "right": 337,
+          "bottom": 467,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 168,
+          "top": 525,
+          "right": 190,
+          "bottom": 547,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 159,
+          "top": 507,
+          "right": 199,
+          "bottom": 527,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 117.9140625,
+            "right": 228.0859375,
+            "top": 502,
+            "bottom": 520,
+            "text": "江岸路综合配送中心",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 210.078125,
+            "right": 257.921875,
+            "top": 395.375,
+            "bottom": 412.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 338.0546875,
+            "right": 373.9453125,
+            "top": 545.375,
+            "bottom": 562.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 266.078125,
+            "right": 313.921875,
+            "top": 518.375,
+            "bottom": 535.625,
+            "text": "江淮大道",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 231.0546875,
+            "right": 266.9453125,
+            "top": 459.375,
+            "bottom": 476.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 307.0546875,
+            "right": 342.9453125,
+            "top": 400.375,
+            "bottom": 417.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "dark-monitoring",
+        "expanded": "true"
+      },
+      "switched": {
+        "map": {
+          "left": 13,
+          "top": 168,
+          "right": 399,
+          "bottom": 872,
+          "width": 386,
+          "height": 704
+        },
+        "sheet": {
+          "left": 13,
+          "top": 555.203125,
+          "right": 399,
+          "bottom": 872,
+          "width": 386,
+          "height": 316.796875
+        },
+        "frame": {
+          "left": 21,
+          "top": 413.625,
+          "right": 337,
+          "bottom": 508,
+          "width": 316,
+          "height": 94.375
+        },
+        "close": {
+          "left": 293,
+          "top": 413.625,
+          "right": 337,
+          "bottom": 457.625,
+          "width": 44,
+          "height": 44
+        },
+        "marker": {
+          "left": 168,
+          "top": 525,
+          "right": 190,
+          "bottom": 547,
+          "width": 22,
+          "height": 22
+        },
+        "tip": {
+          "left": 159,
+          "top": 507,
+          "right": 199,
+          "bottom": 527,
+          "width": 40,
+          "height": 20
+        },
+        "labels": [
+          {
+            "left": 126.5390625,
+            "right": 219.4609375,
+            "top": 503.75,
+            "bottom": 521,
+            "text": "江岸路综合配送中",
+            "tier": 1,
+            "siteId": "S01"
+          },
+          {
+            "left": 274.34375,
+            "right": 355.65625,
+            "top": 503.75,
+            "bottom": 521,
+            "text": "江淮大道配送站",
+            "tier": 1,
+            "siteId": "S04"
+          },
+          {
+            "left": 326.1484375,
+            "right": 395.8515625,
+            "top": 371.75,
+            "bottom": 389,
+            "text": "新港河配送站",
+            "tier": 1,
+            "siteId": "S12"
+          },
+          {
+            "left": 210.5390625,
+            "right": 257.4609375,
+            "top": 395.375,
+            "bottom": 412.625,
+            "text": "江岸片区",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 338.3984375,
+            "right": 373.6015625,
+            "top": 545.375,
+            "bottom": 562.625,
+            "text": "新港河",
+            "tier": 0,
+            "siteId": null
+          },
+          {
+            "left": 231.3984375,
+            "right": 266.6015625,
+            "top": 459.375,
+            "bottom": 476.625,
+            "text": "临江路",
+            "tier": 1,
+            "siteId": null
+          },
+          {
+            "left": 307.3984375,
+            "right": 342.6015625,
+            "top": 400.375,
+            "bottom": 417.625,
+            "text": "三多里",
+            "tier": 1,
+            "siteId": null
+          }
+        ],
+        "selected": "S01",
+        "style": "light-operations",
+        "expanded": "true"
+      }
+    }
+  ],
+  "errors": [],
+  "flow": {
+    "routeTurnsOff": true,
+    "routeStateSurvivesStyleSwitch": true,
+    "routeTurnsOn": true,
+    "selectedMeasure": "deviation"
+  },
+  "sameRenderedData": true,
+  "passed": true
+}

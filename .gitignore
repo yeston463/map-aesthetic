@@ -15,3 +15,7 @@ evals/ab-reviews/*/replay/
 evals/ab-reviews/*/replay-settled/
 evals/ab-reviews/*/replay-final/
 citations.log
+
+# runtime scratch from the browser tooling and local servers
+.playwright-cli/
+output/srv.log

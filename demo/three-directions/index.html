@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>江岸片区配送地图 · 三套视觉方向样图</title>
+<link rel="stylesheet" href="./vendor/leaflet/dist/leaflet.css">
+<link rel="stylesheet" href="./ui.css">
+</head>
+<body class="theme-light-operations">
+<div class="shell">
+  <header class="bar">
+    <div class="ident">
+      <strong>江岸片区配送</strong>
+      <span data-testid="variant-label">浅色运营</span>
+    </div>
+
+    <div class="switcher" role="tablist" aria-label="视觉方向">
+      <button type="button" role="tab" data-style="light-operations" aria-selected="true">
+        <b>浅色运营</b><i>监控状态</i></button>
+      <button type="button" role="tab" data-style="warm-city-guide" aria-selected="false">
+        <b>暖色导览</b><i>面向读者</i></button>
+      <button type="button" role="tab" data-style="dark-monitoring" aria-selected="false">
+        <b>深色监控</b><i>值班大屏</i></button>
+    </div>
+
+    <div class="bar-actions">
+      <label class="field">着色口径
+        <select data-testid="measure-select">
+          <option value="absolute">业务量（顺序色带）</option>
+          <option value="deviation">相对均值偏差（发散色带）</option>
+        </select>
+      </label>
+      <label class="check" title="同时显示原始栅格瓦片，用于对照矢量底图">
+        <input type="checkbox" data-testid="raster-toggle"> 栅格对照
+      </label>
+      <button type="button" data-testid="zoom-overview">全景</button>
+      <button type="button" data-testid="zoom-street">街巷</button>
+    </div>
+  </header>
+
+  <main class="stage">
+    <div id="map" class="map" data-testid="map" role="region"
+         aria-label="江岸片区配送地图，可平移缩放并选择站点">
+
+    <!-- The legend and the north indicator are instruments on the canvas, not a
+         page beside it. They live INSIDE the map container so Leaflet's popup
+         pane (z 700) paints above the HUD (z 680): a popup is never clipped by
+         the legend. Each direction restyles both; see hud.js and ui.css. -->
+    <div class="map-hud" data-testid="map-hud">
+      <div class="hud-compass" data-testid="compass" aria-hidden="true">
+        <div class="compass-disc"></div>
+        <span class="compass-n">N</span>
+        <span class="compass-caption">正北</span>
+      </div>
+
+      <section class="hud-legend" aria-label="地图图例">
+        <header class="hud-head">
+          <div class="hud-titles">
+            <span class="hud-kicker" data-testid="hud-kicker">图例</span>
+            <strong class="hud-title" data-testid="hud-title">业务量分级</strong>
+          </div>
+          <button type="button" class="hud-toggle" data-testid="hud-toggle"
+                  aria-expanded="true" aria-controls="hud-body">收起图例</button>
+        </header>
+        <div class="hud-body" id="hud-body" data-testid="hud-body">
+          <p class="hud-scale" data-testid="hud-scale"></p>
+          <ul class="legend" data-testid="legend"></ul>
+          <p class="hud-foot" data-testid="hud-foot"></p>
+        </div>
+      </section>
+    </div>
+    </div>
+
+    <aside class="panel" data-testid="panel">
+      <section class="intent">
+        <h2>设计意图</h2>
+        <p data-testid="intent-text">—</p>
+      </section>
+      <section>
+        <h2>图层</h2>
+        <ul class="layer-list" data-testid="layer-list"></ul>
+        <p class="note">每个方向都能单独开关底图各层与业务层。</p>
+      </section>
+      <section>
+        <h2>站点</h2>
+        <ul class="sites" data-testid="site-list"></ul>
+      </section>
+      <p class="note" data-testid="provenance">
+        合成数据 · 无真实地点 · 底图为矢量绘制：几何取自案例自带的
+        <code>data/context.geojson</code>（道路、水系、街区）与 <code>data/labels.geojson</code>
+        （地名），因此道路与文字可逐要素改色。原始栅格瓦片仅作对照，可在上方开关。
+      </p>
+    </aside>
+
+    <div class="sheet" data-testid="sheet">
+      <button type="button" class="sheet-handle" data-testid="sheet-toggle" aria-expanded="true">站点面板</button>
+      <div class="sheet-body" data-testid="sheet-body">
+        <ul class="sites sites-compact" data-testid="site-list-sheet"></ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="status">
+    <span data-testid="ready" data-state="loading">载入中…</span>
+    <span>缩放 <output data-testid="zoom-readout">—</output></span>
+    <span>可见标注 <output data-testid="label-readout">—</output></span>
+    <span>选中 <output data-testid="selection-readout">无</output></span>
+    <span>底图署名 <output data-testid="attribution-readout">—</output></span>
+  </footer>
+</div>
+<script src="./vendor/leaflet/dist/leaflet.js"></script>
+<script type="module" src="./app.js"></script>
+</body>
+</html>

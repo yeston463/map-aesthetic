@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","name":"map-aesthetic-case","features":[{"type":"Feature","properties":{"route_id":"R1","name":"主配送线"},"geometry":{"type":"LineString","coordinates":[[121.431724,31.22414],[121.432956,31.2265],[121.436036,31.229096],[121.4385,31.226264],[121.440348,31.22414],[121.444352,31.229096],[121.445276,31.226264]]}}]}

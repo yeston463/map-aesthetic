@@ -1,0 +1,161 @@
+{
+  "light-operations": {
+    "variant": "light-operations",
+    "label": "浅色运营",
+    "basemap": {
+      "land": "#f2f4f6",
+      "water": "#d4e4ef",
+      "park": "#e7eaed",
+      "roadCasing": "#c9cfd6",
+      "road": "#ffffff"
+    },
+    "sequential": [
+      "#e9f2f9",
+      "#bfd8ec",
+      "#84abd3",
+      "#3b6c9f"
+    ],
+    "diverging": [
+      "#9c3b2e",
+      "#d79a86",
+      "#e8e6e0",
+      "#a9c6de",
+      "#3f6f9e"
+    ],
+    "categorical": [
+      "#14558a",
+      "#2b8a6b",
+      "#7a5bb0",
+      "#d97706"
+    ],
+    "missing": "#eef1f4",
+    "boundary": "#5d84ab",
+    "route": "#14558a",
+    "fillOpacity": 0.42,
+    "ui": {
+      "--hud-ground": "rgba(255, 255, 255, 0.92)",
+      "--hud-border": "rgba(27, 36, 48, 0.10)",
+      "--surface": "#ffffff",
+      "--surface-2": "#f7f9fa",
+      "--page": "#e9edf1",
+      "--ink": "#1b2430",
+      "--muted": "#5f6b7a",
+      "--line": "#d9e0e6",
+      "--accent": "#14558a",
+      "--accent-ink": "#ffffff",
+      "--focus": "#0b5cad",
+      "--radius": "4px",
+      "--radius-sm": "3px",
+      "--shadow": "0 1px 2px rgba(20, 32, 44, .10)",
+      "--font-display": "var(--font-ui)",
+      "--font-num": "\"SFMono-Regular\", \"Cascadia Mono\", Consolas, monospace"
+    }
+  },
+  "warm-city-guide": {
+    "variant": "warm-city-guide",
+    "label": "暖色城市导览",
+    "basemap": {
+      "land": "#f6efe1",
+      "water": "#bcd6cd",
+      "park": "#eee2cb",
+      "roadCasing": "#c9b28c",
+      "road": "#fdf7ec"
+    },
+    "sequential": [
+      "#faf0dd",
+      "#f2dfb6",
+      "#e7c58e",
+      "#d5a663"
+    ],
+    "diverging": [
+      "#9c4a2c",
+      "#d99a72",
+      "#f3ece0",
+      "#bcc9b2",
+      "#4f6b52"
+    ],
+    "categorical": [
+      "#8c3f2b",
+      "#a8703a",
+      "#6f6a3c",
+      "#b4442c"
+    ],
+    "missing": "#f2ead9",
+    "boundary": "#9a6a3c",
+    "route": "#b4442c",
+    "fillOpacity": 0.44,
+    "ui": {
+      "--hud-ground": "rgba(253, 248, 239, 0.94)",
+      "--hud-border": "rgba(92, 74, 56, 0.20)",
+      "--surface": "#fdf8ef",
+      "--surface-2": "#f8f1e3",
+      "--page": "#ece2d0",
+      "--ink": "#3f3327",
+      "--muted": "#7a6752",
+      "--line": "#e0d3bd",
+      "--accent": "#b4442c",
+      "--accent-ink": "#fdf8ef",
+      "--focus": "#8c3f2b",
+      "--radius": "10px",
+      "--radius-sm": "7px",
+      "--shadow": "0 2px 10px rgba(92, 74, 56, .16)",
+      "--font-display": "\"Songti SC\", \"SimSun\", Georgia, serif",
+      "--font-num": "\"SFMono-Regular\", \"Cascadia Mono\", Consolas, monospace",
+      "--sheet-height": "44vh"
+    }
+  },
+  "dark-monitoring": {
+    "variant": "dark-monitoring",
+    "label": "深色监控",
+    "basemap": {
+      "land": "#080c12",
+      "water": "#123243",
+      "park": "#101820",
+      "roadCasing": "#26313d",
+      "road": "#4a5a6b"
+    },
+    "sequential": [
+      "#12283f",
+      "#194a6e",
+      "#21749e",
+      "#33a6cb"
+    ],
+    "diverging": [
+      "#8a3b3b",
+      "#c07a6a",
+      "#2b3644",
+      "#3f8f9c",
+      "#5ad0c9"
+    ],
+    "categorical": [
+      "#4fc3f7",
+      "#7dd3a0",
+      "#c4a7f0",
+      "#ffb340"
+    ],
+    "missing": "#1c242f",
+    "boundary": "#4fd0e8",
+    "route": "#35c9e8",
+    "fillOpacity": 0.44,
+    "ui": {
+      "--hud-ground": "rgba(12, 18, 26, 0.92)",
+      "--hud-border": "rgba(120, 150, 180, 0.24)",
+      "--surface": "#0f151d",
+      "--surface-2": "#131b24",
+      "--page": "#070b11",
+      "--ink": "#e6edf5",
+      "--muted": "#8b9aad",
+      "--line": "#1f2b38",
+      "--accent": "#35c9e8",
+      "--accent-ink": "#04121a",
+      "--focus": "#56d8f0",
+      "--alert": "#ffb340",
+      "--radius": "6px",
+      "--radius-sm": "4px",
+      "--shadow": "0 2px 14px rgba(0, 0, 0, .55)",
+      "--font-display": "var(--font-ui)",
+      "--font-num": "\"SFMono-Regular\", \"Cascadia Mono\", Consolas, monospace",
+      "--sheet-height": "40vh"
+    }
+  }
+}

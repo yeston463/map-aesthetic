@@ -1,0 +1,61 @@
+{
+  "archive": "C:\\Users\\赵航\\Desktop\\map_skill\\.tmp\\releases\\map-aesthetic-0.2.0.zip",
+  "ok": true,
+  "checks": [
+    {
+      "check": "archive-integrity",
+      "ok": true,
+      "detail": "all CRC checks passed"
+    },
+    {
+      "check": "manifest-present",
+      "ok": true,
+      "detail": "map-aesthetic 0.2.0, 37 listed files"
+    },
+    {
+      "check": "manifest-file-set",
+      "ok": true,
+      "detail": "listed 37, archive payload 37"
+    },
+    {
+      "check": "manifest-hashes",
+      "ok": true,
+      "detail": "all hashes and sizes match"
+    },
+    {
+      "check": "frontmatter",
+      "ok": true,
+      "detail": "name=map-aesthetic\r, description present"
+    },
+    {
+      "check": "local-links",
+      "ok": true,
+      "detail": "all local links resolve inside the package"
+    },
+    {
+      "check": "script-files",
+      "ok": true,
+      "detail": "5 referenced, 5 shipped"
+    },
+    {
+      "check": "python-syntax",
+      "ok": true,
+      "detail": "4 Python scripts parse"
+    },
+    {
+      "check": "no-secrets-or-abs-paths",
+      "ok": true,
+      "detail": "nothing found"
+    },
+    {
+      "check": "no-caches",
+      "ok": true,
+      "detail": "no generated caches"
+    },
+    {
+      "check": "node-syntax",
+      "ok": true,
+      "detail": "1 JS modules parse"
+    }
+  ]
+}

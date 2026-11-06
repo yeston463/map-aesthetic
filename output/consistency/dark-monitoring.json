@@ -1,0 +1,383 @@
+{
+  "url": "http://127.0.0.1:61027/demo/three-directions/?style=dark-monitoring",
+  "page": null,
+  "widths": [
+    1440,
+    1024,
+    768,
+    390
+  ],
+  "states": [
+    {
+      "width": 1440,
+      "height": 900,
+      "consoleErrors": [],
+      "results": {
+        "text-contrast": [],
+        "body-size": [],
+        "tap-target": [],
+        "button-styles": [],
+        "heading-scale": [],
+        "radius-family": [],
+        "focus-visible": [],
+        "raw-colour": [],
+        "opaque-fill": [],
+        "cursor-pointer": [],
+        "default-popup": [],
+        "pin-density": [],
+        "attribution-legible": [],
+        "tabular-numbers": [],
+        "annotation-overlap": [],
+        "annotation-outside": [],
+        "popup-covers-feature": null,
+        "legend-correspondence": [],
+        "attribution-present": [],
+        "controls-reachable": [],
+        "filler-words": [],
+        "placeholder-text": [],
+        "label-not-noun": [],
+        "scroll-reveal": [],
+        "motion-duration": [],
+        "reduced-motion": []
+      }
+    },
+    {
+      "width": 1024,
+      "height": 900,
+      "consoleErrors": [],
+      "results": {
+        "text-contrast": [],
+        "body-size": [],
+        "tap-target": [],
+        "button-styles": [],
+        "heading-scale": [],
+        "radius-family": [],
+        "focus-visible": [],
+        "raw-colour": [],
+        "opaque-fill": [],
+        "cursor-pointer": [],
+        "default-popup": [],
+        "pin-density": [],
+        "attribution-legible": [],
+        "tabular-numbers": [],
+        "annotation-overlap": [],
+        "annotation-outside": [],
+        "popup-covers-feature": null,
+        "legend-correspondence": [],
+        "attribution-present": [],
+        "controls-reachable": [],
+        "filler-words": [],
+        "placeholder-text": [],
+        "label-not-noun": [],
+        "scroll-reveal": [],
+        "motion-duration": [],
+        "reduced-motion": []
+      }
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "consoleErrors": [],
+      "results": {
+        "text-contrast": [],
+        "body-size": [],
+        "tap-target": [],
+        "button-styles": [],
+        "heading-scale": [],
+        "radius-family": [],
+        "focus-visible": [],
+        "raw-colour": [],
+        "opaque-fill": [],
+        "cursor-pointer": [],
+        "default-popup": [],
+        "pin-density": [],
+        "attribution-legible": [],
+        "tabular-numbers": [],
+        "annotation-overlap": [],
+        "annotation-outside": [],
+        "popup-covers-feature": null,
+        "legend-correspondence": [],
+        "attribution-present": [],
+        "controls-reachable": [],
+        "filler-words": [],
+        "placeholder-text": [],
+        "label-not-noun": [],
+        "scroll-reveal": [],
+        "motion-duration": [],
+        "reduced-motion": []
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "consoleErrors": [],
+      "results": {
+        "text-contrast": [],
+        "body-size": [],
+        "tap-target": [],
+        "button-styles": [],
+        "heading-scale": [],
+        "radius-family": [],
+        "focus-visible": [],
+        "raw-colour": [],
+        "opaque-fill": [],
+        "cursor-pointer": [],
+        "default-popup": [],
+        "pin-density": [],
+        "attribution-legible": [],
+        "tabular-numbers": [],
+        "annotation-overlap": [],
+        "annotation-outside": [],
+        "popup-covers-feature": null,
+        "legend-correspondence": [],
+        "attribution-present": [],
+        "controls-reachable": [],
+        "filler-words": [],
+        "placeholder-text": [],
+        "label-not-noun": [],
+        "scroll-reveal": [],
+        "motion-duration": [],
+        "reduced-motion": []
+      }
+    }
+  ],
+  "findings": [],
+  "table": [
+    {
+      "rule": "text-contrast",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "body-size",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "tap-target",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "button-styles",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "heading-scale",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "radius-family",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "focus-visible",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "raw-colour",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "opaque-fill",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "cursor-pointer",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "default-popup",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "pin-density",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "attribution-legible",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "tabular-numbers",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "annotation-overlap",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "annotation-outside",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "popup-covers-feature",
+      "cells": [
+        "SKIP",
+        "SKIP",
+        "SKIP",
+        "SKIP"
+      ]
+    },
+    {
+      "rule": "legend-correspondence",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "attribution-present",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "controls-reachable",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "filler-words",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "placeholder-text",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "label-not-noun",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "scroll-reveal",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "motion-duration",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "rule": "reduced-motion",
+      "cells": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    }
+  ],
+  "fails": 0,
+  "warns": 0
+}

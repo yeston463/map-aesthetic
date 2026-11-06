@@ -1,0 +1,328 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "facility_id": "F01",
+    "name": "江岸博物馆",
+    "category": "博物馆",
+    "color": "#3f6fa3",
+    "annual_visits": 190000,
+    "year_opened": 1999,
+    "note": "虚构示例 · 未吸附真实地址"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.43406,
+     31.228784
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "facility_id": "F02",
+    "name": "临江工业遗产馆",
+    "category": "博物馆",
+    "color": "#3f6fa3",
+    "annual_visits": 380000,
+    "year_opened": 1961,
+    "note": "虚构示例 · 未吸附真实地址"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.436343,
+     31.22587
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "facility_id": "F03",
+    "name": "旧仓里航运馆",
+    "category": "博物馆",
+    "color": "#3f6fa3",
+    "annual_visits": 490000,
+    "year_opened": 1979,
+    "note": "虚构示例 · 未吸附真实地址"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.435581,
+     31.231862
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "facility_id": "F04",
+    "name": "临江图书馆",
+    "category": "图书馆",
+    "color": "#4e9a76",
+    "annual_visits": 470000,
+    "year_opened": 1958,
+    "note": "虚构示例 · 未吸附真实地址"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.434601,
+     31.22471
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "facility_id": "F05",
+    "name": "江畔少儿图书馆",
+    "category": "图书馆",
+    "color": "#4e9a76",
+    "annual_visits": 310000,
+    "year_opened": 1967,
+    "note": "虚构示例 · 未吸附真实地址"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.442282,
+     31.223906
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "facility_id": "F06",
+    "name": "西园社区书房",
+    "category": "图书馆",
+    "color": "#4e9a76",
+    "annual_visits": 450000,
+    "year_opened": 2019,
+    "note": "虚构示例 · 未吸附真实地址"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.444596,
+     31.227886
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "facility_id": "F07",
+    "name": "江岸大剧院",
+    "category": "剧院",
+    "color": "#c25a43",
+    "annual_visits": 180000,
+    "year_opened": 1967,
+    "note": "虚构示例 · 未吸附真实地址"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.435783,
+     31.230544
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "facility_id": "F08",
+    "name": "旧仓里小剧场",
+    "category": "剧院",
+    "color": "#c25a43",
+    "annual_visits": 320000,
+    "year_opened": 1967,
+    "note": "虚构示例 · 未吸附真实地址"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.441612,
+     31.231545
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "facility_id": "F09",
+    "name": "光复西路演艺中心",
+    "category": "剧院",
+    "color": "#c25a43",
+    "annual_visits": 130000,
+    "year_opened": 1994,
+    "note": "虚构示例 · 未吸附真实地址"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.442352,
+     31.222904
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "facility_id": "F10",
+    "name": "南苑美术馆",
+    "category": "美术馆",
+    "color": "#8a6cb0",
+    "annual_visits": 510000,
+    "year_opened": 1984,
+    "note": "虚构示例 · 未吸附真实地址"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.441391,
+     31.230158
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "facility_id": "F11",
+    "name": "滨河当代艺术馆",
+    "category": "美术馆",
+    "color": "#8a6cb0",
+    "annual_visits": 120000,
+    "year_opened": 1962,
+    "note": "虚构示例 · 未吸附真实地址"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.436804,
+     31.226423
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "facility_id": "F12",
+    "name": "渡口书店",
+    "category": "书店",
+    "color": "#c8902c",
+    "annual_visits": 120000,
+    "year_opened": 1975,
+    "note": "虚构示例 · 未吸附真实地址"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.439652,
+     31.226411
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "facility_id": "F13",
+    "name": "旧仓库书局",
+    "category": "书店",
+    "color": "#c8902c",
+    "annual_visits": 140000,
+    "year_opened": 1994,
+    "note": "虚构示例 · 未吸附真实地址"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.440532,
+     31.223328
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "facility_id": "F14",
+    "name": "梧桐里独立书店",
+    "category": "书店",
+    "color": "#c8902c",
+    "annual_visits": 110000,
+    "year_opened": 2005,
+    "note": "虚构示例 · 未吸附真实地址"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.433242,
+     31.22376
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "facility_id": "F15",
+    "name": "非遗驿站·织造",
+    "category": "非遗驿站",
+    "color": "#4f95a6",
+    "annual_visits": 120000,
+    "year_opened": 2018,
+    "note": "虚构示例 · 未吸附真实地址"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.433291,
+     31.226466
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "facility_id": "F16",
+    "name": "非遗驿站·曲艺",
+    "category": "非遗驿站",
+    "color": "#4f95a6",
+    "annual_visits": 310000,
+    "year_opened": 1993,
+    "note": "虚构示例 · 未吸附真实地址"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.433163,
+     31.223456
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "facility_id": "F17",
+    "name": "非遗驿站·船工号子",
+    "category": "非遗驿站",
+    "color": "#4f95a6",
+    "annual_visits": 250000,
+    "year_opened": 1994,
+    "note": "虚构示例 · 未吸附真实地址"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.443742,
+     31.229791
+    ]
+   }
+  }
+ ]
+}

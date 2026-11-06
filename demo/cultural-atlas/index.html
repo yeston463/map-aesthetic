@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>城市文化设施 · 地图示意</title>
+  <link rel="stylesheet" href="../three-directions/vendor/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="sheet-collapsed">
+  <div class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">文</span><span><strong>城市文化设施</strong><small>CULTURAL ATLAS</small></span></div>
+      <div class="header-title"><span>设施地图</span><span> / </span><b>街区概览</b></div>
+      <div class="header-note"><i></i> 示例数据</div>
+    </header>
+    <main class="workspace">
+      <aside class="side" aria-label="设施目录">
+        <button class="sheet-toggle" type="button" aria-expanded="false" aria-controls="side-body" data-testid="sheet-toggle">
+          <span><b>设施目录</b><small><span data-count="sites">—</span> 处设施</small></span><span class="toggle-label">展开 +</span>
+        </button>
+        <div class="side-body" id="side-body">
+          <section class="intro">
+            <div class="eyebrow"><span>01</span> / 设施示意</div>
+            <h1>城市文化设施地图</h1>
+            <p>在真实路网上查看博物馆、图书馆、剧院等文化场所，按类别与年访问量区分。</p>
+            <div class="metrics" aria-label="设施概况">
+              <div><strong data-count="sites">—</strong><span>设施</span></div>
+              <div><strong data-count="cats">—</strong><span>类别</span></div>
+              <div><strong data-count="visits">—</strong><span>年访问量(万)</span></div>
+            </div>
+          </section>
+          <section class="filter-section">
+            <div class="section-heading"><h2>类别筛选</h2><span>点击显隐</span></div>
+            <ul class="cat-filter" data-testid="cat-filter"></ul>
+          </section>
+          <section class="site-section">
+            <div class="section-heading"><h2>设施目录</h2><span>点击查看详情</span></div>
+            <ul class="site-list" data-testid="site-list"></ul>
+          </section>
+          <div class="side-foot">设施名称、访问量与年份均为虚构示例，未吸附真实地址，不用于导航。</div>
+        </div>
+      </aside>
+      <section class="map-stage" aria-label="文化设施地图">
+        <div id="map" class="map" role="region" aria-label="城市文化设施示意地图" data-testid="map"></div>
+        <div class="map-heading"><span class="map-heading-index">地图 / 01</span><strong>路网与设施</strong><small>背景为真实路网，设施为示意</small></div>
+        <div class="map-actions" aria-label="地图图层">
+          <button type="button" aria-pressed="true" data-testid="toggle-labels"><span class="label-icon"></span>路名</button>
+        </div>
+        <div class="map-key" aria-hidden="true"></div>
+        <div class="map-status" data-testid="ready" data-state="loading" aria-live="polite">地图加载中</div>
+      </section>
+    </main>
+  </div>
+  <script src="../three-directions/vendor/leaflet/dist/leaflet.js"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

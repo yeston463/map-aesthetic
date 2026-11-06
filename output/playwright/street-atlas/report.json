@@ -1,0 +1,1203 @@
+{
+  "states": [
+    {
+      "viewport": "desktop",
+      "issues": [],
+      "initialLabelCount": 15,
+      "selected": {
+        "map": {
+          "left": 330,
+          "top": 68,
+          "right": 1440,
+          "bottom": 900,
+          "width": 1110,
+          "height": 832
+        },
+        "marker": {
+          "x": 503,
+          "y": 618,
+          "width": 16,
+          "height": 16,
+          "top": 618,
+          "right": 519,
+          "bottom": 634,
+          "left": 503
+        },
+        "popup": {
+          "left": 346,
+          "top": 476.90625,
+          "right": 676,
+          "bottom": 613,
+          "width": 330,
+          "height": 136.09375
+        },
+        "close": {
+          "left": 640,
+          "top": 476.90625,
+          "right": 676,
+          "bottom": 512.90625,
+          "width": 36,
+          "height": 36
+        },
+        "sheet": {
+          "left": 0,
+          "top": 68,
+          "right": 330,
+          "bottom": 900,
+          "width": 330,
+          "height": 832
+        },
+        "labels": [
+          {
+            "left": 612.3984375,
+            "top": 667.5,
+            "right": 643.6015625,
+            "bottom": 680.5,
+            "width": 31.203125,
+            "height": 13,
+            "text": "愚园路"
+          },
+          {
+            "left": 1054.3984375,
+            "top": 94.5,
+            "right": 1085.6015625,
+            "bottom": 107.5,
+            "width": 31.203125,
+            "height": 13,
+            "text": "常德路"
+          },
+          {
+            "left": 517.1953125,
+            "top": 310.5,
+            "right": 558.8046875,
+            "bottom": 323.5,
+            "width": 41.609375,
+            "height": 13,
+            "text": "武宁南路"
+          },
+          {
+            "left": 461.5,
+            "top": 606.703125,
+            "right": 560.5,
+            "bottom": 621,
+            "width": 99,
+            "height": 14.296875,
+            "text": "江岸路综合配送中心"
+          },
+          {
+            "left": 756,
+            "top": 304.703125,
+            "right": 822,
+            "bottom": 319,
+            "width": 66,
+            "height": 14.296875,
+            "text": "临江路集散点"
+          },
+          {
+            "left": 873.5,
+            "top": 448.703125,
+            "right": 928.5,
+            "bottom": 463,
+            "width": 55,
+            "height": 14.296875,
+            "text": "旧仓里驿站"
+          },
+          {
+            "left": 979.5,
+            "top": 580.703125,
+            "right": 1056.5,
+            "bottom": 595,
+            "width": 77,
+            "height": 14.296875,
+            "text": "江淮大道配送站"
+          },
+          {
+            "left": 1199,
+            "top": 274.703125,
+            "right": 1265,
+            "bottom": 289,
+            "width": 66,
+            "height": 14.296875,
+            "text": "东圩里集散点"
+          },
+          {
+            "left": 637,
+            "top": 742.703125,
+            "right": 703,
+            "bottom": 757,
+            "width": 66,
+            "height": 14.296875,
+            "text": "纺织新村驿站"
+          },
+          {
+            "left": 835,
+            "top": 147.703125,
+            "right": 901,
+            "bottom": 162,
+            "width": 66,
+            "height": 14.296875,
+            "text": "沿河路配送站"
+          },
+          {
+            "left": 1043,
+            "top": 739.703125,
+            "right": 1087,
+            "bottom": 754,
+            "width": 44,
+            "height": 14.296875,
+            "text": "南苑驿站"
+          },
+          {
+            "left": 1233,
+            "top": 422.703125,
+            "right": 1299,
+            "bottom": 437,
+            "width": 66,
+            "height": 14.296875,
+            "text": "三多里配送站"
+          },
+          {
+            "left": 590,
+            "top": 472.703125,
+            "right": 656,
+            "bottom": 487,
+            "width": 66,
+            "height": 14.296875,
+            "text": "兴仁里集散点"
+          },
+          {
+            "left": 966,
+            "top": 780.703125,
+            "right": 1032,
+            "bottom": 795,
+            "width": 66,
+            "height": 14.296875,
+            "text": "小学路口驿站"
+          },
+          {
+            "left": 1167,
+            "top": 155.703125,
+            "right": 1233,
+            "bottom": 170,
+            "width": 66,
+            "height": 14.296875,
+            "text": "新港河配送站"
+          }
+        ],
+        "expanded": "true",
+        "selected": "S01",
+        "layers": {
+          "route": true,
+          "sites": true
+        }
+      }
+    },
+    {
+      "viewport": "tablet",
+      "issues": [],
+      "initialLabelCount": 16,
+      "selected": {
+        "map": {
+          "left": 330,
+          "top": 68,
+          "right": 1024,
+          "bottom": 768,
+          "width": 694,
+          "height": 700
+        },
+        "marker": {
+          "x": 503,
+          "y": 511,
+          "width": 16,
+          "height": 16,
+          "top": 511,
+          "right": 519,
+          "bottom": 527,
+          "left": 503
+        },
+        "popup": {
+          "left": 346,
+          "top": 369.90625,
+          "right": 676,
+          "bottom": 506,
+          "width": 330,
+          "height": 136.09375
+        },
+        "close": {
+          "left": 640,
+          "top": 369.90625,
+          "right": 676,
+          "bottom": 405.90625,
+          "width": 36,
+          "height": 36
+        },
+        "sheet": {
+          "left": 0,
+          "top": 68,
+          "right": 330,
+          "bottom": 768,
+          "width": 330,
+          "height": 700
+        },
+        "labels": [
+          {
+            "left": 917.3984375,
+            "top": 83.5,
+            "right": 948.6015625,
+            "bottom": 96.5,
+            "width": 31.203125,
+            "height": 13,
+            "text": "武定路"
+          },
+          {
+            "left": 577.3984375,
+            "top": 547.5,
+            "right": 608.6015625,
+            "bottom": 560.5,
+            "width": 31.203125,
+            "height": 13,
+            "text": "愚园路"
+          },
+          {
+            "left": 890.3984375,
+            "top": 142.5,
+            "right": 921.6015625,
+            "bottom": 155.5,
+            "width": 31.203125,
+            "height": 13,
+            "text": "常德路"
+          },
+          {
+            "left": 509.1953125,
+            "top": 294.5,
+            "right": 550.8046875,
+            "bottom": 307.5,
+            "width": 41.609375,
+            "height": 13,
+            "text": "武宁南路"
+          },
+          {
+            "left": 461.5,
+            "top": 499.703125,
+            "right": 560.5,
+            "bottom": 514,
+            "width": 99,
+            "height": 14.296875,
+            "text": "江岸路综合配送中心"
+          },
+          {
+            "left": 674,
+            "top": 285.703125,
+            "right": 740,
+            "bottom": 300,
+            "width": 66,
+            "height": 14.296875,
+            "text": "临江路集散点"
+          },
+          {
+            "left": 758.5,
+            "top": 388.703125,
+            "right": 813.5,
+            "bottom": 403,
+            "width": 55,
+            "height": 14.296875,
+            "text": "旧仓里驿站"
+          },
+          {
+            "left": 830.5,
+            "top": 480.703125,
+            "right": 907.5,
+            "bottom": 495,
+            "width": 77,
+            "height": 14.296875,
+            "text": "江淮大道配送站"
+          },
+          {
+            "left": 590,
+            "top": 595.703125,
+            "right": 656,
+            "bottom": 610,
+            "width": 66,
+            "height": 14.296875,
+            "text": "纺织新村驿站"
+          },
+          {
+            "left": 730,
+            "top": 174.703125,
+            "right": 796,
+            "bottom": 189,
+            "width": 66,
+            "height": 14.296875,
+            "text": "沿河路配送站"
+          },
+          {
+            "left": 880,
+            "top": 593.703125,
+            "right": 924,
+            "bottom": 608,
+            "width": 44,
+            "height": 14.296875,
+            "text": "南苑驿站"
+          },
+          {
+            "left": 556,
+            "top": 404.703125,
+            "right": 622,
+            "bottom": 419,
+            "width": 66,
+            "height": 14.296875,
+            "text": "兴仁里集散点"
+          },
+          {
+            "left": 822,
+            "top": 622.703125,
+            "right": 888,
+            "bottom": 637,
+            "width": 66,
+            "height": 14.296875,
+            "text": "小学路口驿站"
+          }
+        ],
+        "expanded": "true",
+        "selected": "S01",
+        "layers": {
+          "route": true,
+          "sites": true
+        }
+      }
+    },
+    {
+      "viewport": "mobile-320",
+      "issues": [],
+      "initialLabelCount": 14,
+      "selected": {
+        "map": {
+          "left": 0,
+          "top": 56,
+          "right": 320,
+          "bottom": 685,
+          "width": 320,
+          "height": 629
+        },
+        "marker": {
+          "x": 136,
+          "y": 278,
+          "width": 16,
+          "height": 16,
+          "top": 278,
+          "right": 152,
+          "bottom": 294,
+          "left": 136
+        },
+        "popup": {
+          "left": 16,
+          "top": 114.40625,
+          "right": 271,
+          "bottom": 273,
+          "width": 255,
+          "height": 158.59375
+        },
+        "close": {
+          "left": 227,
+          "top": 114.40625,
+          "right": 271,
+          "bottom": 158.40625,
+          "width": 44,
+          "height": 44
+        },
+        "sheet": {
+          "left": 0,
+          "top": 685,
+          "right": 320,
+          "bottom": 740,
+          "width": 320,
+          "height": 55
+        },
+        "labels": [
+          {
+            "left": 49.1953125,
+            "top": 651.5,
+            "right": 90.8046875,
+            "bottom": 664.5,
+            "width": 41.609375,
+            "height": 13,
+            "text": "法华镇路"
+          },
+          {
+            "left": 18.3984375,
+            "top": 610.5,
+            "right": 49.6015625,
+            "bottom": 623.5,
+            "width": 31.203125,
+            "height": 13,
+            "text": "番禺路"
+          },
+          {
+            "left": 82.3984375,
+            "top": 562.5,
+            "right": 113.6015625,
+            "bottom": 575.5,
+            "width": 31.203125,
+            "height": 13,
+            "text": "华山路"
+          },
+          {
+            "left": 9.3984375,
+            "top": 664.5,
+            "right": 40.6015625,
+            "bottom": 677.5,
+            "width": 31.203125,
+            "height": 13,
+            "text": "新华路"
+          },
+          {
+            "left": 131.1953125,
+            "top": 190.5,
+            "right": 172.8046875,
+            "bottom": 203.5,
+            "width": 41.609375,
+            "height": 13,
+            "text": "武宁南路"
+          },
+          {
+            "left": 135.3984375,
+            "top": 560.5,
+            "right": 166.6015625,
+            "bottom": 573.5,
+            "width": 31.203125,
+            "height": 13,
+            "text": "兴国路"
+          },
+          {
+            "left": 94.5,
+            "top": 266.703125,
+            "right": 193.5,
+            "bottom": 281,
+            "width": 99,
+            "height": 14.296875,
+            "text": "江岸路综合配送中心"
+          },
+          {
+            "left": 193,
+            "top": 176.703125,
+            "right": 259,
+            "bottom": 191,
+            "width": 66,
+            "height": 14.296875,
+            "text": "临江路集散点"
+          },
+          {
+            "left": 231.5,
+            "top": 219.703125,
+            "right": 286.5,
+            "bottom": 234,
+            "width": 55,
+            "height": 14.296875,
+            "text": "旧仓里驿站"
+          },
+          {
+            "left": 158,
+            "top": 306.703125,
+            "right": 224,
+            "bottom": 321,
+            "width": 66,
+            "height": 14.296875,
+            "text": "纺织新村驿站"
+          },
+          {
+            "left": 217,
+            "top": 129.703125,
+            "right": 283,
+            "bottom": 144,
+            "width": 66,
+            "height": 14.296875,
+            "text": "沿河路配送站"
+          },
+          {
+            "left": 144,
+            "top": 226.703125,
+            "right": 210,
+            "bottom": 241,
+            "width": 66,
+            "height": 14.296875,
+            "text": "兴仁里集散点"
+          }
+        ],
+        "expanded": "false",
+        "selected": "S01",
+        "layers": {
+          "route": true,
+          "sites": true
+        }
+      },
+      "expanded": {
+        "map": {
+          "left": 0,
+          "top": 56,
+          "right": 320,
+          "bottom": 429.203125,
+          "width": 320,
+          "height": 373.203125
+        },
+        "marker": {
+          "x": 136,
+          "y": 278,
+          "width": 16,
+          "height": 16,
+          "top": 278,
+          "right": 152,
+          "bottom": 294,
+          "left": 136
+        },
+        "popup": {
+          "left": 16,
+          "top": 114.40625,
+          "right": 271,
+          "bottom": 273,
+          "width": 255,
+          "height": 158.59375
+        },
+        "close": {
+          "left": 227,
+          "top": 114.40625,
+          "right": 271,
+          "bottom": 158.40625,
+          "width": 44,
+          "height": 44
+        },
+        "sheet": {
+          "left": 0,
+          "top": 429.203125,
+          "right": 320,
+          "bottom": 740,
+          "width": 320,
+          "height": 310.796875
+        },
+        "labels": [
+          {
+            "left": 131.1953125,
+            "top": 190.5,
+            "right": 172.8046875,
+            "bottom": 203.5,
+            "width": 41.609375,
+            "height": 13,
+            "text": "武宁南路"
+          },
+          {
+            "left": 94.5,
+            "top": 266.703125,
+            "right": 193.5,
+            "bottom": 281,
+            "width": 99,
+            "height": 14.296875,
+            "text": "江岸路综合配送中心"
+          },
+          {
+            "left": 193,
+            "top": 176.703125,
+            "right": 259,
+            "bottom": 191,
+            "width": 66,
+            "height": 14.296875,
+            "text": "临江路集散点"
+          },
+          {
+            "left": 231.5,
+            "top": 219.703125,
+            "right": 286.5,
+            "bottom": 234,
+            "width": 55,
+            "height": 14.296875,
+            "text": "旧仓里驿站"
+          },
+          {
+            "left": 158,
+            "top": 306.703125,
+            "right": 224,
+            "bottom": 321,
+            "width": 66,
+            "height": 14.296875,
+            "text": "纺织新村驿站"
+          },
+          {
+            "left": 217,
+            "top": 129.703125,
+            "right": 283,
+            "bottom": 144,
+            "width": 66,
+            "height": 14.296875,
+            "text": "沿河路配送站"
+          },
+          {
+            "left": 144,
+            "top": 226.703125,
+            "right": 210,
+            "bottom": 241,
+            "width": 66,
+            "height": 14.296875,
+            "text": "兴仁里集散点"
+          }
+        ],
+        "expanded": "true",
+        "selected": "S01",
+        "layers": {
+          "route": true,
+          "sites": true
+        }
+      }
+    },
+    {
+      "viewport": "mobile-390",
+      "issues": [],
+      "initialLabelCount": 14,
+      "selected": {
+        "map": {
+          "left": 0,
+          "top": 56,
+          "right": 390,
+          "bottom": 789,
+          "width": 390,
+          "height": 733
+        },
+        "marker": {
+          "x": 171,
+          "y": 325,
+          "width": 16,
+          "height": 16,
+          "top": 325,
+          "right": 187,
+          "bottom": 341,
+          "left": 171
+        },
+        "popup": {
+          "left": 16,
+          "top": 161.40625,
+          "right": 341,
+          "bottom": 320,
+          "width": 325,
+          "height": 158.59375
+        },
+        "close": {
+          "left": 297,
+          "top": 161.40625,
+          "right": 341,
+          "bottom": 205.40625,
+          "width": 44,
+          "height": 44
+        },
+        "sheet": {
+          "left": 0,
+          "top": 789,
+          "right": 390,
+          "bottom": 844,
+          "width": 390,
+          "height": 55
+        },
+        "labels": [
+          {
+            "left": 213.3984375,
+            "top": 349.5,
+            "right": 244.6015625,
+            "bottom": 362.5,
+            "width": 31.203125,
+            "height": 13,
+            "text": "愚园路"
+          },
+          {
+            "left": 99.3984375,
+            "top": 726.5,
+            "right": 130.6015625,
+            "bottom": 739.5,
+            "width": 31.203125,
+            "height": 13,
+            "text": "华山路"
+          },
+          {
+            "left": 170.1953125,
+            "top": 198.5,
+            "right": 211.8046875,
+            "bottom": 211.5,
+            "width": 41.609375,
+            "height": 13,
+            "text": "武宁南路"
+          },
+          {
+            "left": 174.3984375,
+            "top": 723.5,
+            "right": 205.6015625,
+            "bottom": 736.5,
+            "width": 31.203125,
+            "height": 13,
+            "text": "兴国路"
+          },
+          {
+            "left": 129.5,
+            "top": 313.703125,
+            "right": 228.5,
+            "bottom": 328,
+            "width": 99,
+            "height": 14.296875,
+            "text": "江岸路综合配送中心"
+          },
+          {
+            "left": 263,
+            "top": 186.703125,
+            "right": 329,
+            "bottom": 201,
+            "width": 66,
+            "height": 14.296875,
+            "text": "临江路集散点"
+          },
+          {
+            "left": 315.5,
+            "top": 247.703125,
+            "right": 370.5,
+            "bottom": 262,
+            "width": 55,
+            "height": 14.296875,
+            "text": "旧仓里驿站"
+          },
+          {
+            "left": 213,
+            "top": 371.703125,
+            "right": 279,
+            "bottom": 386,
+            "width": 66,
+            "height": 14.296875,
+            "text": "纺织新村驿站"
+          },
+          {
+            "left": 297,
+            "top": 120.703125,
+            "right": 363,
+            "bottom": 135,
+            "width": 66,
+            "height": 14.296875,
+            "text": "沿河路配送站"
+          },
+          {
+            "left": 193,
+            "top": 257.703125,
+            "right": 259,
+            "bottom": 272,
+            "width": 66,
+            "height": 14.296875,
+            "text": "兴仁里集散点"
+          }
+        ],
+        "expanded": "false",
+        "selected": "S01",
+        "layers": {
+          "route": true,
+          "sites": true
+        }
+      },
+      "expanded": {
+        "map": {
+          "left": 0,
+          "top": 56,
+          "right": 390,
+          "bottom": 489.53125,
+          "width": 390,
+          "height": 433.53125
+        },
+        "marker": {
+          "x": 171,
+          "y": 325,
+          "width": 16,
+          "height": 16,
+          "top": 325,
+          "right": 187,
+          "bottom": 341,
+          "left": 171
+        },
+        "popup": {
+          "left": 16,
+          "top": 161.40625,
+          "right": 341,
+          "bottom": 320,
+          "width": 325,
+          "height": 158.59375
+        },
+        "close": {
+          "left": 297,
+          "top": 161.40625,
+          "right": 341,
+          "bottom": 205.40625,
+          "width": 44,
+          "height": 44
+        },
+        "sheet": {
+          "left": 0,
+          "top": 489.53125,
+          "right": 390,
+          "bottom": 844,
+          "width": 390,
+          "height": 354.46875
+        },
+        "labels": [
+          {
+            "left": 213.3984375,
+            "top": 349.5,
+            "right": 244.6015625,
+            "bottom": 362.5,
+            "width": 31.203125,
+            "height": 13,
+            "text": "愚园路"
+          },
+          {
+            "left": 170.1953125,
+            "top": 198.5,
+            "right": 211.8046875,
+            "bottom": 211.5,
+            "width": 41.609375,
+            "height": 13,
+            "text": "武宁南路"
+          },
+          {
+            "left": 129.5,
+            "top": 313.703125,
+            "right": 228.5,
+            "bottom": 328,
+            "width": 99,
+            "height": 14.296875,
+            "text": "江岸路综合配送中心"
+          },
+          {
+            "left": 263,
+            "top": 186.703125,
+            "right": 329,
+            "bottom": 201,
+            "width": 66,
+            "height": 14.296875,
+            "text": "临江路集散点"
+          },
+          {
+            "left": 315.5,
+            "top": 247.703125,
+            "right": 370.5,
+            "bottom": 262,
+            "width": 55,
+            "height": 14.296875,
+            "text": "旧仓里驿站"
+          },
+          {
+            "left": 213,
+            "top": 371.703125,
+            "right": 279,
+            "bottom": 386,
+            "width": 66,
+            "height": 14.296875,
+            "text": "纺织新村驿站"
+          },
+          {
+            "left": 297,
+            "top": 120.703125,
+            "right": 363,
+            "bottom": 135,
+            "width": 66,
+            "height": 14.296875,
+            "text": "沿河路配送站"
+          },
+          {
+            "left": 193,
+            "top": 257.703125,
+            "right": 259,
+            "bottom": 272,
+            "width": 66,
+            "height": 14.296875,
+            "text": "兴仁里集散点"
+          }
+        ],
+        "expanded": "true",
+        "selected": "S01",
+        "layers": {
+          "route": true,
+          "sites": true
+        }
+      }
+    },
+    {
+      "viewport": "mobile-412",
+      "issues": [],
+      "initialLabelCount": 15,
+      "selected": {
+        "map": {
+          "left": 0,
+          "top": 56,
+          "right": 412,
+          "bottom": 860,
+          "width": 412,
+          "height": 804
+        },
+        "marker": {
+          "x": 176,
+          "y": 346,
+          "width": 16,
+          "height": 16,
+          "top": 346,
+          "right": 192,
+          "bottom": 362,
+          "left": 176
+        },
+        "popup": {
+          "left": 16,
+          "top": 204.90625,
+          "right": 352,
+          "bottom": 341,
+          "width": 336,
+          "height": 136.09375
+        },
+        "close": {
+          "left": 308,
+          "top": 204.90625,
+          "right": 352,
+          "bottom": 248.90625,
+          "width": 44,
+          "height": 44
+        },
+        "sheet": {
+          "left": 0,
+          "top": 860,
+          "right": 412,
+          "bottom": 915,
+          "width": 412,
+          "height": 55
+        },
+        "labels": [
+          {
+            "left": 13.3984375,
+            "top": 814.5,
+            "right": 44.6015625,
+            "bottom": 827.5,
+            "width": 31.203125,
+            "height": 13,
+            "text": "番禺路"
+          },
+          {
+            "left": 218.3984375,
+            "top": 370.5,
+            "right": 249.6015625,
+            "bottom": 383.5,
+            "width": 31.203125,
+            "height": 13,
+            "text": "愚园路"
+          },
+          {
+            "left": 104.3984375,
+            "top": 747.5,
+            "right": 135.6015625,
+            "bottom": 760.5,
+            "width": 31.203125,
+            "height": 13,
+            "text": "华山路"
+          },
+          {
+            "left": 175.1953125,
+            "top": 219.5,
+            "right": 216.8046875,
+            "bottom": 232.5,
+            "width": 41.609375,
+            "height": 13,
+            "text": "武宁南路"
+          },
+          {
+            "left": 179.3984375,
+            "top": 744.5,
+            "right": 210.6015625,
+            "bottom": 757.5,
+            "width": 31.203125,
+            "height": 13,
+            "text": "兴国路"
+          },
+          {
+            "left": 134.5,
+            "top": 334.703125,
+            "right": 233.5,
+            "bottom": 349,
+            "width": 99,
+            "height": 14.296875,
+            "text": "江岸路综合配送中心"
+          },
+          {
+            "left": 268,
+            "top": 207.703125,
+            "right": 334,
+            "bottom": 222,
+            "width": 66,
+            "height": 14.296875,
+            "text": "临江路集散点"
+          },
+          {
+            "left": 320.5,
+            "top": 268.703125,
+            "right": 375.5,
+            "bottom": 283,
+            "width": 55,
+            "height": 14.296875,
+            "text": "旧仓里驿站"
+          },
+          {
+            "left": 218,
+            "top": 392.703125,
+            "right": 284,
+            "bottom": 407,
+            "width": 66,
+            "height": 14.296875,
+            "text": "纺织新村驿站"
+          },
+          {
+            "left": 302,
+            "top": 141.703125,
+            "right": 368,
+            "bottom": 156,
+            "width": 66,
+            "height": 14.296875,
+            "text": "沿河路配送站"
+          },
+          {
+            "left": 198,
+            "top": 278.703125,
+            "right": 264,
+            "bottom": 293,
+            "width": 66,
+            "height": 14.296875,
+            "text": "兴仁里集散点"
+          }
+        ],
+        "expanded": "false",
+        "selected": "S01",
+        "layers": {
+          "route": true,
+          "sites": true
+        }
+      },
+      "expanded": {
+        "map": {
+          "left": 0,
+          "top": 56,
+          "right": 412,
+          "bottom": 530.703125,
+          "width": 412,
+          "height": 474.703125
+        },
+        "marker": {
+          "x": 176,
+          "y": 346,
+          "width": 16,
+          "height": 16,
+          "top": 346,
+          "right": 192,
+          "bottom": 362,
+          "left": 176
+        },
+        "popup": {
+          "left": 16,
+          "top": 204.90625,
+          "right": 352,
+          "bottom": 341,
+          "width": 336,
+          "height": 136.09375
+        },
+        "close": {
+          "left": 308,
+          "top": 204.90625,
+          "right": 352,
+          "bottom": 248.90625,
+          "width": 44,
+          "height": 44
+        },
+        "sheet": {
+          "left": 0,
+          "top": 530.703125,
+          "right": 412,
+          "bottom": 915,
+          "width": 412,
+          "height": 384.296875
+        },
+        "labels": [
+          {
+            "left": 218.3984375,
+            "top": 370.5,
+            "right": 249.6015625,
+            "bottom": 383.5,
+            "width": 31.203125,
+            "height": 13,
+            "text": "愚园路"
+          },
+          {
+            "left": 175.1953125,
+            "top": 219.5,
+            "right": 216.8046875,
+            "bottom": 232.5,
+            "width": 41.609375,
+            "height": 13,
+            "text": "武宁南路"
+          },
+          {
+            "left": 134.5,
+            "top": 334.703125,
+            "right": 233.5,
+            "bottom": 349,
+            "width": 99,
+            "height": 14.296875,
+            "text": "江岸路综合配送中心"
+          },
+          {
+            "left": 268,
+            "top": 207.703125,
+            "right": 334,
+            "bottom": 222,
+            "width": 66,
+            "height": 14.296875,
+            "text": "临江路集散点"
+          },
+          {
+            "left": 320.5,
+            "top": 268.703125,
+            "right": 375.5,
+            "bottom": 283,
+            "width": 55,
+            "height": 14.296875,
+            "text": "旧仓里驿站"
+          },
+          {
+            "left": 218,
+            "top": 392.703125,
+            "right": 284,
+            "bottom": 407,
+            "width": 66,
+            "height": 14.296875,
+            "text": "纺织新村驿站"
+          },
+          {
+            "left": 302,
+            "top": 141.703125,
+            "right": 368,
+            "bottom": 156,
+            "width": 66,
+            "height": 14.296875,
+            "text": "沿河路配送站"
+          },
+          {
+            "left": 198,
+            "top": 278.703125,
+            "right": 264,
+            "bottom": 293,
+            "width": 66,
+            "height": 14.296875,
+            "text": "兴仁里集散点"
+          }
+        ],
+        "expanded": "true",
+        "selected": "S01",
+        "layers": {
+          "route": true,
+          "sites": true
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

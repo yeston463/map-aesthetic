@@ -1,0 +1,127 @@
+{
+  "widths": [
+    1440,
+    1024,
+    768,
+    390
+  ],
+  "results": [
+    {
+      "style": "light-operations",
+      "fails": 0,
+      "warns": 0,
+      "nonPass": [
+        {
+          "rule": "popup-covers-feature",
+          "width": 1440,
+          "cell": "SKIP"
+        },
+        {
+          "rule": "popup-covers-feature",
+          "width": 1024,
+          "cell": "SKIP"
+        },
+        {
+          "rule": "popup-covers-feature",
+          "width": 768,
+          "cell": "SKIP"
+        },
+        {
+          "rule": "popup-covers-feature",
+          "width": 390,
+          "cell": "SKIP"
+        }
+      ],
+      "states": 4,
+      "popupSkipped": 4,
+      "selected": false
+    },
+    {
+      "style": "light-operations-selected",
+      "fails": 0,
+      "warns": 0,
+      "nonPass": [],
+      "states": 4,
+      "popupSkipped": 0,
+      "selected": true
+    },
+    {
+      "style": "warm-city-guide",
+      "fails": 0,
+      "warns": 0,
+      "nonPass": [
+        {
+          "rule": "popup-covers-feature",
+          "width": 1440,
+          "cell": "SKIP"
+        },
+        {
+          "rule": "popup-covers-feature",
+          "width": 1024,
+          "cell": "SKIP"
+        },
+        {
+          "rule": "popup-covers-feature",
+          "width": 768,
+          "cell": "SKIP"
+        },
+        {
+          "rule": "popup-covers-feature",
+          "width": 390,
+          "cell": "SKIP"
+        }
+      ],
+      "states": 4,
+      "popupSkipped": 4,
+      "selected": false
+    },
+    {
+      "style": "warm-city-guide-selected",
+      "fails": 0,
+      "warns": 0,
+      "nonPass": [],
+      "states": 4,
+      "popupSkipped": 0,
+      "selected": true
+    },
+    {
+      "style": "dark-monitoring",
+      "fails": 0,
+      "warns": 0,
+      "nonPass": [
+        {
+          "rule": "popup-covers-feature",
+          "width": 1440,
+          "cell": "SKIP"
+        },
+        {
+          "rule": "popup-covers-feature",
+          "width": 1024,
+          "cell": "SKIP"
+        },
+        {
+          "rule": "popup-covers-feature",
+          "width": 768,
+          "cell": "SKIP"
+        },
+        {
+          "rule": "popup-covers-feature",
+          "width": 390,
+          "cell": "SKIP"
+        }
+      ],
+      "states": 4,
+      "popupSkipped": 4,
+      "selected": false
+    },
+    {
+      "style": "dark-monitoring-selected",
+      "fails": 0,
+      "warns": 0,
+      "nonPass": [],
+      "states": 4,
+      "popupSkipped": 0,
+      "selected": true
+    }
+  ]
+}

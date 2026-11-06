@@ -1,0 +1,357 @@
+/* Three-directions demo shell.
+   The three directions do not differ only in colour: each one changes the type scale, the
+   corner radius, the row structure of the site list, the popup construction, the sheet, and
+   the legend. Colour tokens are injected as custom properties by the style module, so the
+   shell stays in one place while each direction owns its own voice. */
+
+:root {
+  --surface: #ffffff;
+  --surface-2: #fbfcfc;
+  --page: #f4f5f6;
+  --ink: #22282c;
+  --muted: #6b7480;
+  --line: #dfe3e6;
+  --accent: #12669b;
+  --accent-ink: #ffffff;
+  --focus: #12669b;
+  --radius: 6px;
+  --radius-sm: 4px;
+  --shadow: 0 1px 2px rgba(16, 24, 32, .08);
+  --font-ui: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+  --font-display: var(--font-ui);
+  --font-num: "SFMono-Regular", "Cascadia Mono", Consolas, monospace;
+  --sheet-height: 42vh;
+  --legend-strip: none;
+  --row-marker: none;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font-ui); color: var(--ink); background: var(--page);
+  -webkit-font-smoothing: antialiased; }
+button, select { font: inherit; }
+button:focus-visible, select:focus-visible, a:focus-visible, .map:focus-visible {
+  outline: 3px solid var(--focus); outline-offset: 2px;
+}
+
+.shell { display: flex; flex-direction: column; height: 100dvh; overflow: hidden; }
+
+/* ---------- top bar ---------- */
+.bar { display: flex; align-items: center; justify-content: space-between; gap: 14px;
+  padding: 9px 16px; background: var(--surface); border-bottom: 1px solid var(--line); }
+.ident { display: flex; align-items: baseline; gap: 10px; }
+.ident strong { font-size: 15px; }
+.ident span { font-size: 11px; color: var(--muted); letter-spacing: .04em; }
+.bar-actions { display: flex; align-items: center; gap: 8px; }
+.field { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
+.check { display: flex; align-items: center; gap: 5px; font-size: 12px; color: var(--muted); }
+.check input { accent-color: var(--accent); }
+.bar-actions button, .bar-actions select { font-size: 12px; padding: 6px 10px;
+  min-height: 32px;
+  border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface-2);
+  color: var(--ink); }
+
+/* ---------- direction switcher ---------- */
+.switcher { display: flex; gap: 4px; padding: 3px; border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 2px); background: var(--surface-2); }
+.switcher button { display: flex; flex-direction: column; gap: 1px; align-items: flex-start;
+  padding: 5px 11px; border: 0; border-radius: var(--radius-sm); background: transparent;
+  color: var(--muted); cursor: pointer; }
+.switcher button b { font-size: 12px; font-weight: 600; letter-spacing: .02em; }
+.switcher button i { font-style: normal; font-size: 10px; opacity: .8; }
+.switcher button[aria-selected="true"] { background: var(--accent); color: var(--accent-ink); }
+.switcher button:hover[aria-selected="false"] { background: var(--surface); color: var(--ink); }
+
+/* ---------- stage, map, panel ---------- */
+.stage { flex: 1; min-height: 0; position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 272px; }
+.map { position: relative; z-index: 0; width: 100%; height: 100%; min-height: 0; }
+.panel { min-height: 0; background: var(--surface); border-left: 1px solid var(--line);
+  padding: 14px; overflow: auto; }
+.panel h2 { margin: 0 0 8px; font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--muted); font-weight: 600; }
+.panel section + section { margin-top: 18px; }
+.note { margin: 16px 0 0; font-size: 11px; line-height: 1.65; color: var(--muted); }
+.intent p { margin: 0; font-size: 12px; line-height: 1.65; color: var(--ink); }
+
+/* ---------- legend ---------- */
+.legend, .sites { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.legend li { display: flex; align-items: center; gap: 8px; font-size: 12px; }
+.legend i { width: 14px; height: 14px; border-radius: 50%; flex: none; border: 1px solid rgba(0,0,0,.18); }
+.legend i.swatch-area { border-radius: 2px; width: 18px; }
+.legend i.swatch-line { border-radius: 2px; width: 20px; height: 4px; }
+.legend i.swatch-ring { background: transparent !important; }
+.legend i.missing-swatch { border-radius: 2px; width: 18px;
+  background: repeating-linear-gradient(45deg,
+    var(--swatch-ground, #e9e9e9) 0 3px, var(--swatch-hatch, #9aa3ac) 3px 6px); }
+.legend .legend-note { font-size: 11px; color: var(--muted); }
+
+/* =======================================================================
+   Floating HUD — the legend and the north indicator live on the canvas.
+   The ground is translucent with a backdrop blur (anti-patterns 4.1), and the
+   alpha stays above 0.9 so contrast is measured against this surface rather
+   than against whatever the map happens to be showing underneath.
+   ======================================================================= */
+/* The HUD sits above every map pane. Leaflet's mapPane carries a CSS transform,
+   which makes it one stacking context: a popup inside it can never paint above
+   a sibling overlay, whatever z-index either one has. So the collision is
+   solved in the interaction layer instead — app.js collapses the legend when a
+   popup would cover it, and restores it when the popup closes. */
+.map-hud { position: absolute; inset: 0; z-index: 680; pointer-events: none; }
+.map-hud > * { pointer-events: auto; }
+
+.hud-legend { position: absolute; left: 14px; bottom: 14px; width: 234px;
+  padding: 10px 12px 11px; color: var(--ink);
+  background: var(--hud-ground); -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--hud-border); border-radius: var(--radius);
+  box-shadow: var(--shadow); font-variant-numeric: tabular-nums; }
+.hud-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.hud-titles { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.hud-kicker { font-size: 10px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--muted); white-space: nowrap; }
+.hud-title { font-family: var(--font-display); font-size: 13px; font-weight: 600; }
+.hud-toggle { flex: none; width: 44px; height: 44px; padding: 0; cursor: pointer;
+  font-size: 10px; line-height: 1.2; color: var(--muted);
+  border: 1px solid var(--line); border-radius: var(--radius-sm);
+  background: var(--surface-2); transition: background-color 0.14s ease; }
+.hud-toggle:hover { background: var(--surface); color: var(--ink); }
+.hud-body { margin-top: 8px; }
+.hud-scale { margin: 0 0 7px; font-size: 12px; color: var(--muted); }
+.hud-foot { margin: 8px 0 0; padding-top: 7px; border-top: 1px solid var(--line);
+  font-size: 12px; color: var(--muted); }
+.hud-collapsed .hud-body { display: none; }
+.hud-collapsed .hud-legend { width: auto; }
+.hud-collapsed .hud-head { gap: 14px; }
+
+.legend li.legend-group { margin-top: 6px; padding-top: 6px;
+  border-top: 1px solid var(--line); font-size: 10px; letter-spacing: .1em;
+  color: var(--muted); }
+.legend li.legend-group:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+.legend i.group-mark { width: 0; height: 0; border: 0; background: transparent; }
+.legend li.legend-group span { text-transform: uppercase; }
+
+.hud-compass { position: absolute; top: 40px; right: 14px;
+  width: 84px; padding: 4px 6px 6px; text-align: center; color: var(--ink);
+  background: var(--hud-ground); -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--hud-border); border-radius: var(--radius);
+  box-shadow: var(--shadow); }
+.compass-n { display: block; font-size: 10px; font-weight: 700; line-height: 1.1;
+  letter-spacing: .08em; color: var(--accent); }
+.compass-disc { width: 58px; height: 58px; margin: 2px auto 0; }
+.compass-disc svg { display: block; width: 100%; height: 100%; }
+.compass-caption { display: block; margin-top: 4px; font-size: 10px; line-height: 1.25;
+  color: var(--muted); font-variant-numeric: tabular-nums; }
+.compass-ring { fill: var(--surface-2); stroke: var(--line); stroke-width: 1; }
+.compass-tick { stroke: var(--muted); }
+.compass-needle-n { fill: var(--accent); }
+.compass-needle-s { fill: var(--muted); opacity: .55; }
+.compass-center { fill: var(--surface); stroke: var(--ink); stroke-width: .8; }
+.compass-cross { stroke: var(--line); }
+.compass-seal-outer { fill: none; stroke: var(--accent); stroke-width: 1.1;
+  stroke-dasharray: 2 3; }
+
+/* Direction 2 — a printed seal: serif north character, sepia dashed ring. */
+body.theme-warm-city-guide .hud-legend { border-radius: 12px; border-width: 1.5px; }
+body.theme-warm-city-guide .hud-title { font-size: 15px; }
+body.theme-warm-city-guide .hud-kicker { text-transform: none; letter-spacing: .04em; }
+body.theme-warm-city-guide .hud-compass { border-radius: 12px; }
+body.theme-warm-city-guide .compass-n { font-family: var(--font-display); font-size: 13px; }
+body.theme-warm-city-guide .compass-caption { font-family: var(--font-display); font-size: 10px; }
+body.theme-warm-city-guide .compass-ring { stroke: var(--accent); }
+body.theme-warm-city-guide .compass-tick { stroke: var(--accent); opacity: .6; }
+body.theme-warm-city-guide .legend li.legend-group { border-top-style: dashed; }
+
+/* Direction 3 — an instrument dial: luminous needle, mono figures, hairlines. */
+body.theme-dark-monitoring .hud-legend { border-radius: 4px; }
+body.theme-dark-monitoring .hud-kicker { font-family: var(--font-num); letter-spacing: .1em; }
+body.theme-dark-monitoring .hud-title { font-size: 12px; letter-spacing: .08em; }
+body.theme-dark-monitoring .hud-scale, body.theme-dark-monitoring .hud-foot {
+  font-size: 12px; letter-spacing: .01em; }
+body.theme-dark-monitoring .legend li.legend-group { font-family: var(--font-num); }
+body.theme-dark-monitoring .compass-n { font-family: var(--font-num); letter-spacing: .12em; }
+body.theme-dark-monitoring .compass-ring { fill: #0a1018; }
+body.theme-dark-monitoring .compass-tick { opacity: .5; }
+body.theme-dark-monitoring .compass-needle-s { opacity: .35; }
+body.theme-dark-monitoring .compass-cross { opacity: .6; }
+
+/* The glow is a soft presence, not a second marker: a 0.8px blur over a
+   translucent 10-16px disc. The boundary line stays crisp on purpose. */
+.leaflet-glow-pane path { filter: blur(0.8px); }
+.leaflet-boundary-pane path { shape-rendering: geometricPrecision; }
+
+/* ---------- site list ---------- */
+.sites li button { width: 100%; text-align: left; font-size: 12px; padding: 7px 9px;
+  border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface-2);
+  color: var(--ink); cursor: pointer; display: flex; gap: 8px; align-items: baseline; }
+.sites li button[aria-pressed="true"] { border-color: var(--accent); background: var(--surface);
+  box-shadow: inset 3px 0 0 var(--accent); padding-left: 12px; }
+.sites .name { font-weight: 600; }
+.sites .kind { display: block; margin-top: 3px; font-size: 10px; color: var(--muted); }
+.sites .throughput { margin-left: auto; font-family: var(--font-num); font-size: 11px; color: var(--muted); }
+.sites .dot { width: 8px; height: 8px; border-radius: 50%; flex: none; align-self: center; }
+
+/* ---------- layer switcher ---------- */
+.layer-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.layer-list button { width: 100%; display: flex; align-items: center; gap: 8px; font-size: 12px;
+  padding: 5px 7px; min-height: 32px;
+  border: 1px solid transparent; border-radius: var(--radius-sm);
+  background: transparent; color: var(--muted); cursor: pointer; text-align: left; }
+.layer-list button:hover { background: var(--surface-2); }
+/* A layer that is on shows a filled chip; a layer that is off shows an empty ring, so the
+   state is readable without reading the label. */
+.layer-list .layer-dot { width: 9px; height: 9px; border-radius: 2px; flex: none;
+  border: 1px solid var(--line); background: transparent; }
+.layer-list button[aria-pressed="true"] { color: var(--ink); }
+.layer-list button[aria-pressed="true"] .layer-dot { background: var(--accent); border-color: var(--accent); }
+.layer-list button[aria-pressed="true"] .layer-dot[data-kind="basemap"] {
+  background: var(--muted); border-color: var(--muted); }
+.layer-list .layer-name { flex: 1; }
+
+/* ---------- status bar ---------- */
+.status { display: flex; flex-wrap: wrap; gap: 14px; padding: 8px 16px; font-size: 11px;
+  color: var(--muted); background: var(--surface); border-top: 1px solid var(--line); }
+/* Every figure the reader compares gets tabular figures, so a column of numbers
+   does not jitter as it updates. */
+.status output { font-variant-numeric: tabular-nums; color: var(--ink); font-family: var(--font-num); }
+.status, .legend-value, .sites .throughput, .site-popup-body b,
+.anno, .readout { font-variant-numeric: tabular-nums; }
+
+/* ---------- annotations ---------- */
+/* The engine draws every label into the same pane, so the classes here are about the
+   treatment of a label class, not about which layer it belongs to. */
+.anno-icon { pointer-events: none; }
+.anno { display: inline-block; white-space: nowrap; line-height: 1.15; }
+/* The area name is set apart from everything else on the map. */
+.anno-area { font-variant: small-caps; }
+/* A station that has been asked about gets an underline rather than a colour change, so the
+   emphasis survives a colour-blind reading and a greyscale print. */
+.anno-selected { text-decoration: underline; text-underline-offset: 3px; }
+/* The guide gives its stations a tag, the way an itinerary marks a stop. */
+.anno-tag { padding: 1px 7px; border: 1px solid var(--line); border-radius: 999px;
+  background: var(--surface); box-shadow: 0 1px 2px rgba(0,0,0,.06); }
+.anno-tag-selected { border-color: var(--accent); }
+/* The monitoring wall marks its assets with a small tick, so a name reads as an asset. */
+.anno-hub::before { content: ''; display: inline-block; width: 3px; height: 3px;
+  border-radius: 50%; background: var(--accent); margin-right: 5px; vertical-align: middle; }
+
+/* ---------- leaflet popup ---------- */
+.leaflet-popup-content-wrapper { border-radius: var(--radius); box-shadow: var(--shadow);
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+.leaflet-popup-tip { background: var(--surface); box-shadow: none; }
+.leaflet-popup-content { margin: 12px 14px; font-size: 12px; line-height: 1.6; }
+/* The engine's close button is 24x24. A popup is a touch instrument, so the
+   hit area is 44x44; the glyph stays centred and the title keeps clear of it. */
+.leaflet-container a.leaflet-popup-close-button { color: var(--muted) !important;
+  width: 44px; height: 44px; padding: 0; text-align: center;
+  font-size: 20px; line-height: 44px; }
+/* The engine's attribution link is the default link blue, which reads at 3.97:1 to
+   4.48:1 depending on the theme's ground — under the 4.5:1 floor for small text. The
+   link takes the theme's accent instead, so it is the same colour as every other
+   link on the page and it passes on every ground. */
+.leaflet-control-attribution a { color: var(--accent); }
+/* The attribution itself is engine chrome and sits on the map's own ground, which
+   on a dark theme is nearly black. It needs its own colour rather than the panel's
+   ink, or it is unreadable. */
+.leaflet-control-attribution { background: var(--surface); color: var(--muted); }
+/* The engine's zoom buttons are 30px. On a touch screen that is below the 44px
+   floor, so the hit area is enlarged without changing the drawn size. */
+.leaflet-touch .leaflet-control-zoom a,
+.leaflet-bar a { width: 44px; height: 44px; line-height: 44px; }
+@media (pointer: coarse) {
+  .leaflet-control-zoom a { width: 44px; height: 44px; line-height: 44px; }
+}
+body.theme-dark-monitoring .leaflet-control-attribution { color: #9aa9bb; }
+body.theme-dark-monitoring .leaflet-control-attribution a { color: #4aa8d8; }
+.site-popup-body strong { display: block; font-size: 13px; padding-right: 30px; }
+.site-popup-body p { margin: 4px 0 2px; }
+.site-popup-body small { color: var(--muted); }
+
+/* ---------- mobile sheet ---------- */
+.sheet { display: none; }
+.sheet-handle { display: none; }
+
+/* =======================================================================
+   Direction 2 — 暖色城市导览: paper, generous type, card rows.
+   ======================================================================= */
+body.theme-warm-city-guide { --radius: 10px; --radius-sm: 7px; }
+body.theme-warm-city-guide .bar { padding: 12px 20px; }
+body.theme-warm-city-guide .ident strong { font-size: 17px; }
+body.theme-warm-city-guide .panel { padding: 18px; }
+body.theme-warm-city-guide .panel h2 { text-transform: none; letter-spacing: .02em; font-size: 13px; }
+body.theme-warm-city-guide .switcher { border-radius: 999px; }
+body.theme-warm-city-guide .switcher button { border-radius: 999px; padding: 6px 14px; }
+body.theme-warm-city-guide .sites li button { padding: 10px 12px; align-items: center; }
+body.theme-warm-city-guide .sites .name { font-size: 13px; }
+body.theme-warm-city-guide .legend { gap: 9px; }
+body.theme-warm-city-guide .legend li { font-size: 12.5px; }
+body.theme-warm-city-guide .sheet-handle { font-size: 13px; padding: 10px 0; }
+body.theme-warm-city-guide .leaflet-popup-content { margin: 15px 17px; }
+body.theme-warm-city-guide .site-popup-body strong { font-size: 15px; line-height: 1.45; }
+body.theme-warm-city-guide .site-popup-body .popup-kicker { display: block; font-size: 10px;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--muted); margin-bottom: 3px; }
+body.theme-warm-city-guide .site-popup-body .popup-rule { height: 1px; background: var(--line);
+  margin: 8px 0 7px; }
+body.theme-warm-city-guide .site-popup-body .popup-facts { display: flex; gap: 14px; font-size: 11px;
+  color: var(--muted); }
+body.theme-warm-city-guide .site-popup-body .popup-facts b { color: var(--ink); font-family: var(--font-num); }
+
+/* =======================================================================
+   Direction 3 — 深色监控: console rows, mono figures, luminous accents.
+   ======================================================================= */
+body.theme-dark-monitoring .switcher { border-radius: 6px; }
+body.theme-dark-monitoring .switcher button { border-radius: 4px; }
+body.theme-dark-monitoring .panel h2 { letter-spacing: .14em; }
+body.theme-dark-monitoring .sites li button { padding: 6px 9px; align-items: center; gap: 9px; }
+body.theme-dark-monitoring .sites .name { font-weight: 500; }
+body.theme-dark-monitoring .sites .kind { margin-top: 1px; }
+body.theme-dark-monitoring .sites li button[aria-pressed="true"] { box-shadow: inset 3px 0 0 var(--accent); }
+body.theme-dark-monitoring .legend li { font-size: 11.5px; }
+body.theme-dark-monitoring .legend .legend-value { margin-left: auto; font-family: var(--font-num);
+  font-size: 11px; color: var(--muted); }
+body.theme-dark-monitoring .site-popup-body strong { font-size: 13px; letter-spacing: .01em; }
+body.theme-dark-monitoring .site-popup-body .popup-badge { display: inline-block; font-size: 10px;
+  letter-spacing: .12em; padding: 2px 7px; border-radius: 3px; margin-bottom: 6px;
+  border: 1px solid currentColor; }
+body.theme-dark-monitoring .site-popup-body .popup-badge.alert { color: var(--alert); }
+body.theme-dark-monitoring .site-popup-body .popup-badge.normal { color: var(--muted); }
+body.theme-dark-monitoring .site-popup-body .popup-facts { display: grid; gap: 3px; margin-top: 7px;
+  font-family: var(--font-num); font-size: 11px; }
+body.theme-dark-monitoring .site-popup-body .popup-facts span { color: var(--muted); }
+body.theme-dark-monitoring .sheet-handle { letter-spacing: .1em; font-size: 12px; text-transform: uppercase; }
+
+/* =======================================================================
+   Mobile
+   ======================================================================= */
+@media (max-width: 760px) {
+  .stage { grid-template-columns: minmax(0, 1fr); }
+  .bar { align-items: flex-start; flex-direction: column; gap: 8px; }
+  .ident { flex-wrap: wrap; }
+  .ident span { min-height: 14px; }
+  .bar-actions { width: 100%; flex-wrap: wrap; }
+  .switcher { width: 100%; }
+  /* On a phone every control is touched, so the switcher's buttons and the
+     measure select get a 44px hit area. The caption line is dropped to make room. */
+  .switcher button { flex: 1; align-items: center; padding: 4px 8px; min-height: 44px; }
+  .bar-actions select, .bar-actions button { min-height: 44px; }
+  /* The one-line note under each direction name is a desktop affordance; on a phone the map
+     needs the height more than the caption does. */
+  .switcher button i { display: none; }
+  .switcher button b { font-size: 12px; }
+  .panel { display: none; }
+  .map { min-height: 0; }
+  /* The HUD moves above the sheet and below the engine's zoom/attribution
+     controls. The legend starts collapsed here; its toggle stays 44x44. */
+  .hud-compass { top: 40px; right: 14px; }
+  .hud-legend { left: 14px; right: auto; top: 112px; bottom: auto; width: 202px;
+    max-height: calc(100% - 124px - var(--sheet-height)); overflow: auto; }
+  .hud-collapsed .hud-legend { width: auto; overflow: visible; }
+  .sheet { display: block; position: absolute; z-index: 10; left: 0; right: 0; bottom: 0;
+    background: var(--surface); border-top: 1px solid var(--line); padding: 8px 12px 12px;
+    max-height: var(--sheet-height); overflow: auto; }
+  .sheet-handle { display: block; position: sticky; z-index: 1; top: 0; width: 100%;
+    min-height: 44px;
+    text-align: left; font-size: 12px; padding: 6px 0; border: 0; background: var(--surface);
+    color: var(--muted); cursor: pointer; }
+  .sites-compact { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+  body.sheet-collapsed .sheet-body { display: none; }
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>街区配送 · 地图示意</title>
+  <link rel="stylesheet" href="../three-directions/vendor/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="sheet-collapsed">
+  <div class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">岸</span><span><strong>城市配送</strong><small>STREET ATLAS</small></span></div>
+      <div class="header-title"><span>配送地图</span><span> / </span><b>街区概览</b></div>
+      <div class="header-note"><i></i> 示例数据</div>
+    </header>
+    <main class="workspace">
+      <aside class="side" aria-label="站点目录">
+        <button class="sheet-toggle" type="button" aria-expanded="false" aria-controls="side-body" data-testid="sheet-toggle">
+          <span><b>站点目录</b><small><span data-count="sites">12</span> 个站点</small></span><span class="toggle-label">展开 +</span>
+        </button>
+        <div class="side-body" id="side-body">
+          <section class="intro">
+            <div class="eyebrow"><span>01</span> / 片区示意</div>
+            <h1>街区配送图</h1>
+            <p>从街巷出发，查看线路与站点。</p>
+            <div class="metrics" aria-label="站点概况">
+              <div><strong data-count="sites">—</strong><span>站点</span></div>
+              <div><strong data-count="route">—</strong><span>线路站点</span></div>
+              <div><strong data-count="alerts">—</strong><span>异常</span></div>
+            </div>
+          </section>
+          <section class="site-section">
+            <div class="section-heading"><h2>站点目录</h2><span>点击查看详情</span></div>
+            <ul class="site-list" data-testid="site-list"></ul>
+          </section>
+          <div class="side-foot">站点与线路均为虚构示例，不用于导航。</div>
+        </div>
+      </aside>
+      <section class="map-stage" aria-label="配送地图">
+        <div id="map" class="map" role="region" aria-label="街区配送示意地图" data-testid="map"></div>
+        <div class="map-heading"><span class="map-heading-index">地图 / 01</span><strong>街巷与线路</strong><small>背景为真实路网，配送数据为示意</small></div>
+        <div class="map-actions" aria-label="地图图层">
+          <button type="button" aria-pressed="true" data-testid="toggle-route"><span class="line-icon"></span>线路</button>
+          <button type="button" aria-pressed="true" data-testid="toggle-sites"><span class="point-icon"></span>站点</button>
+        </div>
+        <div class="map-key" aria-hidden="true"><span><i></i>示意线路</span><span><i></i>示意站点</span></div>
+        <div class="map-status" data-testid="ready" data-state="loading" aria-live="polite">地图加载中</div>
+      </section>
+    </main>
+  </div>
+  <script src="../three-directions/vendor/leaflet/dist/leaflet.js"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

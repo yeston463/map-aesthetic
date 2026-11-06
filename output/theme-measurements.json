@@ -1,0 +1,389 @@
+{
+  "thresholds": {
+    "context": 5.0,
+    "class": 5.0,
+    "ramp_step": 5.0,
+    "wcag_small_text": 4.5
+  },
+  "directions": {
+    "light-operations": {
+      "sequential_steps": [
+        {
+          "step": "0->1",
+          "left": "#e9f2f9",
+          "right": "#bfd8ec",
+          "dE2000": 8.83,
+          "dE2000_deuteranopia": 11.7,
+          "pass": true
+        },
+        {
+          "step": "1->2",
+          "left": "#bfd8ec",
+          "right": "#84abd3",
+          "dE2000": 13.4,
+          "dE2000_deuteranopia": 15.98,
+          "pass": true
+        },
+        {
+          "step": "2->3",
+          "left": "#84abd3",
+          "right": "#3b6c9f",
+          "dE2000": 22.45,
+          "dE2000_deuteranopia": 25.63,
+          "pass": true
+        }
+      ],
+      "diverging_steps": [
+        {
+          "step": "0->1",
+          "left": "#9c3b2e",
+          "right": "#d79a86",
+          "dE2000": 30.56,
+          "dE2000_deuteranopia": 19.94,
+          "pass": true
+        },
+        {
+          "step": "1->2",
+          "left": "#d79a86",
+          "right": "#e8e6e0",
+          "dE2000": 24.88,
+          "dE2000_deuteranopia": 18.9,
+          "pass": true
+        },
+        {
+          "step": "2->3",
+          "left": "#e8e6e0",
+          "right": "#a9c6de",
+          "dE2000": 17.35,
+          "dE2000_deuteranopia": 24.45,
+          "pass": true
+        },
+        {
+          "step": "3->4",
+          "left": "#a9c6de",
+          "right": "#3f6f9e",
+          "dE2000": 29.04,
+          "dE2000_deuteranopia": 34.3,
+          "pass": true
+        }
+      ],
+      "class_pairs": [
+        {
+          "pair": [
+            "#14558a",
+            "#2b8a6b"
+          ],
+          "dE2000": 35.89,
+          "dE2000_deuteranopia": 19.47,
+          "pass": true
+        },
+        {
+          "pair": [
+            "#14558a",
+            "#7a5bb0"
+          ],
+          "dE2000": 20.36,
+          "dE2000_deuteranopia": 21.29,
+          "pass": true
+        },
+        {
+          "pair": [
+            "#14558a",
+            "#d97706"
+          ],
+          "dE2000": 52.7,
+          "dE2000_deuteranopia": 84.57,
+          "pass": true
+        },
+        {
+          "pair": [
+            "#2b8a6b",
+            "#7a5bb0"
+          ],
+          "dE2000": 40.51,
+          "dE2000_deuteranopia": 16.77,
+          "pass": true
+        },
+        {
+          "pair": [
+            "#2b8a6b",
+            "#d97706"
+          ],
+          "dE2000": 46.31,
+          "dE2000_deuteranopia": 56.84,
+          "pass": true
+        },
+        {
+          "pair": [
+            "#7a5bb0",
+            "#d97706"
+          ],
+          "dE2000": 51.11,
+          "dE2000_deuteranopia": 62.96,
+          "pass": true
+        }
+      ],
+      "missing_vs_lowest": 9.37,
+      "contrasts": {
+        "ink_on_surface": 15.65,
+        "muted_on_surface": 5.43,
+        "accent_on_surface": 7.79
+      },
+      "contract_failures": [],
+      "failures": []
+    },
+    "warm-city-guide": {
+      "sequential_steps": [
+        {
+          "step": "0->1",
+          "left": "#faf0dd",
+          "right": "#f2dfb6",
+          "dE2000": 7.79,
+          "dE2000_deuteranopia": 8.2,
+          "pass": true
+        },
+        {
+          "step": "1->2",
+          "left": "#f2dfb6",
+          "right": "#e7c58e",
+          "dE2000": 7.61,
+          "dE2000_deuteranopia": 6.24,
+          "pass": true
+        },
+        {
+          "step": "2->3",
+          "left": "#e7c58e",
+          "right": "#d5a663",
+          "dE2000": 8.5,
+          "dE2000_deuteranopia": 6.54,
+          "pass": true
+        }
+      ],
+      "diverging_steps": [
+        {
+          "step": "0->1",
+          "left": "#9c4a2c",
+          "right": "#d99a72",
+          "dE2000": 26.8,
+          "dE2000_deuteranopia": 18.86,
+          "pass": true
+        },
+        {
+          "step": "1->2",
+          "left": "#d99a72",
+          "right": "#f3ece0",
+          "dE2000": 24.5,
+          "dE2000_deuteranopia": 19.44,
+          "pass": true
+        },
+        {
+          "step": "2->3",
+          "left": "#f3ece0",
+          "right": "#bcc9b2",
+          "dE2000": 13.96,
+          "dE2000_deuteranopia": 11.31,
+          "pass": true
+        },
+        {
+          "step": "3->4",
+          "left": "#bcc9b2",
+          "right": "#4f6b52",
+          "dE2000": 32.62,
+          "dE2000_deuteranopia": 36.19,
+          "pass": true
+        }
+      ],
+      "class_pairs": [
+        {
+          "pair": [
+            "#8c3f2b",
+            "#9b632d"
+          ],
+          "dE2000": 15.81,
+          "dE2000_deuteranopia": 7.1,
+          "pass": true
+        },
+        {
+          "pair": [
+            "#8c3f2b",
+            "#6f6a3c"
+          ],
+          "dE2000": 27.72,
+          "dE2000_deuteranopia": 7.13,
+          "pass": true
+        },
+        {
+          "pair": [
+            "#8c3f2b",
+            "#b4442c"
+          ],
+          "dE2000": 8.48,
+          "dE2000_deuteranopia": 12.47,
+          "pass": true
+        },
+        {
+          "pair": [
+            "#9b632d",
+            "#6f6a3c"
+          ],
+          "dE2000": 17.58,
+          "dE2000_deuteranopia": 13.74,
+          "pass": true
+        },
+        {
+          "pair": [
+            "#9b632d",
+            "#b4442c"
+          ],
+          "dE2000": 15.68,
+          "dE2000_deuteranopia": 5.44,
+          "pass": true
+        },
+        {
+          "pair": [
+            "#6f6a3c",
+            "#b4442c"
+          ],
+          "dE2000": 31.21,
+          "dE2000_deuteranopia": 19.1,
+          "pass": true
+        }
+      ],
+      "missing_vs_lowest": 10.62,
+      "contrasts": {
+        "ink_on_surface": 11.58,
+        "muted_on_surface": 5.1,
+        "accent_on_surface": 5.22
+      },
+      "contract_failures": [],
+      "failures": []
+    },
+    "dark-monitoring": {
+      "sequential_steps": [
+        {
+          "step": "0->1",
+          "left": "#12283f",
+          "right": "#194a6e",
+          "dE2000": 11.77,
+          "dE2000_deuteranopia": 9.66,
+          "pass": true
+        },
+        {
+          "step": "1->2",
+          "left": "#194a6e",
+          "right": "#21749e",
+          "dE2000": 14.81,
+          "dE2000_deuteranopia": 10.05,
+          "pass": true
+        },
+        {
+          "step": "2->3",
+          "left": "#21749e",
+          "right": "#33a6cb",
+          "dE2000": 17.75,
+          "dE2000_deuteranopia": 12.81,
+          "pass": true
+        }
+      ],
+      "diverging_steps": [
+        {
+          "step": "0->1",
+          "left": "#8a3b3b",
+          "right": "#c07a6a",
+          "dE2000": 22.64,
+          "dE2000_deuteranopia": 18.21,
+          "pass": true
+        },
+        {
+          "step": "1->2",
+          "left": "#c07a6a",
+          "right": "#2b3644",
+          "dE2000": 41.97,
+          "dE2000_deuteranopia": 59.17,
+          "pass": true
+        },
+        {
+          "step": "2->3",
+          "left": "#2b3644",
+          "right": "#3f8f9c",
+          "dE2000": 32.84,
+          "dE2000_deuteranopia": 21.07,
+          "pass": true
+        },
+        {
+          "step": "3->4",
+          "left": "#3f8f9c",
+          "right": "#5ad0c9",
+          "dE2000": 20.14,
+          "dE2000_deuteranopia": 17.19,
+          "pass": true
+        }
+      ],
+      "class_pairs": [
+        {
+          "pair": [
+            "#4fc3f7",
+            "#7dd3a0"
+          ],
+          "dE2000": 34.91,
+          "dE2000_deuteranopia": 26.45,
+          "pass": true
+        },
+        {
+          "pair": [
+            "#4fc3f7",
+            "#c4a7f0"
+          ],
+          "dE2000": 30.79,
+          "dE2000_deuteranopia": 17.76,
+          "pass": true
+        },
+        {
+          "pair": [
+            "#4fc3f7",
+            "#ffb340"
+          ],
+          "dE2000": 51.74,
+          "dE2000_deuteranopia": 75.65,
+          "pass": true
+        },
+        {
+          "pair": [
+            "#7dd3a0",
+            "#c4a7f0"
+          ],
+          "dE2000": 40.79,
+          "dE2000_deuteranopia": 18.82,
+          "pass": true
+        },
+        {
+          "pair": [
+            "#7dd3a0",
+            "#ffb340"
+          ],
+          "dE2000": 38.63,
+          "dE2000_deuteranopia": 37.43,
+          "pass": true
+        },
+        {
+          "pair": [
+            "#c4a7f0",
+            "#ffb340"
+          ],
+          "dE2000": 50.33,
+          "dE2000_deuteranopia": 55.38,
+          "pass": true
+        }
+      ],
+      "missing_vs_lowest": 5.68,
+      "contrasts": {
+        "ink_on_surface": 15.54,
+        "muted_on_surface": 6.39,
+        "accent_on_surface": 9.32
+      },
+      "contract_failures": [],
+      "failures": []
+    }
+  },
+  "failed": 0
+}

@@ -1,0 +1,23 @@
+{
+  "description": "Fictional cultural facilities placed over a real OSM road snapshot. Names, visits and years are synthetic; coordinates are not snapped to real addresses and must not be used for wayfinding.",
+  "generator": "demo/cultural-atlas/build_facilities.py",
+  "seed": 20261106,
+  "count": 17,
+  "bounds_used_south_west_north_east": [
+    31.221,
+    121.433,
+    31.233,
+    121.445
+  ],
+  "categories": {
+    "博物馆": "#3f6fa3",
+    "图书馆": "#4e9a76",
+    "剧院": "#c25a43",
+    "美术馆": "#8a6cb0",
+    "书店": "#c8902c",
+    "非遗驿站": "#4f95a6"
+  },
+  "sha256": "5a7152d1cf2f8e5f74eb6154ab256c72e603f0d40ee5c5fcc18e2c2e152be20e",
+  "basemap_source": "OpenStreetMap contributors, via Overpass API (see basemap-provenance.json)",
+  "license": "facility data: CC0 fictional; basemap: ODbL-1.0"
+}

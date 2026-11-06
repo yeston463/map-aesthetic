@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "dataset": "三套视觉方向演示所用的底图与业务数据",
+  "version": "demo-1",
+  "crs": "OGC:CRS84 (lon/lat, WGS 84 axis order)",
+  "rights": "全部为合成数据，由本仓库 scripts/make_case_data.py 以固定种子生成；不表示任何真实地点、真实机构或第三方数据集。",
+  "terms_note": "本演示不调用任何在线底图服务，也不使用任何需要授权或付费的地图数据源；因此不存在需要单独署名的第三方底图。",
+  "synthetic_basemap_note": "底图几何来自案例自带的 context.geojson。案例同时提供一份栅格瓦片，它是由同一份几何渲染出的像素版本；本演示以矢量方式绘制同一份几何，因此两者的道路、水系与街区位置一致，但只有矢量版本可以逐要素改色。",
+  "sources": {
+    "cases/leaflet-raster/data/context.geojson": {
+      "role": "底图几何：主干道、支路、水系、街区面",
+      "sha256": "9703e7eeec4e448b6ff111993b4a1e46dcaace9bc616d510a2261be7ce84de99"
+    },
+    "cases/leaflet-raster/data/labels.geojson": {
+      "role": "地名注记与站点名，共 24 条",
+      "sha256": "06810f588e07d32b76f437b96076696c86ef0771c780aa3ef2125a0a03073c5b"
+    },
+    "cases/leaflet-raster/data/sites.geojson": {
+      "role": "站点要素，共 12 处",
+      "sha256": "ea42a59383c48fac5c36b0db6e07ed0983b54a7e6186aabe9e4694621ff635b4"
+    },
+    "cases/leaflet-raster/data/districts.geojson": {
+      "role": "片区面，共 6 个，含 1 个无数据片区",
+      "sha256": "60b5ce75dd315d88d4ad50243d09fff412be381831ea08cd5e26226c3b507717"
+    },
+    "cases/leaflet-raster/data/route.geojson": {
+      "role": "主配送线，单条折线",
+      "sha256": "492f5fba98767c85f15ebbf3b888d8d3fd71c8e98038c5e97e97d8c374a2e15e"
+    }
+  },
+  "reference_raster": {
+    "path": "cases/leaflet-raster/tiles",
+    "role": "对照用栅格底图，由 scripts/make_case_data.py 渲染；演示中默认关闭，可由顶栏“栅格对照”开关打开",
+    "note": "本演示复制了一份到 demo/three-directions/tiles，仅用于对照，未作任何修改"
+  },
+  "processing": {
+    "tool": "本目录 build_sources.py",
+    "rebuild": "python build_sources.py",
+    "check": "python build_sources.py --check"
+  },
+  "interpretation": "矢量底图为现代参考坐标下的合成街区，非任何历史或真实街区的复原。"
+}
