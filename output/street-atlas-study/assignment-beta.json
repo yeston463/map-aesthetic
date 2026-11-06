@@ -1,0 +1,63 @@
+{
+  "pair": "street-atlas-p1",
+  "left": "street-atlas-refined",
+  "right": "street-atlas",
+  "stills": {
+    "street-atlas": {
+      "desktop": "C:\\Users\\赵航\\Desktop\\map_skill\\output\\street-atlas-study\\stills\\street-atlas-desktop.png",
+      "desktop-state": {
+        "layers": {
+          "route": true,
+          "sites": true
+        },
+        "selected": null,
+        "sheetCollapsed": false,
+        "zoom": 16.25,
+        "labels": 55,
+        "url": "http://127.0.0.1:4174/demo/street-atlas/"
+      },
+      "mobile": "C:\\Users\\赵航\\Desktop\\map_skill\\output\\street-atlas-study\\stills\\street-atlas-mobile.png",
+      "mobile-state": {
+        "layers": {
+          "route": true,
+          "sites": true
+        },
+        "selected": null,
+        "sheetCollapsed": true,
+        "zoom": 15,
+        "labels": 57,
+        "url": "http://127.0.0.1:4174/demo/street-atlas/"
+      }
+    },
+    "street-atlas-refined": {
+      "desktop": "C:\\Users\\赵航\\Desktop\\map_skill\\output\\street-atlas-study\\stills\\street-atlas-refined-desktop.png",
+      "desktop-state": {
+        "layers": {
+          "route": true,
+          "sites": true
+        },
+        "sheetCollapsed": false,
+        "zoom": 16.25,
+        "labels": 55,
+        "url": "http://127.0.0.1:4174/demo/street-atlas-refined/"
+      },
+      "mobile": "C:\\Users\\赵航\\Desktop\\map_skill\\output\\street-atlas-study\\stills\\street-atlas-refined-mobile.png",
+      "mobile-state": {
+        "layers": {
+          "route": true,
+          "sites": true
+        },
+        "sheetCollapsed": true,
+        "zoom": 15,
+        "labels": 57,
+        "url": "http://127.0.0.1:4174/demo/street-atlas-refined/"
+      }
+    }
+  },
+  "created_at": "2026-11-06T07:45:28.845Z",
+  "method": "node:crypto randomInt(0,2)",
+  "images": {
+    "desktop": "compare-desktop.png",
+    "mobile": "compare-mobile.png"
+  }
+}
