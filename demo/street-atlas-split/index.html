@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>街区配送 · 分栏方案</title>
+  <link rel="stylesheet" href="./vendor/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="panel-collapsed" data-testid="panel" data-color="warm">
+  <div class="app">
+    <header class="nav-strip" aria-label="品牌与提示">
+      <div class="brand"><span class="brand-mark">岸</span><span><strong>城市配送</strong><small>STREET ATLAS</small></span></div>
+      <p class="strip-note">路网来自 OpenStreetMap · 站点与线路为虚构示例</p>
+    </header>
+    <main class="workspace">
+      <section class="map-pane" aria-label="配送地图">
+        <div id="map" class="map" role="region" aria-label="街区配送示意地图" data-testid="map"></div>
+        <div class="route-banner" aria-hidden="true"><span class="banner-index">R-01</span><b>配送线路</b><small class="banner-copy">3.2 km · 7 站</small></div>
+        <div class="map-tools" aria-label="地图图层">
+          <button type="button" aria-pressed="true" data-testid="toggle-route"><i class="line-icon"></i>线路</button>
+          <button type="button" aria-pressed="true" data-testid="toggle-sites"><i class="point-icon"></i>站点</button>
+  <button type="button" aria-pressed="true" data-testid="toggle-names"><i class="label-icon"></i>标注</button>
+        </div>
+        <div class="scale-band" aria-hidden="true">
+          <span class="band-slot"></span>
+          <span class="band-slot band-major"></span>
+          <span class="band-slot band-minor"></span>
+          <span class="band-note">主/次/支 路网三级</span>
+        </div>
+        <div class="map-status" data-testid="ready" data-state="loading" aria-live="polite">地图加载中</div>
+      </section>
+      <aside class="detail-pane" aria-label="线路与站点">
+        <div class="detail-head">
+          <div class="eyebrow"><span>01</span> / 分栏</div>
+          <h1>站点清单</h1>
+          <p class="detail-note">站点按路线顺序列出；点击地图标记或在列中点选。</p>
+        </div>
+        <div class="detail-body" id="detail-body">
+          <div class="site-rail" data-testid="site-list"></div>
+        </div>
+        <div class="detail-foot">
+          <div class="legend" aria-hidden="true">
+            <span><i class="key-line"></i>线路</span>
+            <span><i class="key-ring route"></i>线路站点</span>
+            <span><i class="key-ring plain"></i>其他站点</span>
+            <span><i class="key-ring alert"></i>异常</span>
+          </div>
+          <p class="attribution-note">站点与线路均为虚构示例，不用于导航。</p>
+        </div>
+        <button class="sheet-toggle" type="button" aria-expanded="false" aria-controls="detail-body" data-testid="sheet-toggle">
+          <span><b>站点清单</b><b><span data-panel-count>12</span> 个 · <span data-route-count>7</span> 站</b></span><span class="toggle-label">展开 +</span>
+        </button>
+      </aside>
+    </main>
+  </div>
+  <script src="./vendor/leaflet/dist/leaflet.js"></script>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

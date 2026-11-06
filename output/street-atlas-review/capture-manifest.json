@@ -1,0 +1,38 @@
+{
+  "baseline": {
+    "desktop": "C:\\Users\\赵航\\Desktop\\map_skill\\output\\street-atlas-review\\stills\\baseline-desktop.png",
+    "desktop-state": {
+      "issues": [],
+      "url": "http://127.0.0.1:4174/demo/street-atlas/"
+    },
+    "mobile": "C:\\Users\\赵航\\Desktop\\map_skill\\output\\street-atlas-review\\stills\\baseline-mobile.png",
+    "mobile-state": {
+      "issues": [],
+      "url": "http://127.0.0.1:4174/demo/street-atlas/"
+    }
+  },
+  "plate": {
+    "desktop": "C:\\Users\\赵航\\Desktop\\map_skill\\output\\street-atlas-review\\stills\\plate-desktop.png",
+    "desktop-state": {
+      "issues": [],
+      "url": "http://127.0.0.1:4174/demo/street-atlas-plate/"
+    },
+    "mobile": "C:\\Users\\赵航\\Desktop\\map_skill\\output\\street-atlas-review\\stills\\plate-mobile.png",
+    "mobile-state": {
+      "issues": [],
+      "url": "http://127.0.0.1:4174/demo/street-atlas-plate/"
+    }
+  },
+  "split": {
+    "desktop": "C:\\Users\\赵航\\Desktop\\map_skill\\output\\street-atlas-review\\stills\\split-desktop.png",
+    "desktop-state": {
+      "issues": [],
+      "url": "http://127.0.0.1:4174/demo/street-atlas-split/"
+    },
+    "mobile": "C:\\Users\\赵航\\Desktop\\map_skill\\output\\street-atlas-review\\stills\\split-mobile.png",
+    "mobile-state": {
+      "issues": [],
+      "url": "http://127.0.0.1:4174/demo/street-atlas-split/"
+    }
+  }
+}
