@@ -1,0 +1,33 @@
+{
+  "pair": "street-atlas-pair-20261106",
+  "left": "panel-P",
+  "right": "panel-Q",
+  "stills": {
+    "panel-P": {
+      "desktop": "C:\\Users\\赵航\\Desktop\\map_skill\\output\\ab-20261106\\stills\\panel-P-desktop.png",
+      "desktop-state": {
+        "url": "http://127.0.0.1:4174/.tmp/ab-pair/arm-alpha/",
+        "issues": []
+      },
+      "mobile": "C:\\Users\\赵航\\Desktop\\map_skill\\output\\ab-20261106\\stills\\panel-P-mobile.png",
+      "mobile-state": {
+        "url": "http://127.0.0.1:4174/.tmp/ab-pair/arm-alpha/",
+        "issues": []
+      }
+    },
+    "panel-Q": {
+      "desktop": "C:\\Users\\赵航\\Desktop\\map_skill\\output\\ab-20261106\\stills\\panel-Q-desktop.png",
+      "desktop-state": {
+        "url": "http://127.0.0.1:4174/.tmp/ab-pair/arm-beta/",
+        "issues": []
+      },
+      "mobile": "C:\\Users\\赵航\\Desktop\\map_skill\\output\\ab-20261106\\stills\\panel-Q-mobile.png",
+      "mobile-state": {
+        "url": "http://127.0.0.1:4174/.tmp/ab-pair/arm-beta/",
+        "issues": []
+      }
+    }
+  },
+  "created_at": "2026-11-06T12:50:34.115Z",
+  "method": "node:crypto randomInt(0,2)"
+}
