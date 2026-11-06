@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>街区配送 · 运营总览</title>
+  <link rel="stylesheet" href="../vendor/leaflet/dist/leaflet.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-variant="b" class="sheet-collapsed" data-slot="early" data-zoom-band="detail">
+  <div class="app">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">岸</span><span><strong>城市配送</strong><small>STREET OPERATIONS</small></span></div>
+      <div class="slot-group" role="group" aria-label="时段切换" data-testid="slot-group">
+        <button type="button" data-slot="early" aria-pressed="false">早班</button>
+        <button type="button" data-slot="mid" aria-pressed="false">午班</button>
+        <button type="button" data-slot="late" aria-pressed="false">晚班</button>
+      </div>
+      <div class="header-note"><i></i>示例数据 · 虚构</div>
+    </header>
+    <main class="workspace">
+      <section class="map-stage" aria-label="配送地图">
+        <div id="map" class="map" role="region" aria-label="街区运营示意地图" data-testid="map"></div>
+        <div class="map-bar">
+          <div class="bar-title">
+            <span class="bar-text"><b>线路与片区</b><small><span data-slot-label>早班</span> · 城市配送概览</small></span>
+          </div>
+          <nav class="bar-actions" aria-label="地图图层">
+            <button type="button" aria-pressed="true" data-testid="toggle-zones">片区</button>
+            <button type="button" aria-pressed="true" data-testid="toggle-routes">线路</button>
+            <button type="button" aria-pressed="true" data-testid="toggle-sites">站点</button>
+          </nav>
+        </div>
+        <div class="map-legend" data-testid="legend"></div>
+        <div class="map-status" data-testid="ready" data-state="loading" aria-live="polite">地图加载中</div>
+      </section>
+      <aside class="side" aria-label="运营详情">
+        <button class="sheet-toggle" type="button" aria-expanded="false" aria-controls="side-body" data-testid="sheet-toggle">
+          <span class="sheet-grab" aria-hidden="true"></span>
+          <span><b>运营详情</b><small><span data-route-count>2</span> 条线 · <span data-route-stop-count>9</span> 站</small></span>
+          <span class="toggle-label">展开 +</span>
+        </button>
+        <div class="side-body" id="side-body">
+          <section class="slot-block">
+            <header class="section-heading"><h2>当前时段</h2><span data-slot-window>07:00–11:00</span></header>
+            <p class="slot-summary">早班 07:00–11:00 · 主力线路 <span data-slot-label>早班</span></p>
+          </section>
+          <section class="routes-block">
+            <header class="section-heading"><h2>线路</h2><span><span data-route-count>2</span> 条活跃</span></header>
+            <div data-testid="route-list"></div>
+          </section>
+          <section class="zone-block">
+            <header class="section-heading"><h2>片区</h2></header>
+            <div data-testid="zone-list"></div>
+          </section>
+          <section class="site-block">
+            <header class="section-heading"><h2>站点索引</h2></header>
+            <div data-testid="site-list"></div>
+          </section>
+          <div class="side-foot">站点 / 线路 / 片区均为虚构示例，不用于导航。</div>
+        </div>
+      </aside>
+    </main>
+  </div>
+  <script src="../vendor/leaflet/dist/leaflet.js"></script>
+  <script type="module" src="../app.js"></script>
+</body>
+</html>
