@@ -10,5 +10,7 @@
   基准 `demo/street-atlas` 自始至终未被修改。
 - 外部检查基线：两版新方案 verify.mjs 5 视口全绿、consistency.mjs 0 FAIL
   （仅地图小字号路名的 body-size WARN，与基准相同）。
+- 用户决定：本阶段**停在这里**，并把全部提交推送到 GitHub
+  （`yeston463/map-aesthetic`，`main` 分支，`97a5d62..92200ba` 共 7 个提交）。
 - 后续：未选中的方案不再继续打磨，作为反例素材保留（供 transferable-principles 引用）；
   若用户日后要重启此方向，从 `demo/street-atlas-plate` / `demo/street-atlas-split` 继续。
